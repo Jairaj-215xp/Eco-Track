@@ -1,0 +1,79 @@
+@import "tailwindcss";
+
+@theme {
+  --color-background: var(--bg);
+  --color-surface: var(--surface);
+  --color-surface-glass: var(--surface-glass);
+  --color-ink: var(--ink);
+  --color-text: var(--text);
+  --color-text-muted: var(--muted);
+  --color-brand-100: var(--brand-100);
+  --color-brand-500: var(--brand-500);
+  --color-brand-600: var(--brand-600);
+  --color-aqua: var(--aqua);
+  --color-sun: var(--sun);
+  --color-sky: var(--sky);
+  --color-coral: var(--coral);
+  --color-line: var(--line);
+
+  --color-accent: var(--brand-500);
+  --color-accent-soft: var(--brand-100);
+  --color-danger: var(--coral);
+  --color-danger-soft: #FFEAE8;
+  --color-warn: var(--sun);
+  --color-warn-soft: #FFF8E6;
+  --color-info: var(--sky);
+  --color-info-soft: #EBF3FF;
+  --color-success: var(--brand-500);
+  --color-success-soft: var(--brand-100);
+
+  --color-border: var(--line);
+
+  --radius-xl: 14px;
+  --radius-2xl: 24px;
+  --radius-full: 999px;
+
+  --shadow-soft: 0 1px 2px rgba(16,35,28,.04), 0 12px 32px -8px rgba(16,35,28,.10);
+  --shadow-hover: 0 4px 6px rgba(16,35,28,.05), 0 16px 40px -8px rgba(16,35,28,.12);
+
+  --font-sans: 'Inter', system-ui, sans-serif;
+  --font-display: 'Plus Jakarta Sans', 'Inter', system-ui, sans-serif;
+
+  --spacing-content: 1200px;
+  --spacing-feed: 1080px;
+}
+
+@layer base {
+  :root {
+    --bg: #F6FAF8;
+    --surface: #FFFFFF;
+    --surface-glass: rgba(255,255,255,0.72);
+    --ink: #10231C;
+    --text: #2F4A40;
+    --muted: #7A8F87;
+    --brand-100: #DDF4E8;
+    --brand-500: #34B27B;
+    --brand-600: #27976A;
+    --aqua: #4CC9C0;
+    --sun: #FFC857;
+    --sky: #6FA8FF;
+    --coral: #FF7A6B;
+    --line: #E4EEE9;
+  }
+
+  body {
+    background-color: var(--bg);
+    color: var(--text);
+    -webkit-font-smoothing: antialiased;
+    font-family: var(--font-sans);
+    background-image: 
+      radial-gradient(circle at 15% 10%, rgba(52,178,123,0.06) 0%, transparent 40%),
+      radial-gradient(circle at 85% 30%, rgba(76,201,192,0.05) 0%, transparent 40%);
+    background-attachment: fixed;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+    color: var(--ink);
+  }
+}
