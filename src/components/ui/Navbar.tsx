@@ -3,10 +3,11 @@ import { Link, useLocation } from 'react-router-dom';
 import { Leaf, Menu, Bell, User, Camera, LogOut } from 'lucide-react';
 import { useAuth } from '../../contexts/AuthContext';
 import { motion } from 'framer-motion';
+import { ThemeToggle } from './ThemeToggle';
 
 export function Navbar() {
   const location = useLocation();
-  const { user, role, setRole, signOut } = useAuth();
+  const { user, role, signOut } = useAuth();
 
   const getLinks = () => {
     switch(role) {
@@ -23,13 +24,14 @@ export function Navbar() {
         { name: 'How it works', path: '/how-it-works' }
       ];
       case 'org': return [
-        { name: 'Tasks Dashboard', path: '/org' },
-        { name: 'Community Feed', path: '/feed' },
+        { name: 'NGO Workspace', path: '/org' },
+        { name: 'Tasks Feed', path: '/feed' },
         { name: 'Impact', path: '/impact' }
       ];
       case 'admin': return [
-        { name: 'Dashboard', path: '/org' },
-        { name: 'Feed', path: '/feed' },
+        { name: 'Admin Hub', path: '/admin' },
+        { name: 'NGO Workspace', path: '/org' },
+        { name: 'City Feed', path: '/feed' },
         { name: 'Impact', path: '/impact' }
       ];
     }
@@ -74,7 +76,7 @@ export function Navbar() {
 
         {/* Right: Actions */}
         <div className="flex items-center space-x-3">
-          {role === 'guest' ? (
+          {!user ? (
             <>
               <Link to="/login" className="hidden sm:block text-sm font-medium text-text hover:text-brand-600 transition-colors px-4 py-2">
                 Log in
@@ -85,20 +87,32 @@ export function Navbar() {
             </>
           ) : (
             <>
-              {role === 'citizen' && (
+              {user.role === 'citizen' && (
                 <Link to="/report/new" className="hidden sm:flex items-center px-4 py-2 text-xs font-bold text-white bg-brand-500 hover:bg-brand-600 rounded-full shadow-sm hover:scale-105 transition-all">
                   <Camera className="w-3.5 h-3.5 mr-1.5" /> Report Waste
+                </Link>
+              )}
+              {user.role === 'org' && (
+                <Link to="/org" className="hidden sm:flex items-center px-3.5 py-1.5 text-xs font-bold text-white bg-brand-600 hover:bg-brand-700 rounded-full shadow-sm hover:scale-105 transition-all">
+                  NGO Workspace
+                </Link>
+              )}
+              {user.role === 'admin' && (
+                <Link to="/admin" className="hidden sm:flex items-center px-3.5 py-1.5 text-xs font-bold text-white bg-purple-600 hover:bg-purple-700 rounded-full shadow-sm hover:scale-105 transition-all">
+                  Admin Hub
                 </Link>
               )}
 
               {/* User Profile Badge */}
               <div className="flex items-center space-x-2 pl-2 border-l border-border">
                 <div className="text-right hidden sm:block">
-                  <p className="text-xs font-bold text-ink leading-tight truncate max-w-[110px]">
-                    {user?.name || (role === 'org' ? 'NGO Crew' : 'Citizen')}
+                  <p className="text-xs font-bold text-ink leading-tight truncate max-w-[130px]">
+                    {user.name}
                   </p>
-                  <span className="text-[10px] text-brand-600 font-semibold capitalize">
-                    {role}
+                  <span className={`text-[10px] font-bold uppercase tracking-wider ${
+                    user.role === 'admin' ? 'text-purple-600' : user.role === 'org' ? 'text-aqua-600' : 'text-brand-600'
+                  }`}>
+                    {user.role === 'org' ? 'NGO Crew' : user.role === 'admin' ? 'City Admin' : 'Citizen'}
                   </span>
                 </div>
 
@@ -113,18 +127,8 @@ export function Navbar() {
             </>
           )}
 
-          {/* Quick Role Switcher for Testing */}
-          <select 
-            value={role} 
-            onChange={e => setRole(e.target.value as any)}
-            className="text-[10px] bg-surface-2 border border-border rounded-lg px-1.5 py-1 text-ink focus:outline-none"
-            title="Switch User Role"
-          >
-            <option value="guest">Guest</option>
-            <option value="citizen">Citizen</option>
-            <option value="org">Org</option>
-            <option value="admin">Admin</option>
-          </select>
+          {/* Theme Mode Switcher */}
+          <ThemeToggle />
         </div>
 
       </nav>

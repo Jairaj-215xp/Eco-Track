@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { reportService } from '../services/reportService';
-import { Report } from '../types';
+import { Report, Organisation } from '../types';
 import { useAuth } from '../contexts/AuthContext';
 import { 
   ArrowLeft, 
@@ -14,21 +14,32 @@ import {
   ShieldCheck, 
   Sparkles, 
   AlertTriangle,
-  Send
+  Send,
+  Building,
+  RotateCcw,
+  Check,
+  XCircle
 } from 'lucide-react';
 import { Button } from '../components/ui/Button';
 import { GoogleMapView } from '../components/ui/GoogleMapView';
+import { useAlert } from '../contexts/AlertContext';
 
 export function ReportDetail() {
   const { id } = useParams<{ id: string }>();
   const navigate = useNavigate();
-  const { user } = useAuth();
+  const { user, role } = useAuth();
+  const { showAlert, showConfirm } = useAlert();
   
   const [report, setReport] = useState<Report | null>(null);
+  const [orgs, setOrgs] = useState<Organisation[]>([]);
   const [sliderPosition, setSliderPosition] = useState(50);
   const [isDragging, setIsDragging] = useState(false);
   const [upvotes, setUpvotes] = useState(0);
   const [hasUpvoted, setHasUpvoted] = useState(false);
+
+  const notify = (msg: string, type: 'success' | 'info' | 'warning' | 'error' = 'success') => {
+    showAlert(msg, type);
+  };
 
   useEffect(() => {
     if (id) {
@@ -38,6 +49,7 @@ export function ReportDetail() {
           setUpvotes(data.upvotes || 0);
         }
       });
+      reportService.getOrganisations().then(setOrgs);
     }
   }, [id]);
 
@@ -57,6 +69,60 @@ export function ReportDetail() {
     setHasUpvoted(true);
     setUpvotes(u => u + 1);
     await reportService.upvoteReport(report.id, user?.id);
+  };
+
+  const currentOrgId = user?.orgId || (role === 'org' && user?.name?.toLowerCase().includes('green earth') ? 'org_green_earth' : user?.orgId || '');
+  const currentOrgName = user?.name || (role === 'org' ? 'Green Earth Foundation' : '');
+  const isAssignedToMe = role === 'org' && Boolean(
+    (currentOrgId && report.assignedOrgId === currentOrgId) || 
+    (user?.name && report.assignedOrgName && report.assignedOrgName.toLowerCase() === user.name.toLowerCase())
+  );
+  const isUnassigned = report.status === 'reported' && !report.assignedOrgId;
+
+  const handleClaimReport = async () => {
+    if (role !== 'org' && role !== 'admin') {
+      notify('Please sign in or register as an NGO / Municipal crew to claim cleanup tasks.', 'warning');
+      navigate('/login', { state: { from: { pathname: `/report/${report.id}` } } });
+      return;
+    }
+    await reportService.assignReportToOrg(report.id, currentOrgId, currentOrgName, currentOrgName);
+    notify('Task successfully claimed by your organization!');
+    const updated = await reportService.getReportById(report.id);
+    if (updated) setReport(updated);
+  };
+
+  const handleReleaseReport = () => {
+    showConfirm({
+      title: 'Release Task to Open Queue?',
+      message: 'Are you sure you want to release this task? It will be returned to the open municipal dispatch queue so other partner NGOs and sanitation crews can claim it.',
+      confirmText: 'Yes, Release Task',
+      type: 'warning',
+      onConfirm: async () => {
+        await reportService.unassignReport(report.id, currentOrgName);
+        notify('Task released back to public dispatch queue.', 'info');
+        const updated = await reportService.getReportById(report.id);
+        if (updated) setReport(updated);
+      }
+    });
+  };
+
+  const handleAdminAssign = async (orgId: string) => {
+    const targetOrg = orgs.find(o => o.id === orgId);
+    if (!targetOrg) return;
+    await reportService.assignReportToOrg(report.id, targetOrg.id, targetOrg.name, user?.name || 'City Administrator');
+    notify(`Assigned task to ${targetOrg.name}`);
+    const updated = await reportService.getReportById(report.id);
+    if (updated) setReport(updated);
+  };
+
+  const handleAdminReview = async (decision: 'verified' | 'reopened') => {
+    const comment = decision === 'verified'
+      ? 'Cleanup verified and approved by Municipal Authority.'
+      : 'Residual debris detected. Further cleaning requested.';
+    await reportService.adminReviewProof(report.id, decision, comment, user?.name || 'City Administrator');
+    notify(decision === 'verified' ? 'Report verified & certified!' : 'Report reopened for re-cleaning.');
+    const updated = await reportService.getReportById(report.id);
+    if (updated) setReport(updated);
   };
 
   return (
@@ -150,7 +216,7 @@ export function ReportDetail() {
 
               {isResolved && (
                 <>
-                  <div className="absolute bottom-3 left-3 bg-ink/70 backdrop-blur text-white px-2.5 py-1 rounded-lg text-[10px] font-bold shadow-sm">Before</div>
+                  <div className="absolute bottom-3 left-3 bg-slate-900/80 backdrop-blur text-white px-2.5 py-1 rounded-lg text-[10px] font-bold shadow-sm">Before</div>
                   <div className="absolute bottom-3 right-3 bg-brand-500/90 backdrop-blur text-white px-2.5 py-1 rounded-lg text-[10px] font-bold shadow-sm">After</div>
                 </>
               )}
@@ -264,7 +330,140 @@ export function ReportDetail() {
 
         {/* Right Sidebar */}
         <div className="w-full lg:w-[360px] space-y-5">
-          
+          {/* NGO Workflow Actions Box */}
+          {role === 'org' && (
+            <div className="bg-surface rounded-3xl border border-aqua/30 p-5 shadow-xs bg-gradient-to-br from-surface to-aqua/5">
+              <div className="flex items-center justify-between mb-3">
+                <span className="text-[11px] font-bold text-aqua-700 uppercase tracking-wider flex items-center">
+                  <Building className="w-3.5 h-3.5 mr-1" /> NGO Field Action
+                </span>
+                {report.assignedOrgName && (
+                  <span className="text-[10px] bg-aqua-100 text-aqua-800 px-2 py-0.5 rounded-full font-bold">
+                    {report.assignedOrgName}
+                  </span>
+                )}
+              </div>
+
+              {isUnassigned ? (
+                <div className="space-y-2">
+                  <p className="text-xs text-text-muted">
+                    This garbage report is unassigned. Claim this task to mobilize your cleanup team.
+                  </p>
+                  <Button
+                    size="md"
+                    className="w-full bg-aqua-600 hover:bg-aqua-700 text-white font-bold text-xs"
+                    onClick={handleClaimReport}
+                    leftIcon={<Building className="w-4 h-4" />}
+                  >
+                    Claim Task for {currentOrgName}
+                  </Button>
+                </div>
+              ) : isAssignedToMe ? (
+                <div className="space-y-2.5">
+                  <div className="bg-aqua-50 border border-aqua-200 rounded-xl p-2.5 text-[11px] text-aqua-900 font-medium">
+                    This task is currently active with your crew. Take an after-cleanup photo once the site is cleared to earn verification.
+                  </div>
+                  {report.status !== 'verified' && (
+                    <Button
+                      size="md"
+                      className="w-full bg-brand-500 hover:bg-brand-600 text-white font-bold text-xs"
+                      onClick={() => navigate(`/org/report/${report.id}/proof`)}
+                      leftIcon={<Send className="w-4 h-4" />}
+                    >
+                      Submit Cleanup Proof
+                    </Button>
+                  )}
+                  <button
+                    onClick={handleReleaseReport}
+                    className="w-full text-center text-xs text-red-600 hover:text-red-700 font-bold py-2 px-3 rounded-xl bg-red-50 hover:bg-red-100/90 border border-red-200/90 transition-all flex items-center justify-center shadow-2xs group"
+                  >
+                    <RotateCcw className="w-3.5 h-3.5 mr-1.5 text-red-500 group-hover:-rotate-45 transition-transform" />
+                    Release task back to open queue
+                  </button>
+                </div>
+              ) : (
+                <p className="text-xs text-text-muted">
+                  Assigned to <strong className="text-ink">{report.assignedOrgName}</strong>.
+                </p>
+              )}
+            </div>
+          )}
+
+          {/* Unauthenticated NGO Claim prompt */}
+          {!user && isUnassigned && (
+            <div className="bg-surface rounded-3xl border border-aqua/30 p-4 shadow-xs bg-aqua-50/30 text-xs">
+              <div className="flex items-center space-x-1.5 text-aqua-700 font-bold mb-1">
+                <Building className="w-3.5 h-3.5" />
+                <span>NGO / Sanitation Dispatch</span>
+              </div>
+              <p className="text-text-muted text-[11px] mb-2.5">
+                Represent an NGO or municipal sanitation team? Sign in or register your organization to claim this open cleanup site.
+              </p>
+              <Button
+                size="sm"
+                variant="ghost"
+                className="w-full text-xs font-bold border border-aqua/40 text-aqua-800 hover:bg-aqua-50"
+                onClick={() => navigate('/login', { state: { from: { pathname: `/report/${report.id}` } } })}
+              >
+                Sign In to Claim Task
+              </Button>
+            </div>
+          )}
+
+          {/* City Administrator Controls */}
+          {role === 'admin' && (
+            <div className="bg-surface rounded-3xl border border-purple-500/30 p-5 shadow-xs bg-gradient-to-br from-surface to-purple-500/5">
+              <span className="text-[11px] font-bold text-purple-700 uppercase tracking-wider flex items-center mb-3">
+                <ShieldCheck className="w-3.5 h-3.5 mr-1" /> Municipal Command Action
+              </span>
+
+              {/* Assign to Org Dropdown */}
+              <div className="mb-4">
+                <label className="text-[10px] text-text-muted font-bold block uppercase mb-1">
+                  Assign / Reassign Organization
+                </label>
+                <select
+                  value={report.assignedOrgId || ''}
+                  onChange={(e) => handleAdminAssign(e.target.value)}
+                  className="w-full text-xs font-semibold bg-surface-2 border border-border rounded-xl px-3 py-2 text-ink focus:outline-none focus:ring-1 focus:ring-brand-500"
+                >
+                  <option value="">-- Open Public Queue (Unassigned) --</option>
+                  {orgs.map(org => (
+                    <option key={org.id} value={org.id}>
+                      {org.name} ({org.type.toUpperCase()})
+                    </option>
+                  ))}
+                </select>
+              </div>
+
+              {/* Proof verification actions */}
+              {report.status === 'proof_submitted' && (
+                <div className="space-y-2 pt-2 border-t border-purple-500/20">
+                  <p className="text-xs font-bold text-ink">Proof Submitted: Pending Your Review</p>
+                  <div className="grid grid-cols-2 gap-2">
+                    <Button
+                      size="sm"
+                      className="bg-brand-500 hover:bg-brand-600 text-white font-bold text-xs"
+                      onClick={() => handleAdminReview('verified')}
+                      leftIcon={<Check className="w-3.5 h-3.5" />}
+                    >
+                      Approve & Certify
+                    </Button>
+                    <Button
+                      size="sm"
+                      variant="ghost"
+                      className="border border-danger/30 text-danger hover:bg-danger-soft text-xs font-bold"
+                      onClick={() => handleAdminReview('reopened')}
+                      leftIcon={<RotateCcw className="w-3.5 h-3.5" />}
+                    >
+                      Reject & Reopen
+                    </Button>
+                  </div>
+                </div>
+              )}
+            </div>
+          )}
+
           {/* Upvote & Actions */}
           <div className="bg-surface rounded-3xl border border-border p-5 shadow-xs">
             <Button 
@@ -276,18 +475,6 @@ export function ReportDetail() {
             >
               {hasUpvoted ? 'Upvoted!' : 'Upvote this Report'} ({upvotes})
             </Button>
-
-            {/* If NGO/org is viewing an active task, quick button to submit proof */}
-            {user?.role === 'org' && report.status !== 'verified' && (
-              <Button
-                variant="ghost"
-                className="w-full mb-4 border border-brand-500/30 text-brand-600 text-xs py-2.5 bg-brand-50/50 hover:bg-brand-100"
-                onClick={() => navigate(`/org/report/${report.id}/proof`)}
-                leftIcon={<Send className="w-4 h-4" />}
-              >
-                Submit Cleanup Proof
-              </Button>
-            )}
 
             <h3 className="font-bold text-ink text-sm mb-4">Activity Timeline</h3>
             <div className="relative pl-5 space-y-6">

@@ -288,7 +288,7 @@ export function Landing() {
                 </div>
                 <div>
                   <h5 className="text-xs font-bold text-ink">Open Vision AI</h5>
-                  <p className="text-[10px] text-brand-600 font-bold">200 Trained Scenes</p>
+                  <p className="text-[10px] text-brand-600 font-bold">440 Trained Scenes</p>
                 </div>
               </div>
               <p className="text-[10px] text-text-muted leading-tight">
@@ -346,8 +346,8 @@ export function Landing() {
               <Layers className="w-6 h-6 text-brand-600" />
             </div>
             <div>
-              <h3 className="text-2xl font-display font-extrabold text-ink">200 Scenes</h3>
-              <p className="text-xs text-text-muted font-medium">Real Calibrated Dataset</p>
+              <h3 className="text-2xl font-display font-extrabold text-ink">440 Scenes</h3>
+              <p className="text-xs text-text-muted font-medium">880 Calibrated Samples</p>
             </div>
           </div>
         </motion.div>
@@ -383,7 +383,7 @@ export function Landing() {
                 onClick={() => setActiveShowcaseIdx(idx)}
                 className={`px-4 py-2 rounded-full text-xs font-bold transition-all shrink-0 ${
                   activeShowcaseIdx === idx
-                    ? 'bg-ink text-white shadow-xs'
+                    ? 'bg-brand-500 text-white shadow-xs'
                     : 'bg-surface-2 text-text-muted hover:text-ink hover:bg-border/60'
                 }`}
               >

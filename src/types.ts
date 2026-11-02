@@ -68,6 +68,11 @@ export interface Organisation {
   serviceArea: string; 
   approved: boolean; 
   contactEmail?: string;
+  phone?: string;
+  crewSize?: string;
+  coords?: { lat: number; lng: number };
+  activeTasksCount?: number;
+  completedTasksCount?: number;
 }
 
 export interface User { 
@@ -76,5 +81,10 @@ export interface User {
   name: string; 
   role: 'citizen' | 'org' | 'admin'; 
   orgId?: string; 
+  orgServiceArea?: string;
+  orgCoords?: { lat: number; lng: number };
+  orgType?: 'municipal' | 'ngo';
+  crewSize?: string;
+  phone?: string;
   avatarUrl?: string;
 }

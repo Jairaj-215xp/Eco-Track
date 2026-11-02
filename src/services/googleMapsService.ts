@@ -9,6 +9,16 @@ export const isGoogleMapsConfigured = Boolean(
 );
 
 let optionsConfigured = false;
+export let googleMapsAuthFailed = false;
+
+if (typeof window !== 'undefined') {
+  const prevAuth = (window as any).gm_authFailure;
+  (window as any).gm_authFailure = () => {
+    console.warn('Google Maps authentication failed (billing or API key error). Using fallback.');
+    googleMapsAuthFailed = true;
+    if (typeof prevAuth === 'function') prevAuth();
+  };
+}
 
 function ensureOptions() {
   if (!optionsConfigured && isGoogleMapsConfigured) {
@@ -106,11 +116,23 @@ export async function geocodeAddress(query: string): Promise<{ lat: number; lng:
 
   // 2. Fallback to OpenStreetMap Nominatim Search API
   try {
-    const res = await fetch(`https://nominatim.openstreetmap.org/search?format=json&q=${encodeURIComponent(cleanQuery)}&limit=1&addressdetails=1`, {
+    let res = await fetch(`https://nominatim.openstreetmap.org/search?format=json&q=${encodeURIComponent(cleanQuery)}&limit=1&addressdetails=1`, {
       headers: { 'Accept-Language': 'en' }
     });
     if (res.ok) {
-      const data = await res.json();
+      let data = await res.json();
+      if (!data || data.length === 0) {
+        // Try appending Pune, Maharashtra if not already present
+        if (!cleanQuery.toLowerCase().includes('pune') && !cleanQuery.toLowerCase().includes('maharashtra')) {
+          res = await fetch(`https://nominatim.openstreetmap.org/search?format=json&q=${encodeURIComponent(`${cleanQuery}, Pune, Maharashtra`)}&limit=1&addressdetails=1`, {
+            headers: { 'Accept-Language': 'en' }
+          });
+          if (res.ok) {
+            data = await res.json();
+          }
+        }
+      }
+
       if (data && data.length > 0) {
         return {
           lat: parseFloat(data[0].lat),
@@ -190,14 +212,27 @@ export function getCurrentDeviceLocation(): Promise<{ lat: number; lng: number; 
       }
     );
 
-    // Timeout after 3.5 seconds and return best acquired fix
+    // Timeout after 4.5 seconds and return best acquired fix
     timer = setTimeout(() => {
       cleanup();
       if (bestReading) {
         resolve(bestReading);
       } else {
-        reject(new Error('GPS location timeout'));
+        // Fallback to coarse / cached network location before failing
+        navigator.geolocation.getCurrentPosition(
+          (pos) => {
+            resolve({
+              lat: pos.coords.latitude,
+              lng: pos.coords.longitude,
+              accuracyM: Math.round(pos.coords.accuracy || 60)
+            });
+          },
+          (err) => {
+            reject(new Error(err.message || 'GPS location lookup timed out'));
+          },
+          { enableHighAccuracy: false, timeout: 3500, maximumAge: 120000 }
+        );
       }
-    }, 3500);
+    }, 4500);
   });
 }

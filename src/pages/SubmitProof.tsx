@@ -139,7 +139,7 @@ export function SubmitProof() {
           <div className="bg-surface rounded-3xl border border-border p-3 shadow-soft h-full flex flex-col">
             <div className="relative aspect-[16/10] w-full rounded-2xl overflow-hidden mb-3 bg-surface-2">
               <img src={report.photoUrl} alt="Before" className="w-full h-full object-cover" />
-              <div className="absolute top-2.5 left-2.5 bg-ink/75 backdrop-blur text-white px-2.5 py-1 rounded-lg text-[11px] font-bold">
+              <div className="absolute top-2.5 left-2.5 bg-slate-900/80 backdrop-blur text-white px-2.5 py-1 rounded-lg text-[11px] font-bold">
                 Before Cleanup
               </div>
             </div>
@@ -203,7 +203,7 @@ export function SubmitProof() {
                   <img src={proofPreviewUrl} alt="After" className="w-full h-full object-contain" />
                   
                   {verifying ? (
-                    <div className="absolute inset-0 bg-ink/70 backdrop-blur-sm flex flex-col items-center justify-center text-white">
+                    <div className="absolute inset-0 bg-slate-950/80 backdrop-blur-sm flex flex-col items-center justify-center text-white">
                       <Loader2 className="w-8 h-8 animate-spin text-brand-400 mb-2" />
                       <p className="font-bold text-xs">Open Vision Comparing Images...</p>
                       <p className="text-[10px] text-white/70">Analyzing location match & debris reduction</p>

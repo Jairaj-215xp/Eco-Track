@@ -1,8 +1,9 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { Report } from '../../types';
 import { useNavigate } from 'react-router-dom';
-import { loadGoogleMapsCore, isGoogleMapsConfigured } from '../../services/googleMapsService';
+import { loadGoogleMapsCore, isGoogleMapsConfigured, googleMapsAuthFailed } from '../../services/googleMapsService';
 import { MapView as LeafletMapView } from './MapView';
+import { useTheme } from '../../contexts/ThemeContext';
 
 interface GoogleMapViewProps {
   reports: Report[];
@@ -11,6 +12,22 @@ interface GoogleMapViewProps {
   className?: string;
   onSelectReport?: (report: Report) => void;
 }
+
+const lightEcoStyle: google.maps.MapTypeStyle[] = [
+  { featureType: 'poi.park', elementType: 'geometry', stylers: [{ color: '#e8f5e9' }] },
+  { featureType: 'water', elementType: 'geometry', stylers: [{ color: '#e0f7fa' }] },
+  { featureType: 'landscape.natural', elementType: 'geometry', stylers: [{ color: '#fbfbfb' }] }
+];
+
+const darkEcoStyle: google.maps.MapTypeStyle[] = [
+  { elementType: 'geometry', stylers: [{ color: '#13231d' }] },
+  { elementType: 'labels.text.stroke', stylers: [{ color: '#13231d' }] },
+  { elementType: 'labels.text.fill', stylers: [{ color: '#9bb8ab' }] },
+  { featureType: 'poi.park', elementType: 'geometry', stylers: [{ color: '#183127' }] },
+  { featureType: 'water', elementType: 'geometry', stylers: [{ color: '#0d1815' }] },
+  { featureType: 'road', elementType: 'geometry', stylers: [{ color: '#1f382f' }] },
+  { featureType: 'road', elementType: 'geometry.stroke', stylers: [{ color: '#172b24' }] }
+];
 
 export function GoogleMapView({
   reports,
@@ -23,40 +40,25 @@ export function GoogleMapView({
   const mapInstanceRef = useRef<google.maps.Map | null>(null);
   const markersRef = useRef<google.maps.Marker[]>([]);
   const navigate = useNavigate();
-  const [loadError, setLoadError] = useState(false);
+  const [loadError, setLoadError] = useState(googleMapsAuthFailed);
+  const { resolvedTheme } = useTheme();
 
-  // If Google Maps is not configured, fall back to Leaflet map
-  if (!isGoogleMapsConfigured || loadError) {
-    return (
-      <div className={`relative ${className}`}>
-        <LeafletMapView reports={reports} center={[center.lat, center.lng]} zoom={zoom} />
-        {!isGoogleMapsConfigured && (
-          <div className="absolute bottom-2 left-2 z-10 bg-surface/90 backdrop-blur-sm border border-border px-2.5 py-1 rounded-lg text-[10px] text-text-muted flex items-center shadow-xs">
-            <span className="w-1.5 h-1.5 rounded-full bg-brand-500 mr-1.5"></span>
-            Using OpenStreetMap (Add VITE_GOOGLE_MAPS_API_KEY for Google Maps)
-          </div>
-        )}
-      </div>
-    );
-  }
+  const shouldUseLeaflet = !isGoogleMapsConfigured || loadError || googleMapsAuthFailed;
 
   useEffect(() => {
+    if (shouldUseLeaflet) return;
     let isMounted = true;
 
     loadGoogleMapsCore()
       .then((MapConstructor) => {
         if (!isMounted || !mapRef.current) return;
 
-        const ecoStyle: google.maps.MapTypeStyle[] = [
-          { featureType: 'poi.park', elementType: 'geometry', stylers: [{ color: '#e8f5e9' }] },
-          { featureType: 'water', elementType: 'geometry', stylers: [{ color: '#e0f7fa' }] },
-          { featureType: 'landscape.natural', elementType: 'geometry', stylers: [{ color: '#fbfbfb' }] }
-        ];
+        const activeStyle = resolvedTheme === 'dark' ? darkEcoStyle : lightEcoStyle;
 
         const map = new MapConstructor(mapRef.current, {
           center,
           zoom,
-          styles: ecoStyle,
+          styles: activeStyle,
           disableDefaultUI: false,
           zoomControl: true,
           mapTypeControl: false,
@@ -117,7 +119,7 @@ export function GoogleMapView({
         });
       })
       .catch((err) => {
-        console.error('Failed to load Google Maps:', err);
+        console.warn('Failed to load Google Maps, falling back to Leaflet:', err);
         setLoadError(true);
       });
 
@@ -125,7 +127,26 @@ export function GoogleMapView({
       isMounted = false;
       markersRef.current.forEach((m) => m.setMap(null));
     };
-  }, [reports, center.lat, center.lng, zoom]);
+  }, [reports, center.lat, center.lng, zoom, resolvedTheme, shouldUseLeaflet]);
+
+  // Dynamically update map style if theme changes while map is loaded
+  useEffect(() => {
+    if (shouldUseLeaflet) return;
+    if (mapInstanceRef.current) {
+      mapInstanceRef.current.setOptions({
+        styles: resolvedTheme === 'dark' ? darkEcoStyle : lightEcoStyle
+      });
+    }
+  }, [resolvedTheme, shouldUseLeaflet]);
+
+  // If Google Maps is not configured or failed, fall back to Leaflet map
+  if (shouldUseLeaflet) {
+    return (
+      <div className={`relative ${className}`}>
+        <LeafletMapView reports={reports} center={[center.lat, center.lng]} zoom={zoom} />
+      </div>
+    );
+  }
 
   return (
     <div className={`relative rounded-2xl overflow-hidden border border-border shadow-soft ${className}`}>

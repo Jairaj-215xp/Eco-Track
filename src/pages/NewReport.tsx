@@ -313,15 +313,20 @@ export function NewReport() {
                     </div>
                   )}
 
-                  {/* Cleanup Recommendations */}
+                  {/* AI Cleanup Recommendations */}
                   {aiAnalysis.recommendations.length > 0 && (
-                    <div className="bg-brand-100/50 rounded-2xl p-3 border border-brand-500/20">
-                      <p className="text-[11px] font-bold text-brand-700 flex items-center mb-1">
-                        <Target className="w-3.5 h-3.5 mr-1" /> Cleanup Recommendation
+                    <div className="bg-brand-50/70 rounded-2xl p-3 border border-brand-500/25 space-y-2">
+                      <p className="text-[11px] font-bold text-brand-700 flex items-center">
+                        <Target className="w-3.5 h-3.5 mr-1" /> AI Action Protocol
                       </p>
-                      <p className="text-xs text-brand-900 leading-relaxed">
-                        {aiAnalysis.recommendations[0]}
-                      </p>
+                      <div className="space-y-1.5">
+                        {aiAnalysis.recommendations.map((rec, rIdx) => (
+                          <div key={rIdx} className="text-xs text-brand-950 flex items-start leading-relaxed">
+                            <span className="w-1.5 h-1.5 rounded-full bg-brand-500 mt-1.5 mr-2 shrink-0" />
+                            <span>{rec}</span>
+                          </div>
+                        ))}
+                      </div>
                     </div>
                   )}
                 </div>
@@ -389,8 +394,8 @@ export function NewReport() {
                             <Layers className="w-4 h-4" />
                           </div>
                           <div>
-                            <p className="text-xs font-bold text-ink">Test 200 Before & After Trained Scenes</p>
-                            <p className="text-[10px] text-text-muted">Test model on street, canal, park, market & construction sites</p>
+                            <p className="text-xs font-bold text-ink">Test 440 Before & After Trained Scenes</p>
+                            <p className="text-[10px] text-text-muted">Test model on 140 user cluttered places + 300 municipal sites</p>
                           </div>
                         </div>
                         <Button 
@@ -401,7 +406,7 @@ export function NewReport() {
                           onClick={openDatasetPicker}
                           leftIcon={<FolderOpen className="w-3.5 h-3.5" />}
                         >
-                          Browse 200 Scenes
+                          Browse 440 Scenes
                         </Button>
                       </div>
                     </div>
@@ -463,11 +468,11 @@ export function NewReport() {
                                     <rect 
                                       x="0" 
                                       y="-16" 
-                                      width="114" 
+                                      width={aiAnalysis.detectedPolygons && aiAnalysis.detectedPolygons.length === 1 ? "154" : "132"} 
                                       height="22" 
                                       rx="11" 
-                                      fill="rgba(15, 23, 42, 0.85)" 
-                                      stroke="rgba(34, 197, 94, 0.8)" 
+                                      fill="rgba(15, 23, 42, 0.88)" 
+                                      stroke="rgba(34, 197, 94, 0.85)" 
                                       strokeWidth="1.2" 
                                     />
                                     <circle cx="11" cy="-5" r="3.5" fill="#22c55e" />
@@ -479,7 +484,9 @@ export function NewReport() {
                                       fontWeight="bold" 
                                       fontFamily="system-ui, sans-serif"
                                     >
-                                      Cluster #{pIdx + 1} • {Math.round(aiAnalysis.confidence * 100)}%
+                                      {aiAnalysis.detectedPolygons && aiAnalysis.detectedPolygons.length === 1 
+                                        ? `Detected Waste Zone • ${Math.round(aiAnalysis.confidence * 100)}%` 
+                                        : `Waste Cluster #${pIdx + 1} • ${Math.round(aiAnalysis.confidence * 100)}%`}
                                     </text>
                                   </g>
                                 </g>
@@ -504,7 +511,7 @@ export function NewReport() {
                         <button 
                           type="button"
                           onClick={() => setShowOpenCVContours(!showOpenCVContours)}
-                          className="absolute top-3 left-3 bg-ink/85 backdrop-blur-md text-white px-3 py-1.5 rounded-full text-xs font-bold flex items-center hover:bg-ink transition-colors shadow-sm z-10"
+                          className="absolute top-3 left-3 bg-slate-900/85 backdrop-blur-md text-white px-3 py-1.5 rounded-full text-xs font-bold flex items-center hover:bg-slate-900 transition-colors shadow-sm z-10"
                         >
                           <Sparkles className="w-3.5 h-3.5 mr-1.5 text-brand-400" />
                           {showOpenCVContours ? 'Dynamic AI Highlights (Active)' : 'View Raw Photo'}
@@ -512,7 +519,7 @@ export function NewReport() {
                       )}
 
                       {analyzing && (
-                        <div className="absolute inset-0 bg-ink/70 backdrop-blur-sm flex flex-col items-center justify-center text-white">
+                        <div className="absolute inset-0 bg-slate-950/75 backdrop-blur-sm flex flex-col items-center justify-center text-white">
                           <Loader2 className="w-8 h-8 animate-spin text-brand-400 mb-3" />
                           <p className="font-bold text-sm">Open Vision AI Engine Running...</p>
                           <p className="text-xs text-white/70 mt-1">Extracting exact organic silhouettes & measuring cleanliness</p>
@@ -657,7 +664,7 @@ export function NewReport() {
                 </div>
                 <div>
                   <h3 className="text-base sm:text-lg font-bold text-ink flex items-center">
-                    Trained Vision Dataset Browser <span className="ml-2 text-xs bg-brand-100 text-brand-700 px-2 py-0.5 rounded-full font-bold">200 Scenes (400 Samples)</span>
+                    Trained Vision Dataset Browser <span className="ml-2 text-xs bg-brand-100 text-brand-700 px-2 py-0.5 rounded-full font-bold">440 Scenes (880 Samples)</span>
                   </h3>
                   <p className="text-xs text-text-muted">Select any Before or After image to test the model's organic highlighting and cleanliness scoring</p>
                 </div>
@@ -675,7 +682,7 @@ export function NewReport() {
               {/* Category Filter */}
               <div className="flex flex-wrap gap-1.5 text-xs">
                 {[
-                  { id: 'all', label: `All (${datasetScenes.length || 200})` },
+                  { id: 'all', label: `All (${datasetScenes.length || 440})` },
                   { id: 'urban_street', label: 'Street' },
                   { id: 'residential_alley', label: 'Residential' },
                   { id: 'waterfront_canal', label: 'Waterfront' },
@@ -726,7 +733,7 @@ export function NewReport() {
               {loadingDataset ? (
                 <div className="py-20 text-center">
                   <Loader2 className="w-8 h-8 animate-spin mx-auto text-brand-500 mb-2" />
-                  <p className="text-xs text-text-muted">Loading 200 trained multi-spectral scenes...</p>
+                  <p className="text-xs text-text-muted">Loading 440 trained multi-spectral scenes...</p>
                 </div>
               ) : (
                 <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3.5">
@@ -747,7 +754,7 @@ export function NewReport() {
                               alt={scene.sceneId} 
                               className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                             />
-                            <div className="absolute top-2 left-2 bg-ink/75 backdrop-blur text-white px-2 py-0.5 rounded-md text-[10px] font-bold">
+                            <div className="absolute top-2 left-2 bg-slate-900/80 backdrop-blur text-white px-2 py-0.5 rounded-md text-[10px] font-bold">
                               {scene.sceneId}
                             </div>
                             <div className={`absolute bottom-2 right-2 px-2 py-0.5 rounded-md text-[10px] font-bold shadow-xs ${
@@ -780,7 +787,7 @@ export function NewReport() {
             {/* Footer */}
             <div className="p-3 px-5 border-t border-border bg-surface-2 flex items-center justify-between text-xs text-text-muted shrink-0">
               <span className="flex items-center font-medium">
-                <CheckCircle className="w-3.5 h-3.5 mr-1 text-success" /> Exact organic polygon contour highlights calibrated on 200 samples
+                <CheckCircle className="w-3.5 h-3.5 mr-1 text-success" /> Exact organic polygon contour highlights calibrated on 880 samples (440 scenes)
               </span>
               <Button size="sm" variant="ghost" onClick={() => setShowDatasetModal(false)} className="text-xs">
                 Close

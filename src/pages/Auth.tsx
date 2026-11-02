@@ -1,24 +1,47 @@
 import React, { useState } from 'react';
 import { Button } from '../components/ui/Button';
-import { Leaf, Mail, Lock, User, Building, Users, MapPin, CheckCircle, AlertCircle, Loader2 } from 'lucide-react';
+import { Leaf, Mail, Lock, User, Building, Users, MapPin, CheckCircle, AlertCircle, Loader2, ShieldCheck, Phone, Compass, Navigation } from 'lucide-react';
 import { useNavigate, Link, useLocation } from 'react-router-dom';
 import { useAuth } from '../contexts/AuthContext';
 import { motion } from 'framer-motion';
+import { getCurrentDeviceLocation, reverseGeocodeCoords } from '../services/googleMapsService';
 
 export function Auth() {
   const [isLogin, setIsLogin] = useState(true);
-  const [role, setRoleState] = useState<'citizen' | 'org'>('citizen');
+  const [role, setRoleState] = useState<'citizen' | 'org' | 'admin'>('citizen');
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [errorMsg, setErrorMsg] = useState('');
   const [isSubmitting, setIsSubmitting] = useState(false);
   
+  // Specific NGO registration fields
+  const [orgServiceArea, setOrgServiceArea] = useState('Kothrud & Karve Nagar, Pune');
+  const [orgCoords, setOrgCoords] = useState<{ lat: number; lng: number }>({ lat: 18.5074, lng: 73.8077 });
+  const [orgType, setOrgType] = useState<'ngo' | 'municipal'>('ngo');
+  const [crewSize, setCrewSize] = useState('10-30 active members');
+  const [phone, setPhone] = useState('');
+  const [isDetectingLoc, setIsDetectingLoc] = useState(false);
+
   const navigate = useNavigate();
   const location = useLocation();
-  const { signIn, signUp, setRole } = useAuth();
+  const { signIn, signUp } = useAuth();
 
-  const from = location.state?.from?.pathname || (role === 'org' ? '/org' : '/feed');
+  const from = location.state?.from?.pathname || (role === 'admin' ? '/admin' : role === 'org' ? '/org' : '/feed');
+
+  const handleDetectLocation = async () => {
+    setIsDetectingLoc(true);
+    try {
+      const coords = await getCurrentDeviceLocation();
+      const addr = await reverseGeocodeCoords(coords.lat, coords.lng);
+      setOrgCoords(coords);
+      setOrgServiceArea(addr.split(',').slice(0, 3).join(', '));
+    } catch (e) {
+      console.warn('Location detection notice:', e);
+    } finally {
+      setIsDetectingLoc(false);
+    }
+  };
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -34,7 +57,19 @@ export function Auth() {
           return;
         }
       } else {
-        const res = await signUp(email, password, name || email.split('@')[0], role);
+        const res = await signUp(
+          email, 
+          password, 
+          name || email.split('@')[0], 
+          role,
+          role === 'org' ? {
+            orgServiceArea,
+            orgCoords,
+            orgType,
+            crewSize,
+            phone
+          } : undefined
+        );
         if (res.error) {
           setErrorMsg(res.error);
           setIsSubmitting(false);
@@ -48,11 +83,6 @@ export function Auth() {
     } finally {
       setIsSubmitting(false);
     }
-  };
-
-  const handleQuickDemo = (demoRole: 'citizen' | 'org') => {
-    setRole(demoRole);
-    navigate(demoRole === 'org' ? '/org' : '/feed', { replace: true });
   };
 
   return (
@@ -111,17 +141,21 @@ export function Auth() {
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          className="w-full max-w-[420px] bg-surface rounded-[24px] shadow-soft border border-border p-6 sm:p-8"
+          className={`w-full ${!isLogin && role === 'org' ? 'max-w-[480px]' : 'max-w-[420px]'} bg-surface rounded-[24px] shadow-soft border border-border p-6 sm:p-8 max-h-[92vh] overflow-y-auto transition-all duration-300`}
         >
-          <div className="text-center mb-6">
-            <div className="mx-auto w-12 h-12 bg-brand-100 rounded-xl flex items-center justify-center mb-4 overflow-hidden">
+          <div className="text-center mb-5">
+            <div className="mx-auto w-12 h-12 bg-brand-100 rounded-xl flex items-center justify-center mb-3 overflow-hidden">
               <img src="/logo.png" alt="Logo" className="w-8 h-8 object-contain" />
             </div>
             <h2 className="text-2xl font-display font-extrabold text-ink mb-1">
-              {isLogin ? 'Welcome back' : 'Create an Account'}
+              {isLogin ? 'Welcome back' : role === 'org' ? 'Register Organisation / NGO' : 'Create an Account'}
             </h2>
             <p className="text-text-muted text-xs">
-              {isLogin ? 'Enter your Supabase credentials to access your account.' : 'Join the community to report and resolve urban waste.'}
+              {isLogin 
+                ? 'Sign in to access your Eco-Track dashboard and real-time operations.' 
+                : role === 'org' 
+                ? 'Register your NGO or municipal sanitation team with operating area.' 
+                : 'Join the community to report and resolve urban waste.'}
             </p>
           </div>
 
@@ -134,24 +168,26 @@ export function Auth() {
 
           {!isLogin && (
             <div className="flex bg-surface-2 p-1 rounded-xl mb-4 relative">
-              <motion.div 
-                className="absolute inset-y-1 left-1 w-[calc(50%-4px)] bg-surface rounded-lg shadow-sm border border-border/50"
-                animate={{ x: role === 'citizen' ? 0 : '100%' }}
-                transition={{ type: "spring", stiffness: 300, damping: 30 }}
-              />
               <button 
-                className={`flex-1 flex items-center justify-center py-2 text-xs font-bold rounded-lg transition-colors relative z-10 ${role === 'citizen' ? 'text-ink' : 'text-text-muted hover:text-ink'}`}
+                className={`flex-1 flex items-center justify-center py-2 text-xs font-bold rounded-lg transition-colors ${role === 'citizen' ? 'bg-surface text-ink shadow-sm' : 'text-text-muted hover:text-ink'}`}
                 onClick={() => setRoleState('citizen')}
                 type="button"
               >
-                <User className="w-3.5 h-3.5 mr-1.5" /> Citizen
+                <User className="w-3.5 h-3.5 mr-1" /> Citizen
               </button>
               <button 
-                className={`flex-1 flex items-center justify-center py-2 text-xs font-bold rounded-lg transition-colors relative z-10 ${role === 'org' ? 'text-ink' : 'text-text-muted hover:text-ink'}`}
+                className={`flex-1 flex items-center justify-center py-2 text-xs font-bold rounded-lg transition-colors ${role === 'org' ? 'bg-surface text-ink shadow-sm' : 'text-text-muted hover:text-ink'}`}
                 onClick={() => setRoleState('org')}
                 type="button"
               >
-                <Building className="w-3.5 h-3.5 mr-1.5" /> Organisation
+                <Building className="w-3.5 h-3.5 mr-1" /> NGO / Org
+              </button>
+              <button 
+                className={`flex-1 flex items-center justify-center py-2 text-xs font-bold rounded-lg transition-colors ${role === 'admin' ? 'bg-surface text-ink shadow-sm' : 'text-text-muted hover:text-ink'}`}
+                onClick={() => setRoleState('admin')}
+                type="button"
+              >
+                <ShieldCheck className="w-3.5 h-3.5 mr-1" /> City Admin
               </button>
             </div>
           )}
@@ -160,7 +196,7 @@ export function Auth() {
             {!isLogin && (
               <div>
                 <label className="block text-xs font-bold text-ink mb-1">
-                  {role === 'citizen' ? 'Full Name' : 'Organisation Name'}
+                  {role === 'citizen' ? 'Full Name' : role === 'org' ? 'Organisation / NGO Official Name' : 'Authority / Admin Name'}
                 </label>
                 <input 
                   type="text" 
@@ -168,9 +204,105 @@ export function Auth() {
                   value={name}
                   onChange={(e) => setName(e.target.value)}
                   className="w-full bg-surface border border-border rounded-xl px-3 py-2 text-xs focus:outline-none focus:ring-2 focus:ring-brand-500 shadow-sm" 
-                  placeholder={role === 'citizen' ? 'e.g. Jane Doe' : 'e.g. Clean City Initiative'}
+                  placeholder={role === 'citizen' ? 'e.g. Jane Doe' : role === 'org' ? 'e.g. Clean Pune Youth Brigade' : 'e.g. Ward Sanitation Commissioner'}
                 />
               </div>
+            )}
+
+            {!isLogin && role === 'org' && (
+              <motion.div 
+                initial={{ opacity: 0, height: 0 }}
+                animate={{ opacity: 1, height: 'auto' }}
+                className="space-y-3 pt-2 pb-2 border-t border-b border-border/70 my-2"
+              >
+                <div className="flex items-center justify-between">
+                  <span className="text-[11px] font-bold text-aqua-700 uppercase tracking-wider flex items-center">
+                    <Building className="w-3.5 h-3.5 mr-1" /> NGO & Sanitation Profile
+                  </span>
+                  <span className="text-[10px] text-text-muted bg-surface-2 px-2 py-0.5 rounded-full font-medium">
+                    Required for task dispatch
+                  </span>
+                </div>
+
+                {/* Org Type */}
+                <div>
+                  <label className="block text-[11px] font-bold text-ink mb-1">Organization Category</label>
+                  <select
+                    value={orgType}
+                    onChange={(e) => setOrgType(e.target.value as 'ngo' | 'municipal')}
+                    className="w-full bg-surface border border-border rounded-xl px-3 py-2 text-xs focus:outline-none focus:ring-2 focus:ring-brand-500 shadow-sm text-ink font-medium"
+                  >
+                    <option value="ngo">Registered NGO / Environmental Non-Profit</option>
+                    <option value="municipal">Municipal Sanitation Department / Ward Office</option>
+                  </select>
+                </div>
+
+                {/* Operating Service Area */}
+                <div>
+                  <div className="flex items-center justify-between mb-1">
+                    <label className="text-[11px] font-bold text-ink flex items-center">
+                      <MapPin className="w-3 h-3 mr-1 text-brand-500" /> Operating Base Area / Sector
+                    </label>
+                    <button
+                      type="button"
+                      onClick={handleDetectLocation}
+                      disabled={isDetectingLoc}
+                      className="text-[10px] font-bold text-brand-600 hover:text-brand-700 flex items-center hover:underline"
+                    >
+                      {isDetectingLoc ? (
+                        <Loader2 className="w-3 h-3 animate-spin mr-1" />
+                      ) : (
+                        <Navigation className="w-3 h-3 mr-1" />
+                      )}
+                      Detect GPS Base
+                    </button>
+                  </div>
+                  <input
+                    type="text"
+                    required
+                    value={orgServiceArea}
+                    onChange={(e) => setOrgServiceArea(e.target.value)}
+                    className="w-full bg-surface border border-border rounded-xl px-3 py-2 text-xs focus:outline-none focus:ring-2 focus:ring-brand-500 shadow-sm"
+                    placeholder="e.g. Kothrud & Karve Nagar, Pune"
+                  />
+                  <div className="flex items-center justify-between mt-1 text-[10px] text-text-muted">
+                    <span>GPS locked: {orgCoords.lat.toFixed(4)}, {orgCoords.lng.toFixed(4)}</span>
+                    <span className="text-brand-600 font-medium">Auto-suggests closest cleanups</span>
+                  </div>
+                </div>
+
+                {/* Crew Size & Phone */}
+                <div className="grid grid-cols-2 gap-2">
+                  <div>
+                    <label className="block text-[11px] font-bold text-ink mb-1 flex items-center">
+                      <Users className="w-3 h-3 mr-1 text-brand-500" /> Crew Size
+                    </label>
+                    <select
+                      value={crewSize}
+                      onChange={(e) => setCrewSize(e.target.value)}
+                      className="w-full bg-surface border border-border rounded-xl px-2.5 py-2 text-xs focus:outline-none focus:ring-2 focus:ring-brand-500 shadow-sm text-ink font-medium"
+                    >
+                      <option value="1-10 volunteers">1 - 10 volunteers</option>
+                      <option value="10-30 active members">10 - 30 field crew</option>
+                      <option value="30-100 personnel">30 - 100 personnel</option>
+                      <option value="100+ municipal force">100+ field force</option>
+                    </select>
+                  </div>
+
+                  <div>
+                    <label className="block text-[11px] font-bold text-ink mb-1 flex items-center">
+                      <Phone className="w-3 h-3 mr-1 text-brand-500" /> Dispatch Phone
+                    </label>
+                    <input
+                      type="tel"
+                      value={phone}
+                      onChange={(e) => setPhone(e.target.value)}
+                      className="w-full bg-surface border border-border rounded-xl px-2.5 py-2 text-xs focus:outline-none focus:ring-2 focus:ring-brand-500 shadow-sm"
+                      placeholder="+91 98220 12345"
+                    />
+                  </div>
+                </div>
+              </motion.div>
             )}
             
             <div>
@@ -216,28 +348,7 @@ export function Auth() {
             </Button>
           </form>
 
-          {/* Quick Demo Access Bar */}
-          <div className="mt-5 pt-4 border-t border-border text-center">
-            <p className="text-[10px] text-text-muted font-bold uppercase tracking-wider mb-2">Instant Demo Access</p>
-            <div className="flex gap-2">
-              <button 
-                type="button"
-                onClick={() => handleQuickDemo('citizen')}
-                className="flex-1 py-1.5 px-2 bg-brand-50 hover:bg-brand-100 text-brand-700 rounded-lg text-[11px] font-bold border border-brand-500/20 transition-colors"
-              >
-                Demo Citizen
-              </button>
-              <button 
-                type="button"
-                onClick={() => handleQuickDemo('org')}
-                className="flex-1 py-1.5 px-2 bg-surface-2 hover:bg-surface border border-border text-ink rounded-lg text-[11px] font-bold transition-colors"
-              >
-                Demo NGO / Org
-              </button>
-            </div>
-          </div>
-
-          <div className="mt-4 text-center text-xs text-text-muted">
+          <div className="mt-6 pt-4 border-t border-border text-center text-xs text-text-muted">
             {isLogin ? "Don't have an account? " : "Already have an account? "}
             <button onClick={() => { setIsLogin(!isLogin); setErrorMsg(''); }} className="text-brand-600 font-bold hover:underline">
               {isLogin ? 'Sign up' : 'Log in'}

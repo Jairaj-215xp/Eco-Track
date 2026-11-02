@@ -1,8 +1,48 @@
-import { Report, Status, AIAnalysisResult, ProofVerificationResult } from '../types';
+import { Report, Status, AIAnalysisResult, ProofVerificationResult, Organisation } from '../types';
 import { supabase, isSupabaseConfigured, uploadImageToStorage } from './supabaseClient';
 
 const LOCAL_STORAGE_KEY = 'ecotrack_real_reports_v1';
 const MY_REPORTS_STORAGE_KEY = 'my_submitted_report_ids';
+const ORGS_STORAGE_KEY = 'ecotrack_organisations_v1';
+
+const INITIAL_ORGS: Organisation[] = [
+  {
+    id: 'org_green_earth',
+    name: 'Green Earth Foundation',
+    type: 'ngo',
+    serviceArea: 'Central Pune & Deccan Gymkhana',
+    coords: { lat: 18.5167, lng: 73.8417 },
+    approved: true,
+    contactEmail: 'ops@greenearth.org'
+  },
+  {
+    id: 'org_clean_city',
+    name: 'Clean City Youth Initiative',
+    type: 'ngo',
+    serviceArea: 'Karve Nagar & Kothrud West',
+    coords: { lat: 18.5074, lng: 73.8077 },
+    approved: true,
+    contactEmail: 'contact@cleancity.org'
+  },
+  {
+    id: 'org_pmc_sanitation',
+    name: 'Pune Municipal Solid Waste Dept',
+    type: 'municipal',
+    serviceArea: 'PMC Ward 1-15 Metro Jurisdiction',
+    coords: { lat: 18.5204, lng: 73.8567 },
+    approved: true,
+    contactEmail: 'sanitation@punecorporation.org'
+  },
+  {
+    id: 'org_swachh_brigade',
+    name: 'Swachh Bharat Citizen Brigade',
+    type: 'ngo',
+    serviceArea: 'Aundh, Baner & Shivaji Nagar',
+    coords: { lat: 18.5590, lng: 73.7868 },
+    approved: true,
+    contactEmail: 'brigade@swachh.org'
+  }
+];
 
 /**
  * Checks if a string is a valid UUID
@@ -131,8 +171,32 @@ export const reportService = {
 
     // Merge Supabase reports and local reports without duplicates
     const map = new Map<string, Report>();
-    localReports.forEach(r => map.set(r.id, r));
+    // First seed with Supabase reports
     supabaseReports.forEach(r => map.set(r.id, r));
+
+    // Then overlay local reports so locally claimed / updated tasks take precedence
+    localReports.forEach(r => {
+      const existing = map.get(r.id);
+      if (!existing) {
+        map.set(r.id, r);
+      } else {
+        // If local has assignment or status change that Supabase hasn't synced, local state takes precedence
+        const localHasAssignment = !!r.assignedOrgId && !existing.assignedOrgId;
+        const localStatusChanged = r.status !== existing.status && existing.status === 'reported';
+        const localIsNewer = new Date(r.updatedAt || r.createdAt).getTime() >= new Date(existing.updatedAt || existing.createdAt).getTime();
+
+        if (localHasAssignment || localStatusChanged || localIsNewer) {
+          map.set(r.id, {
+            ...existing,
+            ...r,
+            assignedOrgId: r.assignedOrgId || existing.assignedOrgId,
+            assignedOrgName: r.assignedOrgName || existing.assignedOrgName,
+            status: r.status !== 'reported' ? r.status : (existing.status !== 'reported' ? existing.status : r.status),
+            timeline: r.timeline && r.timeline.length >= (existing.timeline?.length || 0) ? r.timeline : existing.timeline
+          });
+        }
+      }
+    });
 
     const merged = Array.from(map.values()).sort(
       (a, b) => new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime()
@@ -145,6 +209,9 @@ export const reportService = {
    * Fetches a single real report by its ID
    */
   getReportById: async (id: string): Promise<Report | undefined> => {
+    const localList = getLocalReports();
+    const localMatch = localList.find((r) => r.id === id);
+
     if (isSupabaseConfigured) {
       try {
         const { data, error } = await supabase
@@ -159,7 +226,7 @@ export const reportService = {
         if (error) {
           console.warn('Supabase getReportById notice:', error.message);
         } else if (data) {
-          return {
+          const supaReport: Report = {
             id: data.id,
             photoUrl: data.photo_url,
             location: {
@@ -189,14 +256,27 @@ export const reportService = {
               comment: t.comment
             }))
           };
+
+          // If locally claimed or updated, merge so assignment is preserved
+          if (localMatch && ((localMatch.assignedOrgId && !supaReport.assignedOrgId) || (localMatch.status !== supaReport.status && supaReport.status === 'reported'))) {
+            return {
+              ...supaReport,
+              ...localMatch,
+              assignedOrgId: localMatch.assignedOrgId || supaReport.assignedOrgId,
+              assignedOrgName: localMatch.assignedOrgName || supaReport.assignedOrgName,
+              status: localMatch.status !== 'reported' ? localMatch.status : supaReport.status,
+              timeline: localMatch.timeline && localMatch.timeline.length >= supaReport.timeline.length ? localMatch.timeline : supaReport.timeline
+            };
+          }
+
+          return supaReport;
         }
       } catch (err) {
         console.warn('Error fetching report by ID from Supabase:', err);
       }
     }
 
-    const localList = getLocalReports();
-    return localList.find((r) => r.id === id);
+    return localMatch;
   },
 
   /**
@@ -396,5 +476,291 @@ export const reportService = {
       return local[index].upvotes;
     }
     return 0;
+  },
+
+  /**
+   * Retrieves list of registered organizations with dynamic live task counts
+   */
+  getOrganisations: async (): Promise<Organisation[]> => {
+    let orgs: Organisation[] = [];
+    try {
+      const stored = localStorage.getItem(ORGS_STORAGE_KEY);
+      if (stored) {
+        orgs = JSON.parse(stored);
+      } else {
+        orgs = [...INITIAL_ORGS];
+        localStorage.setItem(ORGS_STORAGE_KEY, JSON.stringify(orgs));
+      }
+    } catch {
+      orgs = [...INITIAL_ORGS];
+    }
+
+    // Compute live task metrics from current reports
+    const reports = await reportService.getReports();
+    return orgs.map(org => {
+      const active = reports.filter(r => r.assignedOrgId === org.id && (r.status === 'in_progress' || r.status === 'assigned' || r.status === 'proof_submitted')).length;
+      const completed = reports.filter(r => r.assignedOrgId === org.id && r.status === 'verified').length;
+      return {
+        ...org,
+        activeTasksCount: active,
+        completedTasksCount: completed
+      };
+    });
+  },
+
+  /**
+   * Registers a new organization or updates an existing one
+   */
+  registerOrganisation: async (org: Organisation): Promise<Organisation> => {
+    let orgs: Organisation[] = [];
+    try {
+      const stored = localStorage.getItem(ORGS_STORAGE_KEY);
+      orgs = stored ? JSON.parse(stored) : [...INITIAL_ORGS];
+    } catch {
+      orgs = [...INITIAL_ORGS];
+    }
+
+    const idx = orgs.findIndex(o => o.id === org.id);
+    if (idx !== -1) {
+      orgs[idx] = { ...orgs[idx], ...org };
+    } else {
+      orgs.push(org);
+    }
+    localStorage.setItem(ORGS_STORAGE_KEY, JSON.stringify(orgs));
+
+    if (isSupabaseConfigured) {
+      try {
+        await supabase
+          .from('organizations')
+          .upsert({
+            id: org.id,
+            name: org.name,
+            type: org.type,
+            service_area: org.serviceArea,
+            approved: org.approved,
+            contact_email: org.contactEmail
+          });
+      } catch (err) {
+        console.warn('Supabase register organisation notice:', err);
+      }
+    }
+
+    return org;
+  },
+
+  /**
+   * Assigns or claims a report for an organization
+   */
+  assignReportToOrg: async (
+    reportId: string, 
+    orgId: string, 
+    orgName: string, 
+    assignedBy = 'System'
+  ): Promise<Report | undefined> => {
+    const now = new Date().toISOString();
+
+    if (isSupabaseConfigured) {
+      try {
+        await supabase
+          .from('reports')
+          .update({
+            status: 'in_progress',
+            assigned_org_id: orgId,
+            assigned_org_name: orgName,
+            updated_at: now
+          })
+          .eq('id', reportId);
+
+        await supabase.from('report_timeline').insert({
+          report_id: reportId,
+          status: 'in_progress',
+          at: now,
+          by_user: `${orgName} (Assigned by ${assignedBy})`
+        });
+      } catch (err) {
+        console.warn('Supabase assign report notice:', err);
+      }
+    }
+
+    const local = getLocalReports();
+    let idx = local.findIndex(r => r.id === reportId);
+    
+    // If report is not in local cache yet (e.g. came from Supabase), copy it into local
+    if (idx === -1) {
+      const all = await reportService.getReports();
+      const match = all.find(r => r.id === reportId);
+      if (match) {
+        local.unshift({ ...match });
+        idx = 0;
+      }
+    }
+
+    if (idx !== -1) {
+      local[idx].status = 'in_progress';
+      local[idx].assignedOrgId = orgId;
+      local[idx].assignedOrgName = orgName;
+      local[idx].updatedAt = now;
+      local[idx].timeline = local[idx].timeline || [];
+      local[idx].timeline.push({
+        status: 'in_progress',
+        at: now,
+        by: `${orgName} (Assigned by ${assignedBy})`
+      });
+      saveLocalReports(local);
+      return local[idx];
+    }
+    return undefined;
+  },
+
+  /**
+   * Releases an accepted task back to the unassigned queue
+   */
+  unassignReport: async (reportId: string, unassignedBy = 'System'): Promise<Report | undefined> => {
+    const now = new Date().toISOString();
+
+    if (isSupabaseConfigured) {
+      try {
+        await supabase
+          .from('reports')
+          .update({
+            status: 'reported',
+            assigned_org_id: null,
+            assigned_org_name: null,
+            updated_at: now
+          })
+          .eq('id', reportId);
+
+        await supabase.from('report_timeline').insert({
+          report_id: reportId,
+          status: 'reported',
+          at: now,
+          by_user: `Task released by ${unassignedBy}`
+        });
+      } catch (err) {
+        console.warn('Supabase unassign notice:', err);
+      }
+    }
+
+    const local = getLocalReports();
+    let idx = local.findIndex(r => r.id === reportId);
+    if (idx === -1) {
+      const all = await reportService.getReports();
+      const match = all.find(r => r.id === reportId);
+      if (match) {
+        local.unshift({ ...match });
+        idx = 0;
+      }
+    }
+
+    if (idx !== -1) {
+      local[idx].status = 'reported';
+      local[idx].assignedOrgId = undefined;
+      local[idx].assignedOrgName = undefined;
+      local[idx].updatedAt = now;
+      local[idx].timeline = local[idx].timeline || [];
+      local[idx].timeline.push({
+        status: 'reported',
+        at: now,
+        by: `Task released back to queue by ${unassignedBy}`
+      });
+      saveLocalReports(local);
+      return local[idx];
+    }
+    return undefined;
+  },
+
+  /**
+   * Admin verification review: approves cleanup or reopens task with comment
+   */
+  adminReviewProof: async (
+    reportId: string,
+    decision: 'verified' | 'reopened',
+    comment: string,
+    reviewerName = 'Administrator'
+  ): Promise<Report | undefined> => {
+    const now = new Date().toISOString();
+
+    if (isSupabaseConfigured) {
+      try {
+        const updatePayload: any = {
+          status: decision,
+          updated_at: now
+        };
+        if (decision === 'reopened') {
+          // Keep previous proof in history but allow re-submission
+        }
+        await supabase
+          .from('reports')
+          .update(updatePayload)
+          .eq('id', reportId);
+
+        await supabase.from('report_timeline').insert({
+          report_id: reportId,
+          status: decision,
+          at: now,
+          by_user: `${reviewerName}: ${comment}`
+        });
+      } catch (err) {
+        console.warn('Supabase review proof notice:', err);
+      }
+    }
+
+    const local = getLocalReports();
+    let idx = local.findIndex(r => r.id === reportId);
+    if (idx === -1) {
+      const all = await reportService.getReports();
+      const match = all.find(r => r.id === reportId);
+      if (match) {
+        local.unshift({ ...match });
+        idx = 0;
+      }
+    }
+
+    if (idx !== -1) {
+      local[idx].status = decision;
+      local[idx].updatedAt = now;
+      local[idx].timeline = local[idx].timeline || [];
+      local[idx].timeline.push({
+        status: decision,
+        at: now,
+        by: `${reviewerName} (${decision === 'verified' ? 'Approved' : 'Reopened'}): ${comment}`
+      });
+      saveLocalReports(local);
+      return local[idx];
+    }
+    return undefined;
+  },
+
+  /**
+   * Deletes a report from storage and database
+   */
+  deleteReport: async (reportId: string): Promise<boolean> => {
+    if (isSupabaseConfigured) {
+      try {
+        await supabase.from('report_timeline').delete().eq('report_id', reportId);
+        await supabase.from('reports').delete().eq('id', reportId);
+      } catch (e) {
+        console.warn('Supabase delete notice:', e);
+      }
+    }
+
+    const local = getLocalReports();
+    const filtered = local.filter(r => r.id !== reportId);
+    saveLocalReports(filtered);
+    return true;
+  },
+
+  /**
+   * Toggles an organization's verified/approved status
+   */
+  toggleOrgApproval: async (orgId: string): Promise<Organisation[]> => {
+    const orgs = await reportService.getOrganisations();
+    const updated = orgs.map(o => o.id === orgId ? { ...o, approved: !o.approved } : o);
+    try {
+      localStorage.setItem(ORGS_STORAGE_KEY, JSON.stringify(updated));
+    } catch (e) {
+      console.warn('Failed to save orgs:', e);
+    }
+    return updated;
   }
 };

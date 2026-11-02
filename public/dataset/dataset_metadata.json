@@ -3768,5 +3768,4717 @@
     "aiRecommendation": "Deploy designated sanitary cleanup crew, clear waste clusters, and apply sanitization spray.",
     "beforeImagePath": "/dataset/before_cleanup/scene_200_before.jpg",
     "afterImagePath": "/dataset/after_cleanup/scene_200_after.jpg"
+  },
+  {
+    "sceneId": "scene_201",
+    "environment": "urban_street",
+    "environmentName": "Urban Indian Street Waste #201",
+    "wasteType": "plastic",
+    "severity": "high",
+    "coveragePercent": 42.9,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Black heavy-duty polythene trash bags",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps",
+      "Single-use LDPE carry bags & pouches"
+    ],
+    "beforeCleanlinessScore": 37,
+    "afterCleanlinessScore": 93,
+    "aiRecommendation": "Dispatch municipal sanitation crew with dedicated sorting bins, compactors, and safety gear.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_201_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_201_after.jpg"
+  },
+  {
+    "sceneId": "scene_202",
+    "environment": "urban_street",
+    "environmentName": "Urban Indian Street Waste #202",
+    "wasteType": "plastic",
+    "severity": "medium",
+    "coveragePercent": 33.3,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Black heavy-duty polythene trash bags",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps",
+      "Single-use LDPE carry bags & pouches"
+    ],
+    "beforeCleanlinessScore": 46,
+    "afterCleanlinessScore": 92,
+    "aiRecommendation": "Dispatch municipal sanitation crew with dedicated sorting bins, compactors, and safety gear.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_202_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_202_after.jpg"
+  },
+  {
+    "sceneId": "scene_203",
+    "environment": "urban_street",
+    "environmentName": "Urban Indian Street Waste #203",
+    "wasteType": "plastic",
+    "severity": "medium",
+    "coveragePercent": 35.8,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Black heavy-duty polythene trash bags",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps",
+      "Single-use LDPE carry bags & pouches"
+    ],
+    "beforeCleanlinessScore": 41,
+    "afterCleanlinessScore": 94,
+    "aiRecommendation": "Dispatch municipal sanitation crew with dedicated sorting bins, compactors, and safety gear.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_203_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_203_after.jpg"
+  },
+  {
+    "sceneId": "scene_204",
+    "environment": "urban_street",
+    "environmentName": "Urban Indian Street Waste #204",
+    "wasteType": "plastic",
+    "severity": "medium",
+    "coveragePercent": 25.8,
+    "clustersCount": 2,
+    "detectedItems": [
+      "Black heavy-duty polythene trash bags",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps",
+      "Single-use LDPE carry bags & pouches"
+    ],
+    "beforeCleanlinessScore": 52,
+    "afterCleanlinessScore": 98,
+    "aiRecommendation": "Dispatch municipal sanitation crew with dedicated sorting bins, compactors, and safety gear.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_204_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_204_after.jpg"
+  },
+  {
+    "sceneId": "scene_205",
+    "environment": "urban_street",
+    "environmentName": "Urban Indian Street Waste #205",
+    "wasteType": "plastic",
+    "severity": "medium",
+    "coveragePercent": 36.1,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Black heavy-duty polythene trash bags",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps",
+      "Single-use LDPE carry bags & pouches"
+    ],
+    "beforeCleanlinessScore": 44,
+    "afterCleanlinessScore": 98,
+    "aiRecommendation": "Dispatch municipal sanitation crew with dedicated sorting bins, compactors, and safety gear.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_205_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_205_after.jpg"
+  },
+  {
+    "sceneId": "scene_206",
+    "environment": "urban_street",
+    "environmentName": "Urban Indian Street Waste #206",
+    "wasteType": "plastic",
+    "severity": "high",
+    "coveragePercent": 58.9,
+    "clustersCount": 2,
+    "detectedItems": [
+      "Black heavy-duty polythene trash bags",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps",
+      "Single-use LDPE carry bags & pouches"
+    ],
+    "beforeCleanlinessScore": 15,
+    "afterCleanlinessScore": 98,
+    "aiRecommendation": "Dispatch municipal sanitation crew with dedicated sorting bins, compactors, and safety gear.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_206_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_206_after.jpg"
+  },
+  {
+    "sceneId": "scene_207",
+    "environment": "urban_street",
+    "environmentName": "Urban Indian Street Waste #207",
+    "wasteType": "plastic",
+    "severity": "medium",
+    "coveragePercent": 39.0,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Black heavy-duty polythene trash bags",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps",
+      "Single-use LDPE carry bags & pouches"
+    ],
+    "beforeCleanlinessScore": 37,
+    "afterCleanlinessScore": 96,
+    "aiRecommendation": "Dispatch municipal sanitation crew with dedicated sorting bins, compactors, and safety gear.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_207_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_207_after.jpg"
+  },
+  {
+    "sceneId": "scene_208",
+    "environment": "urban_street",
+    "environmentName": "Urban Indian Street Waste #208",
+    "wasteType": "plastic",
+    "severity": "high",
+    "coveragePercent": 43.5,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Black heavy-duty polythene trash bags",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps",
+      "Single-use LDPE carry bags & pouches"
+    ],
+    "beforeCleanlinessScore": 34,
+    "afterCleanlinessScore": 97,
+    "aiRecommendation": "Dispatch municipal sanitation crew with dedicated sorting bins, compactors, and safety gear.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_208_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_208_after.jpg"
+  },
+  {
+    "sceneId": "scene_209",
+    "environment": "urban_street",
+    "environmentName": "Urban Indian Street Waste #209",
+    "wasteType": "plastic",
+    "severity": "high",
+    "coveragePercent": 41.3,
+    "clustersCount": 2,
+    "detectedItems": [
+      "Black heavy-duty polythene trash bags",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps",
+      "Single-use LDPE carry bags & pouches"
+    ],
+    "beforeCleanlinessScore": 33,
+    "afterCleanlinessScore": 92,
+    "aiRecommendation": "Dispatch municipal sanitation crew with dedicated sorting bins, compactors, and safety gear.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_209_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_209_after.jpg"
+  },
+  {
+    "sceneId": "scene_210",
+    "environment": "urban_street",
+    "environmentName": "Urban Indian Street Waste #210",
+    "wasteType": "plastic",
+    "severity": "medium",
+    "coveragePercent": 38.5,
+    "clustersCount": 2,
+    "detectedItems": [
+      "Black heavy-duty polythene trash bags",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps",
+      "Single-use LDPE carry bags & pouches"
+    ],
+    "beforeCleanlinessScore": 36,
+    "afterCleanlinessScore": 98,
+    "aiRecommendation": "Dispatch municipal sanitation crew with dedicated sorting bins, compactors, and safety gear.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_210_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_210_after.jpg"
+  },
+  {
+    "sceneId": "scene_211",
+    "environment": "urban_street",
+    "environmentName": "Urban Indian Street Waste #211",
+    "wasteType": "plastic",
+    "severity": "high",
+    "coveragePercent": 44.6,
+    "clustersCount": 2,
+    "detectedItems": [
+      "Black heavy-duty polythene trash bags",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps",
+      "Single-use LDPE carry bags & pouches"
+    ],
+    "beforeCleanlinessScore": 32,
+    "afterCleanlinessScore": 98,
+    "aiRecommendation": "Dispatch municipal sanitation crew with dedicated sorting bins, compactors, and safety gear.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_211_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_211_after.jpg"
+  },
+  {
+    "sceneId": "scene_212",
+    "environment": "urban_street",
+    "environmentName": "Urban Indian Street Waste #212",
+    "wasteType": "plastic",
+    "severity": "medium",
+    "coveragePercent": 27.9,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Black heavy-duty polythene trash bags",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps",
+      "Single-use LDPE carry bags & pouches"
+    ],
+    "beforeCleanlinessScore": 52,
+    "afterCleanlinessScore": 93,
+    "aiRecommendation": "Dispatch municipal sanitation crew with dedicated sorting bins, compactors, and safety gear.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_212_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_212_after.jpg"
+  },
+  {
+    "sceneId": "scene_213",
+    "environment": "urban_street",
+    "environmentName": "Urban Indian Street Waste #213",
+    "wasteType": "plastic",
+    "severity": "high",
+    "coveragePercent": 49.1,
+    "clustersCount": 2,
+    "detectedItems": [
+      "Black heavy-duty polythene trash bags",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps",
+      "Single-use LDPE carry bags & pouches"
+    ],
+    "beforeCleanlinessScore": 27,
+    "afterCleanlinessScore": 98,
+    "aiRecommendation": "Dispatch municipal sanitation crew with dedicated sorting bins, compactors, and safety gear.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_213_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_213_after.jpg"
+  },
+  {
+    "sceneId": "scene_214",
+    "environment": "urban_street",
+    "environmentName": "Urban Indian Street Waste #214",
+    "wasteType": "plastic",
+    "severity": "medium",
+    "coveragePercent": 36.1,
+    "clustersCount": 2,
+    "detectedItems": [
+      "Black heavy-duty polythene trash bags",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps",
+      "Single-use LDPE carry bags & pouches"
+    ],
+    "beforeCleanlinessScore": 41,
+    "afterCleanlinessScore": 94,
+    "aiRecommendation": "Dispatch municipal sanitation crew with dedicated sorting bins, compactors, and safety gear.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_214_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_214_after.jpg"
+  },
+  {
+    "sceneId": "scene_215",
+    "environment": "urban_street",
+    "environmentName": "Urban Indian Street Waste #215",
+    "wasteType": "plastic",
+    "severity": "high",
+    "coveragePercent": 42.9,
+    "clustersCount": 2,
+    "detectedItems": [
+      "Black heavy-duty polythene trash bags",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps",
+      "Single-use LDPE carry bags & pouches"
+    ],
+    "beforeCleanlinessScore": 35,
+    "afterCleanlinessScore": 97,
+    "aiRecommendation": "Dispatch municipal sanitation crew with dedicated sorting bins, compactors, and safety gear.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_215_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_215_after.jpg"
+  },
+  {
+    "sceneId": "scene_216",
+    "environment": "urban_street",
+    "environmentName": "Urban Indian Street Waste #216",
+    "wasteType": "plastic",
+    "severity": "high",
+    "coveragePercent": 43.3,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Black heavy-duty polythene trash bags",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps",
+      "Single-use LDPE carry bags & pouches"
+    ],
+    "beforeCleanlinessScore": 30,
+    "afterCleanlinessScore": 98,
+    "aiRecommendation": "Dispatch municipal sanitation crew with dedicated sorting bins, compactors, and safety gear.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_216_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_216_after.jpg"
+  },
+  {
+    "sceneId": "scene_217",
+    "environment": "urban_street",
+    "environmentName": "Urban Indian Street Waste #217",
+    "wasteType": "plastic",
+    "severity": "high",
+    "coveragePercent": 45.3,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Black heavy-duty polythene trash bags",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps",
+      "Single-use LDPE carry bags & pouches"
+    ],
+    "beforeCleanlinessScore": 28,
+    "afterCleanlinessScore": 94,
+    "aiRecommendation": "Dispatch municipal sanitation crew with dedicated sorting bins, compactors, and safety gear.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_217_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_217_after.jpg"
+  },
+  {
+    "sceneId": "scene_218",
+    "environment": "urban_street",
+    "environmentName": "Urban Indian Street Waste #218",
+    "wasteType": "plastic",
+    "severity": "high",
+    "coveragePercent": 58.3,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Black heavy-duty polythene trash bags",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps",
+      "Single-use LDPE carry bags & pouches"
+    ],
+    "beforeCleanlinessScore": 15,
+    "afterCleanlinessScore": 98,
+    "aiRecommendation": "Dispatch municipal sanitation crew with dedicated sorting bins, compactors, and safety gear.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_218_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_218_after.jpg"
+  },
+  {
+    "sceneId": "scene_219",
+    "environment": "urban_street",
+    "environmentName": "Urban Indian Street Waste #219",
+    "wasteType": "plastic",
+    "severity": "high",
+    "coveragePercent": 46.5,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Black heavy-duty polythene trash bags",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps",
+      "Single-use LDPE carry bags & pouches"
+    ],
+    "beforeCleanlinessScore": 26,
+    "afterCleanlinessScore": 96,
+    "aiRecommendation": "Dispatch municipal sanitation crew with dedicated sorting bins, compactors, and safety gear.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_219_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_219_after.jpg"
+  },
+  {
+    "sceneId": "scene_220",
+    "environment": "urban_street",
+    "environmentName": "Urban Indian Street Waste #220",
+    "wasteType": "plastic",
+    "severity": "medium",
+    "coveragePercent": 29.0,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Black heavy-duty polythene trash bags",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps",
+      "Single-use LDPE carry bags & pouches"
+    ],
+    "beforeCleanlinessScore": 52,
+    "afterCleanlinessScore": 93,
+    "aiRecommendation": "Dispatch municipal sanitation crew with dedicated sorting bins, compactors, and safety gear.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_220_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_220_after.jpg"
+  },
+  {
+    "sceneId": "scene_221",
+    "environment": "urban_street",
+    "environmentName": "Urban Indian Street Waste #221",
+    "wasteType": "plastic",
+    "severity": "high",
+    "coveragePercent": 50.4,
+    "clustersCount": 2,
+    "detectedItems": [
+      "Black heavy-duty polythene trash bags",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps",
+      "Single-use LDPE carry bags & pouches"
+    ],
+    "beforeCleanlinessScore": 27,
+    "afterCleanlinessScore": 95,
+    "aiRecommendation": "Dispatch municipal sanitation crew with dedicated sorting bins, compactors, and safety gear.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_221_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_221_after.jpg"
+  },
+  {
+    "sceneId": "scene_222",
+    "environment": "urban_street",
+    "environmentName": "Urban Indian Street Waste #222",
+    "wasteType": "plastic",
+    "severity": "medium",
+    "coveragePercent": 34.4,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Black heavy-duty polythene trash bags",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps",
+      "Single-use LDPE carry bags & pouches"
+    ],
+    "beforeCleanlinessScore": 44,
+    "afterCleanlinessScore": 98,
+    "aiRecommendation": "Dispatch municipal sanitation crew with dedicated sorting bins, compactors, and safety gear.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_222_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_222_after.jpg"
+  },
+  {
+    "sceneId": "scene_223",
+    "environment": "urban_street",
+    "environmentName": "Urban Indian Street Waste #223",
+    "wasteType": "plastic",
+    "severity": "high",
+    "coveragePercent": 43.9,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Black heavy-duty polythene trash bags",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps",
+      "Single-use LDPE carry bags & pouches"
+    ],
+    "beforeCleanlinessScore": 36,
+    "afterCleanlinessScore": 98,
+    "aiRecommendation": "Dispatch municipal sanitation crew with dedicated sorting bins, compactors, and safety gear.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_223_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_223_after.jpg"
+  },
+  {
+    "sceneId": "scene_224",
+    "environment": "urban_street",
+    "environmentName": "Urban Indian Street Waste #224",
+    "wasteType": "plastic",
+    "severity": "high",
+    "coveragePercent": 57.0,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Black heavy-duty polythene trash bags",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps",
+      "Single-use LDPE carry bags & pouches"
+    ],
+    "beforeCleanlinessScore": 20,
+    "afterCleanlinessScore": 97,
+    "aiRecommendation": "Dispatch municipal sanitation crew with dedicated sorting bins, compactors, and safety gear.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_224_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_224_after.jpg"
+  },
+  {
+    "sceneId": "scene_225",
+    "environment": "urban_street",
+    "environmentName": "Urban Indian Street Waste #225",
+    "wasteType": "plastic",
+    "severity": "medium",
+    "coveragePercent": 32.9,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Black heavy-duty polythene trash bags",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps",
+      "Single-use LDPE carry bags & pouches"
+    ],
+    "beforeCleanlinessScore": 50,
+    "afterCleanlinessScore": 98,
+    "aiRecommendation": "Dispatch municipal sanitation crew with dedicated sorting bins, compactors, and safety gear.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_225_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_225_after.jpg"
+  },
+  {
+    "sceneId": "scene_226",
+    "environment": "urban_street",
+    "environmentName": "Urban Indian Street Waste #226",
+    "wasteType": "plastic",
+    "severity": "high",
+    "coveragePercent": 47.7,
+    "clustersCount": 2,
+    "detectedItems": [
+      "Black heavy-duty polythene trash bags",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps",
+      "Single-use LDPE carry bags & pouches"
+    ],
+    "beforeCleanlinessScore": 29,
+    "afterCleanlinessScore": 92,
+    "aiRecommendation": "Dispatch municipal sanitation crew with dedicated sorting bins, compactors, and safety gear.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_226_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_226_after.jpg"
+  },
+  {
+    "sceneId": "scene_227",
+    "environment": "construction_site",
+    "environmentName": "Demolition & Solid Debris #227",
+    "wasteType": "construction",
+    "severity": "medium",
+    "coveragePercent": 27.5,
+    "clustersCount": 2,
+    "detectedItems": [
+      "Broken terracotta bricks & masonry rubble",
+      "Cracked concrete plaster & mortar dust"
+    ],
+    "beforeCleanlinessScore": 52,
+    "afterCleanlinessScore": 98,
+    "aiRecommendation": "Dispatch municipal sanitation crew with dedicated sorting bins, compactors, and safety gear.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_227_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_227_after.jpg"
+  },
+  {
+    "sceneId": "scene_228",
+    "environment": "construction_site",
+    "environmentName": "Demolition & Solid Debris #228",
+    "wasteType": "construction",
+    "severity": "high",
+    "coveragePercent": 41.5,
+    "clustersCount": 2,
+    "detectedItems": [
+      "Broken terracotta bricks & masonry rubble",
+      "Cracked concrete plaster & mortar dust"
+    ],
+    "beforeCleanlinessScore": 34,
+    "afterCleanlinessScore": 93,
+    "aiRecommendation": "Dispatch municipal sanitation crew with dedicated sorting bins, compactors, and safety gear.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_228_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_228_after.jpg"
+  },
+  {
+    "sceneId": "scene_229",
+    "environment": "construction_site",
+    "environmentName": "Demolition & Solid Debris #229",
+    "wasteType": "construction",
+    "severity": "high",
+    "coveragePercent": 54.1,
+    "clustersCount": 2,
+    "detectedItems": [
+      "Broken terracotta bricks & masonry rubble",
+      "Cracked concrete plaster & mortar dust"
+    ],
+    "beforeCleanlinessScore": 22,
+    "afterCleanlinessScore": 98,
+    "aiRecommendation": "Dispatch municipal sanitation crew with dedicated sorting bins, compactors, and safety gear.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_229_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_229_after.jpg"
+  },
+  {
+    "sceneId": "scene_230",
+    "environment": "construction_site",
+    "environmentName": "Demolition & Solid Debris #230",
+    "wasteType": "construction",
+    "severity": "high",
+    "coveragePercent": 45.0,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Broken terracotta bricks & masonry rubble",
+      "Cracked concrete plaster & mortar dust"
+    ],
+    "beforeCleanlinessScore": 27,
+    "afterCleanlinessScore": 98,
+    "aiRecommendation": "Dispatch municipal sanitation crew with dedicated sorting bins, compactors, and safety gear.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_230_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_230_after.jpg"
+  },
+  {
+    "sceneId": "scene_231",
+    "environment": "construction_site",
+    "environmentName": "Demolition & Solid Debris #231",
+    "wasteType": "construction",
+    "severity": "high",
+    "coveragePercent": 57.4,
+    "clustersCount": 2,
+    "detectedItems": [
+      "Broken terracotta bricks & masonry rubble",
+      "Cracked concrete plaster & mortar dust"
+    ],
+    "beforeCleanlinessScore": 15,
+    "afterCleanlinessScore": 95,
+    "aiRecommendation": "Dispatch municipal sanitation crew with dedicated sorting bins, compactors, and safety gear.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_231_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_231_after.jpg"
+  },
+  {
+    "sceneId": "scene_232",
+    "environment": "construction_site",
+    "environmentName": "Demolition & Solid Debris #232",
+    "wasteType": "construction",
+    "severity": "medium",
+    "coveragePercent": 33.5,
+    "clustersCount": 2,
+    "detectedItems": [
+      "Broken terracotta bricks & masonry rubble",
+      "Cracked concrete plaster & mortar dust"
+    ],
+    "beforeCleanlinessScore": 47,
+    "afterCleanlinessScore": 92,
+    "aiRecommendation": "Dispatch municipal sanitation crew with dedicated sorting bins, compactors, and safety gear.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_232_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_232_after.jpg"
+  },
+  {
+    "sceneId": "scene_233",
+    "environment": "construction_site",
+    "environmentName": "Demolition & Solid Debris #233",
+    "wasteType": "construction",
+    "severity": "medium",
+    "coveragePercent": 38.4,
+    "clustersCount": 2,
+    "detectedItems": [
+      "Broken terracotta bricks & masonry rubble",
+      "Cracked concrete plaster & mortar dust"
+    ],
+    "beforeCleanlinessScore": 37,
+    "afterCleanlinessScore": 92,
+    "aiRecommendation": "Dispatch municipal sanitation crew with dedicated sorting bins, compactors, and safety gear.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_233_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_233_after.jpg"
+  },
+  {
+    "sceneId": "scene_234",
+    "environment": "construction_site",
+    "environmentName": "Demolition & Solid Debris #234",
+    "wasteType": "construction",
+    "severity": "medium",
+    "coveragePercent": 36.6,
+    "clustersCount": 2,
+    "detectedItems": [
+      "Broken terracotta bricks & masonry rubble",
+      "Cracked concrete plaster & mortar dust"
+    ],
+    "beforeCleanlinessScore": 46,
+    "afterCleanlinessScore": 93,
+    "aiRecommendation": "Dispatch municipal sanitation crew with dedicated sorting bins, compactors, and safety gear.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_234_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_234_after.jpg"
+  },
+  {
+    "sceneId": "scene_235",
+    "environment": "construction_site",
+    "environmentName": "Demolition & Solid Debris #235",
+    "wasteType": "construction",
+    "severity": "high",
+    "coveragePercent": 53.5,
+    "clustersCount": 2,
+    "detectedItems": [
+      "Broken terracotta bricks & masonry rubble",
+      "Cracked concrete plaster & mortar dust"
+    ],
+    "beforeCleanlinessScore": 22,
+    "afterCleanlinessScore": 97,
+    "aiRecommendation": "Dispatch municipal sanitation crew with dedicated sorting bins, compactors, and safety gear.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_235_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_235_after.jpg"
+  },
+  {
+    "sceneId": "scene_236",
+    "environment": "construction_site",
+    "environmentName": "Demolition & Solid Debris #236",
+    "wasteType": "construction",
+    "severity": "high",
+    "coveragePercent": 46.5,
+    "clustersCount": 2,
+    "detectedItems": [
+      "Broken terracotta bricks & masonry rubble",
+      "Cracked concrete plaster & mortar dust"
+    ],
+    "beforeCleanlinessScore": 33,
+    "afterCleanlinessScore": 97,
+    "aiRecommendation": "Dispatch municipal sanitation crew with dedicated sorting bins, compactors, and safety gear.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_236_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_236_after.jpg"
+  },
+  {
+    "sceneId": "scene_237",
+    "environment": "construction_site",
+    "environmentName": "Demolition & Solid Debris #237",
+    "wasteType": "construction",
+    "severity": "high",
+    "coveragePercent": 49.8,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Broken terracotta bricks & masonry rubble",
+      "Cracked concrete plaster & mortar dust"
+    ],
+    "beforeCleanlinessScore": 28,
+    "afterCleanlinessScore": 92,
+    "aiRecommendation": "Dispatch municipal sanitation crew with dedicated sorting bins, compactors, and safety gear.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_237_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_237_after.jpg"
+  },
+  {
+    "sceneId": "scene_238",
+    "environment": "construction_site",
+    "environmentName": "Demolition & Solid Debris #238",
+    "wasteType": "construction",
+    "severity": "high",
+    "coveragePercent": 60.3,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Broken terracotta bricks & masonry rubble",
+      "Cracked concrete plaster & mortar dust"
+    ],
+    "beforeCleanlinessScore": 15,
+    "afterCleanlinessScore": 98,
+    "aiRecommendation": "Dispatch municipal sanitation crew with dedicated sorting bins, compactors, and safety gear.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_238_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_238_after.jpg"
+  },
+  {
+    "sceneId": "scene_239",
+    "environment": "construction_site",
+    "environmentName": "Demolition & Solid Debris #239",
+    "wasteType": "construction",
+    "severity": "medium",
+    "coveragePercent": 29.0,
+    "clustersCount": 2,
+    "detectedItems": [
+      "Broken terracotta bricks & masonry rubble",
+      "Cracked concrete plaster & mortar dust"
+    ],
+    "beforeCleanlinessScore": 52,
+    "afterCleanlinessScore": 93,
+    "aiRecommendation": "Dispatch municipal sanitation crew with dedicated sorting bins, compactors, and safety gear.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_239_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_239_after.jpg"
+  },
+  {
+    "sceneId": "scene_240",
+    "environment": "construction_site",
+    "environmentName": "Demolition & Solid Debris #240",
+    "wasteType": "construction",
+    "severity": "high",
+    "coveragePercent": 55.0,
+    "clustersCount": 2,
+    "detectedItems": [
+      "Broken terracotta bricks & masonry rubble",
+      "Cracked concrete plaster & mortar dust"
+    ],
+    "beforeCleanlinessScore": 20,
+    "afterCleanlinessScore": 93,
+    "aiRecommendation": "Dispatch municipal sanitation crew with dedicated sorting bins, compactors, and safety gear.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_240_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_240_after.jpg"
+  },
+  {
+    "sceneId": "scene_241",
+    "environment": "construction_site",
+    "environmentName": "Demolition & Solid Debris #241",
+    "wasteType": "construction",
+    "severity": "medium",
+    "coveragePercent": 27.0,
+    "clustersCount": 2,
+    "detectedItems": [
+      "Broken terracotta bricks & masonry rubble",
+      "Cracked concrete plaster & mortar dust"
+    ],
+    "beforeCleanlinessScore": 52,
+    "afterCleanlinessScore": 98,
+    "aiRecommendation": "Dispatch municipal sanitation crew with dedicated sorting bins, compactors, and safety gear.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_241_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_241_after.jpg"
+  },
+  {
+    "sceneId": "scene_242",
+    "environment": "construction_site",
+    "environmentName": "Demolition & Solid Debris #242",
+    "wasteType": "construction",
+    "severity": "medium",
+    "coveragePercent": 31.7,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Broken terracotta bricks & masonry rubble",
+      "Cracked concrete plaster & mortar dust"
+    ],
+    "beforeCleanlinessScore": 47,
+    "afterCleanlinessScore": 97,
+    "aiRecommendation": "Dispatch municipal sanitation crew with dedicated sorting bins, compactors, and safety gear.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_242_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_242_after.jpg"
+  },
+  {
+    "sceneId": "scene_243",
+    "environment": "construction_site",
+    "environmentName": "Demolition & Solid Debris #243",
+    "wasteType": "construction",
+    "severity": "high",
+    "coveragePercent": 47.5,
+    "clustersCount": 2,
+    "detectedItems": [
+      "Broken terracotta bricks & masonry rubble",
+      "Cracked concrete plaster & mortar dust"
+    ],
+    "beforeCleanlinessScore": 32,
+    "afterCleanlinessScore": 94,
+    "aiRecommendation": "Dispatch municipal sanitation crew with dedicated sorting bins, compactors, and safety gear.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_243_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_243_after.jpg"
+  },
+  {
+    "sceneId": "scene_244",
+    "environment": "construction_site",
+    "environmentName": "Demolition & Solid Debris #244",
+    "wasteType": "construction",
+    "severity": "medium",
+    "coveragePercent": 30.8,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Broken terracotta bricks & masonry rubble",
+      "Cracked concrete plaster & mortar dust"
+    ],
+    "beforeCleanlinessScore": 48,
+    "afterCleanlinessScore": 97,
+    "aiRecommendation": "Dispatch municipal sanitation crew with dedicated sorting bins, compactors, and safety gear.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_244_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_244_after.jpg"
+  },
+  {
+    "sceneId": "scene_245",
+    "environment": "construction_site",
+    "environmentName": "Demolition & Solid Debris #245",
+    "wasteType": "construction",
+    "severity": "high",
+    "coveragePercent": 54.8,
+    "clustersCount": 2,
+    "detectedItems": [
+      "Broken terracotta bricks & masonry rubble",
+      "Cracked concrete plaster & mortar dust"
+    ],
+    "beforeCleanlinessScore": 15,
+    "afterCleanlinessScore": 93,
+    "aiRecommendation": "Dispatch municipal sanitation crew with dedicated sorting bins, compactors, and safety gear.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_245_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_245_after.jpg"
+  },
+  {
+    "sceneId": "scene_246",
+    "environment": "construction_site",
+    "environmentName": "Demolition & Solid Debris #246",
+    "wasteType": "construction",
+    "severity": "high",
+    "coveragePercent": 45.8,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Broken terracotta bricks & masonry rubble",
+      "Cracked concrete plaster & mortar dust"
+    ],
+    "beforeCleanlinessScore": 30,
+    "afterCleanlinessScore": 93,
+    "aiRecommendation": "Dispatch municipal sanitation crew with dedicated sorting bins, compactors, and safety gear.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_246_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_246_after.jpg"
+  },
+  {
+    "sceneId": "scene_247",
+    "environment": "construction_site",
+    "environmentName": "Demolition & Solid Debris #247",
+    "wasteType": "construction",
+    "severity": "medium",
+    "coveragePercent": 25.8,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Broken terracotta bricks & masonry rubble",
+      "Cracked concrete plaster & mortar dust"
+    ],
+    "beforeCleanlinessScore": 52,
+    "afterCleanlinessScore": 97,
+    "aiRecommendation": "Dispatch municipal sanitation crew with dedicated sorting bins, compactors, and safety gear.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_247_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_247_after.jpg"
+  },
+  {
+    "sceneId": "scene_248",
+    "environment": "construction_site",
+    "environmentName": "Demolition & Solid Debris #248",
+    "wasteType": "construction",
+    "severity": "high",
+    "coveragePercent": 51.6,
+    "clustersCount": 2,
+    "detectedItems": [
+      "Broken terracotta bricks & masonry rubble",
+      "Cracked concrete plaster & mortar dust"
+    ],
+    "beforeCleanlinessScore": 23,
+    "afterCleanlinessScore": 93,
+    "aiRecommendation": "Dispatch municipal sanitation crew with dedicated sorting bins, compactors, and safety gear.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_248_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_248_after.jpg"
+  },
+  {
+    "sceneId": "scene_249",
+    "environment": "construction_site",
+    "environmentName": "Demolition & Solid Debris #249",
+    "wasteType": "construction",
+    "severity": "medium",
+    "coveragePercent": 39.4,
+    "clustersCount": 2,
+    "detectedItems": [
+      "Broken terracotta bricks & masonry rubble",
+      "Cracked concrete plaster & mortar dust"
+    ],
+    "beforeCleanlinessScore": 39,
+    "afterCleanlinessScore": 92,
+    "aiRecommendation": "Dispatch municipal sanitation crew with dedicated sorting bins, compactors, and safety gear.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_249_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_249_after.jpg"
+  },
+  {
+    "sceneId": "scene_250",
+    "environment": "construction_site",
+    "environmentName": "Demolition & Solid Debris #250",
+    "wasteType": "construction",
+    "severity": "medium",
+    "coveragePercent": 35.6,
+    "clustersCount": 2,
+    "detectedItems": [
+      "Broken terracotta bricks & masonry rubble",
+      "Cracked concrete plaster & mortar dust"
+    ],
+    "beforeCleanlinessScore": 45,
+    "afterCleanlinessScore": 95,
+    "aiRecommendation": "Dispatch municipal sanitation crew with dedicated sorting bins, compactors, and safety gear.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_250_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_250_after.jpg"
+  },
+  {
+    "sceneId": "scene_251",
+    "environment": "construction_site",
+    "environmentName": "Demolition & Solid Debris #251",
+    "wasteType": "construction",
+    "severity": "high",
+    "coveragePercent": 43.2,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Broken terracotta bricks & masonry rubble",
+      "Cracked concrete plaster & mortar dust"
+    ],
+    "beforeCleanlinessScore": 29,
+    "afterCleanlinessScore": 96,
+    "aiRecommendation": "Dispatch municipal sanitation crew with dedicated sorting bins, compactors, and safety gear.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_251_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_251_after.jpg"
+  },
+  {
+    "sceneId": "scene_252",
+    "environment": "construction_site",
+    "environmentName": "Demolition & Solid Debris #252",
+    "wasteType": "construction",
+    "severity": "high",
+    "coveragePercent": 55.7,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Broken terracotta bricks & masonry rubble",
+      "Cracked concrete plaster & mortar dust"
+    ],
+    "beforeCleanlinessScore": 21,
+    "afterCleanlinessScore": 95,
+    "aiRecommendation": "Dispatch municipal sanitation crew with dedicated sorting bins, compactors, and safety gear.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_252_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_252_after.jpg"
+  },
+  {
+    "sceneId": "scene_253",
+    "environment": "construction_site",
+    "environmentName": "Demolition & Solid Debris #253",
+    "wasteType": "construction",
+    "severity": "high",
+    "coveragePercent": 47.1,
+    "clustersCount": 2,
+    "detectedItems": [
+      "Broken terracotta bricks & masonry rubble",
+      "Cracked concrete plaster & mortar dust"
+    ],
+    "beforeCleanlinessScore": 27,
+    "afterCleanlinessScore": 97,
+    "aiRecommendation": "Dispatch municipal sanitation crew with dedicated sorting bins, compactors, and safety gear.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_253_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_253_after.jpg"
+  },
+  {
+    "sceneId": "scene_254",
+    "environment": "construction_site",
+    "environmentName": "Demolition & Solid Debris #254",
+    "wasteType": "construction",
+    "severity": "high",
+    "coveragePercent": 41.5,
+    "clustersCount": 2,
+    "detectedItems": [
+      "Broken terracotta bricks & masonry rubble",
+      "Cracked concrete plaster & mortar dust"
+    ],
+    "beforeCleanlinessScore": 38,
+    "afterCleanlinessScore": 95,
+    "aiRecommendation": "Dispatch municipal sanitation crew with dedicated sorting bins, compactors, and safety gear.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_254_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_254_after.jpg"
+  },
+  {
+    "sceneId": "scene_255",
+    "environment": "construction_site",
+    "environmentName": "Demolition & Solid Debris #255",
+    "wasteType": "construction",
+    "severity": "medium",
+    "coveragePercent": 36.2,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Broken terracotta bricks & masonry rubble",
+      "Cracked concrete plaster & mortar dust"
+    ],
+    "beforeCleanlinessScore": 39,
+    "afterCleanlinessScore": 96,
+    "aiRecommendation": "Dispatch municipal sanitation crew with dedicated sorting bins, compactors, and safety gear.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_255_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_255_after.jpg"
+  },
+  {
+    "sceneId": "scene_256",
+    "environment": "construction_site",
+    "environmentName": "Demolition & Solid Debris #256",
+    "wasteType": "construction",
+    "severity": "medium",
+    "coveragePercent": 25.2,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Broken terracotta bricks & masonry rubble",
+      "Cracked concrete plaster & mortar dust"
+    ],
+    "beforeCleanlinessScore": 52,
+    "afterCleanlinessScore": 92,
+    "aiRecommendation": "Dispatch municipal sanitation crew with dedicated sorting bins, compactors, and safety gear.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_256_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_256_after.jpg"
+  },
+  {
+    "sceneId": "scene_257",
+    "environment": "construction_site",
+    "environmentName": "Demolition & Solid Debris #257",
+    "wasteType": "construction",
+    "severity": "high",
+    "coveragePercent": 60.8,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Broken terracotta bricks & masonry rubble",
+      "Cracked concrete plaster & mortar dust"
+    ],
+    "beforeCleanlinessScore": 15,
+    "afterCleanlinessScore": 96,
+    "aiRecommendation": "Dispatch municipal sanitation crew with dedicated sorting bins, compactors, and safety gear.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_257_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_257_after.jpg"
+  },
+  {
+    "sceneId": "scene_258",
+    "environment": "construction_site",
+    "environmentName": "Demolition & Solid Debris #258",
+    "wasteType": "construction",
+    "severity": "medium",
+    "coveragePercent": 30.4,
+    "clustersCount": 2,
+    "detectedItems": [
+      "Broken terracotta bricks & masonry rubble",
+      "Cracked concrete plaster & mortar dust"
+    ],
+    "beforeCleanlinessScore": 52,
+    "afterCleanlinessScore": 92,
+    "aiRecommendation": "Dispatch municipal sanitation crew with dedicated sorting bins, compactors, and safety gear.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_258_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_258_after.jpg"
+  },
+  {
+    "sceneId": "scene_259",
+    "environment": "construction_site",
+    "environmentName": "Demolition & Solid Debris #259",
+    "wasteType": "construction",
+    "severity": "high",
+    "coveragePercent": 43.5,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Broken terracotta bricks & masonry rubble",
+      "Cracked concrete plaster & mortar dust"
+    ],
+    "beforeCleanlinessScore": 28,
+    "afterCleanlinessScore": 96,
+    "aiRecommendation": "Dispatch municipal sanitation crew with dedicated sorting bins, compactors, and safety gear.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_259_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_259_after.jpg"
+  },
+  {
+    "sceneId": "scene_260",
+    "environment": "construction_site",
+    "environmentName": "Demolition & Solid Debris #260",
+    "wasteType": "construction",
+    "severity": "medium",
+    "coveragePercent": 38.0,
+    "clustersCount": 2,
+    "detectedItems": [
+      "Broken terracotta bricks & masonry rubble",
+      "Cracked concrete plaster & mortar dust"
+    ],
+    "beforeCleanlinessScore": 35,
+    "afterCleanlinessScore": 94,
+    "aiRecommendation": "Dispatch municipal sanitation crew with dedicated sorting bins, compactors, and safety gear.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_260_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_260_after.jpg"
+  },
+  {
+    "sceneId": "scene_261",
+    "environment": "construction_site",
+    "environmentName": "Demolition & Solid Debris #261",
+    "wasteType": "construction",
+    "severity": "high",
+    "coveragePercent": 47.3,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Broken terracotta bricks & masonry rubble",
+      "Cracked concrete plaster & mortar dust"
+    ],
+    "beforeCleanlinessScore": 27,
+    "afterCleanlinessScore": 93,
+    "aiRecommendation": "Dispatch municipal sanitation crew with dedicated sorting bins, compactors, and safety gear.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_261_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_261_after.jpg"
+  },
+  {
+    "sceneId": "scene_262",
+    "environment": "residential_alley",
+    "environmentName": "Commercial Plastic Packaging #262",
+    "wasteType": "plastic",
+    "severity": "high",
+    "coveragePercent": 51.5,
+    "clustersCount": 2,
+    "detectedItems": [
+      "Black heavy-duty polythene trash bags",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps",
+      "Single-use LDPE carry bags & pouches"
+    ],
+    "beforeCleanlinessScore": 25,
+    "afterCleanlinessScore": 98,
+    "aiRecommendation": "Dispatch municipal sanitation crew with dedicated sorting bins, compactors, and safety gear.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_262_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_262_after.jpg"
+  },
+  {
+    "sceneId": "scene_263",
+    "environment": "residential_alley",
+    "environmentName": "Commercial Plastic Packaging #263",
+    "wasteType": "plastic",
+    "severity": "high",
+    "coveragePercent": 53.2,
+    "clustersCount": 2,
+    "detectedItems": [
+      "Black heavy-duty polythene trash bags",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps",
+      "Single-use LDPE carry bags & pouches"
+    ],
+    "beforeCleanlinessScore": 21,
+    "afterCleanlinessScore": 94,
+    "aiRecommendation": "Dispatch municipal sanitation crew with dedicated sorting bins, compactors, and safety gear.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_263_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_263_after.jpg"
+  },
+  {
+    "sceneId": "scene_264",
+    "environment": "residential_alley",
+    "environmentName": "Commercial Plastic Packaging #264",
+    "wasteType": "plastic",
+    "severity": "medium",
+    "coveragePercent": 30.2,
+    "clustersCount": 2,
+    "detectedItems": [
+      "Black heavy-duty polythene trash bags",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps",
+      "Single-use LDPE carry bags & pouches"
+    ],
+    "beforeCleanlinessScore": 47,
+    "afterCleanlinessScore": 96,
+    "aiRecommendation": "Dispatch municipal sanitation crew with dedicated sorting bins, compactors, and safety gear.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_264_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_264_after.jpg"
+  },
+  {
+    "sceneId": "scene_265",
+    "environment": "residential_alley",
+    "environmentName": "Commercial Plastic Packaging #265",
+    "wasteType": "plastic",
+    "severity": "medium",
+    "coveragePercent": 26.5,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Black heavy-duty polythene trash bags",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps",
+      "Single-use LDPE carry bags & pouches"
+    ],
+    "beforeCleanlinessScore": 52,
+    "afterCleanlinessScore": 98,
+    "aiRecommendation": "Dispatch municipal sanitation crew with dedicated sorting bins, compactors, and safety gear.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_265_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_265_after.jpg"
+  },
+  {
+    "sceneId": "scene_266",
+    "environment": "residential_alley",
+    "environmentName": "Commercial Plastic Packaging #266",
+    "wasteType": "plastic",
+    "severity": "high",
+    "coveragePercent": 44.1,
+    "clustersCount": 2,
+    "detectedItems": [
+      "Black heavy-duty polythene trash bags",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps",
+      "Single-use LDPE carry bags & pouches"
+    ],
+    "beforeCleanlinessScore": 34,
+    "afterCleanlinessScore": 94,
+    "aiRecommendation": "Dispatch municipal sanitation crew with dedicated sorting bins, compactors, and safety gear.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_266_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_266_after.jpg"
+  },
+  {
+    "sceneId": "scene_267",
+    "environment": "residential_alley",
+    "environmentName": "Commercial Plastic Packaging #267",
+    "wasteType": "plastic",
+    "severity": "high",
+    "coveragePercent": 51.8,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Black heavy-duty polythene trash bags",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps",
+      "Single-use LDPE carry bags & pouches"
+    ],
+    "beforeCleanlinessScore": 26,
+    "afterCleanlinessScore": 97,
+    "aiRecommendation": "Dispatch municipal sanitation crew with dedicated sorting bins, compactors, and safety gear.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_267_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_267_after.jpg"
+  },
+  {
+    "sceneId": "scene_268",
+    "environment": "residential_alley",
+    "environmentName": "Commercial Plastic Packaging #268",
+    "wasteType": "plastic",
+    "severity": "high",
+    "coveragePercent": 59.8,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Black heavy-duty polythene trash bags",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps",
+      "Single-use LDPE carry bags & pouches"
+    ],
+    "beforeCleanlinessScore": 15,
+    "afterCleanlinessScore": 94,
+    "aiRecommendation": "Dispatch municipal sanitation crew with dedicated sorting bins, compactors, and safety gear.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_268_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_268_after.jpg"
+  },
+  {
+    "sceneId": "scene_269",
+    "environment": "residential_alley",
+    "environmentName": "Commercial Plastic Packaging #269",
+    "wasteType": "plastic",
+    "severity": "medium",
+    "coveragePercent": 28.1,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Black heavy-duty polythene trash bags",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps",
+      "Single-use LDPE carry bags & pouches"
+    ],
+    "beforeCleanlinessScore": 52,
+    "afterCleanlinessScore": 93,
+    "aiRecommendation": "Dispatch municipal sanitation crew with dedicated sorting bins, compactors, and safety gear.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_269_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_269_after.jpg"
+  },
+  {
+    "sceneId": "scene_270",
+    "environment": "residential_alley",
+    "environmentName": "Commercial Plastic Packaging #270",
+    "wasteType": "plastic",
+    "severity": "medium",
+    "coveragePercent": 38.6,
+    "clustersCount": 2,
+    "detectedItems": [
+      "Black heavy-duty polythene trash bags",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps",
+      "Single-use LDPE carry bags & pouches"
+    ],
+    "beforeCleanlinessScore": 41,
+    "afterCleanlinessScore": 92,
+    "aiRecommendation": "Dispatch municipal sanitation crew with dedicated sorting bins, compactors, and safety gear.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_270_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_270_after.jpg"
+  },
+  {
+    "sceneId": "scene_271",
+    "environment": "residential_alley",
+    "environmentName": "Commercial Plastic Packaging #271",
+    "wasteType": "plastic",
+    "severity": "high",
+    "coveragePercent": 53.5,
+    "clustersCount": 2,
+    "detectedItems": [
+      "Black heavy-duty polythene trash bags",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps",
+      "Single-use LDPE carry bags & pouches"
+    ],
+    "beforeCleanlinessScore": 20,
+    "afterCleanlinessScore": 96,
+    "aiRecommendation": "Dispatch municipal sanitation crew with dedicated sorting bins, compactors, and safety gear.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_271_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_271_after.jpg"
+  },
+  {
+    "sceneId": "scene_272",
+    "environment": "residential_alley",
+    "environmentName": "Commercial Plastic Packaging #272",
+    "wasteType": "plastic",
+    "severity": "medium",
+    "coveragePercent": 29.4,
+    "clustersCount": 2,
+    "detectedItems": [
+      "Black heavy-duty polythene trash bags",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps",
+      "Single-use LDPE carry bags & pouches"
+    ],
+    "beforeCleanlinessScore": 50,
+    "afterCleanlinessScore": 96,
+    "aiRecommendation": "Dispatch municipal sanitation crew with dedicated sorting bins, compactors, and safety gear.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_272_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_272_after.jpg"
+  },
+  {
+    "sceneId": "scene_273",
+    "environment": "residential_alley",
+    "environmentName": "Commercial Plastic Packaging #273",
+    "wasteType": "plastic",
+    "severity": "medium",
+    "coveragePercent": 38.2,
+    "clustersCount": 2,
+    "detectedItems": [
+      "Black heavy-duty polythene trash bags",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps",
+      "Single-use LDPE carry bags & pouches"
+    ],
+    "beforeCleanlinessScore": 37,
+    "afterCleanlinessScore": 95,
+    "aiRecommendation": "Dispatch municipal sanitation crew with dedicated sorting bins, compactors, and safety gear.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_273_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_273_after.jpg"
+  },
+  {
+    "sceneId": "scene_274",
+    "environment": "residential_alley",
+    "environmentName": "Commercial Plastic Packaging #274",
+    "wasteType": "plastic",
+    "severity": "high",
+    "coveragePercent": 50.1,
+    "clustersCount": 2,
+    "detectedItems": [
+      "Black heavy-duty polythene trash bags",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps",
+      "Single-use LDPE carry bags & pouches"
+    ],
+    "beforeCleanlinessScore": 21,
+    "afterCleanlinessScore": 97,
+    "aiRecommendation": "Dispatch municipal sanitation crew with dedicated sorting bins, compactors, and safety gear.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_274_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_274_after.jpg"
+  },
+  {
+    "sceneId": "scene_275",
+    "environment": "residential_alley",
+    "environmentName": "Commercial Plastic Packaging #275",
+    "wasteType": "plastic",
+    "severity": "high",
+    "coveragePercent": 53.7,
+    "clustersCount": 2,
+    "detectedItems": [
+      "Black heavy-duty polythene trash bags",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps",
+      "Single-use LDPE carry bags & pouches"
+    ],
+    "beforeCleanlinessScore": 24,
+    "afterCleanlinessScore": 96,
+    "aiRecommendation": "Dispatch municipal sanitation crew with dedicated sorting bins, compactors, and safety gear.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_275_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_275_after.jpg"
+  },
+  {
+    "sceneId": "scene_276",
+    "environment": "residential_alley",
+    "environmentName": "Commercial Plastic Packaging #276",
+    "wasteType": "plastic",
+    "severity": "medium",
+    "coveragePercent": 33.3,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Black heavy-duty polythene trash bags",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps",
+      "Single-use LDPE carry bags & pouches"
+    ],
+    "beforeCleanlinessScore": 41,
+    "afterCleanlinessScore": 98,
+    "aiRecommendation": "Dispatch municipal sanitation crew with dedicated sorting bins, compactors, and safety gear.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_276_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_276_after.jpg"
+  },
+  {
+    "sceneId": "scene_277",
+    "environment": "residential_alley",
+    "environmentName": "Commercial Plastic Packaging #277",
+    "wasteType": "plastic",
+    "severity": "high",
+    "coveragePercent": 44.9,
+    "clustersCount": 2,
+    "detectedItems": [
+      "Black heavy-duty polythene trash bags",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps",
+      "Single-use LDPE carry bags & pouches"
+    ],
+    "beforeCleanlinessScore": 29,
+    "afterCleanlinessScore": 94,
+    "aiRecommendation": "Dispatch municipal sanitation crew with dedicated sorting bins, compactors, and safety gear.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_277_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_277_after.jpg"
+  },
+  {
+    "sceneId": "scene_278",
+    "environment": "residential_alley",
+    "environmentName": "Commercial Plastic Packaging #278",
+    "wasteType": "plastic",
+    "severity": "medium",
+    "coveragePercent": 34.0,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Black heavy-duty polythene trash bags",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps",
+      "Single-use LDPE carry bags & pouches"
+    ],
+    "beforeCleanlinessScore": 47,
+    "afterCleanlinessScore": 96,
+    "aiRecommendation": "Dispatch municipal sanitation crew with dedicated sorting bins, compactors, and safety gear.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_278_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_278_after.jpg"
+  },
+  {
+    "sceneId": "scene_279",
+    "environment": "residential_alley",
+    "environmentName": "Commercial Plastic Packaging #279",
+    "wasteType": "plastic",
+    "severity": "high",
+    "coveragePercent": 48.1,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Black heavy-duty polythene trash bags",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps",
+      "Single-use LDPE carry bags & pouches"
+    ],
+    "beforeCleanlinessScore": 28,
+    "afterCleanlinessScore": 92,
+    "aiRecommendation": "Dispatch municipal sanitation crew with dedicated sorting bins, compactors, and safety gear.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_279_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_279_after.jpg"
+  },
+  {
+    "sceneId": "scene_280",
+    "environment": "residential_alley",
+    "environmentName": "Commercial Plastic Packaging #280",
+    "wasteType": "plastic",
+    "severity": "medium",
+    "coveragePercent": 37.4,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Black heavy-duty polythene trash bags",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps",
+      "Single-use LDPE carry bags & pouches"
+    ],
+    "beforeCleanlinessScore": 39,
+    "afterCleanlinessScore": 98,
+    "aiRecommendation": "Dispatch municipal sanitation crew with dedicated sorting bins, compactors, and safety gear.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_280_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_280_after.jpg"
+  },
+  {
+    "sceneId": "scene_281",
+    "environment": "residential_alley",
+    "environmentName": "Commercial Plastic Packaging #281",
+    "wasteType": "plastic",
+    "severity": "high",
+    "coveragePercent": 50.5,
+    "clustersCount": 2,
+    "detectedItems": [
+      "Black heavy-duty polythene trash bags",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps",
+      "Single-use LDPE carry bags & pouches"
+    ],
+    "beforeCleanlinessScore": 27,
+    "afterCleanlinessScore": 93,
+    "aiRecommendation": "Dispatch municipal sanitation crew with dedicated sorting bins, compactors, and safety gear.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_281_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_281_after.jpg"
+  },
+  {
+    "sceneId": "scene_282",
+    "environment": "residential_alley",
+    "environmentName": "Commercial Plastic Packaging #282",
+    "wasteType": "plastic",
+    "severity": "high",
+    "coveragePercent": 44.3,
+    "clustersCount": 2,
+    "detectedItems": [
+      "Black heavy-duty polythene trash bags",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps",
+      "Single-use LDPE carry bags & pouches"
+    ],
+    "beforeCleanlinessScore": 27,
+    "afterCleanlinessScore": 95,
+    "aiRecommendation": "Dispatch municipal sanitation crew with dedicated sorting bins, compactors, and safety gear.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_282_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_282_after.jpg"
+  },
+  {
+    "sceneId": "scene_283",
+    "environment": "residential_alley",
+    "environmentName": "Commercial Plastic Packaging #283",
+    "wasteType": "plastic",
+    "severity": "high",
+    "coveragePercent": 52.2,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Black heavy-duty polythene trash bags",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps",
+      "Single-use LDPE carry bags & pouches"
+    ],
+    "beforeCleanlinessScore": 18,
+    "afterCleanlinessScore": 95,
+    "aiRecommendation": "Dispatch municipal sanitation crew with dedicated sorting bins, compactors, and safety gear.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_283_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_283_after.jpg"
+  },
+  {
+    "sceneId": "scene_284",
+    "environment": "residential_alley",
+    "environmentName": "Commercial Plastic Packaging #284",
+    "wasteType": "plastic",
+    "severity": "high",
+    "coveragePercent": 55.3,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Black heavy-duty polythene trash bags",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps",
+      "Single-use LDPE carry bags & pouches"
+    ],
+    "beforeCleanlinessScore": 15,
+    "afterCleanlinessScore": 95,
+    "aiRecommendation": "Dispatch municipal sanitation crew with dedicated sorting bins, compactors, and safety gear.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_284_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_284_after.jpg"
+  },
+  {
+    "sceneId": "scene_285",
+    "environment": "residential_alley",
+    "environmentName": "Commercial Plastic Packaging #285",
+    "wasteType": "plastic",
+    "severity": "high",
+    "coveragePercent": 53.2,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Black heavy-duty polythene trash bags",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps",
+      "Single-use LDPE carry bags & pouches"
+    ],
+    "beforeCleanlinessScore": 20,
+    "afterCleanlinessScore": 94,
+    "aiRecommendation": "Dispatch municipal sanitation crew with dedicated sorting bins, compactors, and safety gear.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_285_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_285_after.jpg"
+  },
+  {
+    "sceneId": "scene_286",
+    "environment": "residential_alley",
+    "environmentName": "Commercial Plastic Packaging #286",
+    "wasteType": "plastic",
+    "severity": "high",
+    "coveragePercent": 54.9,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Black heavy-duty polythene trash bags",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps",
+      "Single-use LDPE carry bags & pouches"
+    ],
+    "beforeCleanlinessScore": 23,
+    "afterCleanlinessScore": 98,
+    "aiRecommendation": "Dispatch municipal sanitation crew with dedicated sorting bins, compactors, and safety gear.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_286_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_286_after.jpg"
+  },
+  {
+    "sceneId": "scene_287",
+    "environment": "residential_alley",
+    "environmentName": "Commercial Plastic Packaging #287",
+    "wasteType": "plastic",
+    "severity": "medium",
+    "coveragePercent": 33.4,
+    "clustersCount": 2,
+    "detectedItems": [
+      "Black heavy-duty polythene trash bags",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps",
+      "Single-use LDPE carry bags & pouches"
+    ],
+    "beforeCleanlinessScore": 46,
+    "afterCleanlinessScore": 98,
+    "aiRecommendation": "Dispatch municipal sanitation crew with dedicated sorting bins, compactors, and safety gear.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_287_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_287_after.jpg"
+  },
+  {
+    "sceneId": "scene_288",
+    "environment": "residential_alley",
+    "environmentName": "Commercial Plastic Packaging #288",
+    "wasteType": "plastic",
+    "severity": "medium",
+    "coveragePercent": 32.4,
+    "clustersCount": 2,
+    "detectedItems": [
+      "Black heavy-duty polythene trash bags",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps",
+      "Single-use LDPE carry bags & pouches"
+    ],
+    "beforeCleanlinessScore": 52,
+    "afterCleanlinessScore": 96,
+    "aiRecommendation": "Dispatch municipal sanitation crew with dedicated sorting bins, compactors, and safety gear.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_288_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_288_after.jpg"
+  },
+  {
+    "sceneId": "scene_289",
+    "environment": "residential_alley",
+    "environmentName": "Commercial Plastic Packaging #289",
+    "wasteType": "plastic",
+    "severity": "medium",
+    "coveragePercent": 38.6,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Black heavy-duty polythene trash bags",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps",
+      "Single-use LDPE carry bags & pouches"
+    ],
+    "beforeCleanlinessScore": 39,
+    "afterCleanlinessScore": 96,
+    "aiRecommendation": "Dispatch municipal sanitation crew with dedicated sorting bins, compactors, and safety gear.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_289_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_289_after.jpg"
+  },
+  {
+    "sceneId": "scene_290",
+    "environment": "residential_alley",
+    "environmentName": "Commercial Plastic Packaging #290",
+    "wasteType": "plastic",
+    "severity": "high",
+    "coveragePercent": 52.0,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Black heavy-duty polythene trash bags",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps",
+      "Single-use LDPE carry bags & pouches"
+    ],
+    "beforeCleanlinessScore": 20,
+    "afterCleanlinessScore": 98,
+    "aiRecommendation": "Dispatch municipal sanitation crew with dedicated sorting bins, compactors, and safety gear.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_290_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_290_after.jpg"
+  },
+  {
+    "sceneId": "scene_291",
+    "environment": "residential_alley",
+    "environmentName": "Commercial Plastic Packaging #291",
+    "wasteType": "plastic",
+    "severity": "high",
+    "coveragePercent": 41.4,
+    "clustersCount": 2,
+    "detectedItems": [
+      "Black heavy-duty polythene trash bags",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps",
+      "Single-use LDPE carry bags & pouches"
+    ],
+    "beforeCleanlinessScore": 31,
+    "afterCleanlinessScore": 92,
+    "aiRecommendation": "Dispatch municipal sanitation crew with dedicated sorting bins, compactors, and safety gear.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_291_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_291_after.jpg"
+  },
+  {
+    "sceneId": "scene_292",
+    "environment": "residential_alley",
+    "environmentName": "Commercial Plastic Packaging #292",
+    "wasteType": "plastic",
+    "severity": "high",
+    "coveragePercent": 52.7,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Black heavy-duty polythene trash bags",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps",
+      "Single-use LDPE carry bags & pouches"
+    ],
+    "beforeCleanlinessScore": 22,
+    "afterCleanlinessScore": 93,
+    "aiRecommendation": "Dispatch municipal sanitation crew with dedicated sorting bins, compactors, and safety gear.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_292_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_292_after.jpg"
+  },
+  {
+    "sceneId": "scene_293",
+    "environment": "residential_alley",
+    "environmentName": "Commercial Plastic Packaging #293",
+    "wasteType": "plastic",
+    "severity": "high",
+    "coveragePercent": 54.3,
+    "clustersCount": 2,
+    "detectedItems": [
+      "Black heavy-duty polythene trash bags",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps",
+      "Single-use LDPE carry bags & pouches"
+    ],
+    "beforeCleanlinessScore": 16,
+    "afterCleanlinessScore": 92,
+    "aiRecommendation": "Dispatch municipal sanitation crew with dedicated sorting bins, compactors, and safety gear.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_293_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_293_after.jpg"
+  },
+  {
+    "sceneId": "scene_294",
+    "environment": "residential_alley",
+    "environmentName": "Commercial Plastic Packaging #294",
+    "wasteType": "plastic",
+    "severity": "medium",
+    "coveragePercent": 32.8,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Black heavy-duty polythene trash bags",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps",
+      "Single-use LDPE carry bags & pouches"
+    ],
+    "beforeCleanlinessScore": 46,
+    "afterCleanlinessScore": 98,
+    "aiRecommendation": "Dispatch municipal sanitation crew with dedicated sorting bins, compactors, and safety gear.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_294_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_294_after.jpg"
+  },
+  {
+    "sceneId": "scene_295",
+    "environment": "residential_alley",
+    "environmentName": "Commercial Plastic Packaging #295",
+    "wasteType": "plastic",
+    "severity": "high",
+    "coveragePercent": 61.6,
+    "clustersCount": 2,
+    "detectedItems": [
+      "Black heavy-duty polythene trash bags",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps",
+      "Single-use LDPE carry bags & pouches"
+    ],
+    "beforeCleanlinessScore": 15,
+    "afterCleanlinessScore": 92,
+    "aiRecommendation": "Dispatch municipal sanitation crew with dedicated sorting bins, compactors, and safety gear.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_295_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_295_after.jpg"
+  },
+  {
+    "sceneId": "scene_296",
+    "environment": "residential_alley",
+    "environmentName": "Commercial Plastic Packaging #296",
+    "wasteType": "plastic",
+    "severity": "medium",
+    "coveragePercent": 34.7,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Black heavy-duty polythene trash bags",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps",
+      "Single-use LDPE carry bags & pouches"
+    ],
+    "beforeCleanlinessScore": 45,
+    "afterCleanlinessScore": 98,
+    "aiRecommendation": "Dispatch municipal sanitation crew with dedicated sorting bins, compactors, and safety gear.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_296_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_296_after.jpg"
+  },
+  {
+    "sceneId": "scene_297",
+    "environment": "urban_street",
+    "environmentName": "Roadside Garbage Dump Mound #297",
+    "wasteType": "household",
+    "severity": "high",
+    "coveragePercent": 47.4,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps",
+      "Cardboard delivery boxes & packing cartons",
+      "Food takeaway containers & styrofoam"
+    ],
+    "beforeCleanlinessScore": 31,
+    "afterCleanlinessScore": 96,
+    "aiRecommendation": "Dispatch municipal sanitation crew with dedicated sorting bins, compactors, and safety gear.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_297_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_297_after.jpg"
+  },
+  {
+    "sceneId": "scene_298",
+    "environment": "urban_street",
+    "environmentName": "Roadside Garbage Dump Mound #298",
+    "wasteType": "household",
+    "severity": "high",
+    "coveragePercent": 42.9,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps",
+      "Cardboard delivery boxes & packing cartons",
+      "Food takeaway containers & styrofoam"
+    ],
+    "beforeCleanlinessScore": 34,
+    "afterCleanlinessScore": 95,
+    "aiRecommendation": "Dispatch municipal sanitation crew with dedicated sorting bins, compactors, and safety gear.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_298_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_298_after.jpg"
+  },
+  {
+    "sceneId": "scene_299",
+    "environment": "urban_street",
+    "environmentName": "Roadside Garbage Dump Mound #299",
+    "wasteType": "household",
+    "severity": "high",
+    "coveragePercent": 45.6,
+    "clustersCount": 2,
+    "detectedItems": [
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps",
+      "Cardboard delivery boxes & packing cartons",
+      "Food takeaway containers & styrofoam"
+    ],
+    "beforeCleanlinessScore": 33,
+    "afterCleanlinessScore": 97,
+    "aiRecommendation": "Dispatch municipal sanitation crew with dedicated sorting bins, compactors, and safety gear.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_299_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_299_after.jpg"
+  },
+  {
+    "sceneId": "scene_300",
+    "environment": "urban_street",
+    "environmentName": "Roadside Garbage Dump Mound #300",
+    "wasteType": "household",
+    "severity": "medium",
+    "coveragePercent": 37.0,
+    "clustersCount": 2,
+    "detectedItems": [
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps",
+      "Cardboard delivery boxes & packing cartons",
+      "Food takeaway containers & styrofoam"
+    ],
+    "beforeCleanlinessScore": 42,
+    "afterCleanlinessScore": 95,
+    "aiRecommendation": "Dispatch municipal sanitation crew with dedicated sorting bins, compactors, and safety gear.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_300_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_300_after.jpg"
+  },
+  {
+    "sceneId": "scene_301",
+    "environment": "construction_site",
+    "environmentName": "Demolition & Debris Disposal Site #301",
+    "wasteType": "construction",
+    "severity": "high",
+    "coveragePercent": 44.1,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Heavy-duty Black HDPE Garbage Sacks",
+      "Crinkled Multi-Layer Plastic (MLP) Wrappers",
+      "Discarded PET Mineral Bottles & Caps",
+      "Corrugated Cardboard Cartons & Packing Boxes"
+    ],
+    "beforeCleanlinessScore": 32,
+    "afterCleanlinessScore": 93,
+    "aiRecommendation": "Deploy municipal waste collection crew with safety equipment and segregate recyclable materials.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_301_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_301_after.jpg"
+  },
+  {
+    "sceneId": "scene_302",
+    "environment": "construction_site",
+    "environmentName": "Demolition & Debris Disposal Site #302",
+    "wasteType": "construction",
+    "severity": "medium",
+    "coveragePercent": 38.7,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Crinkled Multi-Layer Plastic (MLP) Wrappers",
+      "Discarded PET Mineral Bottles & Caps",
+      "Corrugated Cardboard Cartons & Packing Boxes",
+      "Terracotta Masonry Rubble & Concrete Debris"
+    ],
+    "beforeCleanlinessScore": 40,
+    "afterCleanlinessScore": 96,
+    "aiRecommendation": "Deploy municipal waste collection crew with safety equipment and segregate recyclable materials.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_302_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_302_after.jpg"
+  },
+  {
+    "sceneId": "scene_303",
+    "environment": "waterfront_canal",
+    "environmentName": "Watercourse & Canal Waste #303",
+    "wasteType": "near_water",
+    "severity": "high",
+    "coveragePercent": 61.5,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Heavy-duty Black HDPE Garbage Sacks",
+      "Crinkled Multi-Layer Plastic (MLP) Wrappers",
+      "Discarded PET Mineral Bottles & Caps",
+      "Terracotta Masonry Rubble & Concrete Debris"
+    ],
+    "beforeCleanlinessScore": 14,
+    "afterCleanlinessScore": 98,
+    "aiRecommendation": "Deploy municipal waste collection crew with safety equipment and segregate recyclable materials.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_303_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_303_after.jpg"
+  },
+  {
+    "sceneId": "scene_304",
+    "environment": "urban_street",
+    "environmentName": "Urban Street Garbage Heap #304",
+    "wasteType": "plastic",
+    "severity": "medium",
+    "coveragePercent": 39.7,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Heavy-duty Black HDPE Garbage Sacks",
+      "Crinkled Multi-Layer Plastic (MLP) Wrappers",
+      "Discarded PET Mineral Bottles & Caps",
+      "Terracotta Masonry Rubble & Concrete Debris"
+    ],
+    "beforeCleanlinessScore": 41,
+    "afterCleanlinessScore": 94,
+    "aiRecommendation": "Deploy municipal waste collection crew with safety equipment and segregate recyclable materials.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_304_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_304_after.jpg"
+  },
+  {
+    "sceneId": "scene_305",
+    "environment": "construction_site",
+    "environmentName": "Demolition & Debris Disposal Site #305",
+    "wasteType": "construction",
+    "severity": "high",
+    "coveragePercent": 42.0,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Heavy-duty Black HDPE Garbage Sacks",
+      "Crinkled Multi-Layer Plastic (MLP) Wrappers",
+      "Discarded PET Mineral Bottles & Caps",
+      "Corrugated Cardboard Cartons & Packing Boxes"
+    ],
+    "beforeCleanlinessScore": 34,
+    "afterCleanlinessScore": 96,
+    "aiRecommendation": "Deploy municipal waste collection crew with safety equipment and segregate recyclable materials.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_305_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_305_after.jpg"
+  },
+  {
+    "sceneId": "scene_306",
+    "environment": "construction_site",
+    "environmentName": "Demolition & Debris Disposal Site #306",
+    "wasteType": "construction",
+    "severity": "high",
+    "coveragePercent": 61.7,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Crinkled Multi-Layer Plastic (MLP) Wrappers",
+      "Discarded PET Mineral Bottles & Caps",
+      "Terracotta Masonry Rubble & Concrete Debris"
+    ],
+    "beforeCleanlinessScore": 14,
+    "afterCleanlinessScore": 95,
+    "aiRecommendation": "Deploy municipal waste collection crew with safety equipment and segregate recyclable materials.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_306_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_306_after.jpg"
+  },
+  {
+    "sceneId": "scene_307",
+    "environment": "construction_site",
+    "environmentName": "Demolition & Debris Disposal Site #307",
+    "wasteType": "construction",
+    "severity": "high",
+    "coveragePercent": 66.5,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Heavy-duty Black HDPE Garbage Sacks",
+      "Crinkled Multi-Layer Plastic (MLP) Wrappers",
+      "Discarded PET Mineral Bottles & Caps",
+      "Corrugated Cardboard Cartons & Packing Boxes"
+    ],
+    "beforeCleanlinessScore": 14,
+    "afterCleanlinessScore": 96,
+    "aiRecommendation": "Deploy municipal waste collection crew with safety equipment and segregate recyclable materials.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_307_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_307_after.jpg"
+  },
+  {
+    "sceneId": "scene_308",
+    "environment": "urban_street",
+    "environmentName": "Urban Street Garbage Heap #308",
+    "wasteType": "plastic",
+    "severity": "high",
+    "coveragePercent": 43.5,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Heavy-duty Black HDPE Garbage Sacks",
+      "Crinkled Multi-Layer Plastic (MLP) Wrappers",
+      "Discarded PET Mineral Bottles & Caps",
+      "Corrugated Cardboard Cartons & Packing Boxes"
+    ],
+    "beforeCleanlinessScore": 36,
+    "afterCleanlinessScore": 98,
+    "aiRecommendation": "Deploy municipal waste collection crew with safety equipment and segregate recyclable materials.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_308_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_308_after.jpg"
+  },
+  {
+    "sceneId": "scene_309",
+    "environment": "urban_street",
+    "environmentName": "Urban Street Garbage Heap #309",
+    "wasteType": "plastic",
+    "severity": "high",
+    "coveragePercent": 53.9,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Heavy-duty Black HDPE Garbage Sacks",
+      "Crinkled Multi-Layer Plastic (MLP) Wrappers",
+      "Discarded PET Mineral Bottles & Caps",
+      "Corrugated Cardboard Cartons & Packing Boxes"
+    ],
+    "beforeCleanlinessScore": 20,
+    "afterCleanlinessScore": 94,
+    "aiRecommendation": "Deploy municipal waste collection crew with safety equipment and segregate recyclable materials.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_309_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_309_after.jpg"
+  },
+  {
+    "sceneId": "scene_310",
+    "environment": "construction_site",
+    "environmentName": "Demolition & Debris Disposal Site #310",
+    "wasteType": "construction",
+    "severity": "high",
+    "coveragePercent": 42.9,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Heavy-duty Black HDPE Garbage Sacks",
+      "Crinkled Multi-Layer Plastic (MLP) Wrappers",
+      "Discarded PET Mineral Bottles & Caps",
+      "Corrugated Cardboard Cartons & Packing Boxes"
+    ],
+    "beforeCleanlinessScore": 34,
+    "afterCleanlinessScore": 98,
+    "aiRecommendation": "Deploy municipal waste collection crew with safety equipment and segregate recyclable materials.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_310_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_310_after.jpg"
+  },
+  {
+    "sceneId": "scene_311",
+    "environment": "urban_street",
+    "environmentName": "Urban Street Garbage Heap #311",
+    "wasteType": "plastic",
+    "severity": "medium",
+    "coveragePercent": 37.1,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Heavy-duty Black HDPE Garbage Sacks",
+      "Crinkled Multi-Layer Plastic (MLP) Wrappers",
+      "Discarded PET Mineral Bottles & Caps",
+      "Corrugated Cardboard Cartons & Packing Boxes"
+    ],
+    "beforeCleanlinessScore": 46,
+    "afterCleanlinessScore": 96,
+    "aiRecommendation": "Deploy municipal waste collection crew with safety equipment and segregate recyclable materials.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_311_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_311_after.jpg"
+  },
+  {
+    "sceneId": "scene_312",
+    "environment": "urban_street",
+    "environmentName": "Urban Street Garbage Heap #312",
+    "wasteType": "plastic",
+    "severity": "high",
+    "coveragePercent": 45.2,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Heavy-duty Black HDPE Garbage Sacks",
+      "Crinkled Multi-Layer Plastic (MLP) Wrappers",
+      "Discarded PET Mineral Bottles & Caps",
+      "Corrugated Cardboard Cartons & Packing Boxes"
+    ],
+    "beforeCleanlinessScore": 29,
+    "afterCleanlinessScore": 95,
+    "aiRecommendation": "Deploy municipal waste collection crew with safety equipment and segregate recyclable materials.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_312_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_312_after.jpg"
+  },
+  {
+    "sceneId": "scene_313",
+    "environment": "construction_site",
+    "environmentName": "Demolition & Debris Disposal Site #313",
+    "wasteType": "construction",
+    "severity": "medium",
+    "coveragePercent": 40.5,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Heavy-duty Black HDPE Garbage Sacks",
+      "Crinkled Multi-Layer Plastic (MLP) Wrappers",
+      "Discarded PET Mineral Bottles & Caps",
+      "Corrugated Cardboard Cartons & Packing Boxes"
+    ],
+    "beforeCleanlinessScore": 40,
+    "afterCleanlinessScore": 96,
+    "aiRecommendation": "Deploy municipal waste collection crew with safety equipment and segregate recyclable materials.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_313_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_313_after.jpg"
+  },
+  {
+    "sceneId": "scene_314",
+    "environment": "urban_street",
+    "environmentName": "Urban Street Garbage Heap #314",
+    "wasteType": "plastic",
+    "severity": "high",
+    "coveragePercent": 47.5,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Heavy-duty Black HDPE Garbage Sacks",
+      "Crinkled Multi-Layer Plastic (MLP) Wrappers",
+      "Discarded PET Mineral Bottles & Caps",
+      "Corrugated Cardboard Cartons & Packing Boxes"
+    ],
+    "beforeCleanlinessScore": 29,
+    "afterCleanlinessScore": 93,
+    "aiRecommendation": "Deploy municipal waste collection crew with safety equipment and segregate recyclable materials.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_314_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_314_after.jpg"
+  },
+  {
+    "sceneId": "scene_315",
+    "environment": "urban_street",
+    "environmentName": "Urban Street Garbage Heap #315",
+    "wasteType": "plastic",
+    "severity": "medium",
+    "coveragePercent": 33.1,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Heavy-duty Black HDPE Garbage Sacks",
+      "Crinkled Multi-Layer Plastic (MLP) Wrappers",
+      "Discarded PET Mineral Bottles & Caps",
+      "Corrugated Cardboard Cartons & Packing Boxes"
+    ],
+    "beforeCleanlinessScore": 45,
+    "afterCleanlinessScore": 95,
+    "aiRecommendation": "Deploy municipal waste collection crew with safety equipment and segregate recyclable materials.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_315_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_315_after.jpg"
+  },
+  {
+    "sceneId": "scene_316",
+    "environment": "construction_site",
+    "environmentName": "Demolition & Debris Disposal Site #316",
+    "wasteType": "construction",
+    "severity": "high",
+    "coveragePercent": 45.6,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Heavy-duty Black HDPE Garbage Sacks",
+      "Crinkled Multi-Layer Plastic (MLP) Wrappers",
+      "Discarded PET Mineral Bottles & Caps",
+      "Corrugated Cardboard Cartons & Packing Boxes"
+    ],
+    "beforeCleanlinessScore": 29,
+    "afterCleanlinessScore": 97,
+    "aiRecommendation": "Deploy municipal waste collection crew with safety equipment and segregate recyclable materials.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_316_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_316_after.jpg"
+  },
+  {
+    "sceneId": "scene_317",
+    "environment": "construction_site",
+    "environmentName": "Demolition & Debris Disposal Site #317",
+    "wasteType": "construction",
+    "severity": "medium",
+    "coveragePercent": 33.7,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Heavy-duty Black HDPE Garbage Sacks",
+      "Crinkled Multi-Layer Plastic (MLP) Wrappers",
+      "Discarded PET Mineral Bottles & Caps",
+      "Corrugated Cardboard Cartons & Packing Boxes"
+    ],
+    "beforeCleanlinessScore": 44,
+    "afterCleanlinessScore": 95,
+    "aiRecommendation": "Deploy municipal waste collection crew with safety equipment and segregate recyclable materials.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_317_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_317_after.jpg"
+  },
+  {
+    "sceneId": "scene_318",
+    "environment": "urban_street",
+    "environmentName": "Urban Street Garbage Heap #318",
+    "wasteType": "plastic",
+    "severity": "high",
+    "coveragePercent": 50.5,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Heavy-duty Black HDPE Garbage Sacks",
+      "Crinkled Multi-Layer Plastic (MLP) Wrappers",
+      "Discarded PET Mineral Bottles & Caps",
+      "Corrugated Cardboard Cartons & Packing Boxes"
+    ],
+    "beforeCleanlinessScore": 22,
+    "afterCleanlinessScore": 98,
+    "aiRecommendation": "Deploy municipal waste collection crew with safety equipment and segregate recyclable materials.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_318_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_318_after.jpg"
+  },
+  {
+    "sceneId": "scene_319",
+    "environment": "construction_site",
+    "environmentName": "Demolition & Debris Disposal Site #319",
+    "wasteType": "construction",
+    "severity": "medium",
+    "coveragePercent": 35.8,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Heavy-duty Black HDPE Garbage Sacks",
+      "Crinkled Multi-Layer Plastic (MLP) Wrappers",
+      "Discarded PET Mineral Bottles & Caps",
+      "Corrugated Cardboard Cartons & Packing Boxes"
+    ],
+    "beforeCleanlinessScore": 41,
+    "afterCleanlinessScore": 96,
+    "aiRecommendation": "Deploy municipal waste collection crew with safety equipment and segregate recyclable materials.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_319_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_319_after.jpg"
+  },
+  {
+    "sceneId": "scene_320",
+    "environment": "construction_site",
+    "environmentName": "Demolition & Debris Disposal Site #320",
+    "wasteType": "construction",
+    "severity": "high",
+    "coveragePercent": 51.5,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Heavy-duty Black HDPE Garbage Sacks",
+      "Crinkled Multi-Layer Plastic (MLP) Wrappers",
+      "Discarded PET Mineral Bottles & Caps",
+      "Corrugated Cardboard Cartons & Packing Boxes"
+    ],
+    "beforeCleanlinessScore": 22,
+    "afterCleanlinessScore": 98,
+    "aiRecommendation": "Deploy municipal waste collection crew with safety equipment and segregate recyclable materials.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_320_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_320_after.jpg"
+  },
+  {
+    "sceneId": "scene_321",
+    "environment": "urban_street",
+    "environmentName": "Urban Street Garbage Heap #321",
+    "wasteType": "plastic",
+    "severity": "high",
+    "coveragePercent": 46.7,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Heavy-duty Black HDPE Garbage Sacks",
+      "Crinkled Multi-Layer Plastic (MLP) Wrappers",
+      "Discarded PET Mineral Bottles & Caps"
+    ],
+    "beforeCleanlinessScore": 32,
+    "afterCleanlinessScore": 96,
+    "aiRecommendation": "Deploy municipal waste collection crew with safety equipment and segregate recyclable materials.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_321_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_321_after.jpg"
+  },
+  {
+    "sceneId": "scene_322",
+    "environment": "construction_site",
+    "environmentName": "Demolition & Debris Disposal Site #322",
+    "wasteType": "construction",
+    "severity": "high",
+    "coveragePercent": 56.3,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Heavy-duty Black HDPE Garbage Sacks",
+      "Crinkled Multi-Layer Plastic (MLP) Wrappers",
+      "Discarded PET Mineral Bottles & Caps",
+      "Corrugated Cardboard Cartons & Packing Boxes"
+    ],
+    "beforeCleanlinessScore": 17,
+    "afterCleanlinessScore": 94,
+    "aiRecommendation": "Deploy municipal waste collection crew with safety equipment and segregate recyclable materials.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_322_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_322_after.jpg"
+  },
+  {
+    "sceneId": "scene_323",
+    "environment": "urban_street",
+    "environmentName": "Urban Street Garbage Heap #323",
+    "wasteType": "plastic",
+    "severity": "high",
+    "coveragePercent": 67.8,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Heavy-duty Black HDPE Garbage Sacks",
+      "Crinkled Multi-Layer Plastic (MLP) Wrappers",
+      "Discarded PET Mineral Bottles & Caps",
+      "Corrugated Cardboard Cartons & Packing Boxes"
+    ],
+    "beforeCleanlinessScore": 14,
+    "afterCleanlinessScore": 93,
+    "aiRecommendation": "Deploy municipal waste collection crew with safety equipment and segregate recyclable materials.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_323_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_323_after.jpg"
+  },
+  {
+    "sceneId": "scene_324",
+    "environment": "urban_street",
+    "environmentName": "Urban Street Garbage Heap #324",
+    "wasteType": "plastic",
+    "severity": "high",
+    "coveragePercent": 42.6,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Heavy-duty Black HDPE Garbage Sacks",
+      "Crinkled Multi-Layer Plastic (MLP) Wrappers",
+      "Discarded PET Mineral Bottles & Caps",
+      "Corrugated Cardboard Cartons & Packing Boxes"
+    ],
+    "beforeCleanlinessScore": 36,
+    "afterCleanlinessScore": 93,
+    "aiRecommendation": "Deploy municipal waste collection crew with safety equipment and segregate recyclable materials.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_324_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_324_after.jpg"
+  },
+  {
+    "sceneId": "scene_325",
+    "environment": "construction_site",
+    "environmentName": "Demolition & Debris Disposal Site #325",
+    "wasteType": "construction",
+    "severity": "high",
+    "coveragePercent": 66.7,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Heavy-duty Black HDPE Garbage Sacks",
+      "Crinkled Multi-Layer Plastic (MLP) Wrappers",
+      "Discarded PET Mineral Bottles & Caps",
+      "Terracotta Masonry Rubble & Concrete Debris"
+    ],
+    "beforeCleanlinessScore": 14,
+    "afterCleanlinessScore": 94,
+    "aiRecommendation": "Deploy municipal waste collection crew with safety equipment and segregate recyclable materials.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_325_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_325_after.jpg"
+  },
+  {
+    "sceneId": "scene_326",
+    "environment": "urban_street",
+    "environmentName": "Urban Street Garbage Heap #326",
+    "wasteType": "plastic",
+    "severity": "high",
+    "coveragePercent": 42.8,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Heavy-duty Black HDPE Garbage Sacks",
+      "Crinkled Multi-Layer Plastic (MLP) Wrappers",
+      "Discarded PET Mineral Bottles & Caps",
+      "Corrugated Cardboard Cartons & Packing Boxes"
+    ],
+    "beforeCleanlinessScore": 38,
+    "afterCleanlinessScore": 96,
+    "aiRecommendation": "Deploy municipal waste collection crew with safety equipment and segregate recyclable materials.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_326_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_326_after.jpg"
+  },
+  {
+    "sceneId": "scene_327",
+    "environment": "urban_street",
+    "environmentName": "Urban Street Garbage Heap #327",
+    "wasteType": "plastic",
+    "severity": "medium",
+    "coveragePercent": 41.3,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Heavy-duty Black HDPE Garbage Sacks",
+      "Crinkled Multi-Layer Plastic (MLP) Wrappers",
+      "Discarded PET Mineral Bottles & Caps",
+      "Corrugated Cardboard Cartons & Packing Boxes"
+    ],
+    "beforeCleanlinessScore": 39,
+    "afterCleanlinessScore": 94,
+    "aiRecommendation": "Deploy municipal waste collection crew with safety equipment and segregate recyclable materials.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_327_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_327_after.jpg"
+  },
+  {
+    "sceneId": "scene_328",
+    "environment": "construction_site",
+    "environmentName": "Demolition & Debris Disposal Site #328",
+    "wasteType": "construction",
+    "severity": "high",
+    "coveragePercent": 43.8,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Heavy-duty Black HDPE Garbage Sacks",
+      "Crinkled Multi-Layer Plastic (MLP) Wrappers",
+      "Discarded PET Mineral Bottles & Caps",
+      "Terracotta Masonry Rubble & Concrete Debris"
+    ],
+    "beforeCleanlinessScore": 34,
+    "afterCleanlinessScore": 95,
+    "aiRecommendation": "Deploy municipal waste collection crew with safety equipment and segregate recyclable materials.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_328_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_328_after.jpg"
+  },
+  {
+    "sceneId": "scene_329",
+    "environment": "urban_street",
+    "environmentName": "Urban Street Garbage Heap #329",
+    "wasteType": "plastic",
+    "severity": "medium",
+    "coveragePercent": 38.5,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Heavy-duty Black HDPE Garbage Sacks",
+      "Crinkled Multi-Layer Plastic (MLP) Wrappers",
+      "Discarded PET Mineral Bottles & Caps",
+      "Terracotta Masonry Rubble & Concrete Debris"
+    ],
+    "beforeCleanlinessScore": 38,
+    "afterCleanlinessScore": 94,
+    "aiRecommendation": "Deploy municipal waste collection crew with safety equipment and segregate recyclable materials.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_329_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_329_after.jpg"
+  },
+  {
+    "sceneId": "scene_330",
+    "environment": "urban_street",
+    "environmentName": "Urban Street Garbage Heap #330",
+    "wasteType": "plastic",
+    "severity": "high",
+    "coveragePercent": 42.5,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Heavy-duty Black HDPE Garbage Sacks",
+      "Crinkled Multi-Layer Plastic (MLP) Wrappers",
+      "Discarded PET Mineral Bottles & Caps"
+    ],
+    "beforeCleanlinessScore": 36,
+    "afterCleanlinessScore": 94,
+    "aiRecommendation": "Deploy municipal waste collection crew with safety equipment and segregate recyclable materials.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_330_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_330_after.jpg"
+  },
+  {
+    "sceneId": "scene_331",
+    "environment": "urban_street",
+    "environmentName": "Urban Street Garbage Heap #331",
+    "wasteType": "plastic",
+    "severity": "medium",
+    "coveragePercent": 39.1,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Heavy-duty Black HDPE Garbage Sacks",
+      "Crinkled Multi-Layer Plastic (MLP) Wrappers",
+      "Discarded PET Mineral Bottles & Caps",
+      "Corrugated Cardboard Cartons & Packing Boxes"
+    ],
+    "beforeCleanlinessScore": 38,
+    "afterCleanlinessScore": 98,
+    "aiRecommendation": "Deploy municipal waste collection crew with safety equipment and segregate recyclable materials.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_331_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_331_after.jpg"
+  },
+  {
+    "sceneId": "scene_332",
+    "environment": "urban_street",
+    "environmentName": "Urban Street Garbage Heap #332",
+    "wasteType": "plastic",
+    "severity": "high",
+    "coveragePercent": 51.2,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Heavy-duty Black HDPE Garbage Sacks",
+      "Crinkled Multi-Layer Plastic (MLP) Wrappers",
+      "Discarded PET Mineral Bottles & Caps",
+      "Corrugated Cardboard Cartons & Packing Boxes"
+    ],
+    "beforeCleanlinessScore": 24,
+    "afterCleanlinessScore": 98,
+    "aiRecommendation": "Deploy municipal waste collection crew with safety equipment and segregate recyclable materials.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_332_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_332_after.jpg"
+  },
+  {
+    "sceneId": "scene_333",
+    "environment": "urban_street",
+    "environmentName": "Urban Street Garbage Heap #333",
+    "wasteType": "plastic",
+    "severity": "medium",
+    "coveragePercent": 35.5,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Heavy-duty Black HDPE Garbage Sacks",
+      "Crinkled Multi-Layer Plastic (MLP) Wrappers",
+      "Discarded PET Mineral Bottles & Caps"
+    ],
+    "beforeCleanlinessScore": 47,
+    "afterCleanlinessScore": 98,
+    "aiRecommendation": "Deploy municipal waste collection crew with safety equipment and segregate recyclable materials.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_333_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_333_after.jpg"
+  },
+  {
+    "sceneId": "scene_334",
+    "environment": "urban_street",
+    "environmentName": "Urban Street Garbage Heap #334",
+    "wasteType": "plastic",
+    "severity": "high",
+    "coveragePercent": 55.0,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Heavy-duty Black HDPE Garbage Sacks",
+      "Crinkled Multi-Layer Plastic (MLP) Wrappers",
+      "Discarded PET Mineral Bottles & Caps",
+      "Corrugated Cardboard Cartons & Packing Boxes"
+    ],
+    "beforeCleanlinessScore": 19,
+    "afterCleanlinessScore": 96,
+    "aiRecommendation": "Deploy municipal waste collection crew with safety equipment and segregate recyclable materials.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_334_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_334_after.jpg"
+  },
+  {
+    "sceneId": "scene_335",
+    "environment": "urban_street",
+    "environmentName": "Urban Street Garbage Heap #335",
+    "wasteType": "plastic",
+    "severity": "medium",
+    "coveragePercent": 42.0,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Heavy-duty Black HDPE Garbage Sacks",
+      "Crinkled Multi-Layer Plastic (MLP) Wrappers",
+      "Discarded PET Mineral Bottles & Caps",
+      "Corrugated Cardboard Cartons & Packing Boxes"
+    ],
+    "beforeCleanlinessScore": 36,
+    "afterCleanlinessScore": 97,
+    "aiRecommendation": "Deploy municipal waste collection crew with safety equipment and segregate recyclable materials.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_335_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_335_after.jpg"
+  },
+  {
+    "sceneId": "scene_336",
+    "environment": "construction_site",
+    "environmentName": "Demolition & Debris Disposal Site #336",
+    "wasteType": "construction",
+    "severity": "high",
+    "coveragePercent": 57.1,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Heavy-duty Black HDPE Garbage Sacks",
+      "Crinkled Multi-Layer Plastic (MLP) Wrappers",
+      "Discarded PET Mineral Bottles & Caps",
+      "Terracotta Masonry Rubble & Concrete Debris"
+    ],
+    "beforeCleanlinessScore": 17,
+    "afterCleanlinessScore": 98,
+    "aiRecommendation": "Deploy municipal waste collection crew with safety equipment and segregate recyclable materials.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_336_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_336_after.jpg"
+  },
+  {
+    "sceneId": "scene_337",
+    "environment": "urban_street",
+    "environmentName": "Urban Street Garbage Heap #337",
+    "wasteType": "plastic",
+    "severity": "high",
+    "coveragePercent": 45.6,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Heavy-duty Black HDPE Garbage Sacks",
+      "Crinkled Multi-Layer Plastic (MLP) Wrappers",
+      "Discarded PET Mineral Bottles & Caps",
+      "Corrugated Cardboard Cartons & Packing Boxes"
+    ],
+    "beforeCleanlinessScore": 34,
+    "afterCleanlinessScore": 93,
+    "aiRecommendation": "Deploy municipal waste collection crew with safety equipment and segregate recyclable materials.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_337_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_337_after.jpg"
+  },
+  {
+    "sceneId": "scene_338",
+    "environment": "construction_site",
+    "environmentName": "Demolition & Debris Disposal Site #338",
+    "wasteType": "construction",
+    "severity": "high",
+    "coveragePercent": 56.9,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Heavy-duty Black HDPE Garbage Sacks",
+      "Crinkled Multi-Layer Plastic (MLP) Wrappers",
+      "Discarded PET Mineral Bottles & Caps",
+      "Corrugated Cardboard Cartons & Packing Boxes"
+    ],
+    "beforeCleanlinessScore": 14,
+    "afterCleanlinessScore": 98,
+    "aiRecommendation": "Deploy municipal waste collection crew with safety equipment and segregate recyclable materials.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_338_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_338_after.jpg"
+  },
+  {
+    "sceneId": "scene_339",
+    "environment": "urban_street",
+    "environmentName": "Urban Street Garbage Heap #339",
+    "wasteType": "plastic",
+    "severity": "high",
+    "coveragePercent": 58.3,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Heavy-duty Black HDPE Garbage Sacks",
+      "Crinkled Multi-Layer Plastic (MLP) Wrappers",
+      "Discarded PET Mineral Bottles & Caps",
+      "Terracotta Masonry Rubble & Concrete Debris"
+    ],
+    "beforeCleanlinessScore": 17,
+    "afterCleanlinessScore": 93,
+    "aiRecommendation": "Deploy municipal waste collection crew with safety equipment and segregate recyclable materials.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_339_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_339_after.jpg"
+  },
+  {
+    "sceneId": "scene_340",
+    "environment": "urban_street",
+    "environmentName": "Urban Street Garbage Heap #340",
+    "wasteType": "plastic",
+    "severity": "high",
+    "coveragePercent": 55.1,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Heavy-duty Black HDPE Garbage Sacks",
+      "Crinkled Multi-Layer Plastic (MLP) Wrappers",
+      "Discarded PET Mineral Bottles & Caps",
+      "Corrugated Cardboard Cartons & Packing Boxes"
+    ],
+    "beforeCleanlinessScore": 21,
+    "afterCleanlinessScore": 95,
+    "aiRecommendation": "Deploy municipal waste collection crew with safety equipment and segregate recyclable materials.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_340_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_340_after.jpg"
+  },
+  {
+    "sceneId": "scene_341",
+    "environment": "urban_street",
+    "environmentName": "Urban Street Garbage Heap #341",
+    "wasteType": "plastic",
+    "severity": "high",
+    "coveragePercent": 60.5,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Heavy-duty Black HDPE Garbage Sacks",
+      "Crinkled Multi-Layer Plastic (MLP) Wrappers",
+      "Discarded PET Mineral Bottles & Caps",
+      "Corrugated Cardboard Cartons & Packing Boxes"
+    ],
+    "beforeCleanlinessScore": 15,
+    "afterCleanlinessScore": 97,
+    "aiRecommendation": "Deploy municipal waste collection crew with safety equipment and segregate recyclable materials.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_341_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_341_after.jpg"
+  },
+  {
+    "sceneId": "scene_342",
+    "environment": "urban_street",
+    "environmentName": "Urban Street Garbage Heap #342",
+    "wasteType": "plastic",
+    "severity": "high",
+    "coveragePercent": 54.7,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Heavy-duty Black HDPE Garbage Sacks",
+      "Crinkled Multi-Layer Plastic (MLP) Wrappers",
+      "Discarded PET Mineral Bottles & Caps",
+      "Terracotta Masonry Rubble & Concrete Debris"
+    ],
+    "beforeCleanlinessScore": 18,
+    "afterCleanlinessScore": 96,
+    "aiRecommendation": "Deploy municipal waste collection crew with safety equipment and segregate recyclable materials.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_342_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_342_after.jpg"
+  },
+  {
+    "sceneId": "scene_343",
+    "environment": "construction_site",
+    "environmentName": "Demolition & Debris Disposal Site #343",
+    "wasteType": "construction",
+    "severity": "medium",
+    "coveragePercent": 38.2,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Heavy-duty Black HDPE Garbage Sacks",
+      "Crinkled Multi-Layer Plastic (MLP) Wrappers",
+      "Discarded PET Mineral Bottles & Caps",
+      "Corrugated Cardboard Cartons & Packing Boxes"
+    ],
+    "beforeCleanlinessScore": 43,
+    "afterCleanlinessScore": 98,
+    "aiRecommendation": "Deploy municipal waste collection crew with safety equipment and segregate recyclable materials.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_343_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_343_after.jpg"
+  },
+  {
+    "sceneId": "scene_344",
+    "environment": "urban_street",
+    "environmentName": "Urban Street Garbage Heap #344",
+    "wasteType": "plastic",
+    "severity": "high",
+    "coveragePercent": 53.6,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Heavy-duty Black HDPE Garbage Sacks",
+      "Crinkled Multi-Layer Plastic (MLP) Wrappers",
+      "Discarded PET Mineral Bottles & Caps",
+      "Terracotta Masonry Rubble & Concrete Debris"
+    ],
+    "beforeCleanlinessScore": 22,
+    "afterCleanlinessScore": 96,
+    "aiRecommendation": "Deploy municipal waste collection crew with safety equipment and segregate recyclable materials.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_344_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_344_after.jpg"
+  },
+  {
+    "sceneId": "scene_345",
+    "environment": "urban_street",
+    "environmentName": "Urban Street Garbage Heap #345",
+    "wasteType": "plastic",
+    "severity": "high",
+    "coveragePercent": 48.9,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Heavy-duty Black HDPE Garbage Sacks",
+      "Crinkled Multi-Layer Plastic (MLP) Wrappers",
+      "Discarded PET Mineral Bottles & Caps",
+      "Watercourse Plastic Obstruction"
+    ],
+    "beforeCleanlinessScore": 25,
+    "afterCleanlinessScore": 95,
+    "aiRecommendation": "Deploy municipal waste collection crew with safety equipment and segregate recyclable materials.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_345_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_345_after.jpg"
+  },
+  {
+    "sceneId": "scene_346",
+    "environment": "urban_street",
+    "environmentName": "Urban Street Garbage Heap #346",
+    "wasteType": "plastic",
+    "severity": "medium",
+    "coveragePercent": 38.5,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Heavy-duty Black HDPE Garbage Sacks",
+      "Crinkled Multi-Layer Plastic (MLP) Wrappers",
+      "Discarded PET Mineral Bottles & Caps",
+      "Corrugated Cardboard Cartons & Packing Boxes"
+    ],
+    "beforeCleanlinessScore": 38,
+    "afterCleanlinessScore": 95,
+    "aiRecommendation": "Deploy municipal waste collection crew with safety equipment and segregate recyclable materials.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_346_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_346_after.jpg"
+  },
+  {
+    "sceneId": "scene_347",
+    "environment": "construction_site",
+    "environmentName": "Demolition & Debris Disposal Site #347",
+    "wasteType": "construction",
+    "severity": "medium",
+    "coveragePercent": 38.5,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Heavy-duty Black HDPE Garbage Sacks",
+      "Crinkled Multi-Layer Plastic (MLP) Wrappers",
+      "Discarded PET Mineral Bottles & Caps",
+      "Terracotta Masonry Rubble & Concrete Debris"
+    ],
+    "beforeCleanlinessScore": 44,
+    "afterCleanlinessScore": 96,
+    "aiRecommendation": "Deploy municipal waste collection crew with safety equipment and segregate recyclable materials.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_347_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_347_after.jpg"
+  },
+  {
+    "sceneId": "scene_348",
+    "environment": "construction_site",
+    "environmentName": "Demolition & Debris Disposal Site #348",
+    "wasteType": "construction",
+    "severity": "medium",
+    "coveragePercent": 37.0,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Heavy-duty Black HDPE Garbage Sacks",
+      "Crinkled Multi-Layer Plastic (MLP) Wrappers",
+      "Discarded PET Mineral Bottles & Caps",
+      "Corrugated Cardboard Cartons & Packing Boxes"
+    ],
+    "beforeCleanlinessScore": 41,
+    "afterCleanlinessScore": 97,
+    "aiRecommendation": "Deploy municipal waste collection crew with safety equipment and segregate recyclable materials.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_348_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_348_after.jpg"
+  },
+  {
+    "sceneId": "scene_349",
+    "environment": "urban_street",
+    "environmentName": "Urban Street Garbage Heap #349",
+    "wasteType": "plastic",
+    "severity": "high",
+    "coveragePercent": 44.7,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Heavy-duty Black HDPE Garbage Sacks",
+      "Crinkled Multi-Layer Plastic (MLP) Wrappers",
+      "Discarded PET Mineral Bottles & Caps",
+      "Corrugated Cardboard Cartons & Packing Boxes"
+    ],
+    "beforeCleanlinessScore": 33,
+    "afterCleanlinessScore": 96,
+    "aiRecommendation": "Deploy municipal waste collection crew with safety equipment and segregate recyclable materials.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_349_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_349_after.jpg"
+  },
+  {
+    "sceneId": "scene_350",
+    "environment": "urban_street",
+    "environmentName": "Urban Street Garbage Heap #350",
+    "wasteType": "plastic",
+    "severity": "high",
+    "coveragePercent": 66.4,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Heavy-duty Black HDPE Garbage Sacks",
+      "Crinkled Multi-Layer Plastic (MLP) Wrappers",
+      "Discarded PET Mineral Bottles & Caps",
+      "Corrugated Cardboard Cartons & Packing Boxes"
+    ],
+    "beforeCleanlinessScore": 14,
+    "afterCleanlinessScore": 98,
+    "aiRecommendation": "Deploy municipal waste collection crew with safety equipment and segregate recyclable materials.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_350_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_350_after.jpg"
+  },
+  {
+    "sceneId": "scene_351",
+    "environment": "urban_street",
+    "environmentName": "Urban Street Garbage Heap #351",
+    "wasteType": "plastic",
+    "severity": "medium",
+    "coveragePercent": 41.7,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Heavy-duty Black HDPE Garbage Sacks",
+      "Crinkled Multi-Layer Plastic (MLP) Wrappers",
+      "Discarded PET Mineral Bottles & Caps",
+      "Corrugated Cardboard Cartons & Packing Boxes"
+    ],
+    "beforeCleanlinessScore": 36,
+    "afterCleanlinessScore": 96,
+    "aiRecommendation": "Deploy municipal waste collection crew with safety equipment and segregate recyclable materials.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_351_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_351_after.jpg"
+  },
+  {
+    "sceneId": "scene_352",
+    "environment": "urban_street",
+    "environmentName": "Urban Street Garbage Heap #352",
+    "wasteType": "plastic",
+    "severity": "high",
+    "coveragePercent": 46.6,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Heavy-duty Black HDPE Garbage Sacks",
+      "Crinkled Multi-Layer Plastic (MLP) Wrappers",
+      "Discarded PET Mineral Bottles & Caps",
+      "Corrugated Cardboard Cartons & Packing Boxes"
+    ],
+    "beforeCleanlinessScore": 30,
+    "afterCleanlinessScore": 93,
+    "aiRecommendation": "Deploy municipal waste collection crew with safety equipment and segregate recyclable materials.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_352_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_352_after.jpg"
+  },
+  {
+    "sceneId": "scene_353",
+    "environment": "urban_street",
+    "environmentName": "Urban Street Garbage Heap #353",
+    "wasteType": "plastic",
+    "severity": "high",
+    "coveragePercent": 67.9,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Heavy-duty Black HDPE Garbage Sacks",
+      "Crinkled Multi-Layer Plastic (MLP) Wrappers",
+      "Discarded PET Mineral Bottles & Caps",
+      "Corrugated Cardboard Cartons & Packing Boxes"
+    ],
+    "beforeCleanlinessScore": 14,
+    "afterCleanlinessScore": 97,
+    "aiRecommendation": "Deploy municipal waste collection crew with safety equipment and segregate recyclable materials.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_353_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_353_after.jpg"
+  },
+  {
+    "sceneId": "scene_354",
+    "environment": "urban_street",
+    "environmentName": "Urban Street Garbage Heap #354",
+    "wasteType": "plastic",
+    "severity": "high",
+    "coveragePercent": 54.3,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Heavy-duty Black HDPE Garbage Sacks",
+      "Crinkled Multi-Layer Plastic (MLP) Wrappers",
+      "Discarded PET Mineral Bottles & Caps",
+      "Corrugated Cardboard Cartons & Packing Boxes"
+    ],
+    "beforeCleanlinessScore": 21,
+    "afterCleanlinessScore": 94,
+    "aiRecommendation": "Deploy municipal waste collection crew with safety equipment and segregate recyclable materials.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_354_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_354_after.jpg"
+  },
+  {
+    "sceneId": "scene_355",
+    "environment": "urban_street",
+    "environmentName": "Urban Street Garbage Heap #355",
+    "wasteType": "plastic",
+    "severity": "high",
+    "coveragePercent": 65.7,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Heavy-duty Black HDPE Garbage Sacks",
+      "Crinkled Multi-Layer Plastic (MLP) Wrappers",
+      "Discarded PET Mineral Bottles & Caps",
+      "Corrugated Cardboard Cartons & Packing Boxes"
+    ],
+    "beforeCleanlinessScore": 14,
+    "afterCleanlinessScore": 96,
+    "aiRecommendation": "Deploy municipal waste collection crew with safety equipment and segregate recyclable materials.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_355_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_355_after.jpg"
+  },
+  {
+    "sceneId": "scene_356",
+    "environment": "waterfront_canal",
+    "environmentName": "Watercourse & Canal Waste #356",
+    "wasteType": "near_water",
+    "severity": "medium",
+    "coveragePercent": 41.9,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Heavy-duty Black HDPE Garbage Sacks",
+      "Crinkled Multi-Layer Plastic (MLP) Wrappers",
+      "Discarded PET Mineral Bottles & Caps",
+      "Terracotta Masonry Rubble & Concrete Debris"
+    ],
+    "beforeCleanlinessScore": 35,
+    "afterCleanlinessScore": 94,
+    "aiRecommendation": "Deploy municipal waste collection crew with safety equipment and segregate recyclable materials.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_356_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_356_after.jpg"
+  },
+  {
+    "sceneId": "scene_357",
+    "environment": "construction_site",
+    "environmentName": "Demolition & Debris Disposal Site #357",
+    "wasteType": "construction",
+    "severity": "high",
+    "coveragePercent": 61.0,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Heavy-duty Black HDPE Garbage Sacks",
+      "Crinkled Multi-Layer Plastic (MLP) Wrappers",
+      "Discarded PET Mineral Bottles & Caps",
+      "Corrugated Cardboard Cartons & Packing Boxes"
+    ],
+    "beforeCleanlinessScore": 14,
+    "afterCleanlinessScore": 94,
+    "aiRecommendation": "Deploy municipal waste collection crew with safety equipment and segregate recyclable materials.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_357_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_357_after.jpg"
+  },
+  {
+    "sceneId": "scene_358",
+    "environment": "construction_site",
+    "environmentName": "Demolition & Debris Disposal Site #358",
+    "wasteType": "construction",
+    "severity": "high",
+    "coveragePercent": 67.5,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Heavy-duty Black HDPE Garbage Sacks",
+      "Crinkled Multi-Layer Plastic (MLP) Wrappers",
+      "Discarded PET Mineral Bottles & Caps",
+      "Corrugated Cardboard Cartons & Packing Boxes"
+    ],
+    "beforeCleanlinessScore": 14,
+    "afterCleanlinessScore": 96,
+    "aiRecommendation": "Deploy municipal waste collection crew with safety equipment and segregate recyclable materials.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_358_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_358_after.jpg"
+  },
+  {
+    "sceneId": "scene_359",
+    "environment": "construction_site",
+    "environmentName": "Demolition & Debris Disposal Site #359",
+    "wasteType": "construction",
+    "severity": "medium",
+    "coveragePercent": 32.6,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Heavy-duty Black HDPE Garbage Sacks",
+      "Terracotta Masonry Rubble & Concrete Debris"
+    ],
+    "beforeCleanlinessScore": 51,
+    "afterCleanlinessScore": 98,
+    "aiRecommendation": "Deploy municipal waste collection crew with safety equipment and segregate recyclable materials.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_359_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_359_after.jpg"
+  },
+  {
+    "sceneId": "scene_360",
+    "environment": "residential_alley",
+    "environmentName": "Residential Alley Waste Spot #360",
+    "wasteType": "household",
+    "severity": "high",
+    "coveragePercent": 47.9,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Crinkled Multi-Layer Plastic (MLP) Wrappers",
+      "Discarded PET Mineral Bottles & Caps",
+      "Corrugated Cardboard Cartons & Packing Boxes",
+      "Terracotta Masonry Rubble & Concrete Debris"
+    ],
+    "beforeCleanlinessScore": 28,
+    "afterCleanlinessScore": 95,
+    "aiRecommendation": "Deploy municipal waste collection crew with safety equipment and segregate recyclable materials.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_360_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_360_after.jpg"
+  },
+  {
+    "sceneId": "scene_361",
+    "environment": "construction_site",
+    "environmentName": "Demolition & Debris Disposal Site #361",
+    "wasteType": "construction",
+    "severity": "high",
+    "coveragePercent": 47.3,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Heavy-duty Black HDPE Garbage Sacks",
+      "Crinkled Multi-Layer Plastic (MLP) Wrappers",
+      "Discarded PET Mineral Bottles & Caps",
+      "Terracotta Masonry Rubble & Concrete Debris"
+    ],
+    "beforeCleanlinessScore": 32,
+    "afterCleanlinessScore": 94,
+    "aiRecommendation": "Deploy municipal waste collection crew with safety equipment and segregate recyclable materials.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_361_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_361_after.jpg"
+  },
+  {
+    "sceneId": "scene_362",
+    "environment": "urban_street",
+    "environmentName": "Urban Street Garbage Heap #362",
+    "wasteType": "plastic",
+    "severity": "medium",
+    "coveragePercent": 34.3,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Heavy-duty Black HDPE Garbage Sacks",
+      "Crinkled Multi-Layer Plastic (MLP) Wrappers",
+      "Discarded PET Mineral Bottles & Caps",
+      "Corrugated Cardboard Cartons & Packing Boxes"
+    ],
+    "beforeCleanlinessScore": 46,
+    "afterCleanlinessScore": 95,
+    "aiRecommendation": "Deploy municipal waste collection crew with safety equipment and segregate recyclable materials.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_362_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_362_after.jpg"
+  },
+  {
+    "sceneId": "scene_363",
+    "environment": "urban_street",
+    "environmentName": "Urban Street Garbage Heap #363",
+    "wasteType": "plastic",
+    "severity": "medium",
+    "coveragePercent": 41.2,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Heavy-duty Black HDPE Garbage Sacks",
+      "Crinkled Multi-Layer Plastic (MLP) Wrappers",
+      "Discarded PET Mineral Bottles & Caps",
+      "Corrugated Cardboard Cartons & Packing Boxes"
+    ],
+    "beforeCleanlinessScore": 35,
+    "afterCleanlinessScore": 93,
+    "aiRecommendation": "Deploy municipal waste collection crew with safety equipment and segregate recyclable materials.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_363_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_363_after.jpg"
+  },
+  {
+    "sceneId": "scene_364",
+    "environment": "residential_alley",
+    "environmentName": "Residential Alley Waste Spot #364",
+    "wasteType": "household",
+    "severity": "high",
+    "coveragePercent": 55.9,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Heavy-duty Black HDPE Garbage Sacks",
+      "Crinkled Multi-Layer Plastic (MLP) Wrappers",
+      "Discarded PET Mineral Bottles & Caps",
+      "Corrugated Cardboard Cartons & Packing Boxes"
+    ],
+    "beforeCleanlinessScore": 21,
+    "afterCleanlinessScore": 95,
+    "aiRecommendation": "Deploy municipal waste collection crew with safety equipment and segregate recyclable materials.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_364_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_364_after.jpg"
+  },
+  {
+    "sceneId": "scene_365",
+    "environment": "urban_street",
+    "environmentName": "Urban Street Garbage Heap #365",
+    "wasteType": "plastic",
+    "severity": "high",
+    "coveragePercent": 46.8,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Heavy-duty Black HDPE Garbage Sacks",
+      "Crinkled Multi-Layer Plastic (MLP) Wrappers",
+      "Discarded PET Mineral Bottles & Caps",
+      "Terracotta Masonry Rubble & Concrete Debris"
+    ],
+    "beforeCleanlinessScore": 32,
+    "afterCleanlinessScore": 93,
+    "aiRecommendation": "Deploy municipal waste collection crew with safety equipment and segregate recyclable materials.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_365_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_365_after.jpg"
+  },
+  {
+    "sceneId": "scene_366",
+    "environment": "residential_alley",
+    "environmentName": "Residential Alley Waste Spot #366",
+    "wasteType": "household",
+    "severity": "high",
+    "coveragePercent": 49.6,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Crinkled Multi-Layer Plastic (MLP) Wrappers",
+      "Discarded PET Mineral Bottles & Caps",
+      "Corrugated Cardboard Cartons & Packing Boxes"
+    ],
+    "beforeCleanlinessScore": 24,
+    "afterCleanlinessScore": 95,
+    "aiRecommendation": "Deploy municipal waste collection crew with safety equipment and segregate recyclable materials.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_366_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_366_after.jpg"
+  },
+  {
+    "sceneId": "scene_367",
+    "environment": "urban_street",
+    "environmentName": "Urban Street Garbage Heap #367",
+    "wasteType": "plastic",
+    "severity": "high",
+    "coveragePercent": 60.4,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Heavy-duty Black HDPE Garbage Sacks",
+      "Crinkled Multi-Layer Plastic (MLP) Wrappers",
+      "Discarded PET Mineral Bottles & Caps",
+      "Corrugated Cardboard Cartons & Packing Boxes"
+    ],
+    "beforeCleanlinessScore": 14,
+    "afterCleanlinessScore": 98,
+    "aiRecommendation": "Deploy municipal waste collection crew with safety equipment and segregate recyclable materials.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_367_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_367_after.jpg"
+  },
+  {
+    "sceneId": "scene_368",
+    "environment": "urban_street",
+    "environmentName": "Urban Street Garbage Heap #368",
+    "wasteType": "plastic",
+    "severity": "medium",
+    "coveragePercent": 32.2,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Heavy-duty Black HDPE Garbage Sacks",
+      "Crinkled Multi-Layer Plastic (MLP) Wrappers",
+      "Discarded PET Mineral Bottles & Caps",
+      "Watercourse Plastic Obstruction"
+    ],
+    "beforeCleanlinessScore": 51,
+    "afterCleanlinessScore": 94,
+    "aiRecommendation": "Deploy municipal waste collection crew with safety equipment and segregate recyclable materials.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_368_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_368_after.jpg"
+  },
+  {
+    "sceneId": "scene_369",
+    "environment": "construction_site",
+    "environmentName": "Demolition & Debris Disposal Site #369",
+    "wasteType": "construction",
+    "severity": "high",
+    "coveragePercent": 51.3,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Heavy-duty Black HDPE Garbage Sacks",
+      "Crinkled Multi-Layer Plastic (MLP) Wrappers",
+      "Discarded PET Mineral Bottles & Caps",
+      "Corrugated Cardboard Cartons & Packing Boxes"
+    ],
+    "beforeCleanlinessScore": 21,
+    "afterCleanlinessScore": 93,
+    "aiRecommendation": "Deploy municipal waste collection crew with safety equipment and segregate recyclable materials.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_369_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_369_after.jpg"
+  },
+  {
+    "sceneId": "scene_370",
+    "environment": "construction_site",
+    "environmentName": "Demolition & Debris Disposal Site #370",
+    "wasteType": "construction",
+    "severity": "high",
+    "coveragePercent": 66.6,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Heavy-duty Black HDPE Garbage Sacks",
+      "Crinkled Multi-Layer Plastic (MLP) Wrappers",
+      "Discarded PET Mineral Bottles & Caps",
+      "Corrugated Cardboard Cartons & Packing Boxes"
+    ],
+    "beforeCleanlinessScore": 14,
+    "afterCleanlinessScore": 98,
+    "aiRecommendation": "Deploy municipal waste collection crew with safety equipment and segregate recyclable materials.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_370_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_370_after.jpg"
+  },
+  {
+    "sceneId": "scene_371",
+    "environment": "construction_site",
+    "environmentName": "Demolition & Debris Disposal Site #371",
+    "wasteType": "construction",
+    "severity": "medium",
+    "coveragePercent": 36.0,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Heavy-duty Black HDPE Garbage Sacks",
+      "Crinkled Multi-Layer Plastic (MLP) Wrappers",
+      "Discarded PET Mineral Bottles & Caps",
+      "Corrugated Cardboard Cartons & Packing Boxes"
+    ],
+    "beforeCleanlinessScore": 43,
+    "afterCleanlinessScore": 98,
+    "aiRecommendation": "Deploy municipal waste collection crew with safety equipment and segregate recyclable materials.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_371_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_371_after.jpg"
+  },
+  {
+    "sceneId": "scene_372",
+    "environment": "construction_site",
+    "environmentName": "Demolition & Debris Disposal Site #372",
+    "wasteType": "construction",
+    "severity": "medium",
+    "coveragePercent": 35.7,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Heavy-duty Black HDPE Garbage Sacks",
+      "Crinkled Multi-Layer Plastic (MLP) Wrappers",
+      "Discarded PET Mineral Bottles & Caps",
+      "Corrugated Cardboard Cartons & Packing Boxes"
+    ],
+    "beforeCleanlinessScore": 46,
+    "afterCleanlinessScore": 97,
+    "aiRecommendation": "Deploy municipal waste collection crew with safety equipment and segregate recyclable materials.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_372_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_372_after.jpg"
+  },
+  {
+    "sceneId": "scene_373",
+    "environment": "urban_street",
+    "environmentName": "Urban Street Garbage Heap #373",
+    "wasteType": "plastic",
+    "severity": "high",
+    "coveragePercent": 60.6,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Heavy-duty Black HDPE Garbage Sacks",
+      "Crinkled Multi-Layer Plastic (MLP) Wrappers",
+      "Discarded PET Mineral Bottles & Caps",
+      "Corrugated Cardboard Cartons & Packing Boxes"
+    ],
+    "beforeCleanlinessScore": 14,
+    "afterCleanlinessScore": 93,
+    "aiRecommendation": "Deploy municipal waste collection crew with safety equipment and segregate recyclable materials.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_373_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_373_after.jpg"
+  },
+  {
+    "sceneId": "scene_374",
+    "environment": "urban_street",
+    "environmentName": "Urban Street Garbage Heap #374",
+    "wasteType": "plastic",
+    "severity": "high",
+    "coveragePercent": 51.9,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Heavy-duty Black HDPE Garbage Sacks",
+      "Crinkled Multi-Layer Plastic (MLP) Wrappers",
+      "Discarded PET Mineral Bottles & Caps",
+      "Corrugated Cardboard Cartons & Packing Boxes"
+    ],
+    "beforeCleanlinessScore": 20,
+    "afterCleanlinessScore": 94,
+    "aiRecommendation": "Deploy municipal waste collection crew with safety equipment and segregate recyclable materials.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_374_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_374_after.jpg"
+  },
+  {
+    "sceneId": "scene_375",
+    "environment": "urban_street",
+    "environmentName": "Urban Street Garbage Heap #375",
+    "wasteType": "plastic",
+    "severity": "high",
+    "coveragePercent": 42.8,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Heavy-duty Black HDPE Garbage Sacks",
+      "Crinkled Multi-Layer Plastic (MLP) Wrappers",
+      "Discarded PET Mineral Bottles & Caps",
+      "Corrugated Cardboard Cartons & Packing Boxes"
+    ],
+    "beforeCleanlinessScore": 38,
+    "afterCleanlinessScore": 95,
+    "aiRecommendation": "Deploy municipal waste collection crew with safety equipment and segregate recyclable materials.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_375_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_375_after.jpg"
+  },
+  {
+    "sceneId": "scene_376",
+    "environment": "urban_street",
+    "environmentName": "Urban Street Garbage Heap #376",
+    "wasteType": "plastic",
+    "severity": "high",
+    "coveragePercent": 63.6,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Heavy-duty Black HDPE Garbage Sacks",
+      "Crinkled Multi-Layer Plastic (MLP) Wrappers",
+      "Discarded PET Mineral Bottles & Caps",
+      "Terracotta Masonry Rubble & Concrete Debris"
+    ],
+    "beforeCleanlinessScore": 14,
+    "afterCleanlinessScore": 98,
+    "aiRecommendation": "Deploy municipal waste collection crew with safety equipment and segregate recyclable materials.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_376_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_376_after.jpg"
+  },
+  {
+    "sceneId": "scene_377",
+    "environment": "waterfront_canal",
+    "environmentName": "Watercourse & Canal Waste #377",
+    "wasteType": "near_water",
+    "severity": "high",
+    "coveragePercent": 66.4,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Heavy-duty Black HDPE Garbage Sacks",
+      "Crinkled Multi-Layer Plastic (MLP) Wrappers",
+      "Discarded PET Mineral Bottles & Caps",
+      "Corrugated Cardboard Cartons & Packing Boxes"
+    ],
+    "beforeCleanlinessScore": 14,
+    "afterCleanlinessScore": 97,
+    "aiRecommendation": "Deploy municipal waste collection crew with safety equipment and segregate recyclable materials.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_377_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_377_after.jpg"
+  },
+  {
+    "sceneId": "scene_378",
+    "environment": "construction_site",
+    "environmentName": "Demolition & Debris Disposal Site #378",
+    "wasteType": "construction",
+    "severity": "high",
+    "coveragePercent": 58.1,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Heavy-duty Black HDPE Garbage Sacks",
+      "Crinkled Multi-Layer Plastic (MLP) Wrappers",
+      "Discarded PET Mineral Bottles & Caps",
+      "Corrugated Cardboard Cartons & Packing Boxes"
+    ],
+    "beforeCleanlinessScore": 17,
+    "afterCleanlinessScore": 93,
+    "aiRecommendation": "Deploy municipal waste collection crew with safety equipment and segregate recyclable materials.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_378_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_378_after.jpg"
+  },
+  {
+    "sceneId": "scene_379",
+    "environment": "construction_site",
+    "environmentName": "Demolition & Debris Disposal Site #379",
+    "wasteType": "construction",
+    "severity": "high",
+    "coveragePercent": 64.3,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Heavy-duty Black HDPE Garbage Sacks",
+      "Crinkled Multi-Layer Plastic (MLP) Wrappers",
+      "Discarded PET Mineral Bottles & Caps",
+      "Terracotta Masonry Rubble & Concrete Debris"
+    ],
+    "beforeCleanlinessScore": 14,
+    "afterCleanlinessScore": 97,
+    "aiRecommendation": "Deploy municipal waste collection crew with safety equipment and segregate recyclable materials.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_379_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_379_after.jpg"
+  },
+  {
+    "sceneId": "scene_380",
+    "environment": "waterfront_canal",
+    "environmentName": "Watercourse & Canal Waste #380",
+    "wasteType": "near_water",
+    "severity": "high",
+    "coveragePercent": 45.8,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Crinkled Multi-Layer Plastic (MLP) Wrappers",
+      "Discarded PET Mineral Bottles & Caps",
+      "Terracotta Masonry Rubble & Concrete Debris",
+      "Watercourse Plastic Obstruction"
+    ],
+    "beforeCleanlinessScore": 29,
+    "afterCleanlinessScore": 95,
+    "aiRecommendation": "Deploy municipal waste collection crew with safety equipment and segregate recyclable materials.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_380_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_380_after.jpg"
+  },
+  {
+    "sceneId": "scene_381",
+    "environment": "urban_street",
+    "environmentName": "Urban Street Garbage Heap #381",
+    "wasteType": "plastic",
+    "severity": "high",
+    "coveragePercent": 46.2,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Heavy-duty Black HDPE Garbage Sacks",
+      "Crinkled Multi-Layer Plastic (MLP) Wrappers",
+      "Discarded PET Mineral Bottles & Caps",
+      "Corrugated Cardboard Cartons & Packing Boxes"
+    ],
+    "beforeCleanlinessScore": 34,
+    "afterCleanlinessScore": 97,
+    "aiRecommendation": "Deploy municipal waste collection crew with safety equipment and segregate recyclable materials.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_381_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_381_after.jpg"
+  },
+  {
+    "sceneId": "scene_382",
+    "environment": "waterfront_canal",
+    "environmentName": "Watercourse & Canal Waste #382",
+    "wasteType": "near_water",
+    "severity": "high",
+    "coveragePercent": 59.1,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Crinkled Multi-Layer Plastic (MLP) Wrappers",
+      "Discarded PET Mineral Bottles & Caps",
+      "Watercourse Plastic Obstruction"
+    ],
+    "beforeCleanlinessScore": 14,
+    "afterCleanlinessScore": 94,
+    "aiRecommendation": "Deploy municipal waste collection crew with safety equipment and segregate recyclable materials.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_382_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_382_after.jpg"
+  },
+  {
+    "sceneId": "scene_383",
+    "environment": "waterfront_canal",
+    "environmentName": "Watercourse & Canal Waste #383",
+    "wasteType": "near_water",
+    "severity": "high",
+    "coveragePercent": 66.2,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Heavy-duty Black HDPE Garbage Sacks",
+      "Crinkled Multi-Layer Plastic (MLP) Wrappers",
+      "Discarded PET Mineral Bottles & Caps",
+      "Terracotta Masonry Rubble & Concrete Debris"
+    ],
+    "beforeCleanlinessScore": 14,
+    "afterCleanlinessScore": 96,
+    "aiRecommendation": "Deploy municipal waste collection crew with safety equipment and segregate recyclable materials.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_383_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_383_after.jpg"
+  },
+  {
+    "sceneId": "scene_384",
+    "environment": "urban_street",
+    "environmentName": "Urban Street Garbage Heap #384",
+    "wasteType": "plastic",
+    "severity": "high",
+    "coveragePercent": 48.9,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Heavy-duty Black HDPE Garbage Sacks",
+      "Crinkled Multi-Layer Plastic (MLP) Wrappers",
+      "Discarded PET Mineral Bottles & Caps",
+      "Terracotta Masonry Rubble & Concrete Debris"
+    ],
+    "beforeCleanlinessScore": 28,
+    "afterCleanlinessScore": 95,
+    "aiRecommendation": "Deploy municipal waste collection crew with safety equipment and segregate recyclable materials.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_384_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_384_after.jpg"
+  },
+  {
+    "sceneId": "scene_385",
+    "environment": "urban_street",
+    "environmentName": "Urban Street Garbage Heap #385",
+    "wasteType": "plastic",
+    "severity": "high",
+    "coveragePercent": 52.7,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Heavy-duty Black HDPE Garbage Sacks",
+      "Crinkled Multi-Layer Plastic (MLP) Wrappers",
+      "Discarded PET Mineral Bottles & Caps",
+      "Watercourse Plastic Obstruction"
+    ],
+    "beforeCleanlinessScore": 23,
+    "afterCleanlinessScore": 95,
+    "aiRecommendation": "Deploy municipal waste collection crew with safety equipment and segregate recyclable materials.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_385_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_385_after.jpg"
+  },
+  {
+    "sceneId": "scene_386",
+    "environment": "urban_street",
+    "environmentName": "Urban Street Garbage Heap #386",
+    "wasteType": "plastic",
+    "severity": "high",
+    "coveragePercent": 57.0,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Heavy-duty Black HDPE Garbage Sacks",
+      "Crinkled Multi-Layer Plastic (MLP) Wrappers",
+      "Discarded PET Mineral Bottles & Caps"
+    ],
+    "beforeCleanlinessScore": 18,
+    "afterCleanlinessScore": 93,
+    "aiRecommendation": "Deploy municipal waste collection crew with safety equipment and segregate recyclable materials.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_386_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_386_after.jpg"
+  },
+  {
+    "sceneId": "scene_387",
+    "environment": "urban_street",
+    "environmentName": "Urban Street Garbage Heap #387",
+    "wasteType": "plastic",
+    "severity": "medium",
+    "coveragePercent": 33.8,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Heavy-duty Black HDPE Garbage Sacks",
+      "Crinkled Multi-Layer Plastic (MLP) Wrappers",
+      "Discarded PET Mineral Bottles & Caps"
+    ],
+    "beforeCleanlinessScore": 44,
+    "afterCleanlinessScore": 95,
+    "aiRecommendation": "Deploy municipal waste collection crew with safety equipment and segregate recyclable materials.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_387_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_387_after.jpg"
+  },
+  {
+    "sceneId": "scene_388",
+    "environment": "urban_street",
+    "environmentName": "Urban Street Garbage Heap #388",
+    "wasteType": "plastic",
+    "severity": "high",
+    "coveragePercent": 50.1,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Heavy-duty Black HDPE Garbage Sacks",
+      "Crinkled Multi-Layer Plastic (MLP) Wrappers",
+      "Discarded PET Mineral Bottles & Caps",
+      "Corrugated Cardboard Cartons & Packing Boxes"
+    ],
+    "beforeCleanlinessScore": 26,
+    "afterCleanlinessScore": 98,
+    "aiRecommendation": "Deploy municipal waste collection crew with safety equipment and segregate recyclable materials.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_388_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_388_after.jpg"
+  },
+  {
+    "sceneId": "scene_389",
+    "environment": "urban_street",
+    "environmentName": "Urban Street Garbage Heap #389",
+    "wasteType": "plastic",
+    "severity": "high",
+    "coveragePercent": 53.6,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Heavy-duty Black HDPE Garbage Sacks",
+      "Crinkled Multi-Layer Plastic (MLP) Wrappers",
+      "Discarded PET Mineral Bottles & Caps",
+      "Terracotta Masonry Rubble & Concrete Debris"
+    ],
+    "beforeCleanlinessScore": 23,
+    "afterCleanlinessScore": 94,
+    "aiRecommendation": "Deploy municipal waste collection crew with safety equipment and segregate recyclable materials.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_389_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_389_after.jpg"
+  },
+  {
+    "sceneId": "scene_390",
+    "environment": "urban_street",
+    "environmentName": "Urban Street Garbage Heap #390",
+    "wasteType": "plastic",
+    "severity": "medium",
+    "coveragePercent": 32.3,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Heavy-duty Black HDPE Garbage Sacks",
+      "Crinkled Multi-Layer Plastic (MLP) Wrappers",
+      "Discarded PET Mineral Bottles & Caps",
+      "Corrugated Cardboard Cartons & Packing Boxes"
+    ],
+    "beforeCleanlinessScore": 48,
+    "afterCleanlinessScore": 97,
+    "aiRecommendation": "Deploy municipal waste collection crew with safety equipment and segregate recyclable materials.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_390_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_390_after.jpg"
+  },
+  {
+    "sceneId": "scene_391",
+    "environment": "urban_street",
+    "environmentName": "Urban Street Garbage Heap #391",
+    "wasteType": "plastic",
+    "severity": "medium",
+    "coveragePercent": 38.5,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Heavy-duty Black HDPE Garbage Sacks",
+      "Crinkled Multi-Layer Plastic (MLP) Wrappers",
+      "Discarded PET Mineral Bottles & Caps",
+      "Corrugated Cardboard Cartons & Packing Boxes"
+    ],
+    "beforeCleanlinessScore": 44,
+    "afterCleanlinessScore": 93,
+    "aiRecommendation": "Deploy municipal waste collection crew with safety equipment and segregate recyclable materials.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_391_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_391_after.jpg"
+  },
+  {
+    "sceneId": "scene_392",
+    "environment": "construction_site",
+    "environmentName": "Demolition & Debris Disposal Site #392",
+    "wasteType": "construction",
+    "severity": "high",
+    "coveragePercent": 53.9,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Heavy-duty Black HDPE Garbage Sacks",
+      "Crinkled Multi-Layer Plastic (MLP) Wrappers",
+      "Discarded PET Mineral Bottles & Caps",
+      "Terracotta Masonry Rubble & Concrete Debris"
+    ],
+    "beforeCleanlinessScore": 18,
+    "afterCleanlinessScore": 97,
+    "aiRecommendation": "Deploy municipal waste collection crew with safety equipment and segregate recyclable materials.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_392_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_392_after.jpg"
+  },
+  {
+    "sceneId": "scene_393",
+    "environment": "urban_street",
+    "environmentName": "Urban Street Garbage Heap #393",
+    "wasteType": "plastic",
+    "severity": "high",
+    "coveragePercent": 43.5,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Heavy-duty Black HDPE Garbage Sacks",
+      "Crinkled Multi-Layer Plastic (MLP) Wrappers",
+      "Discarded PET Mineral Bottles & Caps",
+      "Corrugated Cardboard Cartons & Packing Boxes"
+    ],
+    "beforeCleanlinessScore": 32,
+    "afterCleanlinessScore": 97,
+    "aiRecommendation": "Deploy municipal waste collection crew with safety equipment and segregate recyclable materials.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_393_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_393_after.jpg"
+  },
+  {
+    "sceneId": "scene_394",
+    "environment": "residential_alley",
+    "environmentName": "Residential Alley Waste Spot #394",
+    "wasteType": "household",
+    "severity": "high",
+    "coveragePercent": 66.6,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Crinkled Multi-Layer Plastic (MLP) Wrappers",
+      "Discarded PET Mineral Bottles & Caps",
+      "Corrugated Cardboard Cartons & Packing Boxes"
+    ],
+    "beforeCleanlinessScore": 14,
+    "afterCleanlinessScore": 94,
+    "aiRecommendation": "Deploy municipal waste collection crew with safety equipment and segregate recyclable materials.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_394_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_394_after.jpg"
+  },
+  {
+    "sceneId": "scene_395",
+    "environment": "urban_street",
+    "environmentName": "Urban Street Garbage Heap #395",
+    "wasteType": "plastic",
+    "severity": "medium",
+    "coveragePercent": 33.9,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Heavy-duty Black HDPE Garbage Sacks",
+      "Crinkled Multi-Layer Plastic (MLP) Wrappers",
+      "Discarded PET Mineral Bottles & Caps",
+      "Terracotta Masonry Rubble & Concrete Debris"
+    ],
+    "beforeCleanlinessScore": 43,
+    "afterCleanlinessScore": 97,
+    "aiRecommendation": "Deploy municipal waste collection crew with safety equipment and segregate recyclable materials.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_395_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_395_after.jpg"
+  },
+  {
+    "sceneId": "scene_396",
+    "environment": "construction_site",
+    "environmentName": "Demolition & Debris Disposal Site #396",
+    "wasteType": "construction",
+    "severity": "medium",
+    "coveragePercent": 40.0,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Heavy-duty Black HDPE Garbage Sacks",
+      "Crinkled Multi-Layer Plastic (MLP) Wrappers",
+      "Discarded PET Mineral Bottles & Caps",
+      "Corrugated Cardboard Cartons & Packing Boxes"
+    ],
+    "beforeCleanlinessScore": 41,
+    "afterCleanlinessScore": 97,
+    "aiRecommendation": "Deploy municipal waste collection crew with safety equipment and segregate recyclable materials.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_396_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_396_after.jpg"
+  },
+  {
+    "sceneId": "scene_397",
+    "environment": "residential_alley",
+    "environmentName": "Residential Alley Waste Spot #397",
+    "wasteType": "household",
+    "severity": "high",
+    "coveragePercent": 48.9,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Crinkled Multi-Layer Plastic (MLP) Wrappers",
+      "Discarded PET Mineral Bottles & Caps",
+      "Corrugated Cardboard Cartons & Packing Boxes"
+    ],
+    "beforeCleanlinessScore": 27,
+    "afterCleanlinessScore": 93,
+    "aiRecommendation": "Deploy municipal waste collection crew with safety equipment and segregate recyclable materials.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_397_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_397_after.jpg"
+  },
+  {
+    "sceneId": "scene_398",
+    "environment": "construction_site",
+    "environmentName": "Demolition & Debris Disposal Site #398",
+    "wasteType": "construction",
+    "severity": "high",
+    "coveragePercent": 48.7,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Heavy-duty Black HDPE Garbage Sacks",
+      "Crinkled Multi-Layer Plastic (MLP) Wrappers",
+      "Discarded PET Mineral Bottles & Caps",
+      "Corrugated Cardboard Cartons & Packing Boxes"
+    ],
+    "beforeCleanlinessScore": 30,
+    "afterCleanlinessScore": 93,
+    "aiRecommendation": "Deploy municipal waste collection crew with safety equipment and segregate recyclable materials.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_398_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_398_after.jpg"
+  },
+  {
+    "sceneId": "scene_399",
+    "environment": "residential_alley",
+    "environmentName": "Residential Alley Waste Spot #399",
+    "wasteType": "household",
+    "severity": "high",
+    "coveragePercent": 65.5,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Crinkled Multi-Layer Plastic (MLP) Wrappers",
+      "Discarded PET Mineral Bottles & Caps",
+      "Corrugated Cardboard Cartons & Packing Boxes"
+    ],
+    "beforeCleanlinessScore": 14,
+    "afterCleanlinessScore": 96,
+    "aiRecommendation": "Deploy municipal waste collection crew with safety equipment and segregate recyclable materials.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_399_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_399_after.jpg"
+  },
+  {
+    "sceneId": "scene_400",
+    "environment": "construction_site",
+    "environmentName": "Demolition & Debris Disposal Site #400",
+    "wasteType": "construction",
+    "severity": "high",
+    "coveragePercent": 58.8,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Heavy-duty Black HDPE Garbage Sacks",
+      "Crinkled Multi-Layer Plastic (MLP) Wrappers",
+      "Discarded PET Mineral Bottles & Caps",
+      "Corrugated Cardboard Cartons & Packing Boxes"
+    ],
+    "beforeCleanlinessScore": 17,
+    "afterCleanlinessScore": 93,
+    "aiRecommendation": "Deploy municipal waste collection crew with safety equipment and segregate recyclable materials.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_400_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_400_after.jpg"
+  },
+  {
+    "sceneId": "scene_401",
+    "environment": "urban_street",
+    "environmentName": "Urban Street Garbage Heap #401",
+    "wasteType": "plastic",
+    "severity": "medium",
+    "coveragePercent": 35.6,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Heavy-duty Black HDPE Garbage Sacks",
+      "Crinkled Multi-Layer Plastic (MLP) Wrappers",
+      "Discarded PET Mineral Bottles & Caps",
+      "Corrugated Cardboard Cartons & Packing Boxes"
+    ],
+    "beforeCleanlinessScore": 47,
+    "afterCleanlinessScore": 94,
+    "aiRecommendation": "Deploy municipal waste collection crew with safety equipment and segregate recyclable materials.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_401_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_401_after.jpg"
+  },
+  {
+    "sceneId": "scene_402",
+    "environment": "waterfront_canal",
+    "environmentName": "Watercourse & Canal Waste #402",
+    "wasteType": "near_water",
+    "severity": "high",
+    "coveragePercent": 63.6,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Heavy-duty Black HDPE Garbage Sacks",
+      "Crinkled Multi-Layer Plastic (MLP) Wrappers",
+      "Discarded PET Mineral Bottles & Caps",
+      "Watercourse Plastic Obstruction"
+    ],
+    "beforeCleanlinessScore": 14,
+    "afterCleanlinessScore": 97,
+    "aiRecommendation": "Deploy municipal waste collection crew with safety equipment and segregate recyclable materials.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_402_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_402_after.jpg"
+  },
+  {
+    "sceneId": "scene_403",
+    "environment": "urban_street",
+    "environmentName": "Urban Street Garbage Heap #403",
+    "wasteType": "plastic",
+    "severity": "high",
+    "coveragePercent": 65.4,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Heavy-duty Black HDPE Garbage Sacks",
+      "Crinkled Multi-Layer Plastic (MLP) Wrappers",
+      "Discarded PET Mineral Bottles & Caps",
+      "Corrugated Cardboard Cartons & Packing Boxes"
+    ],
+    "beforeCleanlinessScore": 14,
+    "afterCleanlinessScore": 96,
+    "aiRecommendation": "Deploy municipal waste collection crew with safety equipment and segregate recyclable materials.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_403_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_403_after.jpg"
+  },
+  {
+    "sceneId": "scene_404",
+    "environment": "urban_street",
+    "environmentName": "Urban Street Garbage Heap #404",
+    "wasteType": "plastic",
+    "severity": "high",
+    "coveragePercent": 55.9,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Heavy-duty Black HDPE Garbage Sacks",
+      "Crinkled Multi-Layer Plastic (MLP) Wrappers",
+      "Discarded PET Mineral Bottles & Caps",
+      "Corrugated Cardboard Cartons & Packing Boxes"
+    ],
+    "beforeCleanlinessScore": 18,
+    "afterCleanlinessScore": 96,
+    "aiRecommendation": "Deploy municipal waste collection crew with safety equipment and segregate recyclable materials.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_404_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_404_after.jpg"
+  },
+  {
+    "sceneId": "scene_405",
+    "environment": "urban_street",
+    "environmentName": "Urban Street Garbage Heap #405",
+    "wasteType": "plastic",
+    "severity": "medium",
+    "coveragePercent": 38.8,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Heavy-duty Black HDPE Garbage Sacks",
+      "Crinkled Multi-Layer Plastic (MLP) Wrappers",
+      "Discarded PET Mineral Bottles & Caps",
+      "Terracotta Masonry Rubble & Concrete Debris"
+    ],
+    "beforeCleanlinessScore": 42,
+    "afterCleanlinessScore": 98,
+    "aiRecommendation": "Deploy municipal waste collection crew with safety equipment and segregate recyclable materials.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_405_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_405_after.jpg"
+  },
+  {
+    "sceneId": "scene_406",
+    "environment": "waterfront_canal",
+    "environmentName": "Watercourse & Canal Waste #406",
+    "wasteType": "near_water",
+    "severity": "high",
+    "coveragePercent": 63.8,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Heavy-duty Black HDPE Garbage Sacks",
+      "Crinkled Multi-Layer Plastic (MLP) Wrappers",
+      "Discarded PET Mineral Bottles & Caps",
+      "Watercourse Plastic Obstruction"
+    ],
+    "beforeCleanlinessScore": 14,
+    "afterCleanlinessScore": 97,
+    "aiRecommendation": "Deploy municipal waste collection crew with safety equipment and segregate recyclable materials.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_406_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_406_after.jpg"
+  },
+  {
+    "sceneId": "scene_407",
+    "environment": "urban_street",
+    "environmentName": "Urban Street Garbage Heap #407",
+    "wasteType": "plastic",
+    "severity": "high",
+    "coveragePercent": 47.9,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Heavy-duty Black HDPE Garbage Sacks",
+      "Crinkled Multi-Layer Plastic (MLP) Wrappers",
+      "Discarded PET Mineral Bottles & Caps",
+      "Corrugated Cardboard Cartons & Packing Boxes"
+    ],
+    "beforeCleanlinessScore": 29,
+    "afterCleanlinessScore": 95,
+    "aiRecommendation": "Deploy municipal waste collection crew with safety equipment and segregate recyclable materials.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_407_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_407_after.jpg"
+  },
+  {
+    "sceneId": "scene_408",
+    "environment": "construction_site",
+    "environmentName": "Demolition & Debris Disposal Site #408",
+    "wasteType": "construction",
+    "severity": "high",
+    "coveragePercent": 59.0,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Heavy-duty Black HDPE Garbage Sacks",
+      "Crinkled Multi-Layer Plastic (MLP) Wrappers",
+      "Discarded PET Mineral Bottles & Caps",
+      "Corrugated Cardboard Cartons & Packing Boxes"
+    ],
+    "beforeCleanlinessScore": 16,
+    "afterCleanlinessScore": 98,
+    "aiRecommendation": "Deploy municipal waste collection crew with safety equipment and segregate recyclable materials.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_408_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_408_after.jpg"
+  },
+  {
+    "sceneId": "scene_409",
+    "environment": "urban_street",
+    "environmentName": "Urban Street Garbage Heap #409",
+    "wasteType": "plastic",
+    "severity": "medium",
+    "coveragePercent": 37.2,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Heavy-duty Black HDPE Garbage Sacks",
+      "Crinkled Multi-Layer Plastic (MLP) Wrappers",
+      "Discarded PET Mineral Bottles & Caps",
+      "Corrugated Cardboard Cartons & Packing Boxes"
+    ],
+    "beforeCleanlinessScore": 44,
+    "afterCleanlinessScore": 93,
+    "aiRecommendation": "Deploy municipal waste collection crew with safety equipment and segregate recyclable materials.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_409_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_409_after.jpg"
+  },
+  {
+    "sceneId": "scene_410",
+    "environment": "construction_site",
+    "environmentName": "Demolition & Debris Disposal Site #410",
+    "wasteType": "construction",
+    "severity": "high",
+    "coveragePercent": 46.2,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Heavy-duty Black HDPE Garbage Sacks",
+      "Crinkled Multi-Layer Plastic (MLP) Wrappers",
+      "Discarded PET Mineral Bottles & Caps",
+      "Terracotta Masonry Rubble & Concrete Debris"
+    ],
+    "beforeCleanlinessScore": 33,
+    "afterCleanlinessScore": 94,
+    "aiRecommendation": "Deploy municipal waste collection crew with safety equipment and segregate recyclable materials.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_410_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_410_after.jpg"
+  },
+  {
+    "sceneId": "scene_411",
+    "environment": "construction_site",
+    "environmentName": "Demolition & Debris Disposal Site #411",
+    "wasteType": "construction",
+    "severity": "high",
+    "coveragePercent": 51.3,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Heavy-duty Black HDPE Garbage Sacks",
+      "Crinkled Multi-Layer Plastic (MLP) Wrappers",
+      "Discarded PET Mineral Bottles & Caps",
+      "Terracotta Masonry Rubble & Concrete Debris"
+    ],
+    "beforeCleanlinessScore": 24,
+    "afterCleanlinessScore": 98,
+    "aiRecommendation": "Deploy municipal waste collection crew with safety equipment and segregate recyclable materials.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_411_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_411_after.jpg"
+  },
+  {
+    "sceneId": "scene_412",
+    "environment": "urban_street",
+    "environmentName": "Urban Street Garbage Heap #412",
+    "wasteType": "plastic",
+    "severity": "medium",
+    "coveragePercent": 38.8,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Heavy-duty Black HDPE Garbage Sacks",
+      "Crinkled Multi-Layer Plastic (MLP) Wrappers",
+      "Discarded PET Mineral Bottles & Caps",
+      "Watercourse Plastic Obstruction"
+    ],
+    "beforeCleanlinessScore": 38,
+    "afterCleanlinessScore": 94,
+    "aiRecommendation": "Deploy municipal waste collection crew with safety equipment and segregate recyclable materials.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_412_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_412_after.jpg"
+  },
+  {
+    "sceneId": "scene_413",
+    "environment": "urban_street",
+    "environmentName": "Urban Street Garbage Heap #413",
+    "wasteType": "plastic",
+    "severity": "high",
+    "coveragePercent": 59.8,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Heavy-duty Black HDPE Garbage Sacks",
+      "Crinkled Multi-Layer Plastic (MLP) Wrappers",
+      "Discarded PET Mineral Bottles & Caps",
+      "Corrugated Cardboard Cartons & Packing Boxes"
+    ],
+    "beforeCleanlinessScore": 16,
+    "afterCleanlinessScore": 95,
+    "aiRecommendation": "Deploy municipal waste collection crew with safety equipment and segregate recyclable materials.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_413_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_413_after.jpg"
+  },
+  {
+    "sceneId": "scene_414",
+    "environment": "urban_street",
+    "environmentName": "Urban Street Garbage Heap #414",
+    "wasteType": "plastic",
+    "severity": "high",
+    "coveragePercent": 42.3,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Heavy-duty Black HDPE Garbage Sacks",
+      "Crinkled Multi-Layer Plastic (MLP) Wrappers",
+      "Discarded PET Mineral Bottles & Caps",
+      "Corrugated Cardboard Cartons & Packing Boxes"
+    ],
+    "beforeCleanlinessScore": 38,
+    "afterCleanlinessScore": 94,
+    "aiRecommendation": "Deploy municipal waste collection crew with safety equipment and segregate recyclable materials.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_414_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_414_after.jpg"
+  },
+  {
+    "sceneId": "scene_415",
+    "environment": "urban_street",
+    "environmentName": "Urban Street Garbage Heap #415",
+    "wasteType": "plastic",
+    "severity": "high",
+    "coveragePercent": 47.3,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Heavy-duty Black HDPE Garbage Sacks",
+      "Crinkled Multi-Layer Plastic (MLP) Wrappers",
+      "Discarded PET Mineral Bottles & Caps",
+      "Corrugated Cardboard Cartons & Packing Boxes"
+    ],
+    "beforeCleanlinessScore": 31,
+    "afterCleanlinessScore": 95,
+    "aiRecommendation": "Deploy municipal waste collection crew with safety equipment and segregate recyclable materials.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_415_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_415_after.jpg"
+  },
+  {
+    "sceneId": "scene_416",
+    "environment": "urban_street",
+    "environmentName": "Urban Street Garbage Heap #416",
+    "wasteType": "plastic",
+    "severity": "high",
+    "coveragePercent": 55.0,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Heavy-duty Black HDPE Garbage Sacks",
+      "Crinkled Multi-Layer Plastic (MLP) Wrappers",
+      "Discarded PET Mineral Bottles & Caps",
+      "Corrugated Cardboard Cartons & Packing Boxes"
+    ],
+    "beforeCleanlinessScore": 16,
+    "afterCleanlinessScore": 93,
+    "aiRecommendation": "Deploy municipal waste collection crew with safety equipment and segregate recyclable materials.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_416_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_416_after.jpg"
+  },
+  {
+    "sceneId": "scene_417",
+    "environment": "urban_street",
+    "environmentName": "Urban Street Garbage Heap #417",
+    "wasteType": "plastic",
+    "severity": "high",
+    "coveragePercent": 66.4,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Heavy-duty Black HDPE Garbage Sacks",
+      "Crinkled Multi-Layer Plastic (MLP) Wrappers",
+      "Discarded PET Mineral Bottles & Caps",
+      "Corrugated Cardboard Cartons & Packing Boxes"
+    ],
+    "beforeCleanlinessScore": 14,
+    "afterCleanlinessScore": 98,
+    "aiRecommendation": "Deploy municipal waste collection crew with safety equipment and segregate recyclable materials.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_417_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_417_after.jpg"
+  },
+  {
+    "sceneId": "scene_418",
+    "environment": "urban_street",
+    "environmentName": "Urban Street Garbage Heap #418",
+    "wasteType": "plastic",
+    "severity": "medium",
+    "coveragePercent": 40.7,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Heavy-duty Black HDPE Garbage Sacks",
+      "Crinkled Multi-Layer Plastic (MLP) Wrappers",
+      "Discarded PET Mineral Bottles & Caps",
+      "Corrugated Cardboard Cartons & Packing Boxes"
+    ],
+    "beforeCleanlinessScore": 40,
+    "afterCleanlinessScore": 98,
+    "aiRecommendation": "Deploy municipal waste collection crew with safety equipment and segregate recyclable materials.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_418_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_418_after.jpg"
+  },
+  {
+    "sceneId": "scene_419",
+    "environment": "construction_site",
+    "environmentName": "Demolition & Debris Disposal Site #419",
+    "wasteType": "construction",
+    "severity": "high",
+    "coveragePercent": 52.9,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Heavy-duty Black HDPE Garbage Sacks",
+      "Crinkled Multi-Layer Plastic (MLP) Wrappers",
+      "Discarded PET Mineral Bottles & Caps",
+      "Corrugated Cardboard Cartons & Packing Boxes"
+    ],
+    "beforeCleanlinessScore": 20,
+    "afterCleanlinessScore": 96,
+    "aiRecommendation": "Deploy municipal waste collection crew with safety equipment and segregate recyclable materials.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_419_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_419_after.jpg"
+  },
+  {
+    "sceneId": "scene_420",
+    "environment": "waterfront_canal",
+    "environmentName": "Watercourse & Canal Waste #420",
+    "wasteType": "near_water",
+    "severity": "high",
+    "coveragePercent": 48.3,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Heavy-duty Black HDPE Garbage Sacks",
+      "Crinkled Multi-Layer Plastic (MLP) Wrappers",
+      "Discarded PET Mineral Bottles & Caps",
+      "Watercourse Plastic Obstruction"
+    ],
+    "beforeCleanlinessScore": 31,
+    "afterCleanlinessScore": 98,
+    "aiRecommendation": "Deploy municipal waste collection crew with safety equipment and segregate recyclable materials.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_420_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_420_after.jpg"
+  },
+  {
+    "sceneId": "scene_421",
+    "environment": "urban_street",
+    "environmentName": "Urban Street Garbage Heap #421",
+    "wasteType": "plastic",
+    "severity": "high",
+    "coveragePercent": 56.8,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Heavy-duty Black HDPE Garbage Sacks",
+      "Crinkled Multi-Layer Plastic (MLP) Wrappers",
+      "Discarded PET Mineral Bottles & Caps",
+      "Terracotta Masonry Rubble & Concrete Debris"
+    ],
+    "beforeCleanlinessScore": 20,
+    "afterCleanlinessScore": 98,
+    "aiRecommendation": "Deploy municipal waste collection crew with safety equipment and segregate recyclable materials.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_421_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_421_after.jpg"
+  },
+  {
+    "sceneId": "scene_422",
+    "environment": "urban_street",
+    "environmentName": "Urban Street Garbage Heap #422",
+    "wasteType": "plastic",
+    "severity": "high",
+    "coveragePercent": 63.3,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Heavy-duty Black HDPE Garbage Sacks",
+      "Crinkled Multi-Layer Plastic (MLP) Wrappers",
+      "Discarded PET Mineral Bottles & Caps",
+      "Corrugated Cardboard Cartons & Packing Boxes"
+    ],
+    "beforeCleanlinessScore": 14,
+    "afterCleanlinessScore": 95,
+    "aiRecommendation": "Deploy municipal waste collection crew with safety equipment and segregate recyclable materials.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_422_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_422_after.jpg"
+  },
+  {
+    "sceneId": "scene_423",
+    "environment": "urban_street",
+    "environmentName": "Urban Street Garbage Heap #423",
+    "wasteType": "plastic",
+    "severity": "high",
+    "coveragePercent": 43.4,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Heavy-duty Black HDPE Garbage Sacks",
+      "Crinkled Multi-Layer Plastic (MLP) Wrappers",
+      "Discarded PET Mineral Bottles & Caps",
+      "Corrugated Cardboard Cartons & Packing Boxes"
+    ],
+    "beforeCleanlinessScore": 35,
+    "afterCleanlinessScore": 95,
+    "aiRecommendation": "Deploy municipal waste collection crew with safety equipment and segregate recyclable materials.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_423_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_423_after.jpg"
+  },
+  {
+    "sceneId": "scene_424",
+    "environment": "urban_street",
+    "environmentName": "Urban Street Garbage Heap #424",
+    "wasteType": "plastic",
+    "severity": "high",
+    "coveragePercent": 66.8,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Heavy-duty Black HDPE Garbage Sacks",
+      "Crinkled Multi-Layer Plastic (MLP) Wrappers",
+      "Discarded PET Mineral Bottles & Caps",
+      "Corrugated Cardboard Cartons & Packing Boxes"
+    ],
+    "beforeCleanlinessScore": 14,
+    "afterCleanlinessScore": 93,
+    "aiRecommendation": "Deploy municipal waste collection crew with safety equipment and segregate recyclable materials.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_424_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_424_after.jpg"
+  },
+  {
+    "sceneId": "scene_425",
+    "environment": "urban_street",
+    "environmentName": "Urban Street Garbage Heap #425",
+    "wasteType": "plastic",
+    "severity": "medium",
+    "coveragePercent": 36.2,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Heavy-duty Black HDPE Garbage Sacks",
+      "Crinkled Multi-Layer Plastic (MLP) Wrappers",
+      "Discarded PET Mineral Bottles & Caps",
+      "Corrugated Cardboard Cartons & Packing Boxes"
+    ],
+    "beforeCleanlinessScore": 47,
+    "afterCleanlinessScore": 95,
+    "aiRecommendation": "Deploy municipal waste collection crew with safety equipment and segregate recyclable materials.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_425_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_425_after.jpg"
+  },
+  {
+    "sceneId": "scene_426",
+    "environment": "construction_site",
+    "environmentName": "Demolition & Debris Disposal Site #426",
+    "wasteType": "construction",
+    "severity": "high",
+    "coveragePercent": 48.2,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Heavy-duty Black HDPE Garbage Sacks",
+      "Terracotta Masonry Rubble & Concrete Debris"
+    ],
+    "beforeCleanlinessScore": 32,
+    "afterCleanlinessScore": 95,
+    "aiRecommendation": "Deploy municipal waste collection crew with safety equipment and segregate recyclable materials.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_426_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_426_after.jpg"
+  },
+  {
+    "sceneId": "scene_427",
+    "environment": "construction_site",
+    "environmentName": "Demolition & Debris Disposal Site #427",
+    "wasteType": "construction",
+    "severity": "high",
+    "coveragePercent": 67.8,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Heavy-duty Black HDPE Garbage Sacks",
+      "Crinkled Multi-Layer Plastic (MLP) Wrappers",
+      "Discarded PET Mineral Bottles & Caps",
+      "Corrugated Cardboard Cartons & Packing Boxes"
+    ],
+    "beforeCleanlinessScore": 14,
+    "afterCleanlinessScore": 93,
+    "aiRecommendation": "Deploy municipal waste collection crew with safety equipment and segregate recyclable materials.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_427_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_427_after.jpg"
+  },
+  {
+    "sceneId": "scene_428",
+    "environment": "construction_site",
+    "environmentName": "Demolition & Debris Disposal Site #428",
+    "wasteType": "construction",
+    "severity": "high",
+    "coveragePercent": 44.0,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Heavy-duty Black HDPE Garbage Sacks",
+      "Crinkled Multi-Layer Plastic (MLP) Wrappers",
+      "Discarded PET Mineral Bottles & Caps",
+      "Corrugated Cardboard Cartons & Packing Boxes"
+    ],
+    "beforeCleanlinessScore": 35,
+    "afterCleanlinessScore": 98,
+    "aiRecommendation": "Deploy municipal waste collection crew with safety equipment and segregate recyclable materials.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_428_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_428_after.jpg"
+  },
+  {
+    "sceneId": "scene_429",
+    "environment": "urban_street",
+    "environmentName": "Urban Street Garbage Heap #429",
+    "wasteType": "plastic",
+    "severity": "high",
+    "coveragePercent": 56.4,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Heavy-duty Black HDPE Garbage Sacks",
+      "Crinkled Multi-Layer Plastic (MLP) Wrappers",
+      "Discarded PET Mineral Bottles & Caps",
+      "Terracotta Masonry Rubble & Concrete Debris"
+    ],
+    "beforeCleanlinessScore": 15,
+    "afterCleanlinessScore": 97,
+    "aiRecommendation": "Deploy municipal waste collection crew with safety equipment and segregate recyclable materials.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_429_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_429_after.jpg"
+  },
+  {
+    "sceneId": "scene_430",
+    "environment": "residential_alley",
+    "environmentName": "Residential Alley Waste Spot #430",
+    "wasteType": "household",
+    "severity": "medium",
+    "coveragePercent": 35.7,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Crinkled Multi-Layer Plastic (MLP) Wrappers",
+      "Discarded PET Mineral Bottles & Caps",
+      "Corrugated Cardboard Cartons & Packing Boxes"
+    ],
+    "beforeCleanlinessScore": 42,
+    "afterCleanlinessScore": 95,
+    "aiRecommendation": "Deploy municipal waste collection crew with safety equipment and segregate recyclable materials.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_430_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_430_after.jpg"
+  },
+  {
+    "sceneId": "scene_431",
+    "environment": "urban_street",
+    "environmentName": "Urban Street Garbage Heap #431",
+    "wasteType": "plastic",
+    "severity": "high",
+    "coveragePercent": 42.3,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Heavy-duty Black HDPE Garbage Sacks",
+      "Crinkled Multi-Layer Plastic (MLP) Wrappers",
+      "Discarded PET Mineral Bottles & Caps",
+      "Corrugated Cardboard Cartons & Packing Boxes"
+    ],
+    "beforeCleanlinessScore": 37,
+    "afterCleanlinessScore": 97,
+    "aiRecommendation": "Deploy municipal waste collection crew with safety equipment and segregate recyclable materials.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_431_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_431_after.jpg"
+  },
+  {
+    "sceneId": "scene_432",
+    "environment": "urban_street",
+    "environmentName": "Urban Street Garbage Heap #432",
+    "wasteType": "plastic",
+    "severity": "high",
+    "coveragePercent": 43.1,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Heavy-duty Black HDPE Garbage Sacks",
+      "Crinkled Multi-Layer Plastic (MLP) Wrappers",
+      "Discarded PET Mineral Bottles & Caps",
+      "Terracotta Masonry Rubble & Concrete Debris"
+    ],
+    "beforeCleanlinessScore": 33,
+    "afterCleanlinessScore": 97,
+    "aiRecommendation": "Deploy municipal waste collection crew with safety equipment and segregate recyclable materials.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_432_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_432_after.jpg"
+  },
+  {
+    "sceneId": "scene_433",
+    "environment": "urban_street",
+    "environmentName": "Urban Street Garbage Heap #433",
+    "wasteType": "plastic",
+    "severity": "high",
+    "coveragePercent": 57.7,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Heavy-duty Black HDPE Garbage Sacks",
+      "Crinkled Multi-Layer Plastic (MLP) Wrappers",
+      "Discarded PET Mineral Bottles & Caps",
+      "Terracotta Masonry Rubble & Concrete Debris"
+    ],
+    "beforeCleanlinessScore": 19,
+    "afterCleanlinessScore": 96,
+    "aiRecommendation": "Deploy municipal waste collection crew with safety equipment and segregate recyclable materials.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_433_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_433_after.jpg"
+  },
+  {
+    "sceneId": "scene_434",
+    "environment": "waterfront_canal",
+    "environmentName": "Watercourse & Canal Waste #434",
+    "wasteType": "near_water",
+    "severity": "high",
+    "coveragePercent": 59.1,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Heavy-duty Black HDPE Garbage Sacks",
+      "Crinkled Multi-Layer Plastic (MLP) Wrappers",
+      "Discarded PET Mineral Bottles & Caps",
+      "Corrugated Cardboard Cartons & Packing Boxes"
+    ],
+    "beforeCleanlinessScore": 14,
+    "afterCleanlinessScore": 96,
+    "aiRecommendation": "Deploy municipal waste collection crew with safety equipment and segregate recyclable materials.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_434_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_434_after.jpg"
+  },
+  {
+    "sceneId": "scene_435",
+    "environment": "construction_site",
+    "environmentName": "Demolition & Debris Disposal Site #435",
+    "wasteType": "construction",
+    "severity": "high",
+    "coveragePercent": 55.5,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Heavy-duty Black HDPE Garbage Sacks",
+      "Crinkled Multi-Layer Plastic (MLP) Wrappers",
+      "Discarded PET Mineral Bottles & Caps",
+      "Corrugated Cardboard Cartons & Packing Boxes"
+    ],
+    "beforeCleanlinessScore": 17,
+    "afterCleanlinessScore": 93,
+    "aiRecommendation": "Deploy municipal waste collection crew with safety equipment and segregate recyclable materials.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_435_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_435_after.jpg"
+  },
+  {
+    "sceneId": "scene_436",
+    "environment": "urban_street",
+    "environmentName": "Urban Street Garbage Heap #436",
+    "wasteType": "plastic",
+    "severity": "high",
+    "coveragePercent": 52.7,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Heavy-duty Black HDPE Garbage Sacks",
+      "Crinkled Multi-Layer Plastic (MLP) Wrappers",
+      "Discarded PET Mineral Bottles & Caps",
+      "Corrugated Cardboard Cartons & Packing Boxes"
+    ],
+    "beforeCleanlinessScore": 22,
+    "afterCleanlinessScore": 97,
+    "aiRecommendation": "Deploy municipal waste collection crew with safety equipment and segregate recyclable materials.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_436_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_436_after.jpg"
+  },
+  {
+    "sceneId": "scene_437",
+    "environment": "urban_street",
+    "environmentName": "Urban Street Garbage Heap #437",
+    "wasteType": "plastic",
+    "severity": "medium",
+    "coveragePercent": 41.3,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Heavy-duty Black HDPE Garbage Sacks",
+      "Crinkled Multi-Layer Plastic (MLP) Wrappers",
+      "Discarded PET Mineral Bottles & Caps",
+      "Corrugated Cardboard Cartons & Packing Boxes"
+    ],
+    "beforeCleanlinessScore": 34,
+    "afterCleanlinessScore": 95,
+    "aiRecommendation": "Deploy municipal waste collection crew with safety equipment and segregate recyclable materials.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_437_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_437_after.jpg"
+  },
+  {
+    "sceneId": "scene_438",
+    "environment": "urban_street",
+    "environmentName": "Urban Street Garbage Heap #438",
+    "wasteType": "plastic",
+    "severity": "medium",
+    "coveragePercent": 32.5,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Heavy-duty Black HDPE Garbage Sacks",
+      "Crinkled Multi-Layer Plastic (MLP) Wrappers",
+      "Discarded PET Mineral Bottles & Caps",
+      "Terracotta Masonry Rubble & Concrete Debris"
+    ],
+    "beforeCleanlinessScore": 47,
+    "afterCleanlinessScore": 95,
+    "aiRecommendation": "Deploy municipal waste collection crew with safety equipment and segregate recyclable materials.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_438_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_438_after.jpg"
+  },
+  {
+    "sceneId": "scene_439",
+    "environment": "construction_site",
+    "environmentName": "Demolition & Debris Disposal Site #439",
+    "wasteType": "construction",
+    "severity": "high",
+    "coveragePercent": 56.6,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Heavy-duty Black HDPE Garbage Sacks",
+      "Terracotta Masonry Rubble & Concrete Debris"
+    ],
+    "beforeCleanlinessScore": 19,
+    "afterCleanlinessScore": 97,
+    "aiRecommendation": "Deploy municipal waste collection crew with safety equipment and segregate recyclable materials.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_439_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_439_after.jpg"
+  },
+  {
+    "sceneId": "scene_440",
+    "environment": "waterfront_canal",
+    "environmentName": "Watercourse & Canal Waste #440",
+    "wasteType": "near_water",
+    "severity": "medium",
+    "coveragePercent": 39.7,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Heavy-duty Black HDPE Garbage Sacks",
+      "Crinkled Multi-Layer Plastic (MLP) Wrappers",
+      "Discarded PET Mineral Bottles & Caps",
+      "Corrugated Cardboard Cartons & Packing Boxes"
+    ],
+    "beforeCleanlinessScore": 41,
+    "afterCleanlinessScore": 97,
+    "aiRecommendation": "Deploy municipal waste collection crew with safety equipment and segregate recyclable materials.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_440_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_440_after.jpg"
   }
 ]

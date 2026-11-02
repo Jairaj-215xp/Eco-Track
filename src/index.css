@@ -3,10 +3,12 @@
 @theme {
   --color-background: var(--bg);
   --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
   --color-surface-glass: var(--surface-glass);
   --color-ink: var(--ink);
   --color-text: var(--text);
   --color-text-muted: var(--muted);
+  --color-brand-50: var(--brand-50);
   --color-brand-100: var(--brand-100);
   --color-brand-500: var(--brand-500);
   --color-brand-600: var(--brand-600);
@@ -19,11 +21,11 @@
   --color-accent: var(--brand-500);
   --color-accent-soft: var(--brand-100);
   --color-danger: var(--coral);
-  --color-danger-soft: #FFEAE8;
+  --color-danger-soft: var(--danger-soft);
   --color-warn: var(--sun);
-  --color-warn-soft: #FFF8E6;
+  --color-warn-soft: var(--warn-soft);
   --color-info: var(--sky);
-  --color-info-soft: #EBF3FF;
+  --color-info-soft: var(--info-soft);
   --color-success: var(--brand-500);
   --color-success-soft: var(--brand-100);
 
@@ -44,13 +46,15 @@
 }
 
 @layer base {
-  :root {
+  :root, :root[data-theme="light"], html.light {
     --bg: #F6FAF8;
     --surface: #FFFFFF;
-    --surface-glass: rgba(255,255,255,0.72);
+    --surface-2: #F0F6F3;
+    --surface-glass: rgba(255,255,255,0.78);
     --ink: #10231C;
     --text: #2F4A40;
     --muted: #7A8F87;
+    --brand-50: #EDF9F2;
     --brand-100: #DDF4E8;
     --brand-500: #34B27B;
     --brand-600: #27976A;
@@ -59,6 +63,31 @@
     --sky: #6FA8FF;
     --coral: #FF7A6B;
     --line: #E4EEE9;
+    --danger-soft: #FFEAE8;
+    --warn-soft: #FFF8E6;
+    --info-soft: #EBF3FF;
+  }
+
+  html.dark, :root[data-theme="dark"] {
+    --bg: #0B1411;
+    --surface: #12211C;
+    --surface-2: #1A2E26;
+    --surface-glass: rgba(18, 33, 28, 0.82);
+    --ink: #F1F8F4;
+    --text: #CBDCD4;
+    --muted: #7F998D;
+    --brand-50: rgba(52, 178, 123, 0.12);
+    --brand-100: rgba(52, 178, 123, 0.22);
+    --brand-500: #38CB8A;
+    --brand-600: #2EA872;
+    --aqua: #4ED3C7;
+    --sun: #FFD166;
+    --sky: #79B3FF;
+    --coral: #FF8676;
+    --line: #223930;
+    --danger-soft: rgba(255, 122, 107, 0.16);
+    --warn-soft: rgba(255, 200, 87, 0.16);
+    --info-soft: rgba(111, 168, 255, 0.16);
   }
 
   body {
@@ -70,10 +99,44 @@
       radial-gradient(circle at 15% 10%, rgba(52,178,123,0.06) 0%, transparent 40%),
       radial-gradient(circle at 85% 30%, rgba(76,201,192,0.05) 0%, transparent 40%);
     background-attachment: fixed;
+    transition: background-color 0.25s ease, color 0.25s ease;
+  }
+
+  html.dark body {
+    background-image: 
+      radial-gradient(circle at 15% 10%, rgba(56,203,138,0.08) 0%, transparent 40%),
+      radial-gradient(circle at 85% 30%, rgba(78,211,199,0.05) 0%, transparent 40%);
   }
   
   h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-display);
     color: var(--ink);
+  }
+
+  /* Dark mode select options */
+  html.dark select option {
+    background-color: #12211C;
+    color: #F1F8F4;
+  }
+
+  /* Dark mode scrollbars */
+  html.dark ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  html.dark ::-webkit-scrollbar-track {
+    background: #0B1411;
+  }
+  html.dark ::-webkit-scrollbar-thumb {
+    background: #223930;
+    border-radius: 999px;
+  }
+  html.dark ::-webkit-scrollbar-thumb:hover {
+    background: #38CB8A;
+  }
+
+  /* Dark mode Leaflet tile styling - invert light OSM tiles, preserve already dark Carto tiles */
+  html.dark .leaflet-tile:not([src*="cartocdn"]) {
+    filter: brightness(0.6) invert(1) contrast(3) hue-rotate(200deg) saturate(0.3) brightness(0.7);
   }
 }
