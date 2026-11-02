@@ -12,6 +12,7 @@
   "dependencies": {
     "@googlemaps/js-api-loader": "^2.1.3",
     "@supabase/supabase-js": "^2.118.0",
+    "@techstark/opencv-js": "^5.0.0-release.1",
     "canvas-confetti": "^1.9.4",
     "clsx": "^2.1.1",
     "framer-motion": "^14.1.0",

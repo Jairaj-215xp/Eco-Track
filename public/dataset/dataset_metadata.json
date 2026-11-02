@@ -1,0 +1,3772 @@
+[
+  {
+    "sceneId": "scene_001",
+    "environment": "urban_street",
+    "environmentName": "Urban Street Corner at Night",
+    "wasteType": "plastic",
+    "severity": "high",
+    "coveragePercent": 44.9,
+    "clustersCount": 2,
+    "detectedItems": [
+      "Polythene carry bags & pouches",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps"
+    ],
+    "beforeCleanlinessScore": 55,
+    "afterCleanlinessScore": 96,
+    "aiRecommendation": "Deploy municipal waste collection vehicle, equip crew with safety gloves, and segregate recyclable dry waste.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_001_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_001_after.jpg"
+  },
+  {
+    "sceneId": "scene_002",
+    "environment": "waterfront_canal",
+    "environmentName": "Beach & Coastal Plastic Bottle",
+    "wasteType": "near_water",
+    "severity": "high",
+    "coveragePercent": 53.5,
+    "clustersCount": 2,
+    "detectedItems": [
+      "Watercourse plastic obstruction",
+      "Floating polythene bags choking canal",
+      "Drifting beverage bottles"
+    ],
+    "beforeCleanlinessScore": 47,
+    "afterCleanlinessScore": 95,
+    "aiRecommendation": "Deploy municipal waste collection vehicle, equip crew with safety gloves, and segregate recyclable dry waste.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_002_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_002_after.jpg"
+  },
+  {
+    "sceneId": "scene_003",
+    "environment": "residential_alley",
+    "environmentName": "Massive Municipal Plastic Waste Dump",
+    "wasteType": "plastic",
+    "severity": "high",
+    "coveragePercent": 60.9,
+    "clustersCount": 3,
+    "detectedItems": [
+      "Polythene carry bags & pouches",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps"
+    ],
+    "beforeCleanlinessScore": 40,
+    "afterCleanlinessScore": 94,
+    "aiRecommendation": "Deploy municipal waste collection vehicle, equip crew with safety gloves, and segregate recyclable dry waste.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_003_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_003_after.jpg"
+  },
+  {
+    "sceneId": "scene_004",
+    "environment": "urban_street",
+    "environmentName": "Roadside Litter & Beverage Containers",
+    "wasteType": "household",
+    "severity": "high",
+    "coveragePercent": 58.1,
+    "clustersCount": 3,
+    "detectedItems": [
+      "Mixed domestic packaging",
+      "Cardboard delivery cartons & boxes",
+      "Discarded beverage cans & tins"
+    ],
+    "beforeCleanlinessScore": 43,
+    "afterCleanlinessScore": 93,
+    "aiRecommendation": "Deploy municipal waste collection vehicle, equip crew with safety gloves, and segregate recyclable dry waste.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_004_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_004_after.jpg"
+  },
+  {
+    "sceneId": "scene_005",
+    "environment": "urban_street",
+    "environmentName": "Urban Street & Roadside in India",
+    "wasteType": "plastic",
+    "severity": "medium",
+    "coveragePercent": 21.8,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Polythene carry bags & pouches",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps"
+    ],
+    "beforeCleanlinessScore": 74,
+    "afterCleanlinessScore": 96,
+    "aiRecommendation": "Dispatch localized municipal cleanup team, clear obstruction, and sanitize area perimeter.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_005_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_005_after.jpg"
+  },
+  {
+    "sceneId": "scene_006",
+    "environment": "urban_street",
+    "environmentName": "Urban Street & Roadside in India",
+    "wasteType": "plastic",
+    "severity": "medium",
+    "coveragePercent": 28.3,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Polythene carry bags & pouches",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps"
+    ],
+    "beforeCleanlinessScore": 68,
+    "afterCleanlinessScore": 94,
+    "aiRecommendation": "Dispatch localized municipal cleanup team, clear obstruction, and sanitize area perimeter.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_006_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_006_after.jpg"
+  },
+  {
+    "sceneId": "scene_007",
+    "environment": "urban_street",
+    "environmentName": "Urban Street & Roadside in India",
+    "wasteType": "plastic",
+    "severity": "high",
+    "coveragePercent": 45.1,
+    "clustersCount": 2,
+    "detectedItems": [
+      "Polythene carry bags & pouches",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps"
+    ],
+    "beforeCleanlinessScore": 52,
+    "afterCleanlinessScore": 96,
+    "aiRecommendation": "Dispatch localized municipal cleanup team, clear obstruction, and sanitize area perimeter.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_007_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_007_after.jpg"
+  },
+  {
+    "sceneId": "scene_008",
+    "environment": "urban_street",
+    "environmentName": "Urban Street & Roadside in India",
+    "wasteType": "plastic",
+    "severity": "medium",
+    "coveragePercent": 20.4,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Polythene carry bags & pouches",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps"
+    ],
+    "beforeCleanlinessScore": 76,
+    "afterCleanlinessScore": 92,
+    "aiRecommendation": "Dispatch localized municipal cleanup team, clear obstruction, and sanitize area perimeter.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_008_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_008_after.jpg"
+  },
+  {
+    "sceneId": "scene_009",
+    "environment": "urban_street",
+    "environmentName": "Urban Street & Roadside in India",
+    "wasteType": "plastic",
+    "severity": "high",
+    "coveragePercent": 50.3,
+    "clustersCount": 3,
+    "detectedItems": [
+      "Polythene carry bags & pouches",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps"
+    ],
+    "beforeCleanlinessScore": 47,
+    "afterCleanlinessScore": 92,
+    "aiRecommendation": "Dispatch localized municipal cleanup team, clear obstruction, and sanitize area perimeter.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_009_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_009_after.jpg"
+  },
+  {
+    "sceneId": "scene_010",
+    "environment": "urban_street",
+    "environmentName": "Urban Street & Roadside in India",
+    "wasteType": "plastic",
+    "severity": "high",
+    "coveragePercent": 53.3,
+    "clustersCount": 3,
+    "detectedItems": [
+      "Polythene carry bags & pouches",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps"
+    ],
+    "beforeCleanlinessScore": 44,
+    "afterCleanlinessScore": 92,
+    "aiRecommendation": "Dispatch localized municipal cleanup team, clear obstruction, and sanitize area perimeter.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_010_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_010_after.jpg"
+  },
+  {
+    "sceneId": "scene_011",
+    "environment": "urban_street",
+    "environmentName": "Urban Street & Roadside in India",
+    "wasteType": "plastic",
+    "severity": "high",
+    "coveragePercent": 48.7,
+    "clustersCount": 3,
+    "detectedItems": [
+      "Polythene carry bags & pouches",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps"
+    ],
+    "beforeCleanlinessScore": 49,
+    "afterCleanlinessScore": 93,
+    "aiRecommendation": "Dispatch localized municipal cleanup team, clear obstruction, and sanitize area perimeter.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_011_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_011_after.jpg"
+  },
+  {
+    "sceneId": "scene_012",
+    "environment": "urban_street",
+    "environmentName": "Urban Street & Roadside in India",
+    "wasteType": "plastic",
+    "severity": "high",
+    "coveragePercent": 48.3,
+    "clustersCount": 3,
+    "detectedItems": [
+      "Polythene carry bags & pouches",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps"
+    ],
+    "beforeCleanlinessScore": 49,
+    "afterCleanlinessScore": 96,
+    "aiRecommendation": "Dispatch localized municipal cleanup team, clear obstruction, and sanitize area perimeter.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_012_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_012_after.jpg"
+  },
+  {
+    "sceneId": "scene_013",
+    "environment": "urban_street",
+    "environmentName": "Urban Street & Roadside in India",
+    "wasteType": "plastic",
+    "severity": "medium",
+    "coveragePercent": 15.0,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Polythene carry bags & pouches",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps"
+    ],
+    "beforeCleanlinessScore": 81,
+    "afterCleanlinessScore": 94,
+    "aiRecommendation": "Dispatch localized municipal cleanup team, clear obstruction, and sanitize area perimeter.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_013_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_013_after.jpg"
+  },
+  {
+    "sceneId": "scene_014",
+    "environment": "urban_street",
+    "environmentName": "Urban Street & Roadside in India",
+    "wasteType": "plastic",
+    "severity": "high",
+    "coveragePercent": 51.1,
+    "clustersCount": 3,
+    "detectedItems": [
+      "Polythene carry bags & pouches",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps"
+    ],
+    "beforeCleanlinessScore": 46,
+    "afterCleanlinessScore": 96,
+    "aiRecommendation": "Dispatch localized municipal cleanup team, clear obstruction, and sanitize area perimeter.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_014_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_014_after.jpg"
+  },
+  {
+    "sceneId": "scene_015",
+    "environment": "urban_street",
+    "environmentName": "Urban Street & Roadside in India",
+    "wasteType": "plastic",
+    "severity": "high",
+    "coveragePercent": 45.5,
+    "clustersCount": 2,
+    "detectedItems": [
+      "Polythene carry bags & pouches",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps"
+    ],
+    "beforeCleanlinessScore": 52,
+    "afterCleanlinessScore": 96,
+    "aiRecommendation": "Dispatch localized municipal cleanup team, clear obstruction, and sanitize area perimeter.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_015_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_015_after.jpg"
+  },
+  {
+    "sceneId": "scene_016",
+    "environment": "urban_street",
+    "environmentName": "Urban Street & Roadside in India",
+    "wasteType": "plastic",
+    "severity": "medium",
+    "coveragePercent": 16.7,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Polythene carry bags & pouches",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps"
+    ],
+    "beforeCleanlinessScore": 79,
+    "afterCleanlinessScore": 96,
+    "aiRecommendation": "Dispatch localized municipal cleanup team, clear obstruction, and sanitize area perimeter.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_016_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_016_after.jpg"
+  },
+  {
+    "sceneId": "scene_017",
+    "environment": "urban_street",
+    "environmentName": "Urban Street & Roadside in India",
+    "wasteType": "plastic",
+    "severity": "medium",
+    "coveragePercent": 36.4,
+    "clustersCount": 2,
+    "detectedItems": [
+      "Polythene carry bags & pouches",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps"
+    ],
+    "beforeCleanlinessScore": 60,
+    "afterCleanlinessScore": 94,
+    "aiRecommendation": "Dispatch localized municipal cleanup team, clear obstruction, and sanitize area perimeter.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_017_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_017_after.jpg"
+  },
+  {
+    "sceneId": "scene_018",
+    "environment": "urban_street",
+    "environmentName": "Urban Street & Roadside in India",
+    "wasteType": "plastic",
+    "severity": "medium",
+    "coveragePercent": 37.0,
+    "clustersCount": 2,
+    "detectedItems": [
+      "Polythene carry bags & pouches",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps"
+    ],
+    "beforeCleanlinessScore": 60,
+    "afterCleanlinessScore": 92,
+    "aiRecommendation": "Dispatch localized municipal cleanup team, clear obstruction, and sanitize area perimeter.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_018_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_018_after.jpg"
+  },
+  {
+    "sceneId": "scene_019",
+    "environment": "urban_street",
+    "environmentName": "Urban Street & Roadside in India",
+    "wasteType": "plastic",
+    "severity": "medium",
+    "coveragePercent": 33.1,
+    "clustersCount": 2,
+    "detectedItems": [
+      "Polythene carry bags & pouches",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps"
+    ],
+    "beforeCleanlinessScore": 64,
+    "afterCleanlinessScore": 96,
+    "aiRecommendation": "Dispatch localized municipal cleanup team, clear obstruction, and sanitize area perimeter.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_019_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_019_after.jpg"
+  },
+  {
+    "sceneId": "scene_020",
+    "environment": "urban_street",
+    "environmentName": "Urban Street & Roadside in India",
+    "wasteType": "plastic",
+    "severity": "medium",
+    "coveragePercent": 31.6,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Polythene carry bags & pouches",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps"
+    ],
+    "beforeCleanlinessScore": 65,
+    "afterCleanlinessScore": 95,
+    "aiRecommendation": "Dispatch localized municipal cleanup team, clear obstruction, and sanitize area perimeter.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_020_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_020_after.jpg"
+  },
+  {
+    "sceneId": "scene_021",
+    "environment": "urban_street",
+    "environmentName": "Urban Street & Roadside in India",
+    "wasteType": "plastic",
+    "severity": "medium",
+    "coveragePercent": 19.2,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Polythene carry bags & pouches",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps"
+    ],
+    "beforeCleanlinessScore": 77,
+    "afterCleanlinessScore": 92,
+    "aiRecommendation": "Dispatch localized municipal cleanup team, clear obstruction, and sanitize area perimeter.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_021_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_021_after.jpg"
+  },
+  {
+    "sceneId": "scene_022",
+    "environment": "urban_street",
+    "environmentName": "Urban Street & Roadside in India",
+    "wasteType": "plastic",
+    "severity": "high",
+    "coveragePercent": 51.4,
+    "clustersCount": 3,
+    "detectedItems": [
+      "Polythene carry bags & pouches",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps"
+    ],
+    "beforeCleanlinessScore": 46,
+    "afterCleanlinessScore": 92,
+    "aiRecommendation": "Dispatch localized municipal cleanup team, clear obstruction, and sanitize area perimeter.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_022_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_022_after.jpg"
+  },
+  {
+    "sceneId": "scene_023",
+    "environment": "urban_street",
+    "environmentName": "Urban Street & Roadside in India",
+    "wasteType": "plastic",
+    "severity": "high",
+    "coveragePercent": 47.3,
+    "clustersCount": 2,
+    "detectedItems": [
+      "Polythene carry bags & pouches",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps"
+    ],
+    "beforeCleanlinessScore": 50,
+    "afterCleanlinessScore": 95,
+    "aiRecommendation": "Dispatch localized municipal cleanup team, clear obstruction, and sanitize area perimeter.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_023_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_023_after.jpg"
+  },
+  {
+    "sceneId": "scene_024",
+    "environment": "urban_street",
+    "environmentName": "Urban Street & Roadside in India",
+    "wasteType": "plastic",
+    "severity": "high",
+    "coveragePercent": 66.2,
+    "clustersCount": 4,
+    "detectedItems": [
+      "Polythene carry bags & pouches",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps"
+    ],
+    "beforeCleanlinessScore": 32,
+    "afterCleanlinessScore": 94,
+    "aiRecommendation": "Dispatch localized municipal cleanup team, clear obstruction, and sanitize area perimeter.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_024_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_024_after.jpg"
+  },
+  {
+    "sceneId": "scene_025",
+    "environment": "urban_street",
+    "environmentName": "Urban Street & Roadside in India",
+    "wasteType": "plastic",
+    "severity": "high",
+    "coveragePercent": 68.8,
+    "clustersCount": 4,
+    "detectedItems": [
+      "Polythene carry bags & pouches",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps"
+    ],
+    "beforeCleanlinessScore": 30,
+    "afterCleanlinessScore": 96,
+    "aiRecommendation": "Dispatch localized municipal cleanup team, clear obstruction, and sanitize area perimeter.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_025_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_025_after.jpg"
+  },
+  {
+    "sceneId": "scene_026",
+    "environment": "urban_street",
+    "environmentName": "Urban Street & Roadside in India",
+    "wasteType": "plastic",
+    "severity": "high",
+    "coveragePercent": 64.5,
+    "clustersCount": 4,
+    "detectedItems": [
+      "Polythene carry bags & pouches",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps"
+    ],
+    "beforeCleanlinessScore": 34,
+    "afterCleanlinessScore": 93,
+    "aiRecommendation": "Dispatch localized municipal cleanup team, clear obstruction, and sanitize area perimeter.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_026_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_026_after.jpg"
+  },
+  {
+    "sceneId": "scene_027",
+    "environment": "urban_street",
+    "environmentName": "Urban Street & Roadside in India",
+    "wasteType": "plastic",
+    "severity": "high",
+    "coveragePercent": 70.1,
+    "clustersCount": 4,
+    "detectedItems": [
+      "Polythene carry bags & pouches",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps"
+    ],
+    "beforeCleanlinessScore": 28,
+    "afterCleanlinessScore": 93,
+    "aiRecommendation": "Dispatch localized municipal cleanup team, clear obstruction, and sanitize area perimeter.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_027_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_027_after.jpg"
+  },
+  {
+    "sceneId": "scene_028",
+    "environment": "urban_street",
+    "environmentName": "Urban Street & Roadside in India",
+    "wasteType": "plastic",
+    "severity": "high",
+    "coveragePercent": 46.2,
+    "clustersCount": 2,
+    "detectedItems": [
+      "Polythene carry bags & pouches",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps"
+    ],
+    "beforeCleanlinessScore": 51,
+    "afterCleanlinessScore": 92,
+    "aiRecommendation": "Dispatch localized municipal cleanup team, clear obstruction, and sanitize area perimeter.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_028_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_028_after.jpg"
+  },
+  {
+    "sceneId": "scene_029",
+    "environment": "urban_street",
+    "environmentName": "Urban Street & Roadside in India",
+    "wasteType": "plastic",
+    "severity": "high",
+    "coveragePercent": 58.4,
+    "clustersCount": 3,
+    "detectedItems": [
+      "Polythene carry bags & pouches",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps"
+    ],
+    "beforeCleanlinessScore": 40,
+    "afterCleanlinessScore": 93,
+    "aiRecommendation": "Dispatch localized municipal cleanup team, clear obstruction, and sanitize area perimeter.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_029_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_029_after.jpg"
+  },
+  {
+    "sceneId": "scene_030",
+    "environment": "urban_street",
+    "environmentName": "Urban Street & Roadside in India",
+    "wasteType": "plastic",
+    "severity": "high",
+    "coveragePercent": 43.6,
+    "clustersCount": 2,
+    "detectedItems": [
+      "Polythene carry bags & pouches",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps"
+    ],
+    "beforeCleanlinessScore": 54,
+    "afterCleanlinessScore": 96,
+    "aiRecommendation": "Dispatch localized municipal cleanup team, clear obstruction, and sanitize area perimeter.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_030_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_030_after.jpg"
+  },
+  {
+    "sceneId": "scene_031",
+    "environment": "residential_alley",
+    "environmentName": "Plastic Packaging & Bags",
+    "wasteType": "plastic",
+    "severity": "medium",
+    "coveragePercent": 28.9,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Polythene carry bags & pouches",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps"
+    ],
+    "beforeCleanlinessScore": 68,
+    "afterCleanlinessScore": 96,
+    "aiRecommendation": "Dispatch localized municipal cleanup team, clear obstruction, and sanitize area perimeter.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_031_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_031_after.jpg"
+  },
+  {
+    "sceneId": "scene_032",
+    "environment": "residential_alley",
+    "environmentName": "Plastic Packaging & Bags",
+    "wasteType": "plastic",
+    "severity": "medium",
+    "coveragePercent": 36.3,
+    "clustersCount": 2,
+    "detectedItems": [
+      "Polythene carry bags & pouches",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps"
+    ],
+    "beforeCleanlinessScore": 61,
+    "afterCleanlinessScore": 96,
+    "aiRecommendation": "Dispatch localized municipal cleanup team, clear obstruction, and sanitize area perimeter.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_032_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_032_after.jpg"
+  },
+  {
+    "sceneId": "scene_033",
+    "environment": "residential_alley",
+    "environmentName": "Plastic Packaging & Bags",
+    "wasteType": "plastic",
+    "severity": "medium",
+    "coveragePercent": 23.8,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Polythene carry bags & pouches",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps"
+    ],
+    "beforeCleanlinessScore": 72,
+    "afterCleanlinessScore": 92,
+    "aiRecommendation": "Dispatch localized municipal cleanup team, clear obstruction, and sanitize area perimeter.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_033_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_033_after.jpg"
+  },
+  {
+    "sceneId": "scene_034",
+    "environment": "residential_alley",
+    "environmentName": "Plastic Packaging & Bags",
+    "wasteType": "plastic",
+    "severity": "high",
+    "coveragePercent": 64.4,
+    "clustersCount": 4,
+    "detectedItems": [
+      "Polythene carry bags & pouches",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps"
+    ],
+    "beforeCleanlinessScore": 34,
+    "afterCleanlinessScore": 96,
+    "aiRecommendation": "Dispatch localized municipal cleanup team, clear obstruction, and sanitize area perimeter.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_034_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_034_after.jpg"
+  },
+  {
+    "sceneId": "scene_035",
+    "environment": "residential_alley",
+    "environmentName": "Plastic Packaging & Bags",
+    "wasteType": "plastic",
+    "severity": "medium",
+    "coveragePercent": 41.4,
+    "clustersCount": 2,
+    "detectedItems": [
+      "Polythene carry bags & pouches",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps"
+    ],
+    "beforeCleanlinessScore": 56,
+    "afterCleanlinessScore": 92,
+    "aiRecommendation": "Dispatch localized municipal cleanup team, clear obstruction, and sanitize area perimeter.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_035_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_035_after.jpg"
+  },
+  {
+    "sceneId": "scene_036",
+    "environment": "residential_alley",
+    "environmentName": "Plastic Packaging & Bags",
+    "wasteType": "plastic",
+    "severity": "high",
+    "coveragePercent": 50.9,
+    "clustersCount": 3,
+    "detectedItems": [
+      "Polythene carry bags & pouches",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps"
+    ],
+    "beforeCleanlinessScore": 47,
+    "afterCleanlinessScore": 95,
+    "aiRecommendation": "Dispatch localized municipal cleanup team, clear obstruction, and sanitize area perimeter.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_036_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_036_after.jpg"
+  },
+  {
+    "sceneId": "scene_037",
+    "environment": "residential_alley",
+    "environmentName": "Plastic Packaging & Bags",
+    "wasteType": "plastic",
+    "severity": "medium",
+    "coveragePercent": 17.6,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Polythene carry bags & pouches",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps"
+    ],
+    "beforeCleanlinessScore": 78,
+    "afterCleanlinessScore": 93,
+    "aiRecommendation": "Dispatch localized municipal cleanup team, clear obstruction, and sanitize area perimeter.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_037_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_037_after.jpg"
+  },
+  {
+    "sceneId": "scene_038",
+    "environment": "residential_alley",
+    "environmentName": "Plastic Packaging & Bags",
+    "wasteType": "plastic",
+    "severity": "medium",
+    "coveragePercent": 34.8,
+    "clustersCount": 2,
+    "detectedItems": [
+      "Polythene carry bags & pouches",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps"
+    ],
+    "beforeCleanlinessScore": 62,
+    "afterCleanlinessScore": 95,
+    "aiRecommendation": "Dispatch localized municipal cleanup team, clear obstruction, and sanitize area perimeter.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_038_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_038_after.jpg"
+  },
+  {
+    "sceneId": "scene_039",
+    "environment": "residential_alley",
+    "environmentName": "Plastic Packaging & Bags",
+    "wasteType": "plastic",
+    "severity": "medium",
+    "coveragePercent": 34.3,
+    "clustersCount": 2,
+    "detectedItems": [
+      "Polythene carry bags & pouches",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps"
+    ],
+    "beforeCleanlinessScore": 62,
+    "afterCleanlinessScore": 92,
+    "aiRecommendation": "Dispatch localized municipal cleanup team, clear obstruction, and sanitize area perimeter.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_039_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_039_after.jpg"
+  },
+  {
+    "sceneId": "scene_040",
+    "environment": "residential_alley",
+    "environmentName": "Plastic Packaging & Bags",
+    "wasteType": "plastic",
+    "severity": "high",
+    "coveragePercent": 72.9,
+    "clustersCount": 4,
+    "detectedItems": [
+      "Polythene carry bags & pouches",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps"
+    ],
+    "beforeCleanlinessScore": 26,
+    "afterCleanlinessScore": 92,
+    "aiRecommendation": "Dispatch localized municipal cleanup team, clear obstruction, and sanitize area perimeter.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_040_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_040_after.jpg"
+  },
+  {
+    "sceneId": "scene_041",
+    "environment": "residential_alley",
+    "environmentName": "Plastic Packaging & Bags",
+    "wasteType": "plastic",
+    "severity": "high",
+    "coveragePercent": 60.6,
+    "clustersCount": 3,
+    "detectedItems": [
+      "Polythene carry bags & pouches",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps"
+    ],
+    "beforeCleanlinessScore": 37,
+    "afterCleanlinessScore": 95,
+    "aiRecommendation": "Dispatch localized municipal cleanup team, clear obstruction, and sanitize area perimeter.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_041_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_041_after.jpg"
+  },
+  {
+    "sceneId": "scene_042",
+    "environment": "residential_alley",
+    "environmentName": "Plastic Packaging & Bags",
+    "wasteType": "plastic",
+    "severity": "high",
+    "coveragePercent": 45.7,
+    "clustersCount": 2,
+    "detectedItems": [
+      "Polythene carry bags & pouches",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps"
+    ],
+    "beforeCleanlinessScore": 52,
+    "afterCleanlinessScore": 93,
+    "aiRecommendation": "Dispatch localized municipal cleanup team, clear obstruction, and sanitize area perimeter.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_042_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_042_after.jpg"
+  },
+  {
+    "sceneId": "scene_043",
+    "environment": "residential_alley",
+    "environmentName": "Plastic Packaging & Bags",
+    "wasteType": "plastic",
+    "severity": "high",
+    "coveragePercent": 66.2,
+    "clustersCount": 4,
+    "detectedItems": [
+      "Polythene carry bags & pouches",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps"
+    ],
+    "beforeCleanlinessScore": 32,
+    "afterCleanlinessScore": 93,
+    "aiRecommendation": "Dispatch localized municipal cleanup team, clear obstruction, and sanitize area perimeter.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_043_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_043_after.jpg"
+  },
+  {
+    "sceneId": "scene_044",
+    "environment": "residential_alley",
+    "environmentName": "Plastic Packaging & Bags",
+    "wasteType": "plastic",
+    "severity": "medium",
+    "coveragePercent": 41.3,
+    "clustersCount": 2,
+    "detectedItems": [
+      "Polythene carry bags & pouches",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps"
+    ],
+    "beforeCleanlinessScore": 56,
+    "afterCleanlinessScore": 94,
+    "aiRecommendation": "Dispatch localized municipal cleanup team, clear obstruction, and sanitize area perimeter.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_044_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_044_after.jpg"
+  },
+  {
+    "sceneId": "scene_045",
+    "environment": "residential_alley",
+    "environmentName": "Plastic Packaging & Bags",
+    "wasteType": "plastic",
+    "severity": "high",
+    "coveragePercent": 60.5,
+    "clustersCount": 3,
+    "detectedItems": [
+      "Polythene carry bags & pouches",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps"
+    ],
+    "beforeCleanlinessScore": 38,
+    "afterCleanlinessScore": 96,
+    "aiRecommendation": "Dispatch localized municipal cleanup team, clear obstruction, and sanitize area perimeter.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_045_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_045_after.jpg"
+  },
+  {
+    "sceneId": "scene_046",
+    "environment": "residential_alley",
+    "environmentName": "Plastic Packaging & Bags",
+    "wasteType": "plastic",
+    "severity": "medium",
+    "coveragePercent": 27.1,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Polythene carry bags & pouches",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps"
+    ],
+    "beforeCleanlinessScore": 69,
+    "afterCleanlinessScore": 93,
+    "aiRecommendation": "Dispatch localized municipal cleanup team, clear obstruction, and sanitize area perimeter.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_046_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_046_after.jpg"
+  },
+  {
+    "sceneId": "scene_047",
+    "environment": "residential_alley",
+    "environmentName": "Plastic Packaging & Bags",
+    "wasteType": "plastic",
+    "severity": "medium",
+    "coveragePercent": 40.0,
+    "clustersCount": 2,
+    "detectedItems": [
+      "Polythene carry bags & pouches",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps"
+    ],
+    "beforeCleanlinessScore": 57,
+    "afterCleanlinessScore": 93,
+    "aiRecommendation": "Dispatch localized municipal cleanup team, clear obstruction, and sanitize area perimeter.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_047_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_047_after.jpg"
+  },
+  {
+    "sceneId": "scene_048",
+    "environment": "residential_alley",
+    "environmentName": "Plastic Packaging & Bags",
+    "wasteType": "plastic",
+    "severity": "high",
+    "coveragePercent": 46.8,
+    "clustersCount": 2,
+    "detectedItems": [
+      "Polythene carry bags & pouches",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps"
+    ],
+    "beforeCleanlinessScore": 51,
+    "afterCleanlinessScore": 91,
+    "aiRecommendation": "Dispatch localized municipal cleanup team, clear obstruction, and sanitize area perimeter.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_048_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_048_after.jpg"
+  },
+  {
+    "sceneId": "scene_049",
+    "environment": "residential_alley",
+    "environmentName": "Plastic Packaging & Bags",
+    "wasteType": "plastic",
+    "severity": "high",
+    "coveragePercent": 53.2,
+    "clustersCount": 3,
+    "detectedItems": [
+      "Polythene carry bags & pouches",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps"
+    ],
+    "beforeCleanlinessScore": 44,
+    "afterCleanlinessScore": 96,
+    "aiRecommendation": "Dispatch localized municipal cleanup team, clear obstruction, and sanitize area perimeter.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_049_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_049_after.jpg"
+  },
+  {
+    "sceneId": "scene_050",
+    "environment": "residential_alley",
+    "environmentName": "Plastic Packaging & Bags",
+    "wasteType": "plastic",
+    "severity": "high",
+    "coveragePercent": 62.2,
+    "clustersCount": 3,
+    "detectedItems": [
+      "Polythene carry bags & pouches",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps"
+    ],
+    "beforeCleanlinessScore": 36,
+    "afterCleanlinessScore": 95,
+    "aiRecommendation": "Dispatch localized municipal cleanup team, clear obstruction, and sanitize area perimeter.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_050_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_050_after.jpg"
+  },
+  {
+    "sceneId": "scene_051",
+    "environment": "residential_alley",
+    "environmentName": "Plastic Packaging & Bags",
+    "wasteType": "plastic",
+    "severity": "high",
+    "coveragePercent": 48.6,
+    "clustersCount": 3,
+    "detectedItems": [
+      "Polythene carry bags & pouches",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps"
+    ],
+    "beforeCleanlinessScore": 49,
+    "afterCleanlinessScore": 91,
+    "aiRecommendation": "Dispatch localized municipal cleanup team, clear obstruction, and sanitize area perimeter.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_051_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_051_after.jpg"
+  },
+  {
+    "sceneId": "scene_052",
+    "environment": "residential_alley",
+    "environmentName": "Plastic Packaging & Bags",
+    "wasteType": "plastic",
+    "severity": "medium",
+    "coveragePercent": 29.6,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Polythene carry bags & pouches",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps"
+    ],
+    "beforeCleanlinessScore": 67,
+    "afterCleanlinessScore": 94,
+    "aiRecommendation": "Dispatch localized municipal cleanup team, clear obstruction, and sanitize area perimeter.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_052_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_052_after.jpg"
+  },
+  {
+    "sceneId": "scene_053",
+    "environment": "residential_alley",
+    "environmentName": "Plastic Packaging & Bags",
+    "wasteType": "plastic",
+    "severity": "medium",
+    "coveragePercent": 24.3,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Polythene carry bags & pouches",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps"
+    ],
+    "beforeCleanlinessScore": 72,
+    "afterCleanlinessScore": 93,
+    "aiRecommendation": "Dispatch localized municipal cleanup team, clear obstruction, and sanitize area perimeter.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_053_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_053_after.jpg"
+  },
+  {
+    "sceneId": "scene_054",
+    "environment": "residential_alley",
+    "environmentName": "Plastic Packaging & Bags",
+    "wasteType": "plastic",
+    "severity": "high",
+    "coveragePercent": 46.2,
+    "clustersCount": 2,
+    "detectedItems": [
+      "Polythene carry bags & pouches",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps"
+    ],
+    "beforeCleanlinessScore": 51,
+    "afterCleanlinessScore": 96,
+    "aiRecommendation": "Dispatch localized municipal cleanup team, clear obstruction, and sanitize area perimeter.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_054_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_054_after.jpg"
+  },
+  {
+    "sceneId": "scene_055",
+    "environment": "residential_alley",
+    "environmentName": "Plastic Packaging & Bags",
+    "wasteType": "plastic",
+    "severity": "high",
+    "coveragePercent": 52.2,
+    "clustersCount": 3,
+    "detectedItems": [
+      "Polythene carry bags & pouches",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps"
+    ],
+    "beforeCleanlinessScore": 45,
+    "afterCleanlinessScore": 96,
+    "aiRecommendation": "Dispatch localized municipal cleanup team, clear obstruction, and sanitize area perimeter.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_055_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_055_after.jpg"
+  },
+  {
+    "sceneId": "scene_056",
+    "environment": "residential_alley",
+    "environmentName": "Plastic Packaging & Bags",
+    "wasteType": "plastic",
+    "severity": "high",
+    "coveragePercent": 56.6,
+    "clustersCount": 3,
+    "detectedItems": [
+      "Polythene carry bags & pouches",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps"
+    ],
+    "beforeCleanlinessScore": 41,
+    "afterCleanlinessScore": 96,
+    "aiRecommendation": "Dispatch localized municipal cleanup team, clear obstruction, and sanitize area perimeter.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_056_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_056_after.jpg"
+  },
+  {
+    "sceneId": "scene_057",
+    "environment": "residential_alley",
+    "environmentName": "Plastic Packaging & Bags",
+    "wasteType": "plastic",
+    "severity": "high",
+    "coveragePercent": 69.0,
+    "clustersCount": 4,
+    "detectedItems": [
+      "Polythene carry bags & pouches",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps"
+    ],
+    "beforeCleanlinessScore": 29,
+    "afterCleanlinessScore": 92,
+    "aiRecommendation": "Dispatch localized municipal cleanup team, clear obstruction, and sanitize area perimeter.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_057_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_057_after.jpg"
+  },
+  {
+    "sceneId": "scene_058",
+    "environment": "residential_alley",
+    "environmentName": "Plastic Packaging & Bags",
+    "wasteType": "plastic",
+    "severity": "high",
+    "coveragePercent": 43.5,
+    "clustersCount": 2,
+    "detectedItems": [
+      "Polythene carry bags & pouches",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps"
+    ],
+    "beforeCleanlinessScore": 54,
+    "afterCleanlinessScore": 94,
+    "aiRecommendation": "Dispatch localized municipal cleanup team, clear obstruction, and sanitize area perimeter.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_058_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_058_after.jpg"
+  },
+  {
+    "sceneId": "scene_059",
+    "environment": "residential_alley",
+    "environmentName": "Plastic Packaging & Bags",
+    "wasteType": "plastic",
+    "severity": "high",
+    "coveragePercent": 45.6,
+    "clustersCount": 2,
+    "detectedItems": [
+      "Polythene carry bags & pouches",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps"
+    ],
+    "beforeCleanlinessScore": 52,
+    "afterCleanlinessScore": 95,
+    "aiRecommendation": "Dispatch localized municipal cleanup team, clear obstruction, and sanitize area perimeter.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_059_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_059_after.jpg"
+  },
+  {
+    "sceneId": "scene_060",
+    "environment": "residential_alley",
+    "environmentName": "Plastic Packaging & Bags",
+    "wasteType": "plastic",
+    "severity": "high",
+    "coveragePercent": 56.6,
+    "clustersCount": 3,
+    "detectedItems": [
+      "Polythene carry bags & pouches",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps"
+    ],
+    "beforeCleanlinessScore": 41,
+    "afterCleanlinessScore": 95,
+    "aiRecommendation": "Dispatch localized municipal cleanup team, clear obstruction, and sanitize area perimeter.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_060_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_060_after.jpg"
+  },
+  {
+    "sceneId": "scene_061",
+    "environment": "residential_alley",
+    "environmentName": "Plastic Packaging & Bags",
+    "wasteType": "plastic",
+    "severity": "high",
+    "coveragePercent": 68.9,
+    "clustersCount": 4,
+    "detectedItems": [
+      "Polythene carry bags & pouches",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps"
+    ],
+    "beforeCleanlinessScore": 30,
+    "afterCleanlinessScore": 92,
+    "aiRecommendation": "Dispatch localized municipal cleanup team, clear obstruction, and sanitize area perimeter.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_061_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_061_after.jpg"
+  },
+  {
+    "sceneId": "scene_062",
+    "environment": "residential_alley",
+    "environmentName": "Plastic Packaging & Bags",
+    "wasteType": "plastic",
+    "severity": "medium",
+    "coveragePercent": 35.5,
+    "clustersCount": 2,
+    "detectedItems": [
+      "Polythene carry bags & pouches",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps"
+    ],
+    "beforeCleanlinessScore": 61,
+    "afterCleanlinessScore": 93,
+    "aiRecommendation": "Dispatch localized municipal cleanup team, clear obstruction, and sanitize area perimeter.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_062_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_062_after.jpg"
+  },
+  {
+    "sceneId": "scene_063",
+    "environment": "residential_alley",
+    "environmentName": "Plastic Packaging & Bags",
+    "wasteType": "plastic",
+    "severity": "high",
+    "coveragePercent": 46.8,
+    "clustersCount": 2,
+    "detectedItems": [
+      "Polythene carry bags & pouches",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps"
+    ],
+    "beforeCleanlinessScore": 51,
+    "afterCleanlinessScore": 92,
+    "aiRecommendation": "Dispatch localized municipal cleanup team, clear obstruction, and sanitize area perimeter.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_063_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_063_after.jpg"
+  },
+  {
+    "sceneId": "scene_064",
+    "environment": "residential_alley",
+    "environmentName": "Plastic Packaging & Bags",
+    "wasteType": "plastic",
+    "severity": "medium",
+    "coveragePercent": 34.1,
+    "clustersCount": 2,
+    "detectedItems": [
+      "Polythene carry bags & pouches",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps"
+    ],
+    "beforeCleanlinessScore": 63,
+    "afterCleanlinessScore": 96,
+    "aiRecommendation": "Dispatch localized municipal cleanup team, clear obstruction, and sanitize area perimeter.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_064_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_064_after.jpg"
+  },
+  {
+    "sceneId": "scene_065",
+    "environment": "residential_alley",
+    "environmentName": "Plastic Packaging & Bags",
+    "wasteType": "plastic",
+    "severity": "high",
+    "coveragePercent": 44.4,
+    "clustersCount": 2,
+    "detectedItems": [
+      "Polythene carry bags & pouches",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps"
+    ],
+    "beforeCleanlinessScore": 53,
+    "afterCleanlinessScore": 95,
+    "aiRecommendation": "Dispatch localized municipal cleanup team, clear obstruction, and sanitize area perimeter.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_065_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_065_after.jpg"
+  },
+  {
+    "sceneId": "scene_066",
+    "environment": "urban_street",
+    "environmentName": "Municipal Street Litter",
+    "wasteType": "household",
+    "severity": "high",
+    "coveragePercent": 64.7,
+    "clustersCount": 4,
+    "detectedItems": [
+      "Mixed domestic packaging",
+      "Cardboard delivery cartons & boxes",
+      "Discarded beverage cans & tins"
+    ],
+    "beforeCleanlinessScore": 34,
+    "afterCleanlinessScore": 96,
+    "aiRecommendation": "Dispatch localized municipal cleanup team, clear obstruction, and sanitize area perimeter.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_066_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_066_after.jpg"
+  },
+  {
+    "sceneId": "scene_067",
+    "environment": "urban_street",
+    "environmentName": "Municipal Street Litter",
+    "wasteType": "household",
+    "severity": "high",
+    "coveragePercent": 57.0,
+    "clustersCount": 3,
+    "detectedItems": [
+      "Mixed domestic packaging",
+      "Cardboard delivery cartons & boxes",
+      "Discarded beverage cans & tins"
+    ],
+    "beforeCleanlinessScore": 41,
+    "afterCleanlinessScore": 92,
+    "aiRecommendation": "Dispatch localized municipal cleanup team, clear obstruction, and sanitize area perimeter.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_067_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_067_after.jpg"
+  },
+  {
+    "sceneId": "scene_068",
+    "environment": "urban_street",
+    "environmentName": "Municipal Street Litter",
+    "wasteType": "household",
+    "severity": "high",
+    "coveragePercent": 73.0,
+    "clustersCount": 4,
+    "detectedItems": [
+      "Mixed domestic packaging",
+      "Cardboard delivery cartons & boxes",
+      "Discarded beverage cans & tins"
+    ],
+    "beforeCleanlinessScore": 26,
+    "afterCleanlinessScore": 93,
+    "aiRecommendation": "Dispatch localized municipal cleanup team, clear obstruction, and sanitize area perimeter.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_068_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_068_after.jpg"
+  },
+  {
+    "sceneId": "scene_069",
+    "environment": "urban_street",
+    "environmentName": "Municipal Street Litter",
+    "wasteType": "household",
+    "severity": "high",
+    "coveragePercent": 61.4,
+    "clustersCount": 3,
+    "detectedItems": [
+      "Mixed domestic packaging",
+      "Cardboard delivery cartons & boxes",
+      "Discarded beverage cans & tins"
+    ],
+    "beforeCleanlinessScore": 37,
+    "afterCleanlinessScore": 96,
+    "aiRecommendation": "Dispatch localized municipal cleanup team, clear obstruction, and sanitize area perimeter.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_069_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_069_after.jpg"
+  },
+  {
+    "sceneId": "scene_070",
+    "environment": "urban_street",
+    "environmentName": "Municipal Street Litter",
+    "wasteType": "household",
+    "severity": "medium",
+    "coveragePercent": 15.6,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Mixed domestic packaging",
+      "Cardboard delivery cartons & boxes",
+      "Discarded beverage cans & tins"
+    ],
+    "beforeCleanlinessScore": 80,
+    "afterCleanlinessScore": 92,
+    "aiRecommendation": "Dispatch localized municipal cleanup team, clear obstruction, and sanitize area perimeter.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_070_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_070_after.jpg"
+  },
+  {
+    "sceneId": "scene_071",
+    "environment": "urban_street",
+    "environmentName": "Municipal Street Litter",
+    "wasteType": "household",
+    "severity": "medium",
+    "coveragePercent": 22.8,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Mixed domestic packaging",
+      "Cardboard delivery cartons & boxes",
+      "Discarded beverage cans & tins"
+    ],
+    "beforeCleanlinessScore": 73,
+    "afterCleanlinessScore": 96,
+    "aiRecommendation": "Dispatch localized municipal cleanup team, clear obstruction, and sanitize area perimeter.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_071_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_071_after.jpg"
+  },
+  {
+    "sceneId": "scene_072",
+    "environment": "urban_street",
+    "environmentName": "Municipal Street Litter",
+    "wasteType": "household",
+    "severity": "high",
+    "coveragePercent": 64.2,
+    "clustersCount": 4,
+    "detectedItems": [
+      "Mixed domestic packaging",
+      "Cardboard delivery cartons & boxes",
+      "Discarded beverage cans & tins"
+    ],
+    "beforeCleanlinessScore": 34,
+    "afterCleanlinessScore": 91,
+    "aiRecommendation": "Dispatch localized municipal cleanup team, clear obstruction, and sanitize area perimeter.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_072_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_072_after.jpg"
+  },
+  {
+    "sceneId": "scene_073",
+    "environment": "urban_street",
+    "environmentName": "Municipal Street Litter",
+    "wasteType": "household",
+    "severity": "medium",
+    "coveragePercent": 20.3,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Mixed domestic packaging",
+      "Cardboard delivery cartons & boxes",
+      "Discarded beverage cans & tins"
+    ],
+    "beforeCleanlinessScore": 76,
+    "afterCleanlinessScore": 96,
+    "aiRecommendation": "Dispatch localized municipal cleanup team, clear obstruction, and sanitize area perimeter.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_073_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_073_after.jpg"
+  },
+  {
+    "sceneId": "scene_074",
+    "environment": "urban_street",
+    "environmentName": "Municipal Street Litter",
+    "wasteType": "household",
+    "severity": "high",
+    "coveragePercent": 64.2,
+    "clustersCount": 4,
+    "detectedItems": [
+      "Mixed domestic packaging",
+      "Cardboard delivery cartons & boxes",
+      "Discarded beverage cans & tins"
+    ],
+    "beforeCleanlinessScore": 34,
+    "afterCleanlinessScore": 95,
+    "aiRecommendation": "Dispatch localized municipal cleanup team, clear obstruction, and sanitize area perimeter.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_074_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_074_after.jpg"
+  },
+  {
+    "sceneId": "scene_075",
+    "environment": "urban_street",
+    "environmentName": "Municipal Street Litter",
+    "wasteType": "household",
+    "severity": "high",
+    "coveragePercent": 71.7,
+    "clustersCount": 4,
+    "detectedItems": [
+      "Mixed domestic packaging",
+      "Cardboard delivery cartons & boxes",
+      "Discarded beverage cans & tins"
+    ],
+    "beforeCleanlinessScore": 27,
+    "afterCleanlinessScore": 93,
+    "aiRecommendation": "Dispatch localized municipal cleanup team, clear obstruction, and sanitize area perimeter.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_075_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_075_after.jpg"
+  },
+  {
+    "sceneId": "scene_076",
+    "environment": "urban_street",
+    "environmentName": "Municipal Street Litter",
+    "wasteType": "household",
+    "severity": "high",
+    "coveragePercent": 63.8,
+    "clustersCount": 3,
+    "detectedItems": [
+      "Mixed domestic packaging",
+      "Cardboard delivery cartons & boxes",
+      "Discarded beverage cans & tins"
+    ],
+    "beforeCleanlinessScore": 34,
+    "afterCleanlinessScore": 92,
+    "aiRecommendation": "Dispatch localized municipal cleanup team, clear obstruction, and sanitize area perimeter.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_076_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_076_after.jpg"
+  },
+  {
+    "sceneId": "scene_077",
+    "environment": "urban_street",
+    "environmentName": "Municipal Street Litter",
+    "wasteType": "household",
+    "severity": "high",
+    "coveragePercent": 70.8,
+    "clustersCount": 4,
+    "detectedItems": [
+      "Mixed domestic packaging",
+      "Cardboard delivery cartons & boxes",
+      "Discarded beverage cans & tins"
+    ],
+    "beforeCleanlinessScore": 28,
+    "afterCleanlinessScore": 94,
+    "aiRecommendation": "Dispatch localized municipal cleanup team, clear obstruction, and sanitize area perimeter.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_077_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_077_after.jpg"
+  },
+  {
+    "sceneId": "scene_078",
+    "environment": "urban_street",
+    "environmentName": "Municipal Street Litter",
+    "wasteType": "household",
+    "severity": "medium",
+    "coveragePercent": 38.7,
+    "clustersCount": 2,
+    "detectedItems": [
+      "Mixed domestic packaging",
+      "Cardboard delivery cartons & boxes",
+      "Discarded beverage cans & tins"
+    ],
+    "beforeCleanlinessScore": 58,
+    "afterCleanlinessScore": 96,
+    "aiRecommendation": "Dispatch localized municipal cleanup team, clear obstruction, and sanitize area perimeter.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_078_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_078_after.jpg"
+  },
+  {
+    "sceneId": "scene_079",
+    "environment": "urban_street",
+    "environmentName": "Municipal Street Litter",
+    "wasteType": "household",
+    "severity": "high",
+    "coveragePercent": 59.4,
+    "clustersCount": 3,
+    "detectedItems": [
+      "Mixed domestic packaging",
+      "Cardboard delivery cartons & boxes",
+      "Discarded beverage cans & tins"
+    ],
+    "beforeCleanlinessScore": 39,
+    "afterCleanlinessScore": 96,
+    "aiRecommendation": "Dispatch localized municipal cleanup team, clear obstruction, and sanitize area perimeter.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_079_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_079_after.jpg"
+  },
+  {
+    "sceneId": "scene_080",
+    "environment": "urban_street",
+    "environmentName": "Municipal Street Litter",
+    "wasteType": "household",
+    "severity": "high",
+    "coveragePercent": 63.0,
+    "clustersCount": 3,
+    "detectedItems": [
+      "Mixed domestic packaging",
+      "Cardboard delivery cartons & boxes",
+      "Discarded beverage cans & tins"
+    ],
+    "beforeCleanlinessScore": 35,
+    "afterCleanlinessScore": 92,
+    "aiRecommendation": "Dispatch localized municipal cleanup team, clear obstruction, and sanitize area perimeter.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_080_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_080_after.jpg"
+  },
+  {
+    "sceneId": "scene_081",
+    "environment": "urban_street",
+    "environmentName": "Municipal Street Litter",
+    "wasteType": "household",
+    "severity": "high",
+    "coveragePercent": 64.6,
+    "clustersCount": 4,
+    "detectedItems": [
+      "Mixed domestic packaging",
+      "Cardboard delivery cartons & boxes",
+      "Discarded beverage cans & tins"
+    ],
+    "beforeCleanlinessScore": 34,
+    "afterCleanlinessScore": 94,
+    "aiRecommendation": "Dispatch localized municipal cleanup team, clear obstruction, and sanitize area perimeter.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_081_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_081_after.jpg"
+  },
+  {
+    "sceneId": "scene_082",
+    "environment": "urban_street",
+    "environmentName": "Municipal Street Litter",
+    "wasteType": "household",
+    "severity": "high",
+    "coveragePercent": 48.4,
+    "clustersCount": 3,
+    "detectedItems": [
+      "Mixed domestic packaging",
+      "Cardboard delivery cartons & boxes",
+      "Discarded beverage cans & tins"
+    ],
+    "beforeCleanlinessScore": 49,
+    "afterCleanlinessScore": 96,
+    "aiRecommendation": "Dispatch localized municipal cleanup team, clear obstruction, and sanitize area perimeter.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_082_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_082_after.jpg"
+  },
+  {
+    "sceneId": "scene_083",
+    "environment": "urban_street",
+    "environmentName": "Municipal Street Litter",
+    "wasteType": "household",
+    "severity": "medium",
+    "coveragePercent": 33.2,
+    "clustersCount": 2,
+    "detectedItems": [
+      "Mixed domestic packaging",
+      "Cardboard delivery cartons & boxes",
+      "Discarded beverage cans & tins"
+    ],
+    "beforeCleanlinessScore": 63,
+    "afterCleanlinessScore": 92,
+    "aiRecommendation": "Dispatch localized municipal cleanup team, clear obstruction, and sanitize area perimeter.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_083_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_083_after.jpg"
+  },
+  {
+    "sceneId": "scene_084",
+    "environment": "urban_street",
+    "environmentName": "Municipal Street Litter",
+    "wasteType": "household",
+    "severity": "high",
+    "coveragePercent": 71.8,
+    "clustersCount": 4,
+    "detectedItems": [
+      "Mixed domestic packaging",
+      "Cardboard delivery cartons & boxes",
+      "Discarded beverage cans & tins"
+    ],
+    "beforeCleanlinessScore": 27,
+    "afterCleanlinessScore": 96,
+    "aiRecommendation": "Dispatch localized municipal cleanup team, clear obstruction, and sanitize area perimeter.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_084_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_084_after.jpg"
+  },
+  {
+    "sceneId": "scene_085",
+    "environment": "urban_street",
+    "environmentName": "Municipal Street Litter",
+    "wasteType": "household",
+    "severity": "high",
+    "coveragePercent": 63.0,
+    "clustersCount": 3,
+    "detectedItems": [
+      "Mixed domestic packaging",
+      "Cardboard delivery cartons & boxes",
+      "Discarded beverage cans & tins"
+    ],
+    "beforeCleanlinessScore": 35,
+    "afterCleanlinessScore": 96,
+    "aiRecommendation": "Dispatch localized municipal cleanup team, clear obstruction, and sanitize area perimeter.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_085_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_085_after.jpg"
+  },
+  {
+    "sceneId": "scene_086",
+    "environment": "urban_street",
+    "environmentName": "Municipal Street Litter",
+    "wasteType": "household",
+    "severity": "high",
+    "coveragePercent": 45.7,
+    "clustersCount": 2,
+    "detectedItems": [
+      "Mixed domestic packaging",
+      "Cardboard delivery cartons & boxes",
+      "Discarded beverage cans & tins"
+    ],
+    "beforeCleanlinessScore": 52,
+    "afterCleanlinessScore": 92,
+    "aiRecommendation": "Dispatch localized municipal cleanup team, clear obstruction, and sanitize area perimeter.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_086_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_086_after.jpg"
+  },
+  {
+    "sceneId": "scene_087",
+    "environment": "urban_street",
+    "environmentName": "Municipal Street Litter",
+    "wasteType": "household",
+    "severity": "medium",
+    "coveragePercent": 30.1,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Mixed domestic packaging",
+      "Cardboard delivery cartons & boxes",
+      "Discarded beverage cans & tins"
+    ],
+    "beforeCleanlinessScore": 66,
+    "afterCleanlinessScore": 96,
+    "aiRecommendation": "Dispatch localized municipal cleanup team, clear obstruction, and sanitize area perimeter.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_087_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_087_after.jpg"
+  },
+  {
+    "sceneId": "scene_088",
+    "environment": "urban_street",
+    "environmentName": "Municipal Street Litter",
+    "wasteType": "household",
+    "severity": "medium",
+    "coveragePercent": 19.0,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Mixed domestic packaging",
+      "Cardboard delivery cartons & boxes",
+      "Discarded beverage cans & tins"
+    ],
+    "beforeCleanlinessScore": 77,
+    "afterCleanlinessScore": 91,
+    "aiRecommendation": "Dispatch localized municipal cleanup team, clear obstruction, and sanitize area perimeter.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_088_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_088_after.jpg"
+  },
+  {
+    "sceneId": "scene_089",
+    "environment": "urban_street",
+    "environmentName": "Municipal Street Litter",
+    "wasteType": "household",
+    "severity": "high",
+    "coveragePercent": 61.3,
+    "clustersCount": 3,
+    "detectedItems": [
+      "Mixed domestic packaging",
+      "Cardboard delivery cartons & boxes",
+      "Discarded beverage cans & tins"
+    ],
+    "beforeCleanlinessScore": 37,
+    "afterCleanlinessScore": 92,
+    "aiRecommendation": "Dispatch localized municipal cleanup team, clear obstruction, and sanitize area perimeter.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_089_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_089_after.jpg"
+  },
+  {
+    "sceneId": "scene_090",
+    "environment": "urban_street",
+    "environmentName": "Municipal Street Litter",
+    "wasteType": "household",
+    "severity": "high",
+    "coveragePercent": 43.3,
+    "clustersCount": 2,
+    "detectedItems": [
+      "Mixed domestic packaging",
+      "Cardboard delivery cartons & boxes",
+      "Discarded beverage cans & tins"
+    ],
+    "beforeCleanlinessScore": 54,
+    "afterCleanlinessScore": 92,
+    "aiRecommendation": "Dispatch localized municipal cleanup team, clear obstruction, and sanitize area perimeter.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_090_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_090_after.jpg"
+  },
+  {
+    "sceneId": "scene_091",
+    "environment": "urban_street",
+    "environmentName": "Municipal Street Litter",
+    "wasteType": "household",
+    "severity": "high",
+    "coveragePercent": 63.5,
+    "clustersCount": 3,
+    "detectedItems": [
+      "Mixed domestic packaging",
+      "Cardboard delivery cartons & boxes",
+      "Discarded beverage cans & tins"
+    ],
+    "beforeCleanlinessScore": 35,
+    "afterCleanlinessScore": 95,
+    "aiRecommendation": "Dispatch localized municipal cleanup team, clear obstruction, and sanitize area perimeter.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_091_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_091_after.jpg"
+  },
+  {
+    "sceneId": "scene_092",
+    "environment": "urban_street",
+    "environmentName": "Municipal Street Litter",
+    "wasteType": "household",
+    "severity": "high",
+    "coveragePercent": 58.6,
+    "clustersCount": 3,
+    "detectedItems": [
+      "Mixed domestic packaging",
+      "Cardboard delivery cartons & boxes",
+      "Discarded beverage cans & tins"
+    ],
+    "beforeCleanlinessScore": 39,
+    "afterCleanlinessScore": 96,
+    "aiRecommendation": "Dispatch localized municipal cleanup team, clear obstruction, and sanitize area perimeter.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_092_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_092_after.jpg"
+  },
+  {
+    "sceneId": "scene_093",
+    "environment": "urban_street",
+    "environmentName": "Municipal Street Litter",
+    "wasteType": "household",
+    "severity": "high",
+    "coveragePercent": 63.2,
+    "clustersCount": 3,
+    "detectedItems": [
+      "Mixed domestic packaging",
+      "Cardboard delivery cartons & boxes",
+      "Discarded beverage cans & tins"
+    ],
+    "beforeCleanlinessScore": 35,
+    "afterCleanlinessScore": 95,
+    "aiRecommendation": "Dispatch localized municipal cleanup team, clear obstruction, and sanitize area perimeter.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_093_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_093_after.jpg"
+  },
+  {
+    "sceneId": "scene_094",
+    "environment": "urban_street",
+    "environmentName": "Municipal Street Litter",
+    "wasteType": "household",
+    "severity": "high",
+    "coveragePercent": 59.8,
+    "clustersCount": 3,
+    "detectedItems": [
+      "Mixed domestic packaging",
+      "Cardboard delivery cartons & boxes",
+      "Discarded beverage cans & tins"
+    ],
+    "beforeCleanlinessScore": 38,
+    "afterCleanlinessScore": 96,
+    "aiRecommendation": "Dispatch localized municipal cleanup team, clear obstruction, and sanitize area perimeter.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_094_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_094_after.jpg"
+  },
+  {
+    "sceneId": "scene_095",
+    "environment": "urban_street",
+    "environmentName": "Municipal Street Litter",
+    "wasteType": "household",
+    "severity": "medium",
+    "coveragePercent": 40.5,
+    "clustersCount": 2,
+    "detectedItems": [
+      "Mixed domestic packaging",
+      "Cardboard delivery cartons & boxes",
+      "Discarded beverage cans & tins"
+    ],
+    "beforeCleanlinessScore": 57,
+    "afterCleanlinessScore": 94,
+    "aiRecommendation": "Dispatch localized municipal cleanup team, clear obstruction, and sanitize area perimeter.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_095_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_095_after.jpg"
+  },
+  {
+    "sceneId": "scene_096",
+    "environment": "urban_street",
+    "environmentName": "Municipal Street Litter",
+    "wasteType": "household",
+    "severity": "high",
+    "coveragePercent": 51.4,
+    "clustersCount": 3,
+    "detectedItems": [
+      "Mixed domestic packaging",
+      "Cardboard delivery cartons & boxes",
+      "Discarded beverage cans & tins"
+    ],
+    "beforeCleanlinessScore": 46,
+    "afterCleanlinessScore": 91,
+    "aiRecommendation": "Dispatch localized municipal cleanup team, clear obstruction, and sanitize area perimeter.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_096_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_096_after.jpg"
+  },
+  {
+    "sceneId": "scene_097",
+    "environment": "urban_street",
+    "environmentName": "Municipal Street Litter",
+    "wasteType": "household",
+    "severity": "high",
+    "coveragePercent": 47.4,
+    "clustersCount": 2,
+    "detectedItems": [
+      "Mixed domestic packaging",
+      "Cardboard delivery cartons & boxes",
+      "Discarded beverage cans & tins"
+    ],
+    "beforeCleanlinessScore": 50,
+    "afterCleanlinessScore": 94,
+    "aiRecommendation": "Dispatch localized municipal cleanup team, clear obstruction, and sanitize area perimeter.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_097_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_097_after.jpg"
+  },
+  {
+    "sceneId": "scene_098",
+    "environment": "urban_street",
+    "environmentName": "Municipal Street Litter",
+    "wasteType": "household",
+    "severity": "medium",
+    "coveragePercent": 15.0,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Mixed domestic packaging",
+      "Cardboard delivery cartons & boxes",
+      "Discarded beverage cans & tins"
+    ],
+    "beforeCleanlinessScore": 81,
+    "afterCleanlinessScore": 96,
+    "aiRecommendation": "Dispatch localized municipal cleanup team, clear obstruction, and sanitize area perimeter.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_098_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_098_after.jpg"
+  },
+  {
+    "sceneId": "scene_099",
+    "environment": "urban_street",
+    "environmentName": "Municipal Street Litter",
+    "wasteType": "household",
+    "severity": "medium",
+    "coveragePercent": 15.1,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Mixed domestic packaging",
+      "Cardboard delivery cartons & boxes",
+      "Discarded beverage cans & tins"
+    ],
+    "beforeCleanlinessScore": 81,
+    "afterCleanlinessScore": 91,
+    "aiRecommendation": "Dispatch localized municipal cleanup team, clear obstruction, and sanitize area perimeter.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_099_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_099_after.jpg"
+  },
+  {
+    "sceneId": "scene_100",
+    "environment": "waterfront_canal",
+    "environmentName": "Waterfront & Canal Waste",
+    "wasteType": "near_water",
+    "severity": "high",
+    "coveragePercent": 52.7,
+    "clustersCount": 3,
+    "detectedItems": [
+      "Watercourse plastic obstruction",
+      "Floating polythene bags choking canal",
+      "Drifting beverage bottles"
+    ],
+    "beforeCleanlinessScore": 45,
+    "afterCleanlinessScore": 92,
+    "aiRecommendation": "Dispatch localized municipal cleanup team, clear obstruction, and sanitize area perimeter.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_100_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_100_after.jpg"
+  },
+  {
+    "sceneId": "scene_101",
+    "environment": "urban_street",
+    "environmentName": "Street Plastic Pollution #101",
+    "wasteType": "plastic",
+    "severity": "high",
+    "coveragePercent": 46.3,
+    "clustersCount": 2,
+    "detectedItems": [
+      "Polythene carry bags & pouches",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps"
+    ],
+    "beforeCleanlinessScore": 28,
+    "afterCleanlinessScore": 96,
+    "aiRecommendation": "Deploy designated sanitary cleanup crew, clear waste clusters, and apply sanitization spray.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_101_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_101_after.jpg"
+  },
+  {
+    "sceneId": "scene_102",
+    "environment": "urban_street",
+    "environmentName": "Street Plastic Pollution #102",
+    "wasteType": "plastic",
+    "severity": "medium",
+    "coveragePercent": 30.8,
+    "clustersCount": 4,
+    "detectedItems": [
+      "Polythene carry bags & pouches",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps"
+    ],
+    "beforeCleanlinessScore": 50,
+    "afterCleanlinessScore": 97,
+    "aiRecommendation": "Deploy designated sanitary cleanup crew, clear waste clusters, and apply sanitization spray.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_102_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_102_after.jpg"
+  },
+  {
+    "sceneId": "scene_103",
+    "environment": "urban_street",
+    "environmentName": "Street Plastic Pollution #103",
+    "wasteType": "plastic",
+    "severity": "high",
+    "coveragePercent": 47.5,
+    "clustersCount": 2,
+    "detectedItems": [
+      "Polythene carry bags & pouches",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps"
+    ],
+    "beforeCleanlinessScore": 31,
+    "afterCleanlinessScore": 96,
+    "aiRecommendation": "Deploy designated sanitary cleanup crew, clear waste clusters, and apply sanitization spray.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_103_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_103_after.jpg"
+  },
+  {
+    "sceneId": "scene_104",
+    "environment": "urban_street",
+    "environmentName": "Street Plastic Pollution #104",
+    "wasteType": "plastic",
+    "severity": "medium",
+    "coveragePercent": 34.2,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Polythene carry bags & pouches",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps"
+    ],
+    "beforeCleanlinessScore": 41,
+    "afterCleanlinessScore": 92,
+    "aiRecommendation": "Deploy designated sanitary cleanup crew, clear waste clusters, and apply sanitization spray.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_104_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_104_after.jpg"
+  },
+  {
+    "sceneId": "scene_105",
+    "environment": "urban_street",
+    "environmentName": "Street Plastic Pollution #105",
+    "wasteType": "plastic",
+    "severity": "medium",
+    "coveragePercent": 32.6,
+    "clustersCount": 3,
+    "detectedItems": [
+      "Polythene carry bags & pouches",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps"
+    ],
+    "beforeCleanlinessScore": 48,
+    "afterCleanlinessScore": 96,
+    "aiRecommendation": "Deploy designated sanitary cleanup crew, clear waste clusters, and apply sanitization spray.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_105_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_105_after.jpg"
+  },
+  {
+    "sceneId": "scene_106",
+    "environment": "urban_street",
+    "environmentName": "Street Plastic Pollution #106",
+    "wasteType": "plastic",
+    "severity": "high",
+    "coveragePercent": 41.0,
+    "clustersCount": 3,
+    "detectedItems": [
+      "Polythene carry bags & pouches",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps"
+    ],
+    "beforeCleanlinessScore": 32,
+    "afterCleanlinessScore": 98,
+    "aiRecommendation": "Deploy designated sanitary cleanup crew, clear waste clusters, and apply sanitization spray.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_106_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_106_after.jpg"
+  },
+  {
+    "sceneId": "scene_107",
+    "environment": "urban_street",
+    "environmentName": "Street Plastic Pollution #107",
+    "wasteType": "plastic",
+    "severity": "medium",
+    "coveragePercent": 35.9,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Polythene carry bags & pouches",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps"
+    ],
+    "beforeCleanlinessScore": 41,
+    "afterCleanlinessScore": 94,
+    "aiRecommendation": "Deploy designated sanitary cleanup crew, clear waste clusters, and apply sanitization spray.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_107_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_107_after.jpg"
+  },
+  {
+    "sceneId": "scene_108",
+    "environment": "urban_street",
+    "environmentName": "Street Plastic Pollution #108",
+    "wasteType": "plastic",
+    "severity": "high",
+    "coveragePercent": 45.5,
+    "clustersCount": 4,
+    "detectedItems": [
+      "Polythene carry bags & pouches",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps"
+    ],
+    "beforeCleanlinessScore": 34,
+    "afterCleanlinessScore": 95,
+    "aiRecommendation": "Deploy designated sanitary cleanup crew, clear waste clusters, and apply sanitization spray.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_108_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_108_after.jpg"
+  },
+  {
+    "sceneId": "scene_109",
+    "environment": "urban_street",
+    "environmentName": "Street Plastic Pollution #109",
+    "wasteType": "plastic",
+    "severity": "medium",
+    "coveragePercent": 34.3,
+    "clustersCount": 3,
+    "detectedItems": [
+      "Polythene carry bags & pouches",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps"
+    ],
+    "beforeCleanlinessScore": 46,
+    "afterCleanlinessScore": 93,
+    "aiRecommendation": "Deploy designated sanitary cleanup crew, clear waste clusters, and apply sanitization spray.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_109_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_109_after.jpg"
+  },
+  {
+    "sceneId": "scene_110",
+    "environment": "urban_street",
+    "environmentName": "Street Plastic Pollution #110",
+    "wasteType": "plastic",
+    "severity": "medium",
+    "coveragePercent": 26.3,
+    "clustersCount": 3,
+    "detectedItems": [
+      "Polythene carry bags & pouches",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps"
+    ],
+    "beforeCleanlinessScore": 52,
+    "afterCleanlinessScore": 98,
+    "aiRecommendation": "Deploy designated sanitary cleanup crew, clear waste clusters, and apply sanitization spray.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_110_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_110_after.jpg"
+  },
+  {
+    "sceneId": "scene_111",
+    "environment": "urban_street",
+    "environmentName": "Street Plastic Pollution #111",
+    "wasteType": "plastic",
+    "severity": "high",
+    "coveragePercent": 42.5,
+    "clustersCount": 2,
+    "detectedItems": [
+      "Polythene carry bags & pouches",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps"
+    ],
+    "beforeCleanlinessScore": 32,
+    "afterCleanlinessScore": 95,
+    "aiRecommendation": "Deploy designated sanitary cleanup crew, clear waste clusters, and apply sanitization spray.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_111_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_111_after.jpg"
+  },
+  {
+    "sceneId": "scene_112",
+    "environment": "urban_street",
+    "environmentName": "Street Plastic Pollution #112",
+    "wasteType": "plastic",
+    "severity": "high",
+    "coveragePercent": 50.5,
+    "clustersCount": 4,
+    "detectedItems": [
+      "Polythene carry bags & pouches",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps"
+    ],
+    "beforeCleanlinessScore": 19,
+    "afterCleanlinessScore": 93,
+    "aiRecommendation": "Deploy designated sanitary cleanup crew, clear waste clusters, and apply sanitization spray.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_112_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_112_after.jpg"
+  },
+  {
+    "sceneId": "scene_113",
+    "environment": "urban_street",
+    "environmentName": "Street Plastic Pollution #113",
+    "wasteType": "plastic",
+    "severity": "medium",
+    "coveragePercent": 39.9,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Polythene carry bags & pouches",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps"
+    ],
+    "beforeCleanlinessScore": 36,
+    "afterCleanlinessScore": 92,
+    "aiRecommendation": "Deploy designated sanitary cleanup crew, clear waste clusters, and apply sanitization spray.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_113_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_113_after.jpg"
+  },
+  {
+    "sceneId": "scene_114",
+    "environment": "urban_street",
+    "environmentName": "Street Plastic Pollution #114",
+    "wasteType": "plastic",
+    "severity": "high",
+    "coveragePercent": 56.3,
+    "clustersCount": 3,
+    "detectedItems": [
+      "Polythene carry bags & pouches",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps"
+    ],
+    "beforeCleanlinessScore": 21,
+    "afterCleanlinessScore": 97,
+    "aiRecommendation": "Deploy designated sanitary cleanup crew, clear waste clusters, and apply sanitization spray.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_114_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_114_after.jpg"
+  },
+  {
+    "sceneId": "scene_115",
+    "environment": "urban_street",
+    "environmentName": "Street Plastic Pollution #115",
+    "wasteType": "plastic",
+    "severity": "high",
+    "coveragePercent": 44.4,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Polythene carry bags & pouches",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps"
+    ],
+    "beforeCleanlinessScore": 35,
+    "afterCleanlinessScore": 92,
+    "aiRecommendation": "Deploy designated sanitary cleanup crew, clear waste clusters, and apply sanitization spray.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_115_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_115_after.jpg"
+  },
+  {
+    "sceneId": "scene_116",
+    "environment": "urban_street",
+    "environmentName": "Street Plastic Pollution #116",
+    "wasteType": "plastic",
+    "severity": "medium",
+    "coveragePercent": 39.2,
+    "clustersCount": 4,
+    "detectedItems": [
+      "Polythene carry bags & pouches",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps"
+    ],
+    "beforeCleanlinessScore": 40,
+    "afterCleanlinessScore": 94,
+    "aiRecommendation": "Deploy designated sanitary cleanup crew, clear waste clusters, and apply sanitization spray.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_116_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_116_after.jpg"
+  },
+  {
+    "sceneId": "scene_117",
+    "environment": "urban_street",
+    "environmentName": "Street Plastic Pollution #117",
+    "wasteType": "plastic",
+    "severity": "high",
+    "coveragePercent": 51.7,
+    "clustersCount": 4,
+    "detectedItems": [
+      "Polythene carry bags & pouches",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps"
+    ],
+    "beforeCleanlinessScore": 21,
+    "afterCleanlinessScore": 97,
+    "aiRecommendation": "Deploy designated sanitary cleanup crew, clear waste clusters, and apply sanitization spray.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_117_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_117_after.jpg"
+  },
+  {
+    "sceneId": "scene_118",
+    "environment": "urban_street",
+    "environmentName": "Street Plastic Pollution #118",
+    "wasteType": "plastic",
+    "severity": "medium",
+    "coveragePercent": 35.7,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Polythene carry bags & pouches",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps"
+    ],
+    "beforeCleanlinessScore": 46,
+    "afterCleanlinessScore": 96,
+    "aiRecommendation": "Deploy designated sanitary cleanup crew, clear waste clusters, and apply sanitization spray.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_118_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_118_after.jpg"
+  },
+  {
+    "sceneId": "scene_119",
+    "environment": "urban_street",
+    "environmentName": "Street Plastic Pollution #119",
+    "wasteType": "plastic",
+    "severity": "high",
+    "coveragePercent": 55.3,
+    "clustersCount": 4,
+    "detectedItems": [
+      "Polythene carry bags & pouches",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps"
+    ],
+    "beforeCleanlinessScore": 18,
+    "afterCleanlinessScore": 94,
+    "aiRecommendation": "Deploy designated sanitary cleanup crew, clear waste clusters, and apply sanitization spray.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_119_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_119_after.jpg"
+  },
+  {
+    "sceneId": "scene_120",
+    "environment": "urban_street",
+    "environmentName": "Street Plastic Pollution #120",
+    "wasteType": "plastic",
+    "severity": "high",
+    "coveragePercent": 42.5,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Polythene carry bags & pouches",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps"
+    ],
+    "beforeCleanlinessScore": 32,
+    "afterCleanlinessScore": 96,
+    "aiRecommendation": "Deploy designated sanitary cleanup crew, clear waste clusters, and apply sanitization spray.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_120_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_120_after.jpg"
+  },
+  {
+    "sceneId": "scene_121",
+    "environment": "urban_street",
+    "environmentName": "Street Plastic Pollution #121",
+    "wasteType": "plastic",
+    "severity": "high",
+    "coveragePercent": 57.2,
+    "clustersCount": 4,
+    "detectedItems": [
+      "Polythene carry bags & pouches",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps"
+    ],
+    "beforeCleanlinessScore": 18,
+    "afterCleanlinessScore": 94,
+    "aiRecommendation": "Deploy designated sanitary cleanup crew, clear waste clusters, and apply sanitization spray.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_121_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_121_after.jpg"
+  },
+  {
+    "sceneId": "scene_122",
+    "environment": "urban_street",
+    "environmentName": "Street Plastic Pollution #122",
+    "wasteType": "plastic",
+    "severity": "high",
+    "coveragePercent": 52.4,
+    "clustersCount": 4,
+    "detectedItems": [
+      "Polythene carry bags & pouches",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps"
+    ],
+    "beforeCleanlinessScore": 21,
+    "afterCleanlinessScore": 97,
+    "aiRecommendation": "Deploy designated sanitary cleanup crew, clear waste clusters, and apply sanitization spray.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_122_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_122_after.jpg"
+  },
+  {
+    "sceneId": "scene_123",
+    "environment": "urban_street",
+    "environmentName": "Street Plastic Pollution #123",
+    "wasteType": "plastic",
+    "severity": "medium",
+    "coveragePercent": 22.9,
+    "clustersCount": 2,
+    "detectedItems": [
+      "Polythene carry bags & pouches",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps"
+    ],
+    "beforeCleanlinessScore": 55,
+    "afterCleanlinessScore": 95,
+    "aiRecommendation": "Deploy designated sanitary cleanup crew, clear waste clusters, and apply sanitization spray.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_123_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_123_after.jpg"
+  },
+  {
+    "sceneId": "scene_124",
+    "environment": "urban_street",
+    "environmentName": "Street Plastic Pollution #124",
+    "wasteType": "plastic",
+    "severity": "medium",
+    "coveragePercent": 27.9,
+    "clustersCount": 3,
+    "detectedItems": [
+      "Polythene carry bags & pouches",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps"
+    ],
+    "beforeCleanlinessScore": 55,
+    "afterCleanlinessScore": 98,
+    "aiRecommendation": "Deploy designated sanitary cleanup crew, clear waste clusters, and apply sanitization spray.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_124_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_124_after.jpg"
+  },
+  {
+    "sceneId": "scene_125",
+    "environment": "urban_street",
+    "environmentName": "Street Plastic Pollution #125",
+    "wasteType": "plastic",
+    "severity": "high",
+    "coveragePercent": 50.7,
+    "clustersCount": 4,
+    "detectedItems": [
+      "Polythene carry bags & pouches",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps"
+    ],
+    "beforeCleanlinessScore": 26,
+    "afterCleanlinessScore": 92,
+    "aiRecommendation": "Deploy designated sanitary cleanup crew, clear waste clusters, and apply sanitization spray.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_125_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_125_after.jpg"
+  },
+  {
+    "sceneId": "scene_126",
+    "environment": "urban_street",
+    "environmentName": "Municipal Waste Containers #126",
+    "wasteType": "plastic",
+    "severity": "high",
+    "coveragePercent": 45.6,
+    "clustersCount": 3,
+    "detectedItems": [
+      "Polythene carry bags & pouches",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps"
+    ],
+    "beforeCleanlinessScore": 31,
+    "afterCleanlinessScore": 92,
+    "aiRecommendation": "Deploy designated sanitary cleanup crew, clear waste clusters, and apply sanitization spray.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_126_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_126_after.jpg"
+  },
+  {
+    "sceneId": "scene_127",
+    "environment": "urban_street",
+    "environmentName": "Municipal Waste Containers #127",
+    "wasteType": "plastic",
+    "severity": "medium",
+    "coveragePercent": 39.9,
+    "clustersCount": 4,
+    "detectedItems": [
+      "Polythene carry bags & pouches",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps"
+    ],
+    "beforeCleanlinessScore": 37,
+    "afterCleanlinessScore": 98,
+    "aiRecommendation": "Deploy designated sanitary cleanup crew, clear waste clusters, and apply sanitization spray.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_127_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_127_after.jpg"
+  },
+  {
+    "sceneId": "scene_128",
+    "environment": "urban_street",
+    "environmentName": "Municipal Waste Containers #128",
+    "wasteType": "plastic",
+    "severity": "high",
+    "coveragePercent": 51.2,
+    "clustersCount": 2,
+    "detectedItems": [
+      "Polythene carry bags & pouches",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps"
+    ],
+    "beforeCleanlinessScore": 23,
+    "afterCleanlinessScore": 96,
+    "aiRecommendation": "Deploy designated sanitary cleanup crew, clear waste clusters, and apply sanitization spray.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_128_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_128_after.jpg"
+  },
+  {
+    "sceneId": "scene_129",
+    "environment": "urban_street",
+    "environmentName": "Municipal Waste Containers #129",
+    "wasteType": "plastic",
+    "severity": "high",
+    "coveragePercent": 42.5,
+    "clustersCount": 3,
+    "detectedItems": [
+      "Polythene carry bags & pouches",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps"
+    ],
+    "beforeCleanlinessScore": 32,
+    "afterCleanlinessScore": 93,
+    "aiRecommendation": "Deploy designated sanitary cleanup crew, clear waste clusters, and apply sanitization spray.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_129_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_129_after.jpg"
+  },
+  {
+    "sceneId": "scene_130",
+    "environment": "urban_street",
+    "environmentName": "Municipal Waste Containers #130",
+    "wasteType": "plastic",
+    "severity": "high",
+    "coveragePercent": 44.3,
+    "clustersCount": 4,
+    "detectedItems": [
+      "Polythene carry bags & pouches",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps"
+    ],
+    "beforeCleanlinessScore": 28,
+    "afterCleanlinessScore": 92,
+    "aiRecommendation": "Deploy designated sanitary cleanup crew, clear waste clusters, and apply sanitization spray.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_130_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_130_after.jpg"
+  },
+  {
+    "sceneId": "scene_131",
+    "environment": "urban_street",
+    "environmentName": "Municipal Waste Containers #131",
+    "wasteType": "plastic",
+    "severity": "high",
+    "coveragePercent": 40.5,
+    "clustersCount": 2,
+    "detectedItems": [
+      "Polythene carry bags & pouches",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps"
+    ],
+    "beforeCleanlinessScore": 40,
+    "afterCleanlinessScore": 97,
+    "aiRecommendation": "Deploy designated sanitary cleanup crew, clear waste clusters, and apply sanitization spray.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_131_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_131_after.jpg"
+  },
+  {
+    "sceneId": "scene_132",
+    "environment": "urban_street",
+    "environmentName": "Municipal Waste Containers #132",
+    "wasteType": "plastic",
+    "severity": "medium",
+    "coveragePercent": 22.5,
+    "clustersCount": 4,
+    "detectedItems": [
+      "Polythene carry bags & pouches",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps"
+    ],
+    "beforeCleanlinessScore": 55,
+    "afterCleanlinessScore": 96,
+    "aiRecommendation": "Deploy designated sanitary cleanup crew, clear waste clusters, and apply sanitization spray.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_132_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_132_after.jpg"
+  },
+  {
+    "sceneId": "scene_133",
+    "environment": "urban_street",
+    "environmentName": "Municipal Waste Containers #133",
+    "wasteType": "plastic",
+    "severity": "medium",
+    "coveragePercent": 33.9,
+    "clustersCount": 2,
+    "detectedItems": [
+      "Polythene carry bags & pouches",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps"
+    ],
+    "beforeCleanlinessScore": 50,
+    "afterCleanlinessScore": 95,
+    "aiRecommendation": "Deploy designated sanitary cleanup crew, clear waste clusters, and apply sanitization spray.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_133_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_133_after.jpg"
+  },
+  {
+    "sceneId": "scene_134",
+    "environment": "urban_street",
+    "environmentName": "Municipal Waste Containers #134",
+    "wasteType": "plastic",
+    "severity": "medium",
+    "coveragePercent": 28.6,
+    "clustersCount": 3,
+    "detectedItems": [
+      "Polythene carry bags & pouches",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps"
+    ],
+    "beforeCleanlinessScore": 54,
+    "afterCleanlinessScore": 95,
+    "aiRecommendation": "Deploy designated sanitary cleanup crew, clear waste clusters, and apply sanitization spray.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_134_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_134_after.jpg"
+  },
+  {
+    "sceneId": "scene_135",
+    "environment": "urban_street",
+    "environmentName": "Municipal Waste Containers #135",
+    "wasteType": "plastic",
+    "severity": "high",
+    "coveragePercent": 42.1,
+    "clustersCount": 3,
+    "detectedItems": [
+      "Polythene carry bags & pouches",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps"
+    ],
+    "beforeCleanlinessScore": 39,
+    "afterCleanlinessScore": 97,
+    "aiRecommendation": "Deploy designated sanitary cleanup crew, clear waste clusters, and apply sanitization spray.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_135_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_135_after.jpg"
+  },
+  {
+    "sceneId": "scene_136",
+    "environment": "urban_street",
+    "environmentName": "Municipal Waste Containers #136",
+    "wasteType": "plastic",
+    "severity": "high",
+    "coveragePercent": 57.9,
+    "clustersCount": 3,
+    "detectedItems": [
+      "Polythene carry bags & pouches",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps"
+    ],
+    "beforeCleanlinessScore": 18,
+    "afterCleanlinessScore": 94,
+    "aiRecommendation": "Deploy designated sanitary cleanup crew, clear waste clusters, and apply sanitization spray.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_136_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_136_after.jpg"
+  },
+  {
+    "sceneId": "scene_137",
+    "environment": "urban_street",
+    "environmentName": "Municipal Waste Containers #137",
+    "wasteType": "plastic",
+    "severity": "high",
+    "coveragePercent": 44.3,
+    "clustersCount": 2,
+    "detectedItems": [
+      "Polythene carry bags & pouches",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps"
+    ],
+    "beforeCleanlinessScore": 28,
+    "afterCleanlinessScore": 92,
+    "aiRecommendation": "Deploy designated sanitary cleanup crew, clear waste clusters, and apply sanitization spray.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_137_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_137_after.jpg"
+  },
+  {
+    "sceneId": "scene_138",
+    "environment": "urban_street",
+    "environmentName": "Municipal Waste Containers #138",
+    "wasteType": "plastic",
+    "severity": "medium",
+    "coveragePercent": 35.1,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Polythene carry bags & pouches",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps"
+    ],
+    "beforeCleanlinessScore": 42,
+    "afterCleanlinessScore": 96,
+    "aiRecommendation": "Deploy designated sanitary cleanup crew, clear waste clusters, and apply sanitization spray.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_138_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_138_after.jpg"
+  },
+  {
+    "sceneId": "scene_139",
+    "environment": "urban_street",
+    "environmentName": "Municipal Waste Containers #139",
+    "wasteType": "plastic",
+    "severity": "high",
+    "coveragePercent": 56.8,
+    "clustersCount": 3,
+    "detectedItems": [
+      "Polythene carry bags & pouches",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps"
+    ],
+    "beforeCleanlinessScore": 18,
+    "afterCleanlinessScore": 94,
+    "aiRecommendation": "Deploy designated sanitary cleanup crew, clear waste clusters, and apply sanitization spray.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_139_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_139_after.jpg"
+  },
+  {
+    "sceneId": "scene_140",
+    "environment": "urban_street",
+    "environmentName": "Municipal Waste Containers #140",
+    "wasteType": "plastic",
+    "severity": "medium",
+    "coveragePercent": 32.2,
+    "clustersCount": 3,
+    "detectedItems": [
+      "Polythene carry bags & pouches",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps"
+    ],
+    "beforeCleanlinessScore": 46,
+    "afterCleanlinessScore": 92,
+    "aiRecommendation": "Deploy designated sanitary cleanup crew, clear waste clusters, and apply sanitization spray.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_140_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_140_after.jpg"
+  },
+  {
+    "sceneId": "scene_141",
+    "environment": "urban_street",
+    "environmentName": "Municipal Waste Containers #141",
+    "wasteType": "plastic",
+    "severity": "medium",
+    "coveragePercent": 39.0,
+    "clustersCount": 2,
+    "detectedItems": [
+      "Polythene carry bags & pouches",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps"
+    ],
+    "beforeCleanlinessScore": 38,
+    "afterCleanlinessScore": 94,
+    "aiRecommendation": "Deploy designated sanitary cleanup crew, clear waste clusters, and apply sanitization spray.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_141_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_141_after.jpg"
+  },
+  {
+    "sceneId": "scene_142",
+    "environment": "urban_street",
+    "environmentName": "Municipal Waste Containers #142",
+    "wasteType": "plastic",
+    "severity": "medium",
+    "coveragePercent": 22.3,
+    "clustersCount": 3,
+    "detectedItems": [
+      "Polythene carry bags & pouches",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps"
+    ],
+    "beforeCleanlinessScore": 55,
+    "afterCleanlinessScore": 95,
+    "aiRecommendation": "Deploy designated sanitary cleanup crew, clear waste clusters, and apply sanitization spray.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_142_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_142_after.jpg"
+  },
+  {
+    "sceneId": "scene_143",
+    "environment": "urban_street",
+    "environmentName": "Municipal Waste Containers #143",
+    "wasteType": "plastic",
+    "severity": "medium",
+    "coveragePercent": 34.3,
+    "clustersCount": 2,
+    "detectedItems": [
+      "Polythene carry bags & pouches",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps"
+    ],
+    "beforeCleanlinessScore": 45,
+    "afterCleanlinessScore": 98,
+    "aiRecommendation": "Deploy designated sanitary cleanup crew, clear waste clusters, and apply sanitization spray.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_143_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_143_after.jpg"
+  },
+  {
+    "sceneId": "scene_144",
+    "environment": "urban_street",
+    "environmentName": "Municipal Waste Containers #144",
+    "wasteType": "plastic",
+    "severity": "high",
+    "coveragePercent": 42.3,
+    "clustersCount": 2,
+    "detectedItems": [
+      "Polythene carry bags & pouches",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps"
+    ],
+    "beforeCleanlinessScore": 31,
+    "afterCleanlinessScore": 97,
+    "aiRecommendation": "Deploy designated sanitary cleanup crew, clear waste clusters, and apply sanitization spray.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_144_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_144_after.jpg"
+  },
+  {
+    "sceneId": "scene_145",
+    "environment": "urban_street",
+    "environmentName": "Municipal Waste Containers #145",
+    "wasteType": "plastic",
+    "severity": "high",
+    "coveragePercent": 44.3,
+    "clustersCount": 3,
+    "detectedItems": [
+      "Polythene carry bags & pouches",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps"
+    ],
+    "beforeCleanlinessScore": 28,
+    "afterCleanlinessScore": 95,
+    "aiRecommendation": "Deploy designated sanitary cleanup crew, clear waste clusters, and apply sanitization spray.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_145_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_145_after.jpg"
+  },
+  {
+    "sceneId": "scene_146",
+    "environment": "urban_street",
+    "environmentName": "Municipal Waste Containers #146",
+    "wasteType": "plastic",
+    "severity": "high",
+    "coveragePercent": 55.0,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Polythene carry bags & pouches",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps"
+    ],
+    "beforeCleanlinessScore": 22,
+    "afterCleanlinessScore": 94,
+    "aiRecommendation": "Deploy designated sanitary cleanup crew, clear waste clusters, and apply sanitization spray.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_146_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_146_after.jpg"
+  },
+  {
+    "sceneId": "scene_147",
+    "environment": "urban_street",
+    "environmentName": "Municipal Waste Containers #147",
+    "wasteType": "plastic",
+    "severity": "high",
+    "coveragePercent": 46.5,
+    "clustersCount": 2,
+    "detectedItems": [
+      "Polythene carry bags & pouches",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps"
+    ],
+    "beforeCleanlinessScore": 30,
+    "afterCleanlinessScore": 98,
+    "aiRecommendation": "Deploy designated sanitary cleanup crew, clear waste clusters, and apply sanitization spray.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_147_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_147_after.jpg"
+  },
+  {
+    "sceneId": "scene_148",
+    "environment": "urban_street",
+    "environmentName": "Municipal Waste Containers #148",
+    "wasteType": "plastic",
+    "severity": "medium",
+    "coveragePercent": 37.9,
+    "clustersCount": 4,
+    "detectedItems": [
+      "Polythene carry bags & pouches",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps"
+    ],
+    "beforeCleanlinessScore": 38,
+    "afterCleanlinessScore": 98,
+    "aiRecommendation": "Deploy designated sanitary cleanup crew, clear waste clusters, and apply sanitization spray.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_148_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_148_after.jpg"
+  },
+  {
+    "sceneId": "scene_149",
+    "environment": "urban_street",
+    "environmentName": "Municipal Waste Containers #149",
+    "wasteType": "plastic",
+    "severity": "high",
+    "coveragePercent": 53.1,
+    "clustersCount": 2,
+    "detectedItems": [
+      "Polythene carry bags & pouches",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps"
+    ],
+    "beforeCleanlinessScore": 18,
+    "afterCleanlinessScore": 92,
+    "aiRecommendation": "Deploy designated sanitary cleanup crew, clear waste clusters, and apply sanitization spray.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_149_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_149_after.jpg"
+  },
+  {
+    "sceneId": "scene_150",
+    "environment": "urban_street",
+    "environmentName": "Municipal Waste Containers #150",
+    "wasteType": "plastic",
+    "severity": "medium",
+    "coveragePercent": 34.2,
+    "clustersCount": 2,
+    "detectedItems": [
+      "Polythene carry bags & pouches",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps"
+    ],
+    "beforeCleanlinessScore": 43,
+    "afterCleanlinessScore": 98,
+    "aiRecommendation": "Deploy designated sanitary cleanup crew, clear waste clusters, and apply sanitization spray.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_150_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_150_after.jpg"
+  },
+  {
+    "sceneId": "scene_151",
+    "environment": "urban_street",
+    "environmentName": "Municipal Waste Containers #151",
+    "wasteType": "plastic",
+    "severity": "high",
+    "coveragePercent": 54.2,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Polythene carry bags & pouches",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps"
+    ],
+    "beforeCleanlinessScore": 22,
+    "afterCleanlinessScore": 92,
+    "aiRecommendation": "Deploy designated sanitary cleanup crew, clear waste clusters, and apply sanitization spray.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_151_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_151_after.jpg"
+  },
+  {
+    "sceneId": "scene_152",
+    "environment": "urban_street",
+    "environmentName": "Municipal Waste Containers #152",
+    "wasteType": "plastic",
+    "severity": "medium",
+    "coveragePercent": 27.4,
+    "clustersCount": 4,
+    "detectedItems": [
+      "Polythene carry bags & pouches",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps"
+    ],
+    "beforeCleanlinessScore": 55,
+    "afterCleanlinessScore": 92,
+    "aiRecommendation": "Deploy designated sanitary cleanup crew, clear waste clusters, and apply sanitization spray.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_152_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_152_after.jpg"
+  },
+  {
+    "sceneId": "scene_153",
+    "environment": "urban_street",
+    "environmentName": "Municipal Waste Containers #153",
+    "wasteType": "plastic",
+    "severity": "medium",
+    "coveragePercent": 32.6,
+    "clustersCount": 3,
+    "detectedItems": [
+      "Polythene carry bags & pouches",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps"
+    ],
+    "beforeCleanlinessScore": 44,
+    "afterCleanlinessScore": 94,
+    "aiRecommendation": "Deploy designated sanitary cleanup crew, clear waste clusters, and apply sanitization spray.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_153_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_153_after.jpg"
+  },
+  {
+    "sceneId": "scene_154",
+    "environment": "urban_street",
+    "environmentName": "Municipal Waste Containers #154",
+    "wasteType": "plastic",
+    "severity": "high",
+    "coveragePercent": 52.9,
+    "clustersCount": 4,
+    "detectedItems": [
+      "Polythene carry bags & pouches",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps"
+    ],
+    "beforeCleanlinessScore": 18,
+    "afterCleanlinessScore": 94,
+    "aiRecommendation": "Deploy designated sanitary cleanup crew, clear waste clusters, and apply sanitization spray.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_154_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_154_after.jpg"
+  },
+  {
+    "sceneId": "scene_155",
+    "environment": "vacant_plot",
+    "environmentName": "Illegal Waste Dumping Site #155",
+    "wasteType": "construction",
+    "severity": "high",
+    "coveragePercent": 52.4,
+    "clustersCount": 2,
+    "detectedItems": [
+      "Masonry rubble & broken cement bricks",
+      "Tile fragments & construction dust"
+    ],
+    "beforeCleanlinessScore": 21,
+    "afterCleanlinessScore": 92,
+    "aiRecommendation": "Deploy designated sanitary cleanup crew, clear waste clusters, and apply sanitization spray.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_155_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_155_after.jpg"
+  },
+  {
+    "sceneId": "scene_156",
+    "environment": "vacant_plot",
+    "environmentName": "Illegal Waste Dumping Site #156",
+    "wasteType": "construction",
+    "severity": "high",
+    "coveragePercent": 52.2,
+    "clustersCount": 4,
+    "detectedItems": [
+      "Masonry rubble & broken cement bricks",
+      "Tile fragments & construction dust"
+    ],
+    "beforeCleanlinessScore": 18,
+    "afterCleanlinessScore": 96,
+    "aiRecommendation": "Deploy designated sanitary cleanup crew, clear waste clusters, and apply sanitization spray.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_156_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_156_after.jpg"
+  },
+  {
+    "sceneId": "scene_157",
+    "environment": "vacant_plot",
+    "environmentName": "Illegal Waste Dumping Site #157",
+    "wasteType": "construction",
+    "severity": "medium",
+    "coveragePercent": 30.5,
+    "clustersCount": 3,
+    "detectedItems": [
+      "Masonry rubble & broken cement bricks",
+      "Tile fragments & construction dust"
+    ],
+    "beforeCleanlinessScore": 47,
+    "afterCleanlinessScore": 98,
+    "aiRecommendation": "Deploy designated sanitary cleanup crew, clear waste clusters, and apply sanitization spray.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_157_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_157_after.jpg"
+  },
+  {
+    "sceneId": "scene_158",
+    "environment": "vacant_plot",
+    "environmentName": "Illegal Waste Dumping Site #158",
+    "wasteType": "construction",
+    "severity": "high",
+    "coveragePercent": 47.5,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Masonry rubble & broken cement bricks",
+      "Tile fragments & construction dust"
+    ],
+    "beforeCleanlinessScore": 31,
+    "afterCleanlinessScore": 92,
+    "aiRecommendation": "Deploy designated sanitary cleanup crew, clear waste clusters, and apply sanitization spray.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_158_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_158_after.jpg"
+  },
+  {
+    "sceneId": "scene_159",
+    "environment": "vacant_plot",
+    "environmentName": "Illegal Waste Dumping Site #159",
+    "wasteType": "construction",
+    "severity": "high",
+    "coveragePercent": 57.8,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Masonry rubble & broken cement bricks",
+      "Tile fragments & construction dust"
+    ],
+    "beforeCleanlinessScore": 18,
+    "afterCleanlinessScore": 96,
+    "aiRecommendation": "Deploy designated sanitary cleanup crew, clear waste clusters, and apply sanitization spray.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_159_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_159_after.jpg"
+  },
+  {
+    "sceneId": "scene_160",
+    "environment": "vacant_plot",
+    "environmentName": "Illegal Waste Dumping Site #160",
+    "wasteType": "construction",
+    "severity": "medium",
+    "coveragePercent": 36.1,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Masonry rubble & broken cement bricks",
+      "Tile fragments & construction dust"
+    ],
+    "beforeCleanlinessScore": 42,
+    "afterCleanlinessScore": 93,
+    "aiRecommendation": "Deploy designated sanitary cleanup crew, clear waste clusters, and apply sanitization spray.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_160_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_160_after.jpg"
+  },
+  {
+    "sceneId": "scene_161",
+    "environment": "vacant_plot",
+    "environmentName": "Illegal Waste Dumping Site #161",
+    "wasteType": "construction",
+    "severity": "medium",
+    "coveragePercent": 26.9,
+    "clustersCount": 3,
+    "detectedItems": [
+      "Masonry rubble & broken cement bricks",
+      "Tile fragments & construction dust"
+    ],
+    "beforeCleanlinessScore": 55,
+    "afterCleanlinessScore": 97,
+    "aiRecommendation": "Deploy designated sanitary cleanup crew, clear waste clusters, and apply sanitization spray.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_161_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_161_after.jpg"
+  },
+  {
+    "sceneId": "scene_162",
+    "environment": "vacant_plot",
+    "environmentName": "Illegal Waste Dumping Site #162",
+    "wasteType": "construction",
+    "severity": "medium",
+    "coveragePercent": 38.1,
+    "clustersCount": 2,
+    "detectedItems": [
+      "Masonry rubble & broken cement bricks",
+      "Tile fragments & construction dust"
+    ],
+    "beforeCleanlinessScore": 39,
+    "afterCleanlinessScore": 97,
+    "aiRecommendation": "Deploy designated sanitary cleanup crew, clear waste clusters, and apply sanitization spray.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_162_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_162_after.jpg"
+  },
+  {
+    "sceneId": "scene_163",
+    "environment": "vacant_plot",
+    "environmentName": "Illegal Waste Dumping Site #163",
+    "wasteType": "construction",
+    "severity": "medium",
+    "coveragePercent": 35.5,
+    "clustersCount": 4,
+    "detectedItems": [
+      "Masonry rubble & broken cement bricks",
+      "Tile fragments & construction dust"
+    ],
+    "beforeCleanlinessScore": 47,
+    "afterCleanlinessScore": 98,
+    "aiRecommendation": "Deploy designated sanitary cleanup crew, clear waste clusters, and apply sanitization spray.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_163_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_163_after.jpg"
+  },
+  {
+    "sceneId": "scene_164",
+    "environment": "vacant_plot",
+    "environmentName": "Illegal Waste Dumping Site #164",
+    "wasteType": "construction",
+    "severity": "high",
+    "coveragePercent": 57.8,
+    "clustersCount": 4,
+    "detectedItems": [
+      "Masonry rubble & broken cement bricks",
+      "Tile fragments & construction dust"
+    ],
+    "beforeCleanlinessScore": 18,
+    "afterCleanlinessScore": 94,
+    "aiRecommendation": "Deploy designated sanitary cleanup crew, clear waste clusters, and apply sanitization spray.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_164_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_164_after.jpg"
+  },
+  {
+    "sceneId": "scene_165",
+    "environment": "vacant_plot",
+    "environmentName": "Illegal Waste Dumping Site #165",
+    "wasteType": "construction",
+    "severity": "high",
+    "coveragePercent": 57.8,
+    "clustersCount": 3,
+    "detectedItems": [
+      "Masonry rubble & broken cement bricks",
+      "Tile fragments & construction dust"
+    ],
+    "beforeCleanlinessScore": 18,
+    "afterCleanlinessScore": 92,
+    "aiRecommendation": "Deploy designated sanitary cleanup crew, clear waste clusters, and apply sanitization spray.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_165_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_165_after.jpg"
+  },
+  {
+    "sceneId": "scene_166",
+    "environment": "vacant_plot",
+    "environmentName": "Illegal Waste Dumping Site #166",
+    "wasteType": "construction",
+    "severity": "medium",
+    "coveragePercent": 31.1,
+    "clustersCount": 4,
+    "detectedItems": [
+      "Masonry rubble & broken cement bricks",
+      "Tile fragments & construction dust"
+    ],
+    "beforeCleanlinessScore": 48,
+    "afterCleanlinessScore": 97,
+    "aiRecommendation": "Deploy designated sanitary cleanup crew, clear waste clusters, and apply sanitization spray.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_166_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_166_after.jpg"
+  },
+  {
+    "sceneId": "scene_167",
+    "environment": "vacant_plot",
+    "environmentName": "Illegal Waste Dumping Site #167",
+    "wasteType": "construction",
+    "severity": "high",
+    "coveragePercent": 46.6,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Masonry rubble & broken cement bricks",
+      "Tile fragments & construction dust"
+    ],
+    "beforeCleanlinessScore": 25,
+    "afterCleanlinessScore": 96,
+    "aiRecommendation": "Deploy designated sanitary cleanup crew, clear waste clusters, and apply sanitization spray.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_167_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_167_after.jpg"
+  },
+  {
+    "sceneId": "scene_168",
+    "environment": "vacant_plot",
+    "environmentName": "Illegal Waste Dumping Site #168",
+    "wasteType": "construction",
+    "severity": "medium",
+    "coveragePercent": 23.9,
+    "clustersCount": 2,
+    "detectedItems": [
+      "Masonry rubble & broken cement bricks",
+      "Tile fragments & construction dust"
+    ],
+    "beforeCleanlinessScore": 54,
+    "afterCleanlinessScore": 96,
+    "aiRecommendation": "Deploy designated sanitary cleanup crew, clear waste clusters, and apply sanitization spray.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_168_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_168_after.jpg"
+  },
+  {
+    "sceneId": "scene_169",
+    "environment": "vacant_plot",
+    "environmentName": "Illegal Waste Dumping Site #169",
+    "wasteType": "construction",
+    "severity": "medium",
+    "coveragePercent": 32.8,
+    "clustersCount": 4,
+    "detectedItems": [
+      "Masonry rubble & broken cement bricks",
+      "Tile fragments & construction dust"
+    ],
+    "beforeCleanlinessScore": 48,
+    "afterCleanlinessScore": 97,
+    "aiRecommendation": "Deploy designated sanitary cleanup crew, clear waste clusters, and apply sanitization spray.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_169_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_169_after.jpg"
+  },
+  {
+    "sceneId": "scene_170",
+    "environment": "vacant_plot",
+    "environmentName": "Illegal Waste Dumping Site #170",
+    "wasteType": "construction",
+    "severity": "high",
+    "coveragePercent": 47.2,
+    "clustersCount": 3,
+    "detectedItems": [
+      "Masonry rubble & broken cement bricks",
+      "Tile fragments & construction dust"
+    ],
+    "beforeCleanlinessScore": 30,
+    "afterCleanlinessScore": 98,
+    "aiRecommendation": "Deploy designated sanitary cleanup crew, clear waste clusters, and apply sanitization spray.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_170_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_170_after.jpg"
+  },
+  {
+    "sceneId": "scene_171",
+    "environment": "vacant_plot",
+    "environmentName": "Illegal Waste Dumping Site #171",
+    "wasteType": "construction",
+    "severity": "medium",
+    "coveragePercent": 32.0,
+    "clustersCount": 4,
+    "detectedItems": [
+      "Masonry rubble & broken cement bricks",
+      "Tile fragments & construction dust"
+    ],
+    "beforeCleanlinessScore": 49,
+    "afterCleanlinessScore": 94,
+    "aiRecommendation": "Deploy designated sanitary cleanup crew, clear waste clusters, and apply sanitization spray.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_171_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_171_after.jpg"
+  },
+  {
+    "sceneId": "scene_172",
+    "environment": "vacant_plot",
+    "environmentName": "Illegal Waste Dumping Site #172",
+    "wasteType": "construction",
+    "severity": "medium",
+    "coveragePercent": 36.1,
+    "clustersCount": 2,
+    "detectedItems": [
+      "Masonry rubble & broken cement bricks",
+      "Tile fragments & construction dust"
+    ],
+    "beforeCleanlinessScore": 39,
+    "afterCleanlinessScore": 92,
+    "aiRecommendation": "Deploy designated sanitary cleanup crew, clear waste clusters, and apply sanitization spray.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_172_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_172_after.jpg"
+  },
+  {
+    "sceneId": "scene_173",
+    "environment": "vacant_plot",
+    "environmentName": "Illegal Waste Dumping Site #173",
+    "wasteType": "construction",
+    "severity": "medium",
+    "coveragePercent": 36.8,
+    "clustersCount": 4,
+    "detectedItems": [
+      "Masonry rubble & broken cement bricks",
+      "Tile fragments & construction dust"
+    ],
+    "beforeCleanlinessScore": 45,
+    "afterCleanlinessScore": 98,
+    "aiRecommendation": "Deploy designated sanitary cleanup crew, clear waste clusters, and apply sanitization spray.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_173_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_173_after.jpg"
+  },
+  {
+    "sceneId": "scene_174",
+    "environment": "vacant_plot",
+    "environmentName": "Illegal Waste Dumping Site #174",
+    "wasteType": "construction",
+    "severity": "medium",
+    "coveragePercent": 27.1,
+    "clustersCount": 2,
+    "detectedItems": [
+      "Masonry rubble & broken cement bricks",
+      "Tile fragments & construction dust"
+    ],
+    "beforeCleanlinessScore": 51,
+    "afterCleanlinessScore": 94,
+    "aiRecommendation": "Deploy designated sanitary cleanup crew, clear waste clusters, and apply sanitization spray.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_174_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_174_after.jpg"
+  },
+  {
+    "sceneId": "scene_175",
+    "environment": "vacant_plot",
+    "environmentName": "Illegal Waste Dumping Site #175",
+    "wasteType": "construction",
+    "severity": "medium",
+    "coveragePercent": 22.6,
+    "clustersCount": 3,
+    "detectedItems": [
+      "Masonry rubble & broken cement bricks",
+      "Tile fragments & construction dust"
+    ],
+    "beforeCleanlinessScore": 55,
+    "afterCleanlinessScore": 94,
+    "aiRecommendation": "Deploy designated sanitary cleanup crew, clear waste clusters, and apply sanitization spray.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_175_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_175_after.jpg"
+  },
+  {
+    "sceneId": "scene_176",
+    "environment": "vacant_plot",
+    "environmentName": "Illegal Waste Dumping Site #176",
+    "wasteType": "construction",
+    "severity": "high",
+    "coveragePercent": 56.2,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Masonry rubble & broken cement bricks",
+      "Tile fragments & construction dust"
+    ],
+    "beforeCleanlinessScore": 18,
+    "afterCleanlinessScore": 94,
+    "aiRecommendation": "Deploy designated sanitary cleanup crew, clear waste clusters, and apply sanitization spray.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_176_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_176_after.jpg"
+  },
+  {
+    "sceneId": "scene_177",
+    "environment": "vacant_plot",
+    "environmentName": "Illegal Waste Dumping Site #177",
+    "wasteType": "construction",
+    "severity": "high",
+    "coveragePercent": 40.5,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Masonry rubble & broken cement bricks",
+      "Tile fragments & construction dust"
+    ],
+    "beforeCleanlinessScore": 32,
+    "afterCleanlinessScore": 97,
+    "aiRecommendation": "Deploy designated sanitary cleanup crew, clear waste clusters, and apply sanitization spray.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_177_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_177_after.jpg"
+  },
+  {
+    "sceneId": "scene_178",
+    "environment": "vacant_plot",
+    "environmentName": "Illegal Waste Dumping Site #178",
+    "wasteType": "construction",
+    "severity": "medium",
+    "coveragePercent": 26.9,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Masonry rubble & broken cement bricks",
+      "Tile fragments & construction dust"
+    ],
+    "beforeCleanlinessScore": 52,
+    "afterCleanlinessScore": 94,
+    "aiRecommendation": "Deploy designated sanitary cleanup crew, clear waste clusters, and apply sanitization spray.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_178_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_178_after.jpg"
+  },
+  {
+    "sceneId": "scene_179",
+    "environment": "vacant_plot",
+    "environmentName": "Illegal Waste Dumping Site #179",
+    "wasteType": "construction",
+    "severity": "high",
+    "coveragePercent": 51.2,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Masonry rubble & broken cement bricks",
+      "Tile fragments & construction dust"
+    ],
+    "beforeCleanlinessScore": 27,
+    "afterCleanlinessScore": 98,
+    "aiRecommendation": "Deploy designated sanitary cleanup crew, clear waste clusters, and apply sanitization spray.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_179_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_179_after.jpg"
+  },
+  {
+    "sceneId": "scene_180",
+    "environment": "vacant_plot",
+    "environmentName": "Illegal Waste Dumping Site #180",
+    "wasteType": "construction",
+    "severity": "medium",
+    "coveragePercent": 39.9,
+    "clustersCount": 2,
+    "detectedItems": [
+      "Masonry rubble & broken cement bricks",
+      "Tile fragments & construction dust"
+    ],
+    "beforeCleanlinessScore": 39,
+    "afterCleanlinessScore": 92,
+    "aiRecommendation": "Deploy designated sanitary cleanup crew, clear waste clusters, and apply sanitization spray.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_180_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_180_after.jpg"
+  },
+  {
+    "sceneId": "scene_181",
+    "environment": "vacant_plot",
+    "environmentName": "Illegal Waste Dumping Site #181",
+    "wasteType": "construction",
+    "severity": "medium",
+    "coveragePercent": 31.7,
+    "clustersCount": 3,
+    "detectedItems": [
+      "Masonry rubble & broken cement bricks",
+      "Tile fragments & construction dust"
+    ],
+    "beforeCleanlinessScore": 49,
+    "afterCleanlinessScore": 93,
+    "aiRecommendation": "Deploy designated sanitary cleanup crew, clear waste clusters, and apply sanitization spray.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_181_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_181_after.jpg"
+  },
+  {
+    "sceneId": "scene_182",
+    "environment": "vacant_plot",
+    "environmentName": "Illegal Waste Dumping Site #182",
+    "wasteType": "construction",
+    "severity": "high",
+    "coveragePercent": 41.4,
+    "clustersCount": 4,
+    "detectedItems": [
+      "Masonry rubble & broken cement bricks",
+      "Tile fragments & construction dust"
+    ],
+    "beforeCleanlinessScore": 34,
+    "afterCleanlinessScore": 97,
+    "aiRecommendation": "Deploy designated sanitary cleanup crew, clear waste clusters, and apply sanitization spray.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_182_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_182_after.jpg"
+  },
+  {
+    "sceneId": "scene_183",
+    "environment": "vacant_plot",
+    "environmentName": "Illegal Waste Dumping Site #183",
+    "wasteType": "construction",
+    "severity": "medium",
+    "coveragePercent": 35.1,
+    "clustersCount": 2,
+    "detectedItems": [
+      "Masonry rubble & broken cement bricks",
+      "Tile fragments & construction dust"
+    ],
+    "beforeCleanlinessScore": 42,
+    "afterCleanlinessScore": 95,
+    "aiRecommendation": "Deploy designated sanitary cleanup crew, clear waste clusters, and apply sanitization spray.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_183_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_183_after.jpg"
+  },
+  {
+    "sceneId": "scene_184",
+    "environment": "vacant_plot",
+    "environmentName": "Illegal Waste Dumping Site #184",
+    "wasteType": "construction",
+    "severity": "high",
+    "coveragePercent": 46.5,
+    "clustersCount": 2,
+    "detectedItems": [
+      "Masonry rubble & broken cement bricks",
+      "Tile fragments & construction dust"
+    ],
+    "beforeCleanlinessScore": 31,
+    "afterCleanlinessScore": 94,
+    "aiRecommendation": "Deploy designated sanitary cleanup crew, clear waste clusters, and apply sanitization spray.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_184_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_184_after.jpg"
+  },
+  {
+    "sceneId": "scene_185",
+    "environment": "public_park",
+    "environmentName": "Park & Public Litter #185",
+    "wasteType": "plastic",
+    "severity": "high",
+    "coveragePercent": 55.1,
+    "clustersCount": 2,
+    "detectedItems": [
+      "Polythene carry bags & pouches",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps"
+    ],
+    "beforeCleanlinessScore": 21,
+    "afterCleanlinessScore": 97,
+    "aiRecommendation": "Deploy designated sanitary cleanup crew, clear waste clusters, and apply sanitization spray.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_185_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_185_after.jpg"
+  },
+  {
+    "sceneId": "scene_186",
+    "environment": "public_park",
+    "environmentName": "Park & Public Litter #186",
+    "wasteType": "plastic",
+    "severity": "medium",
+    "coveragePercent": 26.5,
+    "clustersCount": 4,
+    "detectedItems": [
+      "Polythene carry bags & pouches",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps"
+    ],
+    "beforeCleanlinessScore": 55,
+    "afterCleanlinessScore": 96,
+    "aiRecommendation": "Deploy designated sanitary cleanup crew, clear waste clusters, and apply sanitization spray.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_186_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_186_after.jpg"
+  },
+  {
+    "sceneId": "scene_187",
+    "environment": "public_park",
+    "environmentName": "Park & Public Litter #187",
+    "wasteType": "plastic",
+    "severity": "medium",
+    "coveragePercent": 36.5,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Polythene carry bags & pouches",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps"
+    ],
+    "beforeCleanlinessScore": 40,
+    "afterCleanlinessScore": 92,
+    "aiRecommendation": "Deploy designated sanitary cleanup crew, clear waste clusters, and apply sanitization spray.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_187_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_187_after.jpg"
+  },
+  {
+    "sceneId": "scene_188",
+    "environment": "public_park",
+    "environmentName": "Park & Public Litter #188",
+    "wasteType": "plastic",
+    "severity": "medium",
+    "coveragePercent": 38.6,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Polythene carry bags & pouches",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps"
+    ],
+    "beforeCleanlinessScore": 43,
+    "afterCleanlinessScore": 94,
+    "aiRecommendation": "Deploy designated sanitary cleanup crew, clear waste clusters, and apply sanitization spray.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_188_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_188_after.jpg"
+  },
+  {
+    "sceneId": "scene_189",
+    "environment": "public_park",
+    "environmentName": "Park & Public Litter #189",
+    "wasteType": "plastic",
+    "severity": "high",
+    "coveragePercent": 57.6,
+    "clustersCount": 4,
+    "detectedItems": [
+      "Polythene carry bags & pouches",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps"
+    ],
+    "beforeCleanlinessScore": 18,
+    "afterCleanlinessScore": 97,
+    "aiRecommendation": "Deploy designated sanitary cleanup crew, clear waste clusters, and apply sanitization spray.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_189_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_189_after.jpg"
+  },
+  {
+    "sceneId": "scene_190",
+    "environment": "public_park",
+    "environmentName": "Park & Public Litter #190",
+    "wasteType": "plastic",
+    "severity": "medium",
+    "coveragePercent": 30.9,
+    "clustersCount": 3,
+    "detectedItems": [
+      "Polythene carry bags & pouches",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps"
+    ],
+    "beforeCleanlinessScore": 47,
+    "afterCleanlinessScore": 97,
+    "aiRecommendation": "Deploy designated sanitary cleanup crew, clear waste clusters, and apply sanitization spray.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_190_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_190_after.jpg"
+  },
+  {
+    "sceneId": "scene_191",
+    "environment": "public_park",
+    "environmentName": "Park & Public Litter #191",
+    "wasteType": "plastic",
+    "severity": "medium",
+    "coveragePercent": 23.0,
+    "clustersCount": 2,
+    "detectedItems": [
+      "Polythene carry bags & pouches",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps"
+    ],
+    "beforeCleanlinessScore": 55,
+    "afterCleanlinessScore": 93,
+    "aiRecommendation": "Deploy designated sanitary cleanup crew, clear waste clusters, and apply sanitization spray.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_191_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_191_after.jpg"
+  },
+  {
+    "sceneId": "scene_192",
+    "environment": "public_park",
+    "environmentName": "Park & Public Litter #192",
+    "wasteType": "plastic",
+    "severity": "high",
+    "coveragePercent": 54.0,
+    "clustersCount": 3,
+    "detectedItems": [
+      "Polythene carry bags & pouches",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps"
+    ],
+    "beforeCleanlinessScore": 18,
+    "afterCleanlinessScore": 98,
+    "aiRecommendation": "Deploy designated sanitary cleanup crew, clear waste clusters, and apply sanitization spray.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_192_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_192_after.jpg"
+  },
+  {
+    "sceneId": "scene_193",
+    "environment": "public_park",
+    "environmentName": "Park & Public Litter #193",
+    "wasteType": "plastic",
+    "severity": "medium",
+    "coveragePercent": 24.1,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Polythene carry bags & pouches",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps"
+    ],
+    "beforeCleanlinessScore": 55,
+    "afterCleanlinessScore": 93,
+    "aiRecommendation": "Deploy designated sanitary cleanup crew, clear waste clusters, and apply sanitization spray.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_193_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_193_after.jpg"
+  },
+  {
+    "sceneId": "scene_194",
+    "environment": "public_park",
+    "environmentName": "Park & Public Litter #194",
+    "wasteType": "plastic",
+    "severity": "high",
+    "coveragePercent": 46.2,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Polythene carry bags & pouches",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps"
+    ],
+    "beforeCleanlinessScore": 25,
+    "afterCleanlinessScore": 92,
+    "aiRecommendation": "Deploy designated sanitary cleanup crew, clear waste clusters, and apply sanitization spray.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_194_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_194_after.jpg"
+  },
+  {
+    "sceneId": "scene_195",
+    "environment": "public_park",
+    "environmentName": "Park & Public Litter #195",
+    "wasteType": "plastic",
+    "severity": "medium",
+    "coveragePercent": 29.9,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Polythene carry bags & pouches",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps"
+    ],
+    "beforeCleanlinessScore": 48,
+    "afterCleanlinessScore": 94,
+    "aiRecommendation": "Deploy designated sanitary cleanup crew, clear waste clusters, and apply sanitization spray.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_195_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_195_after.jpg"
+  },
+  {
+    "sceneId": "scene_196",
+    "environment": "public_park",
+    "environmentName": "Park & Public Litter #196",
+    "wasteType": "plastic",
+    "severity": "medium",
+    "coveragePercent": 39.4,
+    "clustersCount": 2,
+    "detectedItems": [
+      "Polythene carry bags & pouches",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps"
+    ],
+    "beforeCleanlinessScore": 36,
+    "afterCleanlinessScore": 95,
+    "aiRecommendation": "Deploy designated sanitary cleanup crew, clear waste clusters, and apply sanitization spray.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_196_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_196_after.jpg"
+  },
+  {
+    "sceneId": "scene_197",
+    "environment": "public_park",
+    "environmentName": "Park & Public Litter #197",
+    "wasteType": "plastic",
+    "severity": "high",
+    "coveragePercent": 55.1,
+    "clustersCount": 3,
+    "detectedItems": [
+      "Polythene carry bags & pouches",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps"
+    ],
+    "beforeCleanlinessScore": 19,
+    "afterCleanlinessScore": 93,
+    "aiRecommendation": "Deploy designated sanitary cleanup crew, clear waste clusters, and apply sanitization spray.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_197_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_197_after.jpg"
+  },
+  {
+    "sceneId": "scene_198",
+    "environment": "public_park",
+    "environmentName": "Park & Public Litter #198",
+    "wasteType": "plastic",
+    "severity": "medium",
+    "coveragePercent": 37.8,
+    "clustersCount": 4,
+    "detectedItems": [
+      "Polythene carry bags & pouches",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps"
+    ],
+    "beforeCleanlinessScore": 36,
+    "afterCleanlinessScore": 93,
+    "aiRecommendation": "Deploy designated sanitary cleanup crew, clear waste clusters, and apply sanitization spray.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_198_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_198_after.jpg"
+  },
+  {
+    "sceneId": "scene_199",
+    "environment": "public_park",
+    "environmentName": "Park & Public Litter #199",
+    "wasteType": "plastic",
+    "severity": "medium",
+    "coveragePercent": 32.4,
+    "clustersCount": 1,
+    "detectedItems": [
+      "Polythene carry bags & pouches",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps"
+    ],
+    "beforeCleanlinessScore": 49,
+    "afterCleanlinessScore": 93,
+    "aiRecommendation": "Deploy designated sanitary cleanup crew, clear waste clusters, and apply sanitization spray.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_199_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_199_after.jpg"
+  },
+  {
+    "sceneId": "scene_200",
+    "environment": "public_park",
+    "environmentName": "Park & Public Litter #200",
+    "wasteType": "plastic",
+    "severity": "high",
+    "coveragePercent": 55.2,
+    "clustersCount": 4,
+    "detectedItems": [
+      "Polythene carry bags & pouches",
+      "Crinkled food & snack wrappers",
+      "Discarded PET plastic bottles & caps"
+    ],
+    "beforeCleanlinessScore": 22,
+    "afterCleanlinessScore": 96,
+    "aiRecommendation": "Deploy designated sanitary cleanup crew, clear waste clusters, and apply sanitization spray.",
+    "beforeImagePath": "/dataset/before_cleanup/scene_200_before.jpg",
+    "afterImagePath": "/dataset/after_cleanup/scene_200_after.jpg"
+  }
+]

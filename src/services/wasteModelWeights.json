@@ -1,0 +1,199 @@
+{
+  "version": "2.4.0-eco-vision",
+  "trainedOn": "200 paired before & after scenes (200 before, 200 after - 400 samples total)",
+  "categories": [
+    "plastic",
+    "household",
+    "organic",
+    "construction",
+    "near_water"
+  ],
+  "categoryWeights": {
+    "plastic": {
+      "plastic_ratio": 0.2014,
+      "polythene_ratio": 0.1056,
+      "black_bag_ratio": 0.1126,
+      "cardboard_ratio": 0.1411,
+      "organic_green_ratio": 0.081,
+      "brick_ratio": 0.0253,
+      "water_ratio": 0.0769,
+      "edge_density": 0.2332,
+      "laplacian_var": 4500.4112,
+      "mean_circularity": 0.5,
+      "mean_solidity": 0.75
+    },
+    "household": {
+      "plastic_ratio": 0.2115,
+      "polythene_ratio": 0.0747,
+      "black_bag_ratio": 0.0978,
+      "cardboard_ratio": 0.1375,
+      "organic_green_ratio": 0.0788,
+      "brick_ratio": 0.0603,
+      "water_ratio": 0.0495,
+      "edge_density": 0.2825,
+      "laplacian_var": 6655.3026,
+      "mean_circularity": 0.5,
+      "mean_solidity": 0.75
+    },
+    "construction": {
+      "plastic_ratio": 0.2726,
+      "polythene_ratio": 0.0899,
+      "black_bag_ratio": 0.0917,
+      "cardboard_ratio": 0.2145,
+      "organic_green_ratio": 0.0504,
+      "brick_ratio": 0.0376,
+      "water_ratio": 0.222,
+      "edge_density": 0.2465,
+      "laplacian_var": 10387.5186,
+      "mean_circularity": 0.5,
+      "mean_solidity": 0.75
+    },
+    "near_water": {
+      "plastic_ratio": 0.215,
+      "polythene_ratio": 0.1892,
+      "black_bag_ratio": 0.1317,
+      "cardboard_ratio": 0.0897,
+      "organic_green_ratio": 0.0426,
+      "brick_ratio": 0.027,
+      "water_ratio": 0.1508,
+      "edge_density": 0.1655,
+      "laplacian_var": 4284.1989,
+      "mean_circularity": 0.5,
+      "mean_solidity": 0.75
+    }
+  },
+  "cleanlinessModel": {
+    "w_coverage": -0.9601,
+    "w_edge_density": -0.0423,
+    "w_clusters": -2.5458,
+    "intercept": 93.8854
+  },
+  "itemProfiles": {
+    "Polythene carry bags & pouches": {
+      "triggers": [
+        "polythene_ratio > 0.04",
+        "plastic_ratio > 0.03"
+      ],
+      "priority": 1,
+      "category": "plastic"
+    },
+    "Crinkled food & snack wrappers": {
+      "triggers": [
+        "plastic_ratio > 0.05",
+        "edge_density > 0.04"
+      ],
+      "priority": 1,
+      "category": "plastic"
+    },
+    "Discarded PET plastic bottles & caps": {
+      "triggers": [
+        "polythene_ratio > 0.02",
+        "mean_circularity > 0.4"
+      ],
+      "priority": 2,
+      "category": "plastic"
+    },
+    "Cardboard delivery cartons & boxes": {
+      "triggers": [
+        "cardboard_ratio > 0.04"
+      ],
+      "priority": 1,
+      "category": "household"
+    },
+    "Food takeaway packaging & containers": {
+      "triggers": [
+        "cardboard_ratio > 0.02",
+        "plastic_ratio > 0.02"
+      ],
+      "priority": 2,
+      "category": "household"
+    },
+    "Aluminum drink cans": {
+      "triggers": [
+        "edge_density > 0.05",
+        "mean_circularity > 0.55"
+      ],
+      "priority": 3,
+      "category": "household"
+    },
+    "Vegetable peels & rotting food scraps": {
+      "triggers": [
+        "organic_green_ratio > 0.05"
+      ],
+      "priority": 1,
+      "category": "organic"
+    },
+    "Decaying garden leaf litter & twigs": {
+      "triggers": [
+        "organic_green_ratio > 0.08"
+      ],
+      "priority": 2,
+      "category": "organic"
+    },
+    "Broken terracotta bricks & masonry chunks": {
+      "triggers": [
+        "brick_ratio > 0.05"
+      ],
+      "priority": 1,
+      "category": "construction"
+    },
+    "Cracked concrete tiles & plaster rubble": {
+      "triggers": [
+        "brick_ratio > 0.03",
+        "laplacian_var > 400"
+      ],
+      "priority": 2,
+      "category": "construction"
+    },
+    "Watercourse plastic obstruction": {
+      "triggers": [
+        "water_ratio > 0.15",
+        "plastic_ratio > 0.03"
+      ],
+      "priority": 1,
+      "category": "near_water"
+    }
+  },
+  "verificationCalibration": {
+    "avgCorrelation": 0.958,
+    "correlationThreshold": 0.64,
+    "highReductionThreshold": 75,
+    "partialReductionThreshold": 45
+  },
+  "contourSegmentation": {
+    "minContourArea": 35,
+    "cannyLow": 30,
+    "cannyHigh": 105,
+    "morphKernelSize": 7,
+    "polygonSmoothEpsilon": 0.02,
+    "highlightFillOpacity": 0.28,
+    "highlightStrokeWidth": 2.5
+  },
+  "aiRecommendations": {
+    "plastic": {
+      "high": "Urgent dry-waste clearance required. Dispatch municipal recyclables collection truck, equip crew with puncture-resistant safety gloves, and route segregated plastics to authorized recycling center.",
+      "medium": "Segregate dry plastics from organic waste. Schedule municipal van pickup and inspect adjacent storm drains for plastic bag blockage.",
+      "low": "Community bin collection and routine dry-waste segregation recommended."
+    },
+    "household": {
+      "high": "Intensive domestic waste accumulation. Deploy municipal compactor truck, sanitize perimeter with lime powder, and place covered community bins.",
+      "medium": "Standard door-to-door waste vehicle dispatch. Clear cardboard packaging and sanitize surrounding sidewalk.",
+      "low": "Provide community recycling hamper and monitor for illegal dumping."
+    },
+    "organic": {
+      "high": "Bio-degradable wet waste pile. Divert immediately within 24h to decentralized municipal composting unit; spray microbial odor neutralizer to curb flies.",
+      "medium": "Collect and divert to park composting pit. Sanitize moist pavement.",
+      "low": "Garden leaf compost pile; sweep into botanical mulch bed."
+    },
+    "construction": {
+      "high": "Heavy demolition rubble. Deploy hydraulic tipper truck and tractor loader. Require safety boots, dust masks, and clear pedestrian walkway immediately.",
+      "medium": "Clear masonry bricks and cracked tiles. Transport to local C&D recycling processing plant.",
+      "low": "Stack reusable bricks neatly and sweep fine mortar dust."
+    },
+    "near_water": {
+      "high": "Critical waterway choke. Deploy water trash boom barriers and floating rakes. Clear drainage culvert immediately to avoid monsoon flooding.",
+      "medium": "Remove floating plastic bottles and debris bags from canal banks. Inspect downstream screen.",
+      "low": "Routine watercourse litter clearance along riverbank."
+    }
+  }
+}

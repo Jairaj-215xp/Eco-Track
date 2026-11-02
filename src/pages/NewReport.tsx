@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { Camera, MapPin, ChevronLeft, ArrowRight, X, Info, CheckCircle, Leaf, Loader2, Target, Zap, AlertCircle, FileText, Sparkles, ShieldAlert } from 'lucide-react';
+import { Camera, MapPin, ChevronLeft, ArrowRight, X, Info, CheckCircle, Leaf, Loader2, Target, Zap, AlertCircle, FileText, Sparkles, ShieldAlert, FolderOpen, Layers } from 'lucide-react';
 import { Button } from '../components/ui/Button';
 import { useNavigate } from 'react-router-dom';
 import { reportService } from '../services/reportService';
@@ -22,6 +22,7 @@ export function NewReport() {
   const [photoUrl, setPhotoUrl] = useState<string | null>(null);
   const [photoFile, setPhotoFile] = useState<File | null>(null);
   const [aiAnalysis, setAiAnalysis] = useState<AIAnalysisResult | null>(null);
+  const [showOpenCVContours, setShowOpenCVContours] = useState(true);
 
   const [location, setLocation] = useState<{ lat: number; lng: number; address: string; accuracyM: number }>({
     lat: 18.4912, 
@@ -40,6 +41,49 @@ export function NewReport() {
   const handlePrev = () => {
     if (step === 1) navigate(-1);
     else setStep(s => s - 1);
+  };
+
+  // Dataset Modal State for testing 100 before/after scenes
+  const [showDatasetModal, setShowDatasetModal] = useState(false);
+  const [datasetScenes, setDatasetScenes] = useState<any[]>([]);
+  const [selectedEnvFilter, setSelectedEnvFilter] = useState<string>('all');
+  const [loadingDataset, setLoadingDataset] = useState(false);
+  const [sampleMode, setSampleMode] = useState<'before' | 'after'>('before');
+
+  const openDatasetPicker = async () => {
+    setShowDatasetModal(true);
+    if (datasetScenes.length === 0) {
+      setLoadingDataset(true);
+      try {
+        const res = await fetch('/dataset/dataset_metadata.json');
+        if (res.ok) {
+          const data = await res.json();
+          setDatasetScenes(data);
+        }
+      } catch (err) {
+        console.warn('Failed to load dataset metadata:', err);
+      } finally {
+        setLoadingDataset(false);
+      }
+    }
+  };
+
+  const handleSelectSample = async (imagePath: string, defaultWasteType?: string) => {
+    setShowDatasetModal(false);
+    setPhotoUrl(imagePath);
+    setPhotoFile(null);
+    setAnalyzing(true);
+    try {
+      const result = await openVisionService.scanGarbageImage(imagePath);
+      setAiAnalysis(result);
+      setWasteType(result.wasteType);
+      setSeverity(result.severity);
+    } catch (err) {
+      console.error('Error analyzing sample image:', err);
+      if (defaultWasteType) setWasteType(defaultWasteType as any);
+    } finally {
+      setAnalyzing(false);
+    }
   };
 
   // Real Image Upload & Open Vision AI Scan
@@ -213,7 +257,7 @@ export function NewReport() {
                 <div className="space-y-4">
                   <div className="inline-flex items-center space-x-1.5 bg-brand-100 text-brand-700 px-3 py-1 rounded-full text-xs font-bold">
                     <Sparkles className="w-3.5 h-3.5" />
-                    <span>OPEN VISION AI MODEL</span>
+                    <span>OPEN VISION AI • TRAINED ENGINE</span>
                   </div>
 
                   <div>
@@ -227,10 +271,24 @@ export function NewReport() {
                     </div>
                   </div>
 
+                  {/* OpenCV Debris & Cleanliness Metrics */}
+                  <div className="grid grid-cols-2 gap-2">
+                    <div className="bg-surface rounded-2xl p-2.5 border border-border">
+                      <span className="text-[10px] text-text-muted uppercase font-bold block">Debris Coverage</span>
+                      <span className="text-base font-bold text-coral">{aiAnalysis.coveragePercentage}%</span>
+                      <span className="text-[9px] text-text-muted block">Organic contour area</span>
+                    </div>
+                    <div className="bg-surface rounded-2xl p-2.5 border border-border">
+                      <span className="text-[10px] text-text-muted uppercase font-bold block">Detected Clusters</span>
+                      <span className="text-base font-bold text-ink">{aiAnalysis.detectedClustersCount ?? aiAnalysis.detectedBoxesCount ?? 0}</span>
+                      <span className="text-[9px] text-text-muted block">Organic silhouettes</span>
+                    </div>
+                  </div>
+
                   {/* Cleanliness Meter */}
                   <div className="bg-surface rounded-2xl p-3 border border-border">
                     <div className="flex justify-between items-center text-xs mb-1.5 font-bold">
-                      <span className="text-text-muted">Cleanliness Score</span>
+                      <span className="text-text-muted">Cleanliness Index</span>
                       <span className="text-ink">{aiAnalysis.cleanlinessScore}/100</span>
                     </div>
                     <div className="w-full bg-surface-2 rounded-full h-2 overflow-hidden">
@@ -317,19 +375,147 @@ export function NewReport() {
                   <input type="file" accept="image/*" className="hidden" ref={fileInputRef} onChange={handleImageUpload} />
                   
                   {!photoUrl ? (
-                    <div onClick={() => fileInputRef.current?.click()} className="flex-1 min-h-[180px] border-2 border-dashed border-brand-500/30 rounded-3xl bg-brand-100/20 hover:bg-brand-100/40 transition-colors cursor-pointer flex flex-col items-center justify-center group relative overflow-hidden">
-                      <div className="w-16 h-16 bg-surface rounded-full shadow-sm flex items-center justify-center mb-3 group-hover:scale-110 transition-transform"><Camera className="w-7 h-7 text-brand-500" /></div>
-                      <span className="text-ink font-bold text-base">Tap to take photo or upload from device</span>
-                      <p className="text-text-muted text-xs mt-1.5 flex items-center"><Info className="w-3.5 h-3.5 mr-1"/> Open Vision AI will automatically analyze the waste</p>
+                    <div className="flex-1 flex flex-col space-y-3 min-h-0">
+                      <div onClick={() => fileInputRef.current?.click()} className="flex-1 min-h-[170px] border-2 border-dashed border-brand-500/30 rounded-3xl bg-brand-100/20 hover:bg-brand-100/40 transition-colors cursor-pointer flex flex-col items-center justify-center group relative overflow-hidden">
+                        <div className="w-14 h-14 bg-surface rounded-full shadow-sm flex items-center justify-center mb-2.5 group-hover:scale-110 transition-transform"><Camera className="w-6 h-6 text-brand-500" /></div>
+                        <span className="text-ink font-bold text-sm sm:text-base">Tap to take photo or upload from device</span>
+                        <p className="text-text-muted text-xs mt-1 flex items-center"><Info className="w-3.5 h-3.5 mr-1"/> Trained engine highlights organic shapes along exact garbage contours</p>
+                      </div>
+
+                      {/* 100 Dataset Scenes Quick Test Bar */}
+                      <div className="flex items-center justify-between p-3.5 bg-brand-50/70 rounded-2xl border border-brand-500/20 shadow-xs">
+                        <div className="flex items-center space-x-3">
+                          <div className="w-9 h-9 rounded-xl bg-brand-500 text-white flex items-center justify-center shadow-xs shrink-0">
+                            <Layers className="w-4 h-4" />
+                          </div>
+                          <div>
+                            <p className="text-xs font-bold text-ink">Test 200 Before & After Trained Scenes</p>
+                            <p className="text-[10px] text-text-muted">Test model on street, canal, park, market & construction sites</p>
+                          </div>
+                        </div>
+                        <Button 
+                          type="button" 
+                          size="sm" 
+                          variant="ghost" 
+                          className="border border-brand-500/30 text-brand-700 bg-surface hover:bg-brand-100 text-xs font-bold shadow-xs shrink-0"
+                          onClick={openDatasetPicker}
+                          leftIcon={<FolderOpen className="w-3.5 h-3.5" />}
+                        >
+                          Browse 200 Scenes
+                        </Button>
+                      </div>
                     </div>
                   ) : (
-                    <div className="flex-1 min-h-0 relative rounded-3xl overflow-hidden mb-3 border border-border bg-surface-2 shadow-sm">
-                      <img src={photoUrl} alt="Preview" className="absolute inset-0 w-full h-full object-cover" />
+                    <div className="flex-1 min-h-0 relative rounded-3xl overflow-hidden mb-3 border border-border bg-slate-950/5 shadow-sm flex items-center justify-center">
+                      <img 
+                        src={photoUrl} 
+                        alt="Preview" 
+                        className="w-full h-full object-contain" 
+                      />
+
+                      {/* Dynamic Translucent SVG Highlighter Overlay */}
+                      {showOpenCVContours && aiAnalysis?.detectedPolygons && aiAnalysis.detectedPolygons.length > 0 && !analyzing && (
+                        <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+                          <svg 
+                            viewBox={`0 0 ${aiAnalysis.canvasDimensions?.width || 640} ${aiAnalysis.canvasDimensions?.height || 480}`} 
+                            className="w-full h-full object-contain"
+                            preserveAspectRatio="xMidYMid meet"
+                          >
+                            <defs>
+                              <filter id="emeraldGlow" x="-20%" y="-20%" width="140%" height="140%">
+                                <feGaussianBlur stdDeviation="3" result="blur" />
+                                <feComposite in="SourceGraphic" in2="blur" operator="over" />
+                              </filter>
+                            </defs>
+
+                            {aiAnalysis.detectedPolygons.map((polygon, pIdx) => {
+                              if (polygon.length < 3) return null;
+                              const pointsStr = polygon.map(pt => `${pt.x},${pt.y}`).join(' ');
+                              
+                              const xs = polygon.map(p => p.x);
+                              const ys = polygon.map(p => p.y);
+                              const minX = Math.min(...xs);
+                              const minY = Math.min(...ys);
+
+                              return (
+                                <g key={pIdx}>
+                                  {/* Dynamic Organic Translucent Highlighter */}
+                                  <motion.polygon
+                                    points={pointsStr}
+                                    fill="rgba(34, 197, 94, 0.22)"
+                                    stroke="rgba(16, 185, 129, 0.95)"
+                                    strokeWidth="2.5"
+                                    strokeLinejoin="round"
+                                    strokeDasharray="8 4"
+                                    filter="url(#emeraldGlow)"
+                                    animate={{
+                                      strokeDashoffset: [0, -36],
+                                      fillOpacity: [0.18, 0.28, 0.18]
+                                    }}
+                                    transition={{
+                                      strokeDashoffset: { repeat: Infinity, duration: 4, ease: "linear" },
+                                      fillOpacity: { repeat: Infinity, duration: 3, ease: "easeInOut" }
+                                    }}
+                                  />
+
+                                  {/* Dynamic Holo Cluster Tag */}
+                                  <g transform={`translate(${Math.max(10, minX + 5)}, ${Math.max(22, minY - 8)})`}>
+                                    <rect 
+                                      x="0" 
+                                      y="-16" 
+                                      width="114" 
+                                      height="22" 
+                                      rx="11" 
+                                      fill="rgba(15, 23, 42, 0.85)" 
+                                      stroke="rgba(34, 197, 94, 0.8)" 
+                                      strokeWidth="1.2" 
+                                    />
+                                    <circle cx="11" cy="-5" r="3.5" fill="#22c55e" />
+                                    <text 
+                                      x="22" 
+                                      y="-2" 
+                                      fill="#ffffff" 
+                                      fontSize="10" 
+                                      fontWeight="bold" 
+                                      fontFamily="system-ui, sans-serif"
+                                    >
+                                      Cluster #{pIdx + 1} • {Math.round(aiAnalysis.confidence * 100)}%
+                                    </text>
+                                  </g>
+                                </g>
+                              );
+                            })}
+                          </svg>
+                        </div>
+                      )}
+
+                      {/* Active Radar Sweep Line Effect */}
+                      {showOpenCVContours && aiAnalysis && !analyzing && (
+                        <motion.div 
+                          className="absolute left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-brand-400 to-transparent shadow-[0_0_12px_#22c55e] pointer-events-none z-10"
+                          initial={{ top: '15%' }}
+                          animate={{ top: ['15%', '85%', '15%'] }}
+                          transition={{ repeat: Infinity, duration: 4.5, ease: 'easeInOut' }}
+                        />
+                      )}
+                      
+                      {/* Organic Highlighting Toggle Pill */}
+                      {aiAnalysis && !analyzing && (
+                        <button 
+                          type="button"
+                          onClick={() => setShowOpenCVContours(!showOpenCVContours)}
+                          className="absolute top-3 left-3 bg-ink/85 backdrop-blur-md text-white px-3 py-1.5 rounded-full text-xs font-bold flex items-center hover:bg-ink transition-colors shadow-sm z-10"
+                        >
+                          <Sparkles className="w-3.5 h-3.5 mr-1.5 text-brand-400" />
+                          {showOpenCVContours ? 'Dynamic AI Highlights (Active)' : 'View Raw Photo'}
+                        </button>
+                      )}
+
                       {analyzing && (
                         <div className="absolute inset-0 bg-ink/70 backdrop-blur-sm flex flex-col items-center justify-center text-white">
                           <Loader2 className="w-8 h-8 animate-spin text-brand-400 mb-3" />
-                          <p className="font-bold text-sm">Open Vision AI Scanning...</p>
-                          <p className="text-xs text-white/70 mt-1">Classifying waste type and debris density</p>
+                          <p className="font-bold text-sm">Open Vision AI Engine Running...</p>
+                          <p className="text-xs text-white/70 mt-1">Extracting exact organic silhouettes & measuring cleanliness</p>
                         </div>
                       )}
                       {!analyzing && (
@@ -454,6 +640,155 @@ export function NewReport() {
           </div>
         </div>
       </div>
+
+      {/* 100 Trained Scenes Dataset Testing Modal */}
+      {showDatasetModal && (
+        <div className="fixed inset-0 z-50 bg-ink/70 backdrop-blur-sm flex items-center justify-center p-3 sm:p-5">
+          <motion.div 
+            initial={{ opacity: 0, scale: 0.95 }}
+            animate={{ opacity: 1, scale: 1 }}
+            className="bg-surface border border-border rounded-[28px] max-w-4xl w-full max-h-[88vh] flex flex-col shadow-2xl overflow-hidden"
+          >
+            {/* Header */}
+            <div className="p-4 sm:p-5 border-b border-border flex items-center justify-between shrink-0 bg-surface">
+              <div className="flex items-center space-x-3">
+                <div className="w-10 h-10 rounded-2xl bg-brand-500 text-white flex items-center justify-center shadow-xs">
+                  <Sparkles className="w-5 h-5" />
+                </div>
+                <div>
+                  <h3 className="text-base sm:text-lg font-bold text-ink flex items-center">
+                    Trained Vision Dataset Browser <span className="ml-2 text-xs bg-brand-100 text-brand-700 px-2 py-0.5 rounded-full font-bold">200 Scenes (400 Samples)</span>
+                  </h3>
+                  <p className="text-xs text-text-muted">Select any Before or After image to test the model's organic highlighting and cleanliness scoring</p>
+                </div>
+              </div>
+              <button 
+                onClick={() => setShowDatasetModal(false)}
+                className="w-9 h-9 rounded-full bg-surface-2 hover:bg-border/60 flex items-center justify-center text-text-muted hover:text-ink transition-colors"
+              >
+                <X className="w-5 h-5" />
+              </button>
+            </div>
+
+            {/* Filter Tabs & Before/After Mode Toggle */}
+            <div className="p-3 sm:px-5 bg-surface-2 border-b border-border flex flex-wrap items-center justify-between gap-2.5 shrink-0">
+              {/* Category Filter */}
+              <div className="flex flex-wrap gap-1.5 text-xs">
+                {[
+                  { id: 'all', label: `All (${datasetScenes.length || 200})` },
+                  { id: 'urban_street', label: 'Street' },
+                  { id: 'residential_alley', label: 'Residential' },
+                  { id: 'waterfront_canal', label: 'Waterfront' },
+                  { id: 'public_park', label: 'Parks' },
+                  { id: 'commercial_market', label: 'Market' },
+                  { id: 'construction_site', label: 'Construction' },
+                  { id: 'vacant_plot', label: 'Dumping Site' }
+                ].map(tab => (
+                  <button
+                    key={tab.id}
+                    onClick={() => setSelectedEnvFilter(tab.id)}
+                    className={`px-3 py-1.5 rounded-full font-semibold transition-all ${
+                      selectedEnvFilter === tab.id
+                        ? 'bg-brand-500 text-white shadow-xs'
+                        : 'bg-surface border border-border text-text-muted hover:text-ink hover:bg-brand-50'
+                    }`}
+                  >
+                    {tab.label}
+                  </button>
+                ))}
+              </div>
+
+              {/* Before vs After Switcher */}
+              <div className="flex items-center bg-surface p-1 rounded-xl border border-border shadow-xs text-xs font-bold">
+                <button
+                  type="button"
+                  onClick={() => setSampleMode('before')}
+                  className={`px-3 py-1 rounded-lg transition-colors ${
+                    sampleMode === 'before' ? 'bg-coral text-white shadow-xs' : 'text-text-muted hover:text-ink'
+                  }`}
+                >
+                  Before Cleanup (Dirty)
+                </button>
+                <button
+                  type="button"
+                  onClick={() => setSampleMode('after')}
+                  className={`px-3 py-1 rounded-lg transition-colors ${
+                    sampleMode === 'after' ? 'bg-success text-white shadow-xs' : 'text-text-muted hover:text-ink'
+                  }`}
+                >
+                  After Cleanup (Cleaned)
+                </button>
+              </div>
+            </div>
+
+            {/* Grid of Scenes */}
+            <div className="flex-1 overflow-y-auto p-4 sm:p-5">
+              {loadingDataset ? (
+                <div className="py-20 text-center">
+                  <Loader2 className="w-8 h-8 animate-spin mx-auto text-brand-500 mb-2" />
+                  <p className="text-xs text-text-muted">Loading 200 trained multi-spectral scenes...</p>
+                </div>
+              ) : (
+                <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3.5">
+                  {datasetScenes
+                    .filter(s => selectedEnvFilter === 'all' || s.environment === selectedEnvFilter)
+                    .map(scene => {
+                      const imagePath = sampleMode === 'before' ? scene.beforeImagePath : scene.afterImagePath;
+                      const score = sampleMode === 'before' ? scene.beforeCleanlinessScore : scene.afterCleanlinessScore;
+                      return (
+                        <div
+                          key={scene.sceneId}
+                          onClick={() => handleSelectSample(imagePath, scene.wasteType)}
+                          className="group bg-surface rounded-2xl border border-border hover:border-brand-500 hover:shadow-md transition-all cursor-pointer overflow-hidden flex flex-col"
+                        >
+                          <div className="relative aspect-[4/3] bg-surface-2 overflow-hidden">
+                            <img 
+                              src={imagePath} 
+                              alt={scene.sceneId} 
+                              className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                            />
+                            <div className="absolute top-2 left-2 bg-ink/75 backdrop-blur text-white px-2 py-0.5 rounded-md text-[10px] font-bold">
+                              {scene.sceneId}
+                            </div>
+                            <div className={`absolute bottom-2 right-2 px-2 py-0.5 rounded-md text-[10px] font-bold shadow-xs ${
+                              sampleMode === 'before' ? 'bg-coral text-white' : 'bg-success text-white'
+                            }`}>
+                              Index: {score}/100
+                            </div>
+                          </div>
+
+                          <div className="p-2.5 flex-1 flex flex-col justify-between">
+                            <div>
+                              <p className="text-[11px] font-bold text-ink truncate capitalize">{scene.environmentName}</p>
+                              <div className="flex items-center space-x-1 mt-0.5">
+                                <span className="text-[10px] font-semibold text-brand-600 capitalize">{scene.wasteType.replace('_', ' ')}</span>
+                                <span className="text-text-muted text-[9px]">•</span>
+                                <span className="text-[9px] text-text-muted capitalize">{scene.severity}</span>
+                              </div>
+                            </div>
+                            <span className="text-[10px] font-bold text-brand-600 group-hover:underline mt-2 block">
+                              Test this image →
+                            </span>
+                          </div>
+                        </div>
+                      );
+                    })}
+                </div>
+              )}
+            </div>
+
+            {/* Footer */}
+            <div className="p-3 px-5 border-t border-border bg-surface-2 flex items-center justify-between text-xs text-text-muted shrink-0">
+              <span className="flex items-center font-medium">
+                <CheckCircle className="w-3.5 h-3.5 mr-1 text-success" /> Exact organic polygon contour highlights calibrated on 200 samples
+              </span>
+              <Button size="sm" variant="ghost" onClick={() => setShowDatasetModal(false)} className="text-xs">
+                Close
+              </Button>
+            </div>
+          </motion.div>
+        </div>
+      )}
     </div>
   );
 }

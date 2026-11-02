@@ -53,6 +53,29 @@ export function SubmitProof() {
     }
   };
 
+  const handleAutoLoadMatchingProof = async () => {
+    if (!report) return;
+    const match = report.photoUrl.match(/scene_(\d+)_before/);
+    if (match) {
+      const sceneNum = match[1];
+      const afterUrl = `/dataset/after_cleanup/scene_${sceneNum}_after.jpg`;
+      setProofPreviewUrl(afterUrl);
+      setVerifying(true);
+      try {
+        const res = await fetch(afterUrl);
+        const blob = await res.blob();
+        const file = new File([blob], `scene_${sceneNum}_after.jpg`, { type: 'image/jpeg' });
+        setProofFile(file);
+        const result = await openVisionService.verifyCleanupProof(report.photoUrl, file);
+        setVerificationResult(result);
+      } catch (e) {
+        console.warn('Error loading matching proof:', e);
+      } finally {
+        setVerifying(false);
+      }
+    }
+  };
+
   const handleSubmit = async () => {
     if (!report || !proofFile) return;
     setSubmitting(true);
@@ -158,14 +181,26 @@ export function SubmitProof() {
                 <p className="text-xs text-text-muted text-center max-w-xs mb-6">
                   Open Vision AI will compare the cleaned scene with the original report to verify that waste was cleared.
                 </p>
-                <Button variant="ghost" className="border border-border text-xs" leftIcon={<Upload className="w-4 h-4" />}>
-                  Browse device photos
-                </Button>
+                <div className="flex flex-col items-center gap-2.5">
+                  <Button variant="ghost" className="border border-border text-xs" leftIcon={<Upload className="w-4 h-4" />}>
+                    Browse device photos
+                  </Button>
+                  {report?.photoUrl?.includes('scene_') && (
+                    <button 
+                      type="button" 
+                      className="text-[11px] font-bold px-3 py-1.5 rounded-xl border border-brand-500/30 text-brand-700 bg-brand-50 hover:bg-brand-100 flex items-center transition-colors shadow-xs"
+                      onClick={(e) => { e.stopPropagation(); handleAutoLoadMatchingProof(); }}
+                    >
+                      <Sparkles className="w-3.5 h-3.5 mr-1.5 text-brand-500" />
+                      Use Matched After Cleanup Photo (Dataset Test)
+                    </button>
+                  )}
+                </div>
               </div>
             ) : (
               <div className="space-y-3">
-                <div className="relative aspect-[16/10] w-full rounded-2xl overflow-hidden bg-surface-2 border border-border">
-                  <img src={proofPreviewUrl} alt="After" className="w-full h-full object-cover" />
+                <div className="relative aspect-[16/10] w-full rounded-2xl overflow-hidden bg-slate-950/5 border border-border flex items-center justify-center">
+                  <img src={proofPreviewUrl} alt="After" className="w-full h-full object-contain" />
                   
                   {verifying ? (
                     <div className="absolute inset-0 bg-ink/70 backdrop-blur-sm flex flex-col items-center justify-center text-white">

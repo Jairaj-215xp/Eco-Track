@@ -7,6 +7,11 @@ export interface AIAnalysisResult {
   detectedItems: string[];
   cleanlinessScore: number; // 0-100 (lower means more garbage)
   coveragePercentage: number;
+  detectedBoxesCount?: number;
+  detectedClustersCount?: number;
+  detectedPolygons?: Array<Array<{ x: number; y: number }>>;
+  canvasDimensions?: { width: number; height: number };
+  annotatedPhotoUrl?: string; // OpenCV annotated preview showing detected garbage contours
   recommendations: string[];
   analyzedAt: string;
 }

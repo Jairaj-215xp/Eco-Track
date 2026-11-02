@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
 import { reportService } from '../services/reportService';
 import { Report, Status } from '../types';
 import { ReportCard } from '../components/report/ReportCard';
@@ -252,11 +253,26 @@ export function Feed() {
               )}
             </div>
           ) : (
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              {filteredReports.map((report) => (
-                <ReportCard key={report.id} report={report} onClick={() => navigate(`/report/${report.id}`)} />
-              ))}
-            </div>
+            <motion.div 
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.3 }}
+              className="grid grid-cols-1 md:grid-cols-2 gap-6"
+            >
+              <AnimatePresence mode="popLayout">
+                {filteredReports.map((report, idx) => (
+                  <motion.div
+                    key={report.id}
+                    initial={{ opacity: 0, y: 15 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    exit={{ opacity: 0, scale: 0.95 }}
+                    transition={{ duration: 0.3, delay: Math.min(idx * 0.04, 0.4) }}
+                  >
+                    <ReportCard report={report} onClick={() => navigate(`/report/${report.id}`)} />
+                  </motion.div>
+                ))}
+              </AnimatePresence>
+            </motion.div>
           )}
         </div>
 
