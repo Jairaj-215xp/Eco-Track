@@ -11,7 +11,7 @@ interface ThemeContextType {
 }
 
 const ThemeContext = createContext<ThemeContextType>({
-  theme: 'system',
+  theme: 'light',
   resolvedTheme: 'light',
   setTheme: () => {},
   toggleTheme: () => {}
@@ -30,13 +30,13 @@ export const ThemeProvider: React.FC<{ children: React.ReactNode }> = ({ childre
   const [theme, setThemeState] = useState<Theme>(() => {
     try {
       const saved = localStorage.getItem(THEME_STORAGE_KEY) as Theme;
-      if (saved === 'light' || saved === 'dark' || saved === 'system') {
+      if (saved === 'light' || saved === 'dark') {
         return saved;
       }
     } catch (e) {
       console.warn('Could not read saved theme:', e);
     }
-    return 'system';
+    return 'light'; // Default to white / light mode
   });
 
   const [resolvedTheme, setResolvedTheme] = useState<ResolvedTheme>(() => {
@@ -44,7 +44,7 @@ export const ThemeProvider: React.FC<{ children: React.ReactNode }> = ({ childre
       const saved = localStorage.getItem(THEME_STORAGE_KEY) as Theme;
       if (saved === 'light' || saved === 'dark') return saved;
     } catch {}
-    return getSystemTheme();
+    return 'light'; // Default to white / light mode
   });
 
   // Apply theme to DOM

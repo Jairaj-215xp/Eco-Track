@@ -92,21 +92,41 @@ function saveLocalReports(reports: Report[]) {
 /**
  * Tracks an ID as submitted by this user/browser
  */
-export function trackMySubmittedReportId(id: string) {
+export function trackMySubmittedReportId(id: string, userId?: string, userEmail?: string) {
   try {
-    const existing: string[] = JSON.parse(localStorage.getItem(MY_REPORTS_STORAGE_KEY) || '[]');
-    if (!existing.includes(id)) {
-      existing.unshift(id);
-      localStorage.setItem(MY_REPORTS_STORAGE_KEY, JSON.stringify(existing));
+    if (userId) {
+      const userKey = `my_submitted_report_ids_${userId}`;
+      const existing: string[] = JSON.parse(localStorage.getItem(userKey) || '[]');
+      if (!existing.includes(id)) {
+        existing.unshift(id);
+        localStorage.setItem(userKey, JSON.stringify(existing));
+      }
+    }
+    if (userEmail) {
+      const emailKey = `my_submitted_report_ids_${userEmail.toLowerCase().trim()}`;
+      const existing: string[] = JSON.parse(localStorage.getItem(emailKey) || '[]');
+      if (!existing.includes(id)) {
+        existing.unshift(id);
+        localStorage.setItem(emailKey, JSON.stringify(existing));
+      }
     }
   } catch (e) {
     console.error('Failed to track my report ID:', e);
   }
 }
 
-export function getMySubmittedReportIds(): string[] {
+export function getMySubmittedReportIds(userId?: string, userEmail?: string): string[] {
   try {
-    return JSON.parse(localStorage.getItem(MY_REPORTS_STORAGE_KEY) || '[]');
+    const ids = new Set<string>();
+    if (userId) {
+      const byUser: string[] = JSON.parse(localStorage.getItem(`my_submitted_report_ids_${userId}`) || '[]');
+      byUser.forEach(id => ids.add(id));
+    }
+    if (userEmail) {
+      const byEmail: string[] = JSON.parse(localStorage.getItem(`my_submitted_report_ids_${userEmail.toLowerCase().trim()}`) || '[]');
+      byEmail.forEach(id => ids.add(id));
+    }
+    return Array.from(ids);
   } catch (e) {
     return [];
   }
@@ -328,7 +348,7 @@ export const reportService = {
     };
 
     // Track locally first so it is immediately visible
-    trackMySubmittedReportId(newReportId);
+    trackMySubmittedReportId(newReportId, params.reporterId, params.reporterEmail);
     const local = getLocalReports();
     local.unshift(newReport);
     saveLocalReports(local);

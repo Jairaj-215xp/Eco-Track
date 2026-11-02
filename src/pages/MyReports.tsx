@@ -14,15 +14,24 @@ export function MyReports() {
   const navigate = useNavigate();
 
   useEffect(() => {
+    if (!user) {
+      setReports([]);
+      setLoading(false);
+      return;
+    }
+
     reportService.getReports().then((all) => {
-      const myIds = new Set(getMySubmittedReportIds());
-      // Filter for reports submitted by this user or created on this machine
-      const userReports = all.filter(r => 
-        myIds.has(r.id) ||
-        (user?.id && r.reporterId === user.id) || 
-        (user?.email && r.reporterEmail === user.email) ||
-        r.reporterId === 'anonymous'
-      );
+      const myUserReportIds = new Set(getMySubmittedReportIds(user.id, user.email));
+
+      // Strictly filter for reports submitted by THIS user only
+      const userReports = all.filter(r => {
+        const matchesId = Boolean(user.id && r.reporterId && r.reporterId !== 'anonymous' && r.reporterId === user.id);
+        const matchesEmail = Boolean(user.email && r.reporterEmail && r.reporterEmail.toLowerCase() === user.email.toLowerCase());
+        const matchesTracked = myUserReportIds.has(r.id);
+
+        return matchesId || matchesEmail || matchesTracked;
+      });
+
       setReports(userReports);
       setLoading(false);
     });
