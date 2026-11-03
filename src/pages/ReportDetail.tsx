@@ -128,29 +128,29 @@ export function ReportDetail() {
   return (
     <div className="bg-background min-h-[calc(100vh-96px)] font-sans pb-24">
       {/* Top Banner */}
-      <div className="bg-surface border-b border-border py-4 sticky top-[72px] z-20 shadow-xs">
-        <div className="max-w-[1200px] mx-auto px-6 flex items-center justify-between">
-          <div className="flex items-center space-x-3">
-            <button onClick={() => navigate(-1)} className="p-2 hover:bg-surface-2 rounded-full transition-colors text-text-muted hover:text-ink">
+      <div className="bg-surface border-b border-border py-3 sm:py-4 sticky top-[64px] sm:top-[72px] z-20 shadow-xs">
+        <div className="max-w-[1200px] mx-auto px-4 sm:px-6 flex items-center justify-between gap-2">
+          <div className="flex items-center space-x-2 sm:space-x-3 min-w-0">
+            <button onClick={() => navigate(-1)} className="p-1.5 sm:p-2 hover:bg-surface-2 rounded-full transition-colors text-text-muted hover:text-ink shrink-0">
               <ArrowLeft className="w-5 h-5" />
             </button>
-            <div>
-              <h1 className="text-xl font-display font-bold text-ink leading-tight capitalize">
+            <div className="min-w-0">
+              <h1 className="text-base sm:text-xl font-display font-bold text-ink leading-tight capitalize truncate">
                 {report.wasteType.replace('_', ' ')} Waste
               </h1>
-              <p className="text-xs text-text-muted flex items-center mt-0.5">
-                <MapPin className="w-3 h-3 mr-1 text-brand-500" /> {report.location.address}
+              <p className="text-[11px] sm:text-xs text-text-muted flex items-center mt-0.5 truncate">
+                <MapPin className="w-3 h-3 mr-1 text-brand-500 shrink-0" /> <span className="truncate">{report.location.address}</span>
               </p>
             </div>
           </div>
           
-          <div className={`px-3.5 py-1.5 rounded-full text-xs font-bold flex items-center shadow-xs border ${
+          <div className={`px-2.5 sm:px-3.5 py-1 sm:py-1.5 rounded-full text-[10px] sm:text-xs font-bold flex items-center shadow-xs border shrink-0 ${
             report.status === 'verified' ? 'bg-success-soft text-success border-success/20' : 
             report.status === 'in_progress' ? 'bg-sun/15 text-warn border-sun/30' :
             'bg-coral/10 text-coral border-coral/20'
           }`}>
-            {report.status === 'verified' ? <CheckCircle className="w-3.5 h-3.5 mr-1.5" /> : <Clock className="w-3.5 h-3.5 mr-1.5" />}
-            {report.status.replace('_', ' ').toUpperCase()}
+            {report.status === 'verified' ? <CheckCircle className="w-3 h-3 sm:w-3.5 sm:h-3.5 mr-1" /> : <Clock className="w-3 h-3 sm:w-3.5 sm:h-3.5 mr-1" />}
+            <span>{report.status.replace('_', ' ').toUpperCase()}</span>
           </div>
         </div>
       </div>

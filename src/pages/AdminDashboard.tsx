@@ -206,26 +206,26 @@ export function AdminDashboard() {
               </p>
             </div>
 
-            <div className="flex flex-wrap gap-2.5">
-              <div className="bg-surface-2 rounded-2xl px-4 py-2.5 border border-border">
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-2 sm:gap-2.5">
+              <div className="bg-surface-2 rounded-2xl px-3 sm:px-4 py-2.5 border border-border">
                 <span className="text-[10px] font-bold text-text-muted uppercase block">Total Incidents</span>
-                <span className="text-xl font-bold text-ink">{totalIncidents}</span>
+                <span className="text-lg sm:text-xl font-bold text-ink">{totalIncidents}</span>
               </div>
-              <div className="bg-coral/10 rounded-2xl px-4 py-2.5 border border-coral/20">
+              <div className="bg-coral/10 rounded-2xl px-3 sm:px-4 py-2.5 border border-coral/20">
                 <span className="text-[10px] font-bold text-coral uppercase block">Unassigned</span>
-                <span className="text-xl font-bold text-coral">{unassignedCount}</span>
+                <span className="text-lg sm:text-xl font-bold text-coral">{unassignedCount}</span>
               </div>
-              <div className="bg-sun/10 rounded-2xl px-4 py-2.5 border border-sun/20">
+              <div className="bg-sun/10 rounded-2xl px-3 sm:px-4 py-2.5 border border-sun/20">
                 <span className="text-[10px] font-bold text-warn uppercase block">In Progress</span>
-                <span className="text-xl font-bold text-warn">{inProgressCount}</span>
+                <span className="text-lg sm:text-xl font-bold text-warn">{inProgressCount}</span>
               </div>
-              <div className="bg-brand-50 rounded-2xl px-4 py-2.5 border border-brand-500/20">
-                <span className="text-[10px] font-bold text-brand-700 uppercase block">Proof Review</span>
-                <span className="text-xl font-bold text-brand-600">{proofSubmittedCount}</span>
+              <div className="bg-brand-50 dark:bg-brand-950/40 rounded-2xl px-3 sm:px-4 py-2.5 border border-brand-500/20">
+                <span className="text-[10px] font-bold text-brand-700 dark:text-brand-300 uppercase block">Proof Review</span>
+                <span className="text-lg sm:text-xl font-bold text-brand-600">{proofSubmittedCount}</span>
               </div>
-              <div className="bg-indigo-50 rounded-2xl px-4 py-2.5 border border-indigo-200">
-                <span className="text-[10px] font-bold text-indigo-700 uppercase block">City Cleanliness</span>
-                <span className="text-xl font-bold text-indigo-700">{avgCleanliness}/100</span>
+              <div className="col-span-2 sm:col-span-1 bg-indigo-50 dark:bg-indigo-950/40 rounded-2xl px-3 sm:px-4 py-2.5 border border-indigo-200 dark:border-indigo-800">
+                <span className="text-[10px] font-bold text-indigo-700 dark:text-indigo-300 uppercase block">City Cleanliness</span>
+                <span className="text-lg sm:text-xl font-bold text-indigo-700 dark:text-indigo-300">{avgCleanliness}/100</span>
               </div>
             </div>
           </div>

@@ -183,18 +183,18 @@ export function OrgDashboard() {
               </div>
             </div>
 
-            <div className="flex flex-wrap gap-2.5">
-              <div className="bg-brand-50 rounded-2xl px-4 py-2.5 border border-brand-500/20 shadow-xs">
-                <span className="text-[10px] font-bold text-brand-700 uppercase block">Active Tasks (Accepted)</span>
-                <span className="text-2xl font-display font-bold text-brand-600">{myAcceptedTasks.length}</span>
+            <div className="grid grid-cols-2 sm:grid-cols-3 gap-2 sm:gap-2.5">
+              <div className="bg-brand-50 dark:bg-brand-950/40 rounded-2xl px-3 sm:px-4 py-2.5 border border-brand-500/20 shadow-xs">
+                <span className="text-[10px] font-bold text-brand-700 dark:text-brand-300 uppercase block">Active (Mine)</span>
+                <span className="text-xl sm:text-2xl font-display font-bold text-brand-600">{myAcceptedTasks.length}</span>
               </div>
-              <div className="bg-coral/10 rounded-2xl px-4 py-2.5 border border-coral/20 shadow-xs">
-                <span className="text-[10px] font-bold text-coral uppercase block">Available to Claim</span>
-                <span className="text-2xl font-display font-bold text-coral">{availableQueue.length}</span>
+              <div className="bg-coral/10 rounded-2xl px-3 sm:px-4 py-2.5 border border-coral/20 shadow-xs">
+                <span className="text-[10px] font-bold text-coral uppercase block">Open to Claim</span>
+                <span className="text-xl sm:text-2xl font-display font-bold text-coral">{availableQueue.length}</span>
               </div>
-              <div className="bg-surface-2 rounded-2xl px-4 py-2.5 border border-border shadow-xs">
-                <span className="text-[10px] font-bold text-text-muted uppercase block">Verified Cleanups</span>
-                <span className="text-2xl font-display font-bold text-ink">{myCompletedTasks.length}</span>
+              <div className="col-span-2 sm:col-span-1 bg-surface-2 rounded-2xl px-3 sm:px-4 py-2.5 border border-border shadow-xs">
+                <span className="text-[10px] font-bold text-text-muted uppercase block">Cleaned</span>
+                <span className="text-xl sm:text-2xl font-display font-bold text-ink">{myCompletedTasks.length}</span>
               </div>
             </div>
           </div>

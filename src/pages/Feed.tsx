@@ -32,6 +32,7 @@ export function Feed() {
   const [selectedCategory, setSelectedCategory] = useState<string>('all');
   const [searchQuery, setSearchQuery] = useState('');
   const [sortBy, setSortBy] = useState<'newest' | 'upvotes' | 'nearest'>('newest');
+  const [showMobileFilters, setShowMobileFilters] = useState(false);
   const { user, role } = useAuth();
   const { showAlert } = useAlert();
 
@@ -242,10 +243,10 @@ export function Feed() {
         </div>
       </div>
 
-      <div className="max-w-[1400px] mx-auto px-6 py-8 flex flex-col lg:flex-row gap-8">
+      <div className="max-w-[1400px] mx-auto px-4 sm:px-6 py-6 sm:py-8 flex flex-col lg:flex-row gap-6 lg:gap-8">
         
         {/* LEFT SIDEBAR (Filters) */}
-        <div className="w-full lg:w-[280px] flex-shrink-0 space-y-6">
+        <div className="w-full lg:w-[280px] flex-shrink-0 space-y-4 sm:space-y-6">
           {role === 'org' ? (
             <Button 
               size="lg" 
@@ -258,7 +259,7 @@ export function Feed() {
           ) : role === 'admin' ? (
             <Button 
               size="lg" 
-              className="w-full bg-gradient-to-r from-purple-600 to-indigo-600 hover:scale-[1.02] transition-transform text-white shadow-md border-none text-xs font-bold"
+              className="w-full bg-gradient-to-r from-purple-700 to-indigo-700 hover:scale-[1.02] transition-transform text-white shadow-md border-none text-xs font-bold"
               onClick={() => navigate('/admin')}
               leftIcon={<ShieldCheck className="w-4 h-4" />}
             >
@@ -267,7 +268,7 @@ export function Feed() {
           ) : (
             <Button 
               size="lg" 
-              className="w-full bg-gradient-to-r from-brand-500 to-aqua hover:scale-[1.02] transition-transform text-white shadow-md border-none text-sm"
+              className="w-full bg-gradient-to-r from-brand-500 to-aqua hover:scale-[1.02] transition-transform text-white shadow-md border-none text-sm font-bold"
               onClick={() => navigate('/report/new')}
               leftIcon={<Camera className="w-4 h-4" />}
             >
@@ -275,7 +276,22 @@ export function Feed() {
             </Button>
           )}
 
-          <div className="bg-surface rounded-2xl border border-border p-5 shadow-xs space-y-5">
+          {/* Mobile Filter Toggle Button */}
+          <div className="lg:hidden">
+            <button
+              type="button"
+              onClick={() => setShowMobileFilters(!showMobileFilters)}
+              className="w-full flex items-center justify-between p-3.5 bg-surface rounded-2xl border border-border shadow-xs text-xs font-bold text-ink"
+            >
+              <div className="flex items-center space-x-2">
+                <Filter className="w-4 h-4 text-brand-600" />
+                <span>Filters & Search {selectedStatus !== 'all' || selectedCategory !== 'all' || searchQuery ? '(Active)' : ''}</span>
+              </div>
+              <ChevronDown className={`w-4 h-4 text-text-muted transition-transform ${showMobileFilters ? 'rotate-180' : ''}`} />
+            </button>
+          </div>
+
+          <div className={`${showMobileFilters ? 'block' : 'hidden'} lg:block bg-surface rounded-2xl border border-border p-4 sm:p-5 shadow-xs space-y-5`}>
             <div>
               <label className="flex items-center text-xs font-bold text-ink mb-2">
                 <MapPin className="w-3.5 h-3.5 mr-1.5 text-brand-500"/> Detected Area

@@ -44,12 +44,12 @@ export function MyReports() {
   return (
     <div className="bg-background min-h-[calc(100vh-96px)] font-sans pb-24">
       {/* Top Banner */}
-      <div className="bg-surface border-b border-border py-8 mb-8">
-        <div className="max-w-[1200px] mx-auto px-6">
+      <div className="bg-surface border-b border-border py-6 sm:py-8 mb-6 sm:mb-8">
+        <div className="max-w-[1200px] mx-auto px-4 sm:px-6">
           <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4">
             <div>
               <p className="text-xs font-bold text-brand-600 mb-1 uppercase tracking-wider">Citizen Profile</p>
-              <h1 className="text-2xl sm:text-3xl font-display font-extrabold text-ink">
+              <h1 className="text-xl sm:text-2xl md:text-3xl font-display font-extrabold text-ink">
                 My Environmental Reports
               </h1>
               <p className="text-xs text-text-muted mt-1">
@@ -59,7 +59,7 @@ export function MyReports() {
 
             <Button 
               onClick={() => navigate('/report/new')} 
-              className="text-xs shadow-sm bg-brand-500 hover:bg-brand-600"
+              className="text-xs shadow-sm bg-brand-500 hover:bg-brand-600 w-full sm:w-auto"
               leftIcon={<Camera className="w-4 h-4" />}
             >
               Report New Waste
@@ -67,22 +67,22 @@ export function MyReports() {
           </div>
 
           {/* User Achievement Badges */}
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mt-6">
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-2.5 sm:gap-3 mt-5 sm:mt-6">
             <div className="bg-surface-2 p-3 rounded-2xl border border-border">
               <span className="text-[10px] font-bold text-text-muted uppercase block">Total Reports</span>
-              <span className="text-xl font-bold text-ink">{reports.length}</span>
+              <span className="text-lg sm:text-xl font-bold text-ink">{reports.length}</span>
             </div>
             <div className="bg-surface-2 p-3 rounded-2xl border border-border">
               <span className="text-[10px] font-bold text-text-muted uppercase block">Verified Clean</span>
-              <span className="text-xl font-bold text-brand-600">{verifiedCount}</span>
+              <span className="text-lg sm:text-xl font-bold text-brand-600">{verifiedCount}</span>
             </div>
             <div className="bg-surface-2 p-3 rounded-2xl border border-border">
               <span className="text-[10px] font-bold text-text-muted uppercase block">In Progress</span>
-              <span className="text-xl font-bold text-warn">{inProgressCount}</span>
+              <span className="text-lg sm:text-xl font-bold text-warn">{inProgressCount}</span>
             </div>
-            <div className="bg-brand-50 p-3 rounded-2xl border border-brand-500/20">
-              <span className="text-[10px] font-bold text-brand-700 uppercase block">Eco Points</span>
-              <span className="text-xl font-bold text-brand-700">+{ecoPoints} pts</span>
+            <div className="bg-brand-50 dark:bg-brand-950/40 p-3 rounded-2xl border border-brand-500/20">
+              <span className="text-[10px] font-bold text-brand-700 dark:text-brand-300 uppercase block">Eco Points</span>
+              <span className="text-lg sm:text-xl font-bold text-brand-700 dark:text-brand-300">+{ecoPoints} pts</span>
             </div>
           </div>
         </div>

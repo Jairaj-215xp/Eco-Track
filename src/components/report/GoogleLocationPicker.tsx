@@ -47,8 +47,8 @@ function MapController({ center }: { center: [number, number] }) {
   }, [center[0], center[1]]);
 
   useEffect(() => {
-    const t1 = setTimeout(() => map.invalidateSize(), 100);
-    const t2 = setTimeout(() => map.invalidateSize(), 400);
+    const t1 = setTimeout(() => map.invalidateSize(), 50);
+    const t2 = setTimeout(() => map.invalidateSize(), 300);
     const t3 = setTimeout(() => map.invalidateSize(), 800);
     return () => {
       clearTimeout(t1);
@@ -206,147 +206,94 @@ export function GoogleLocationPicker({
     });
   };
 
-  // Attempt Google Maps initialization if configured; switch to Leaflet on any error or timeout
+  // Google Maps Initialization
   useEffect(() => {
-    let isMounted = true;
+    let isCancelled = false;
 
-    if (!isGoogleMapsConfigured || googleMapsAuthFailed) {
-      setUseLeaflet(true);
-      return;
-    }
+    if (!useLeaflet && isGoogleMapsConfigured && !googleMapsAuthFailed) {
+      loadGoogleMapsCore()
+        .then(() => {
+          if (isCancelled || !mapContainerRef.current) return;
 
-    const prevAuth = (window as any).gm_authFailure;
-    (window as any).gm_authFailure = () => {
-      if (isMounted) setUseLeaflet(true);
-      if (typeof prevAuth === 'function') prevAuth();
-    };
-
-    // Fallback safety timeout if Google Maps takes too long or freezes
-    const safetyTimer = setTimeout(() => {
-      if (isMounted && !mapInstanceRef.current) {
-        setUseLeaflet(true);
-      }
-    }, 1500);
-
-    loadGoogleMapsCore()
-      .then((MapConstructor) => {
-        if (!isMounted || !mapContainerRef.current) return;
-
-        try {
-          const map = new MapConstructor(mapContainerRef.current, {
-            center: { lat: location.lat, lng: location.lng },
+          const latLng = { lat: location.lat, lng: location.lng };
+          const map = new google.maps.Map(mapContainerRef.current, {
+            center: latLng,
             zoom: 16,
+            disableDefaultUI: false,
             zoomControl: true,
             mapTypeControl: false,
             streetViewControl: false,
             fullscreenControl: false,
-            styles: [
-              { featureType: 'poi.park', elementType: 'geometry', stylers: [{ color: '#e8f5e9' }] },
-              { featureType: 'water', elementType: 'geometry', stylers: [{ color: '#e0f7fa' }] },
-              { featureType: 'road', elementType: 'geometry', stylers: [{ lightness: 20 }] }
-            ]
+            styles: resolvedTheme === 'dark' ? [
+              { elementType: 'geometry', stylers: [{ color: '#242f3e' }] },
+              { elementType: 'labels.text.stroke', stylers: [{ color: '#242f3e' }] },
+              { elementType: 'labels.text.fill', stylers: [{ color: '#746855' }] },
+              { featureType: 'road', elementType: 'geometry', stylers: [{ color: '#38414e' }] },
+              { featureType: 'water', elementType: 'geometry', stylers: [{ color: '#17263c' }] },
+            ] : []
           });
 
           mapInstanceRef.current = map;
 
           const marker = new google.maps.Marker({
-            position: { lat: location.lat, lng: location.lng },
+            position: latLng,
             map,
             draggable: true,
+            title: 'Garbage Location',
             animation: google.maps.Animation.DROP,
-            title: 'Drag to pinpoint exact spot',
-            icon: {
-              path: 'M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z',
-              fillColor: '#16a34a',
-              fillOpacity: 1,
-              strokeWeight: 2,
-              strokeColor: '#FFFFFF',
-              scale: 2,
-              anchor: new google.maps.Point(12, 22)
-            }
           });
 
           markerRef.current = marker;
 
           const circle = new google.maps.Circle({
-            map,
-            center: { lat: location.lat, lng: location.lng },
-            radius: location.accuracyM || 25,
-            fillColor: '#34d399',
-            fillOpacity: 0.18,
             strokeColor: '#059669',
-            strokeOpacity: 0.5,
-            strokeWeight: 1.5
+            strokeOpacity: 0.8,
+            strokeWeight: 2,
+            fillColor: '#10b981',
+            fillOpacity: 0.2,
+            map,
+            center: latLng,
+            radius: location.accuracyM || 25,
           });
 
           circleRef.current = circle;
 
+          // Event: Drag End
           marker.addListener('dragend', async () => {
             const pos = marker.getPosition();
             if (pos) {
-              const newLat = pos.lat();
-              const newLng = pos.lng();
-              circle.setCenter({ lat: newLat, lng: newLng });
-              handleMapCoordChange(newLat, newLng, 5);
+              const lat = pos.lat();
+              const lng = pos.lng();
+              circle.setCenter({ lat, lng });
+              handleMapCoordChange(lat, lng);
             }
           });
 
-          map.addListener('click', async (e: google.maps.MapMouseEvent) => {
+          // Event: Map Click
+          map.addListener('click', (e: google.maps.MapMouseEvent) => {
             if (e.latLng) {
-              const newLat = e.latLng.lat();
-              const newLng = e.latLng.lng();
-              marker.setPosition({ lat: newLat, lng: newLng });
-              circle.setCenter({ lat: newLat, lng: newLng });
-              handleMapCoordChange(newLat, newLng, 5);
+              const lat = e.latLng.lat();
+              const lng = e.latLng.lng();
+              marker.setPosition({ lat, lng });
+              circle.setCenter({ lat, lng });
+              handleMapCoordChange(lat, lng);
             }
           });
+        })
+        .catch((err) => {
+          console.warn('Google Maps load issue, falling back to Leaflet:', err);
+          if (!isCancelled) setUseLeaflet(true);
+        });
+    }
 
-          // Places Autocomplete
-          if (searchInputRef.current && window.google?.maps?.places) {
-            const autocomplete = new google.maps.places.Autocomplete(searchInputRef.current, {
-              fields: ['geometry', 'formatted_address', 'name'],
-              componentRestrictions: { country: 'in' }
-            });
-
-            autocomplete.addListener('place_changed', () => {
-              const place = autocomplete.getPlace();
-              if (place.geometry?.location) {
-                const newLat = place.geometry.location.lat();
-                const newLng = place.geometry.location.lng();
-                const newAddress = place.formatted_address || place.name || `${newLat}, ${newLng}`;
-
-                map.panTo({ lat: newLat, lng: newLng });
-                map.setZoom(17);
-                marker.setPosition({ lat: newLat, lng: newLng });
-                circle.setCenter({ lat: newLat, lng: newLng });
-                setBaseDetectedAddress(newAddress);
-
-                const parts: string[] = [];
-                if (streetDetails.trim()) parts.push(streetDetails.trim());
-                if (landmarkDetails.trim()) parts.push(`Near ${landmarkDetails.trim()}`);
-                parts.push(newAddress);
-
-                onChange({
-                  lat: newLat,
-                  lng: newLng,
-                  address: parts.join(', '),
-                  accuracyM: 10
-                });
-              }
-            });
-          }
-        } catch (innerErr) {
-          console.warn('Google Maps initialization failed, switching to Leaflet:', innerErr);
-          setUseLeaflet(true);
-        }
-      })
-      .catch((err) => {
-        console.warn('Google Maps Load Error, switching to Leaflet:', err);
-        if (isMounted) setUseLeaflet(true);
-      });
+    const safetyTimer = setTimeout(() => {
+      if (!useLeaflet && !mapInstanceRef.current) {
+        setUseLeaflet(true);
+      }
+    }, 2500);
 
     return () => {
-      isMounted = false;
+      isCancelled = true;
       clearTimeout(safetyTimer);
     };
   }, []);
@@ -456,17 +403,13 @@ export function GoogleLocationPicker({
         mapInstanceRef.current.setZoom(17);
         markerRef.current.setPosition({ lat: coords.lat, lng: coords.lng });
         circleRef.current?.setCenter({ lat: coords.lat, lng: coords.lng });
-        circleRef.current?.setRadius(coords.accuracyM);
+        circleRef.current?.setRadius(coords.accuracyM || 15);
       }
 
-      showAlert(`Live GPS locked (±${coords.accuracyM}m accuracy)`, 'success', 'GPS Updated');
+      showAlert(`Acquired high-accuracy GPS (±${coords.accuracyM}m)! Pin updated.`, 'info', 'GPS Located');
     } catch (err: any) {
-      console.warn('GPS tracking error:', err);
-      showAlert(
-        'Could not access live device GPS. Please enable location permissions or drag the pin on the map.',
-        'warning',
-        'GPS Access Notice'
-      );
+      console.warn('GPS location lookup issue:', err);
+      showAlert('Could not read hardware GPS. Please search your area or drag the map pin.', 'warning', 'Location Notice');
     } finally {
       setLoadingLocation(false);
     }
@@ -474,19 +417,17 @@ export function GoogleLocationPicker({
 
   const isCoarseAccuracy = (location.accuracyM || 0) > 150;
 
-  // Leaflet Tile configuration (Carto Dark Matter for Dark mode, OSM for Light mode)
+  // Leaflet Tile configuration
   const leafletTileUrl = resolvedTheme === 'dark'
-    ? 'https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png'
+    ? 'https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png'
     : 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
 
-  const leafletAttribution = resolvedTheme === 'dark'
-    ? '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>'
-    : '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>';
+  const leafletAttribution = '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors';
 
   return (
-    <div className="bg-surface rounded-[28px] p-3 border border-border flex flex-col h-full min-h-0 shadow-sm overflow-hidden">
+    <div className="bg-surface rounded-3xl p-3 sm:p-4 border border-border flex flex-col shadow-sm">
       {/* Top Search Bar */}
-      <form onSubmit={handleSearchSubmit} className="mb-2 shrink-0 flex items-center gap-2">
+      <form onSubmit={handleSearchSubmit} className="mb-2.5 flex items-center gap-2">
         <div className="relative flex-1">
           <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-text-muted" />
           <input
@@ -497,7 +438,7 @@ export function GoogleLocationPicker({
             onKeyDown={(e) => {
               if (e.key === 'Enter') handleSearchSubmit();
             }}
-            placeholder="Search area, landmark or street (e.g. Kothrud, Baner)..."
+            placeholder="Search Pune area, street or landmark..."
             className="w-full bg-surface-2 border border-border rounded-xl pl-9 pr-16 py-2 text-xs text-ink focus:outline-none focus:ring-2 focus:ring-brand-500 font-medium"
           />
           <button
@@ -513,7 +454,7 @@ export function GoogleLocationPicker({
           type="button"
           onClick={handleTrackCurrentLocation}
           disabled={loadingLocation}
-          className="flex items-center space-x-1.5 px-3 py-2 bg-brand-500 hover:bg-brand-600 text-white rounded-xl text-xs font-bold shrink-0 transition-colors shadow-xs"
+          className="flex items-center space-x-1 px-3 py-2 bg-brand-500 hover:bg-brand-600 text-white rounded-xl text-xs font-bold shrink-0 transition-colors shadow-xs"
           title="Track High-Accuracy GPS"
         >
           {loadingLocation ? (
@@ -526,22 +467,22 @@ export function GoogleLocationPicker({
       </form>
 
       {/* Quick Jump Buttons */}
-      <div className="flex items-center gap-1.5 mb-2 overflow-x-auto no-scrollbar shrink-0 py-0.5">
-        <span className="text-[10px] text-text-muted font-bold uppercase shrink-0">Quick Jump:</span>
+      <div className="flex items-center gap-1.5 mb-2.5 overflow-x-auto no-scrollbar py-0.5">
+        <span className="text-[10px] text-text-muted font-bold uppercase shrink-0">QUICK:</span>
         {POPULAR_PUNE_AREAS.map((area) => (
           <button
             key={area}
             type="button"
             onClick={() => handleQuickAreaSelect(area)}
-            className="text-[10px] px-2 py-0.5 bg-surface-2 hover:bg-brand-50 hover:text-brand-700 dark:hover:bg-brand-950 dark:hover:text-brand-300 border border-border rounded-lg text-text-muted font-medium shrink-0 transition-colors"
+            className="text-[10px] px-2.5 py-1 bg-surface-2 hover:bg-brand-50 hover:text-brand-700 dark:hover:bg-brand-950 dark:hover:text-brand-300 border border-border rounded-lg text-text-muted font-medium shrink-0 transition-colors"
           >
             {area.replace(', Pune', '')}
           </button>
         ))}
       </div>
 
-      {/* Interactive Map Container */}
-      <div className="flex-1 rounded-[20px] relative overflow-hidden bg-brand-50/50 dark:bg-brand-950/20 min-h-[200px] border border-border/80">
+      {/* Interactive Map Container with guaranteed height */}
+      <div className="w-full h-[260px] sm:h-[340px] md:h-[400px] rounded-2xl relative overflow-hidden bg-brand-50/50 dark:bg-brand-950/20 border border-border/80 shadow-inner">
         {useLeaflet ? (
           <div className="h-full w-full relative z-0">
             <MapContainer
@@ -587,17 +528,17 @@ export function GoogleLocationPicker({
         {/* Map engine indicator pill */}
         <div className="absolute bottom-2 left-2 z-[1000] bg-surface/85 backdrop-blur-sm border border-border px-2 py-0.5 rounded-md text-[9px] text-text-muted flex items-center pointer-events-none">
           <span className="w-1.5 h-1.5 rounded-full bg-brand-500 mr-1.5 animate-pulse" />
-          <span>{useLeaflet ? 'Interactive OpenStreetMap' : 'Google Maps Engine'}</span>
+          <span>{useLeaflet ? 'Interactive Map' : 'Google Maps Engine'}</span>
         </div>
       </div>
 
       {/* Specific Street & Landmark Details Inputs */}
-      <div className="mt-2.5 bg-surface-2/60 border border-border/80 rounded-2xl p-2.5 space-y-2 shrink-0">
+      <div className="mt-3 bg-surface-2/60 border border-border/80 rounded-2xl p-2.5 space-y-2">
         <div className="flex items-center justify-between">
           <span className="text-[11px] font-bold text-ink flex items-center">
             <Building2 className="w-3.5 h-3.5 mr-1 text-brand-600" /> Precise Street & Landmark Details
           </span>
-          <span className="text-[10px] text-text-muted">Helps cleanup crew navigate directly</span>
+          <span className="text-[10px] text-text-muted">Helps crew navigate</span>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
@@ -616,7 +557,7 @@ export function GoogleLocationPicker({
               type="text"
               value={landmarkDetails}
               onChange={(e) => handleLandmarkChange(e.target.value)}
-              placeholder="Nearby landmark (e.g. Opp. Cummins College gate, near bus stop)..."
+              placeholder="Nearby landmark (e.g. Opp. Cummins College gate)..."
               className="w-full bg-surface border border-border rounded-xl px-3 py-1.5 text-xs text-ink focus:outline-none focus:ring-1 focus:ring-brand-500 shadow-2xs"
             />
           </div>
@@ -624,19 +565,19 @@ export function GoogleLocationPicker({
       </div>
 
       {/* Bottom Confirmation Bar */}
-      <div className="mt-2 pt-2 border-t border-border flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2 shrink-0">
+      <div className="mt-3 pt-2.5 border-t border-border flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2.5">
         <div className="min-w-0 flex-1">
-          <p className="text-[10px] font-bold text-text-muted uppercase tracking-wider">Confirmed Address</p>
-          <p className="text-xs font-semibold text-ink truncate" title={location.address}>
+          <p className="text-[10px] font-bold text-text-muted uppercase tracking-wider">CONFIRMED ADDRESS</p>
+          <p className="text-xs font-bold text-ink truncate" title={location.address}>
             {location.address}
           </p>
         </div>
 
-        <div className="flex items-center space-x-2 w-full sm:w-auto shrink-0">
+        <div className="flex items-center space-x-2 w-full sm:w-auto">
           <Button 
             size="sm"
             onClick={onConfirm} 
-            className="w-full sm:w-auto px-6 py-2 shadow-sm text-xs bg-brand-500 hover:bg-brand-600 font-bold"
+            className="w-full sm:w-auto px-6 py-2.5 shadow-sm text-xs bg-brand-500 hover:bg-brand-600 font-bold"
             leftIcon={<CheckCircle className="w-3.5 h-3.5" />}
           >
             Confirm Location

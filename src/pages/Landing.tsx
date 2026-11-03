@@ -170,7 +170,7 @@ export function Landing() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.4 }}
-              className="grid grid-cols-3 gap-4 border-t border-border pt-8 max-w-lg mx-auto lg:mx-0"
+              className="grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-4 border-t border-border pt-6 sm:pt-8 max-w-lg mx-auto lg:mx-0"
             >
               {[
                 { title: 'Take a photo', sub: 'Open Vision scans waste', icon: Camera },
