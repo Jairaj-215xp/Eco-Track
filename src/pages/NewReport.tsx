@@ -243,12 +243,12 @@ export function NewReport() {
             </button>
             <h1 className="text-xl sm:text-2xl md:text-3xl font-display font-extrabold text-ink tracking-tight mb-0.5">
               {step === 1 && <>Snap or upload <span className="text-brand-600">photo</span></>}
-              {step === 2 && <>Confirm with <span className="text-brand-600">Google Maps</span></>}
+              {step === 2 && <>Confirm <span className="text-brand-600">Exact Location</span></>}
               {step === 3 && <>Review & <span className="text-brand-600">Submit</span></>}
             </h1>
             <p className="text-text-muted text-xs max-w-md">
               {step === 1 && "Use live camera or upload a picture. Open Vision AI will detect waste characteristics."}
-              {step === 2 && "Interactive Google Maps location pinpointing with real-time street address reverse geocoding."}
+              {step === 2 && "Interactive live map pinpointing with high-accuracy GPS tracking and street address reverse geocoding."}
               {step === 3 && "Review AI recommendations and submit directly to Supabase."}
             </p>
           </div>

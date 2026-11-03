@@ -43,17 +43,32 @@ function MapController({ center }: { center: [number, number] }) {
   const map = useMap();
 
   useEffect(() => {
-    map.flyTo(center, Math.max(map.getZoom(), 16), { duration: 0.8 });
-  }, [center[0], center[1]]);
+    if (center && typeof center[0] === 'number' && typeof center[1] === 'number' && !isNaN(center[0]) && !isNaN(center[1])) {
+      map.flyTo(center, Math.max(map.getZoom(), 16), { duration: 0.8 });
+    }
+  }, [center[0], center[1], map]);
 
   useEffect(() => {
-    const t1 = setTimeout(() => map.invalidateSize(), 50);
-    const t2 = setTimeout(() => map.invalidateSize(), 300);
-    const t3 = setTimeout(() => map.invalidateSize(), 800);
+    const invalidate = () => {
+      try {
+        map.invalidateSize();
+      } catch (e) {
+        // ignore
+      }
+    };
+
+    const t1 = setTimeout(invalidate, 50);
+    const t2 = setTimeout(invalidate, 200);
+    const t3 = setTimeout(invalidate, 500);
+    const t4 = setTimeout(invalidate, 1000);
+
+    window.addEventListener('resize', invalidate);
     return () => {
       clearTimeout(t1);
       clearTimeout(t2);
       clearTimeout(t3);
+      clearTimeout(t4);
+      window.removeEventListener('resize', invalidate);
     };
   }, [map]);
 
@@ -69,6 +84,9 @@ function LeafletPickerView({
   onLocationSelected: (lat: number, lng: number) => void;
 }) {
   const markerRef = useRef<L.Marker>(null);
+
+  const safeLat = typeof location.lat === 'number' && !isNaN(location.lat) ? location.lat : 18.4912;
+  const safeLng = typeof location.lng === 'number' && !isNaN(location.lng) ? location.lng : 73.8217;
 
   useMapEvents({
     click(e) {
@@ -91,16 +109,16 @@ function LeafletPickerView({
 
   return (
     <>
-      <MapController center={[location.lat, location.lng]} />
+      <MapController center={[safeLat, safeLng]} />
       <Marker
         draggable={true}
         eventHandlers={eventHandlers}
-        position={[location.lat, location.lng]}
+        position={[safeLat, safeLng]}
         ref={markerRef}
         icon={customEcoMarkerIcon}
       />
       <Circle
-        center={[location.lat, location.lng]}
+        center={[safeLat, safeLng]}
         radius={location.accuracyM || 25}
         pathOptions={{
           color: '#059669',
@@ -142,10 +160,20 @@ export function GoogleLocationPicker({
   const markerRef = useRef<google.maps.Marker | null>(null);
   const circleRef = useRef<google.maps.Circle | null>(null);
 
-  const [useLeaflet, setUseLeaflet] = useState(!isGoogleMapsConfigured || googleMapsAuthFailed);
+  const [useLeaflet, setUseLeaflet] = useState(true);
   const [loadingLocation, setLoadingLocation] = useState(false);
   const [geocoding, setGeocoding] = useState(false);
   const [searchQuery, setSearchQuery] = useState(location.address || '');
+
+  // Listen for Google Maps auth or billing failures to seamlessly stay on Leaflet
+  useEffect(() => {
+    const handleAuthFailure = () => {
+      setUseLeaflet(true);
+      showAlert('Google Maps key has no billing enabled. Automatically using OpenStreetMap.', 'info', 'Map Engine');
+    };
+    window.addEventListener('google-maps-auth-failed', handleAuthFailure);
+    return () => window.removeEventListener('google-maps-auth-failed', handleAuthFailure);
+  }, []);
 
   // Detailed address state (Street, Building, Landmark)
   const [streetDetails, setStreetDetails] = useState('');
@@ -417,12 +445,12 @@ export function GoogleLocationPicker({
 
   const isCoarseAccuracy = (location.accuracyM || 0) > 150;
 
-  // Leaflet Tile configuration
+  // Leaflet Tile configuration (Carto Dark Matter in dark mode, OpenStreetMap in light mode)
   const leafletTileUrl = resolvedTheme === 'dark'
-    ? 'https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png'
+    ? 'https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png'
     : 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
 
-  const leafletAttribution = '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors';
+  const leafletAttribution = '&copy; <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noreferrer">OpenStreetMap</a> contributors';
 
   return (
     <div className="bg-surface rounded-3xl p-3 sm:p-4 border border-border flex flex-col shadow-sm">
@@ -495,6 +523,8 @@ export function GoogleLocationPicker({
                 key={`${leafletTileUrl}-${resolvedTheme}`}
                 attribution={leafletAttribution}
                 url={leafletTileUrl}
+                subdomains={resolvedTheme === 'dark' ? ['a', 'b', 'c', 'd'] : ['a', 'b', 'c']}
+                maxZoom={19}
               />
               <LeafletPickerView
                 location={location}
@@ -526,9 +556,20 @@ export function GoogleLocationPicker({
         </div>
 
         {/* Map engine indicator pill */}
-        <div className="absolute bottom-2 left-2 z-[1000] bg-surface/85 backdrop-blur-sm border border-border px-2 py-0.5 rounded-md text-[9px] text-text-muted flex items-center pointer-events-none">
-          <span className="w-1.5 h-1.5 rounded-full bg-brand-500 mr-1.5 animate-pulse" />
-          <span>{useLeaflet ? 'Interactive Map' : 'Google Maps Engine'}</span>
+        <div className="absolute bottom-2 left-2 z-[1000] bg-surface/90 backdrop-blur-md border border-border px-2.5 py-1 rounded-lg text-[10px] text-text-muted flex items-center shadow-xs">
+          <span className="w-2 h-2 rounded-full bg-brand-500 mr-1.5 animate-pulse" />
+          <span className="font-semibold text-ink">
+            {useLeaflet ? 'OpenStreetMap GIS Engine (Active)' : 'Google Maps Engine'}
+          </span>
+          {isGoogleMapsConfigured && (
+            <button
+              type="button"
+              onClick={() => setUseLeaflet(!useLeaflet)}
+              className="ml-2 text-[9px] text-brand-600 dark:text-brand-400 hover:underline font-bold"
+            >
+              {useLeaflet ? 'Switch Engine' : 'Use OpenStreetMap'}
+            </button>
+          )}
         </div>
       </div>
 

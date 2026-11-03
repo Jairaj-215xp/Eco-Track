@@ -14,8 +14,9 @@ export let googleMapsAuthFailed = false;
 if (typeof window !== 'undefined') {
   const prevAuth = (window as any).gm_authFailure;
   (window as any).gm_authFailure = () => {
-    console.warn('Google Maps authentication failed (billing or API key error). Using fallback.');
+    console.warn('Google Maps authentication failed (billing or API key error). Using OpenStreetMap fallback.');
     googleMapsAuthFailed = true;
+    window.dispatchEvent(new CustomEvent('google-maps-auth-failed'));
     if (typeof prevAuth === 'function') prevAuth();
   };
 }
